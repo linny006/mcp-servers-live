@@ -33,7 +33,7 @@ expired items removed — so you can rely on what you see being current.
 
 ## 📋 Current Items
 
-> ⏰ Last updated: 2026-05-25 15:45 UTC
+> ⏰ Last updated: 2026-05-25 16:00 UTC
 >
 > Data source: `GitHub Search API`
 >
@@ -42,56 +42,56 @@ expired items removed — so you can rely on what you see being current.
 <!-- TRACKER_TABLE_START -->
 | # | Name | ⭐ | Lang | Updated | Description |
 |---|------|---|------|---------|-------------|
-| 1 | [mbailey/voicemode](https://github.com/mbailey/voicemode) | 1195 | Python | 2026-05-25 | Natural voice conversations with Claude Code |
-| 2 | [leshchenko1979/fast-mcp-telegram](https://github.com/leshchenko1979/fast-mcp-telegram) | 42 | Python | 2026-05-25 | Telegram MCP server with HTTP-MTProto Bridge — direct API/curl access, multi-user Bearer auth, Docker, MTProto proxy, fi |
-| 3 | [gitmem-dev/gitmem](https://github.com/gitmem-dev/gitmem) | 8 | TypeScript | 2026-05-25 | Institutional memory for AI coding agents. Scars, wins, and patterns that persist across sessions. MCP server for Claude |
-| 4 | [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 10599 | Python | 2026-05-25 | ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops |
-| 5 | [Felinerelief627/mcp](https://github.com/Felinerelief627/mcp) | 0 | — | 2026-05-25 | Connect LLM agents to your WireBoard analytics data using the Model Context Protocol for real-time and historical projec |
-| 6 | [VigiaLabs/vigia-public](https://github.com/VigiaLabs/vigia-public) | 0 | TypeScript | 2026-05-25 | Radical transparency engineered for the public sector: an autonomous oracle that instantly converts impenetrable bureauc |
-| 7 | [herreravalenz6620/context-compression](https://github.com/herreravalenz6620/context-compression) | 0 | Python | 2026-05-25 | Reduce token usage for JSON, CSV, and TSV files with deterministic compression that keeps data intact for AI agents. |
-| 8 | [bridgettmirthful637/librecrawl-mcp](https://github.com/bridgettmirthful637/librecrawl-mcp) | 0 | Python | 2026-05-25 | Audit websites with this self-hosted SEO crawler. Connect LibreCrawl to Claude and perform unlimited technical audits wi |
-| 9 | [blackcomedytrichomanesboschianum859/gatekeeper-ha](https://github.com/blackcomedytrichomanesboschianum859/gatekeeper-ha) | 0 | Python | 2026-05-25 | Generate time-limited QR code access for Home Assistant guests without requiring app installs or user accounts. |
-| 10 | [Licentious-underframe246/terminal-guardian-mcp](https://github.com/Licentious-underframe246/terminal-guardian-mcp) | 0 | TypeScript | 2026-05-25 | Provide secure, sandboxed terminal access for AI assistants using the Model Context Protocol. |
-| 11 | [tucked-angiologist465/agent-automation-creator](https://github.com/tucked-angiologist465/agent-automation-creator) | 0 | HTML | 2026-05-25 | Map processes into automated workflows using this framework to ensure reliable, observable, and governed AI-augmented op |
-| 12 | [Alysiadeceptive64/aemet-client](https://github.com/Alysiadeceptive64/aemet-client) | 0 | TypeScript | 2026-05-25 | Access Spanish weather data through a TypeScript SDK and Model Context Protocol server for the AEMET OpenData API. |
-| 13 | [Niccolounmolested73/chrome-mcp-windows-survival-guide](https://github.com/Niccolounmolested73/chrome-mcp-windows-survival-guide) | 0 | PowerShell | 2026-05-25 | Fix common errors when running the chrome-mcp server on Windows 11 to connect your active Chrome browser and cookies to  |
-| 14 | [openops-cloud/openops](https://github.com/openops-cloud/openops) | 1025 | TypeScript | 2026-05-25 | The batteries-included, No-Code FinOps automation platform, with the AI you trust. |
-| 15 | [udondan/switch-parental-controls](https://github.com/udondan/switch-parental-controls) | 0 | Python | 2026-05-25 | A CLI and MCP server that expose Nintendo Switch Parental Controls as commands and AI-accessible tools. |
-| 16 | [Gestationradiotelescope548/crypto-arbitrage-bot-automated-trading](https://github.com/Gestationradiotelescope548/crypto-arbitrage-bot-automated-trading) | 0 | — | 2026-05-25 | Scan multi-chain markets for price differences and execute automated crypto arbitrage trades across TON, SOL, and EVM ne |
-| 17 | [pedrosakuma/dotnet-diagnostics-mcp](https://github.com/pedrosakuma/dotnet-diagnostics-mcp) | 0 | C# | 2026-05-25 | On-demand .NET runtime diagnostics over MCP — attach to a live CoreCLR process (sidecar or local), collect counters/CPU  |
-| 18 | [aboral-bumper926/anansi](https://github.com/aboral-bumper926/anansi) | 0 | Python | 2026-05-25 | Scrape data from unstable websites using automated self-healing scrapers, TLS fingerprinting, and Pydantic validation to |
-| 19 | [bradleybond512/crystal-ball](https://github.com/bradleybond512/crystal-ball) | 4 | TypeScript | 2026-05-25 | Tauri 2 desktop intelligence platform — Cesium.js 3D globe, 185 live panels, MCP server for Claude Code, and an explaina |
-| 20 | [defi-io/smarts](https://github.com/defi-io/smarts) | 1 | Ruby | 2026-05-25 | Live docs for every verified smart contract. |
-| 21 | [Denithenar327/Argyph](https://github.com/Denithenar327/Argyph) | 0 | Rust | 2026-05-25 | Index codebases for AI agents with a single local binary providing semantic search, symbol graphs, and grep capabilities |
-| 22 | [Glabrous-driving823/chatgpt-portal](https://github.com/Glabrous-driving823/chatgpt-portal) | 0 | TypeScript | 2026-05-25 | Bridge private web pages to ChatGPT agents using local Chrome snapshots, Markdown conversion, and secure, controlled nav |
-| 23 | [Mcpgate-de/mcpgate](https://github.com/Mcpgate-de/mcpgate) | 0 | Python | 2026-05-25 | Self-hosted MCP gateway. Connects Claude, ChatGPT, Codex and any MCP agent to 22+ enterprise tools (Jira, Confluence, Gi |
-| 24 | [valani9/vstack](https://github.com/valani9/vstack) | 0 | Python | 2026-05-25 | AI agents fail like junior teammates—looping on bad ideas, ignoring feedback, escalating commitment. vstack ports 34 of  |
-| 25 | [lelabdev/rag-ferrite](https://github.com/lelabdev/rag-ferrite) | 0 | Rust | 2026-05-25 | Personal RAG engine — simple, fast, Rust. One binary, one DB, native collections. The anti-LangChain. |
-| 26 | [incandescent-gallus977/skill](https://github.com/incandescent-gallus977/skill) | 0 | — | 2026-05-25 | Deploy static sites and manage private cloud storage directly through your AI agent using TARS. |
-| 27 | [Crosswise-overage824/agentic-planet](https://github.com/Crosswise-overage824/agentic-planet) | 0 | — | 2026-05-25 | Build agentic AI workflows with curated tools, MCP server reviews, and technical recipes for software developers. |
-| 28 | [nonagenticai/portoser](https://github.com/nonagenticai/portoser) | 0 | Shell | 2026-05-25 | Declarative service registry, web UI, and MCP server for orchestrating Docker services across heterogeneous hosts — with |
-| 29 | [cogitave/clawtool](https://github.com/cogitave/clawtool) | 3 | Go | 2026-05-25 | Tools. Agents. Wired. \| the canonical tool layer |
-| 30 | [wllrdev/Fast-News-MCP](https://github.com/wllrdev/Fast-News-MCP) | 0 | — | 2026-05-25 | Search, trending, topics, and local news all in one MCP server. Article previews, deduplication, source filtering, and 4 |
-| 31 | [msaad00/agent-bom](https://github.com/msaad00/agent-bom) | 20 | Python | 2026-05-25 | Open security scanner for AI supply chain and infrastructure: agents, MCP, containers, cloud, GPU, and runtime with blas |
-| 32 | [ihorponom/agentpack](https://github.com/ihorponom/agentpack) | 12 | TypeScript | 2026-05-25 | Local task-state ledger for AI coding agents. Preserve decisions, source conclusions, evidence, and checkpoints across C |
-| 33 | [WingedGuardian/agent-tools](https://github.com/WingedGuardian/agent-tools) | 0 | Python | 2026-05-25 | Agent-native utility API bundle. 9 endpoints as MCP server + REST API with x402 micropayments. Live at tools.beethoven20 |
-| 34 | [maximhq/bifrost](https://github.com/maximhq/bifrost) | 5210 | Go | 2026-05-25 | Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, cluster mode, guardrails, 1000+ mod |
-| 35 | [lihtness/gnomon-mcp](https://github.com/lihtness/gnomon-mcp) | 0 | Python | 2026-05-25 |  |
-| 36 | [Unopposable-starting193/chatgpt-bridge](https://github.com/Unopposable-starting193/chatgpt-bridge) | 0 | — | 2026-05-25 | Proxy local OpenAI-compatible requests through your ChatGPT subscription to access chat and image generation features wi |
-| 37 | [waynestimulative605/docker-mcp-gateway](https://github.com/waynestimulative605/docker-mcp-gateway) | 0 | Shell | 2026-05-25 | Run self-hosted Model Context Protocol tool servers with a secure, authenticated HTTP gateway using Docker. |
-| 38 | [LeilaoMi/hot-news-radar](https://github.com/LeilaoMi/hot-news-radar) | 0 | Python | 2026-05-25 | ⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热 |
-| 39 | [Mirannonarbitrable290/agentic-kaggle-skill](https://github.com/Mirannonarbitrable290/agentic-kaggle-skill) | 1 | — | 2026-05-25 | Deploy autonomous AI agents to research, debug, and iterate on Kaggle data science competitions. |
-| 40 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | 189650 | TypeScript | 2026-05-25 | Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host  |
-| 41 | [proompteng/bilig](https://github.com/proompteng/bilig) | 29 | TypeScript | 2026-05-25 | Formula WorkPaper and XLSX recalculation runtime for Node.js services and agent tools: edit cells, recalc, verify readba |
-| 42 | [elvis-velez/google-ads-mcp](https://github.com/elvis-velez/google-ads-mcp) | 0 | Python | 2026-05-25 | Manage Google Ads accounts via MCP. Execute GAQL reads and secure two-phase mutations with full v24 API coverage for rel |
-| 43 | [ober37/ac-infinity-mcp](https://github.com/ober37/ac-infinity-mcp) | 1 | Python | 2026-05-25 | MCP server for AC Infinity grow controllers. AI agent integration for climate monitoring, port control, and grow automat |
-| 44 | [ShiftinBits/constellation-mcp](https://github.com/ShiftinBits/constellation-mcp) | 1 | TypeScript | 2026-05-25 | Code Intelligence Platform for AI Coding Assistants |
-| 45 | [Spokeswomandodgecity658/SharkMCP](https://github.com/Spokeswomandodgecity658/SharkMCP) | 0 | Python | 2026-05-25 | Analyze network captures with natural language by connecting sharkd to LLMs via an MCP server. |
-| 46 | [Uri6407/claudegram](https://github.com/Uri6407/claudegram) | 1 | Python | 2026-05-25 | Connect your personal Telegram account to Claude Code using the MTProto protocol instead of the Bot API. |
-| 47 | [workbookbulb863/korean-law-alio-mcp](https://github.com/workbookbulb863/korean-law-alio-mcp) | 0 | TypeScript | 2026-05-25 | Search and analyze Korean laws, administrative rules, and public institution regulations using 110 MCP tools to provide  |
-| 48 | [Ramosagustinaolivia23/mcp-upgrade](https://github.com/Ramosagustinaolivia23/mcp-upgrade) | 0 | Go | 2026-05-25 | Update your Model Context Protocol servers automatically across all AI coding clients and package ecosystems. |
-| 49 | [Dry-statelyhome866/mcp-database-query-app](https://github.com/Dry-statelyhome866/mcp-database-query-app) | 0 | C# | 2026-05-25 |  |
-| 50 | [fxspeiser/crosscheck-agent](https://github.com/fxspeiser/crosscheck-agent) | 3 | Python | 2026-05-25 | A compact, polyglot MCP add-on for Claude Code that lets Claude confer with GPT, Grok, Gemini, Mistral, Groq, and DeepSe |
+| 1 | [denn-gubsky/loomcycle](https://github.com/denn-gubsky/loomcycle) | 4 | Go | 2026-05-25 | The runtime substrate for agentic systems — one Go binary, six LLM providers, MCP-native, configurable as a managed sand |
+| 2 | [1Panel-dev/MaxKB](https://github.com/1Panel-dev/MaxKB) | 21056 | Python | 2026-05-25 | 🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开源企业级智能体平台。 |
+| 3 | [faraa2m/tokenometer](https://github.com/faraa2m/tokenometer) | 1 | TypeScript | 2026-05-25 | LLM cost calculator, token counter, latency benchmark, CI guardrail, MCP server, and VS Code/Cursor extension. |
+| 4 | [DunkelCloud/ToolMesh](https://github.com/DunkelCloud/ToolMesh) | 3 | Go | 2026-05-25 | Self-hosted MCP gateway with authorization, credential injection, audit logging, and output policies. Includes DADL — de |
+| 5 | [ihorponom/agentpack](https://github.com/ihorponom/agentpack) | 12 | TypeScript | 2026-05-25 | Local task-state ledger for AI coding agents. Preserve decisions, source conclusions, evidence, and checkpoints across C |
+| 6 | [alpic-ai/skybridge](https://github.com/alpic-ai/skybridge) | 1296 | TypeScript | 2026-05-25 | Skybridge is a full-stack TypeScript framework for MCP Apps and ChatGPT Apps. Type-safe. React-powered. Platform-agnosti |
+| 7 | [lulin70/carrymem](https://github.com/lulin70/carrymem) | 2 | Python | 2026-05-25 | Lightweight AI memory layer — preferences, decisions, and corrections that follow you across models, tools, and devices. |
+| 8 | [xieyuschen/gopls-mcp](https://github.com/xieyuschen/gopls-mcp) | 56 | Go | 2026-05-25 | MCP server for golang projects development: Expand AI Code Agent ability boundary to have a semantic understanding and d |
+| 9 | [bradleybond512/crystal-ball](https://github.com/bradleybond512/crystal-ball) | 4 | TypeScript | 2026-05-25 | Tauri 2 desktop intelligence platform — Cesium.js 3D globe, 185 live panels, MCP server for Claude Code, and an explaina |
+| 10 | [lelabdev/rag-ferrite](https://github.com/lelabdev/rag-ferrite) | 0 | Rust | 2026-05-25 | Personal RAG engine — simple, fast, Rust. One binary, one DB, native collections. The anti-LangChain. |
+| 11 | [valani9/vstack](https://github.com/valani9/vstack) | 0 | Python | 2026-05-25 | AI agents fail like junior teammates—looping on bad ideas, ignoring feedback, escalating commitment. vstack ports 34 of  |
+| 12 | [defi-io/smarts](https://github.com/defi-io/smarts) | 1 | Ruby | 2026-05-25 | Live docs for every verified smart contract. |
+| 13 | [hello-123123/canva-mcp-secure-proxy](https://github.com/hello-123123/canva-mcp-secure-proxy) | 0 | HTML | 2026-05-25 | 🔒 Secure Canva AI Tools 2026 - MCP Server & API Hardening Suite |
+| 14 | [cogitave/clawtool](https://github.com/cogitave/clawtool) | 3 | Go | 2026-05-25 | Tools. Agents. Wired. \| the canonical tool layer |
+| 15 | [sreypovrupp/ticktick-terminal-control](https://github.com/sreypovrupp/ticktick-terminal-control) | 0 | HTML | 2026-05-25 | TickTick CLI Mastery 2026 - Ultimate Task Manager, MCP & Skill Hub |
+| 16 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | 189649 | TypeScript | 2026-05-25 | Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host  |
+| 17 | [fxspeiser/crosscheck-agent](https://github.com/fxspeiser/crosscheck-agent) | 3 | Python | 2026-05-25 | A compact, polyglot MCP add-on for Claude Code that lets Claude confer with GPT, Grok, Gemini, Mistral, Groq, and DeepSe |
+| 18 | [hieu5882/telos-customer-validator](https://github.com/hieu5882/telos-customer-validator) | 0 | HTML | 2026-05-25 | The Art of Customer Validation: 2026’s Overlooked Startup Growth Filter |
+| 19 | [msaad00/agent-bom](https://github.com/msaad00/agent-bom) | 20 | Python | 2026-05-25 | Open security scanner for AI supply chain and infrastructure: agents, MCP, containers, cloud, GPU, and runtime with blas |
+| 20 | [bokyostudio/pg-practice-knowledgebase](https://github.com/bokyostudio/pg-practice-knowledgebase) | 0 | HTML | 2026-05-25 | The Ultimate guide to PostgreSQL Optimization for AI Code Generation in 2026 |
+| 21 | [amit491k-del/webasyst-ai-workbench](https://github.com/amit491k-del/webasyst-ai-workbench) | 0 | HTML | 2026-05-25 | Webasyst MCP Server 2026: AI Tools for Apps, Plugins & Themes |
+| 22 | [gist-info/immich-curator-mcp](https://github.com/gist-info/immich-curator-mcp) | 0 | HTML | 2026-05-25 | Best Immich Photo Manager Alternative 2026 - AI Search & Geographic Albums |
+| 23 | [shigetosidumeda-cyber/autonomath-mcp](https://github.com/shigetosidumeda-cyber/autonomath-mcp) | 0 | HTML | 2026-05-25 | Japan public-program MCP server — 11,684 subsidies + 9,484 e-Gov laws + 22,258 enforcement + 13,801 invoice registrants  |
+| 24 | [proompteng/bilig](https://github.com/proompteng/bilig) | 29 | TypeScript | 2026-05-25 | Formula WorkPaper and XLSX recalculation runtime for Node.js services and agent tools: edit cells, recalc, verify readba |
+| 25 | [Umerfarooq1973/base-batch-builder-mcp](https://github.com/Umerfarooq1973/base-batch-builder-mcp) | 0 | HTML | 2026-05-25 | Base MCP Server: AI Agent Crypto Airdrops 2026 🚀 \| Free & Secure |
+| 26 | [Able-rip/BMBrick-Photo-to-LEGO-Mosaic-Skill](https://github.com/Able-rip/BMBrick-Photo-to-LEGO-Mosaic-Skill) | 1 | JavaScript | 2026-05-25 |  MCP server that converts local photos into LEGO-style brick mosaic previews. For Claude, Cursor, Windsurf & more. |
+| 27 | [archestra-ai/archestra](https://github.com/archestra-ai/archestra) | 3741 | TypeScript | 2026-05-25 | Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator |
+| 28 | [bch1212/modelwatch](https://github.com/bch1212/modelwatch) | 0 | Python | 2026-05-25 | Continuous behavioral drift monitoring for LLM applications. |
+| 29 | [Mugetsu44-44/mcp-gateway-orchestrator](https://github.com/Mugetsu44-44/mcp-gateway-orchestrator) | 0 | HTML | 2026-05-25 | Enterprise AI Guardrails 2026 🛡️ - MCP Security & Orchestration Toolkit |
+| 30 | [sirkirby/unifi-mcp](https://github.com/sirkirby/unifi-mcp) | 367 | Python | 2026-05-25 | MCP servers for the UniFi suite of applications, Network, Protect, Access, and Drive |
+| 31 | [tosin2013/helmdeck](https://github.com/tosin2013/helmdeck) | 1 | Go | 2026-05-25 | A self-hosted, containerized platform for AI agents, exposed as Capability Packs — schema-validated, one-shot JSON tools |
+| 32 | [RoyalPineapple/TheButtonHeist](https://github.com/RoyalPineapple/TheButtonHeist) | 1 | Swift | 2026-05-25 | Enable Programatic iOS App Control for Human and AI Alike |
+| 33 | [cwt/hg-mcp](https://github.com/cwt/hg-mcp) | 0 | Python | 2026-05-25 | MCP server for Mercurial repository interaction |
+| 34 | [factorly-dev/factorly](https://github.com/factorly-dev/factorly) | 21 | Go | 2026-05-25 | Factorly is a local runtime for agent tool chains. It manages tool calls, injects credentials from an encrypted vault, e |
+| 35 | [Ibarra25/vault-echo](https://github.com/Ibarra25/vault-echo) | 0 | HTML | 2026-05-25 | Your Ultimate Local AI Memory Hub 2026 – Eliminate AI Amnesia Today |
+| 36 | [comet-ml/opik-mcp](https://github.com/comet-ml/opik-mcp) | 204 | Python | 2026-05-25 | Model Context Protocol (MCP) implementation for Opik enabling seamless IDE integration and unified access to prompts, pr |
+| 37 | [fjwood69/mori](https://github.com/fjwood69/mori) | 3 | Python | 2026-05-25 | Mori MCP server — A shared memory layer for AI coding agents — one that compounds. |
+| 38 | [jenni2910/serena-superpowers-kit](https://github.com/jenni2910/serena-superpowers-kit) | 0 | HTML | 2026-05-25 | OpenSem 2026 Starter Kit: No-Code Bootstrapping for Serena & Superpowers |
+| 39 | [abrahemy319-png/mcp-webasyst-codex-toolkit](https://github.com/abrahemy319-png/mcp-webasyst-codex-toolkit) | 0 | HTML | 2026-05-25 | Unofficial Codex-First MCP for Webasyst 2026 – Apps, Plugins & UI Audit Tools |
+| 40 | [enzosantana-mv/telegram-ai-scope](https://github.com/enzosantana-mv/telegram-ai-scope) | 0 | HTML | 2026-05-25 | AI-Powered Telegram Monitor 2026: Real-Time Message Classification & Insights Dashboard |
+| 41 | [PerpetualSoftware/pad](https://github.com/PerpetualSoftware/pad) | 22 | Go | 2026-05-25 | Project Management for the agent era |
+| 42 | [mihaelamj/cupertino](https://github.com/mihaelamj/cupertino) | 795 | Swift | 2026-05-25 | A local Apple Documentation crawler and MCP server. Written in Swift. |
+| 43 | [vigot876-arch/base-agent-airdrop-mcp](https://github.com/vigot876-arch/base-agent-airdrop-mcp) | 0 | HTML | 2026-05-25 | Base Airdrop MCP Server 2026 🚀 \| AI Agent Token & ETH Tools |
+| 44 | [gitmem-dev/gitmem](https://github.com/gitmem-dev/gitmem) | 8 | TypeScript | 2026-05-25 | Institutional memory for AI coding agents. Scars, wins, and patterns that persist across sessions. MCP server for Claude |
+| 45 | [linny006/mcp-servers-live](https://github.com/linny006/mcp-servers-live) | 0 | Python | 2026-05-25 | Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes |
+| 46 | [linny006/trending-claude-skills](https://github.com/linny006/trending-claude-skills) | 0 | Python | 2026-05-25 | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
+| 47 | [mbailey/voicemode](https://github.com/mbailey/voicemode) | 1195 | Python | 2026-05-25 | Natural voice conversations with Claude Code |
+| 48 | [leshchenko1979/fast-mcp-telegram](https://github.com/leshchenko1979/fast-mcp-telegram) | 42 | Python | 2026-05-25 | Telegram MCP server with HTTP-MTProto Bridge — direct API/curl access, multi-user Bearer auth, Docker, MTProto proxy, fi |
+| 49 | [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 10602 | Python | 2026-05-25 | ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops |
+| 50 | [Felinerelief627/mcp](https://github.com/Felinerelief627/mcp) | 0 | — | 2026-05-25 | Connect LLM agents to your WireBoard analytics data using the Model Context Protocol for real-time and historical projec |
 <!-- TRACKER_TABLE_END -->
 
 ---
