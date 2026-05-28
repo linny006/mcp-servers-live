@@ -19,6 +19,17 @@ Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes
 
 </div>
 
+## 🩺 Diagnose your installed MCP servers
+
+```bash
+npx github:linny006/mcp-doctor check
+```
+
+Health-checks every MCP server in your Claude Desktop config — finds stale packages, broken endpoints, renamed packages. [See mcp-doctor →](https://github.com/linny006/mcp-doctor)
+
+---
+
+
 ---
 
 ## 💡 What is this?
