@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>jmagar/syslog-mcp - entry on MCP Servers Live</title>
-<meta name="description" content="Homelab syslog receiver plus MCP server for searching, tailing, and correlating logs across hosts.">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/jmagar/syslog-mcp/">
+<title>nilsir/mcp-server-mysql - entry on MCP Servers Live</title>
+<meta name="description" content="MCP server for MySQL database operations - query, execute, schema management with permission controls">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/nilsir/mcp-server-mysql/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jmagar/syslog-mcp - entry on MCP Servers Live">
-<meta property="og:description" content="Homelab syslog receiver plus MCP server for searching, tailing, and correlating logs across hosts.">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/jmagar/syslog-mcp/">
+<meta property="og:title" content="nilsir/mcp-server-mysql - entry on MCP Servers Live">
+<meta property="og:description" content="MCP server for MySQL database operations - query, execute, schema management with permission controls">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/nilsir/mcp-server-mysql/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jmagar/syslog-mcp - entry on MCP Servers Live">
-<meta name="twitter:description" content="Homelab syslog receiver plus MCP server for searching, tailing, and correlating logs across hosts.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"jmagar/syslog-mcp","codeRepository":"https://github.com/jmagar/syslog-mcp","programmingLanguage":"Rust","url":"https://linny006.github.io/mcp-servers-live/r/jmagar/syslog-mcp/","description":"Homelab syslog receiver plus MCP server for searching, tailing, and correlating logs across hosts.","author":{"@type":"Person","name":"jmagar","url":"https://github.com/jmagar"},"dateModified":"2026-05-28"}</script>
+<meta name="twitter:title" content="nilsir/mcp-server-mysql - entry on MCP Servers Live">
+<meta name="twitter:description" content="MCP server for MySQL database operations - query, execute, schema management with permission controls">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"nilsir/mcp-server-mysql","codeRepository":"https://github.com/nilsir/mcp-server-mysql","programmingLanguage":"JavaScript","url":"https://linny006.github.io/mcp-servers-live/r/nilsir/mcp-server-mysql/","description":"MCP server for MySQL database operations - query, execute, schema management with permission controls","author":{"@type":"Person","name":"nilsir","url":"https://github.com/nilsir"},"dateModified":"2026-05-28"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,48 +41,60 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>jmagar/syslog-mcp</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>nilsir/mcp-server-mysql</span></nav>
 <main>
-<h1>jmagar/syslog-mcp</h1>
-<p class="lead">Homelab syslog receiver plus MCP server for searching, tailing, and correlating logs across hosts.</p>
+<h1>nilsir/mcp-server-mysql</h1>
+<p class="lead">MCP server for MySQL database operations - query, execute, schema management with permission controls</p>
 <div class="meta">
 <span><strong>Stars</strong> 1</span>
-<span><strong>Language</strong> Rust</span>
+<span><strong>Language</strong> JavaScript</span>
 <span><strong>Last updated</strong> 2026-05-28</span>
-<span><a href="https://github.com/jmagar/syslog-mcp" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/jmagar" rel="external">@jmagar</a></span>
+<span><a href="https://github.com/nilsir/mcp-server-mysql" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/nilsir" rel="external">@nilsir</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
+<p>Install method detected from README: <code>npm install</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>npm install
+npm</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;syslog-mcp&quot;: {
-      &quot;command&quot;: &quot;/path/to/syslog&quot;,
-      &quot;args&quot;: [&quot;mcp&quot;],
+    &quot;mysql&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;@nilsir/mcp-server-mysql&quot;],
       &quot;env&quot;: {
-        &quot;SYSLOG_MCP_DB_PATH&quot;: &quot;/data/syslog.db&quot;,
-        &quot;RUST_LOG&quot;: &quot;warn&quot;
+        &quot;MYSQL_HOST&quot;: &quot;localhost&quot;,
+        &quot;MYSQL_PORT&quot;: &quot;3306&quot;,
+        &quot;MYSQL_USER&quot;: &quot;root&quot;,
+        &quot;MYSQL_PASSWORD&quot;: &quot;your-password&quot;,
+        &quot;MYSQL_DATABASE&quot;: &quot;your-database&quot;,
+        &quot;MYSQL_MODE&quot;: &quot;readonly&quot;,
+        &quot;MYSQL_ALLOW_DDL&quot;: &quot;false&quot;,
+        &quot;MYSQL_ALLOW_INSERT&quot;: &quot;true&quot;,
+        &quot;MYSQL_ALLOW_UPDATE&quot;: &quot;true&quot;,
+        &quot;MYSQL_ALLOW_DELETE&quot;: &quot;false&quot;,
+        &quot;MYSQL_MAX_ROWS&quot;: &quot;100&quot;
       }
     }
   }
 }</code></pre>
-<p><a href="https://github.com/jmagar/syslog-mcp#readme" rel="external">View full README on GitHub</a></p>
+<p><a href="https://github.com/nilsir/mcp-server-mysql#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Rul1an/assay/">Rul1an/assay (stars:3)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/ganeshmalkar/MCP-Control-Lite/">ganeshmalkar/MCP-Control-Lite (stars:1)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/mendez1212/automation-workflows/">mendez1212/automation-workflows (stars:0)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/sleep2agi/agent-network/">sleep2agi/agent-network (stars:28)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/voidly-ai/voidly-pay/">voidly-ai/voidly-pay (stars:10)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/Luis13-source/jira-simple-mcp/">Luis13-source/jira-simple-mcp (stars:0)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/rust/">All Rust entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/javascript/">All JavaScript entries</a></li>
 </ul></section>
 </main>
 <footer>
