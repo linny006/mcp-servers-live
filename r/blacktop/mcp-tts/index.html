@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>ejrgeek/chipytune - entry on MCP Servers Live</title>
-<meta name="description" content="Source-available Game Boy style music and SFX creation for desktop, CLI, HTTP, and MCP workflows.">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/ejrgeek/chipytune/">
+<title>blacktop/mcp-tts - entry on MCP Servers Live</title>
+<meta name="description" content="MCP Server for Text to Speech">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/blacktop/mcp-tts/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ejrgeek/chipytune - entry on MCP Servers Live">
-<meta property="og:description" content="Source-available Game Boy style music and SFX creation for desktop, CLI, HTTP, and MCP workflows.">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/ejrgeek/chipytune/">
+<meta property="og:title" content="blacktop/mcp-tts - entry on MCP Servers Live">
+<meta property="og:description" content="MCP Server for Text to Speech">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/blacktop/mcp-tts/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ejrgeek/chipytune - entry on MCP Servers Live">
-<meta name="twitter:description" content="Source-available Game Boy style music and SFX creation for desktop, CLI, HTTP, and MCP workflows.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"ejrgeek/chipytune","codeRepository":"https://github.com/ejrgeek/chipytune","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/ejrgeek/chipytune/","description":"Source-available Game Boy style music and SFX creation for desktop, CLI, HTTP, and MCP workflows.","author":{"@type":"Person","name":"ejrgeek","url":"https://github.com/ejrgeek"},"dateModified":"2026-05-29"}</script>
+<meta name="twitter:title" content="blacktop/mcp-tts - entry on MCP Servers Live">
+<meta name="twitter:description" content="MCP Server for Text to Speech">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"blacktop/mcp-tts","codeRepository":"https://github.com/blacktop/mcp-tts","programmingLanguage":"Go","url":"https://linny006.github.io/mcp-servers-live/r/blacktop/mcp-tts/","description":"MCP Server for Text to Speech","author":{"@type":"Person","name":"blacktop","url":"https://github.com/blacktop"},"dateModified":"2026-05-29"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,45 +41,54 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>ejrgeek/chipytune</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>blacktop/mcp-tts</span></nav>
 <main>
-<h1>ejrgeek/chipytune</h1>
-<p class="lead">Source-available Game Boy style music and SFX creation for desktop, CLI, HTTP, and MCP workflows.</p>
+<h1>blacktop/mcp-tts</h1>
+<p class="lead">MCP Server for Text to Speech</p>
 <div class="meta">
-<span><strong>Stars</strong> 0</span>
-<span><strong>Language</strong> Python</span>
+<span><strong>Stars</strong> 59</span>
+<span><strong>Language</strong> Go</span>
 <span><strong>Last updated</strong> 2026-05-29</span>
-<span><a href="https://github.com/ejrgeek/chipytune" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/ejrgeek" rel="external">@ejrgeek</a></span>
+<span><a href="https://github.com/blacktop/mcp-tts" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/blacktop" rel="external">@blacktop</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
+<p>Install method detected from README: <code>claude mcp add</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add say \</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;chipytune&quot;: {
-      &quot;command&quot;: &quot;uv&quot;,
-      &quot;args&quot;: [&quot;run&quot;, &quot;chipytune&quot;, &quot;mcp&quot;, &quot;serve&quot;, &quot;--transport&quot;, &quot;stdio&quot;],
-      &quot;cwd&quot;: &quot;/path/to/chipytune&quot;
+    &quot;say&quot;: {
+      &quot;command&quot;: &quot;mcp-tts&quot;,
+      &quot;env&quot;: {
+        &quot;ELEVENLABS_API_KEY&quot;: &quot;********&quot;,
+        &quot;ELEVENLABS_VOICE_ID&quot;: &quot;1SM7GgM6IMuvQlz2BwM3&quot;,
+        &quot;GOOGLE_AI_API_KEY&quot;: &quot;********&quot;,
+        &quot;OPENAI_API_KEY&quot;: &quot;********&quot;,
+        &quot;OPENAI_TTS_INSTRUCTIONS&quot;: &quot;Speak in a cheerful and positive tone&quot;,
+        &quot;MCP_TTS_SUPPRESS_SPEAKING_OUTPUT&quot;: &quot;true&quot;,
+        &quot;MCP_TTS_ALLOW_CONCURRENT&quot;: &quot;false&quot;
+      }
     }
   }
 }</code></pre>
-<p><a href="https://github.com/ejrgeek/chipytune#readme" rel="external">View full README on GitHub</a></p>
+<p><a href="https://github.com/blacktop/mcp-tts#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/cameronrye/openzim-mcp/">cameronrye/openzim-mcp (stars:62)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/leshchenko1979/fast-mcp-telegram/">leshchenko1979/fast-mcp-telegram (stars:44)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/JosephOIbrahim/Comfy-Cozy/">JosephOIbrahim/Comfy-Cozy (stars:14)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/orneryd/NornicDB/">orneryd/NornicDB (stars:752)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/blackwell-systems/knowing/">blackwell-systems/knowing (stars:7)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/Detective-XH/DocGraph/">Detective-XH/DocGraph (stars:0)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/python/">All Python entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/go/">All Go entries</a></li>
 </ul></section>
 </main>
 <footer>
