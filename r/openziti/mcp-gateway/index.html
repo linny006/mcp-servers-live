@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>icoretech/codex-pooler - entry on MCP Servers Live</title>
-<meta name="description" content="🤖 Pool and route Codex accounts behind one Gateway. WIP.">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/icoretech/codex-pooler/">
+<title>openziti/mcp-gateway - entry on MCP Servers Live</title>
+<meta name="description" content="Zero trust gateway for MCP servers. Aggregate, filter, and securely access MCP tools from anywhere without VPNs, open po">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/openziti/mcp-gateway/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="icoretech/codex-pooler - entry on MCP Servers Live">
-<meta property="og:description" content="🤖 Pool and route Codex accounts behind one Gateway. WIP.">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/icoretech/codex-pooler/">
+<meta property="og:title" content="openziti/mcp-gateway - entry on MCP Servers Live">
+<meta property="og:description" content="Zero trust gateway for MCP servers. Aggregate, filter, and securely access MCP tools from anywhere without VPNs, open po">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/openziti/mcp-gateway/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="icoretech/codex-pooler - entry on MCP Servers Live">
-<meta name="twitter:description" content="🤖 Pool and route Codex accounts behind one Gateway. WIP.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"icoretech/codex-pooler","codeRepository":"https://github.com/icoretech/codex-pooler","programmingLanguage":"Elixir","url":"https://linny006.github.io/mcp-servers-live/r/icoretech/codex-pooler/","description":"🤖 Pool and route Codex accounts behind one Gateway. WIP.","author":{"@type":"Person","name":"icoretech","url":"https://github.com/icoretech"},"dateModified":"2026-06-01"}</script>
+<meta name="twitter:title" content="openziti/mcp-gateway - entry on MCP Servers Live">
+<meta name="twitter:description" content="Zero trust gateway for MCP servers. Aggregate, filter, and securely access MCP tools from anywhere without VPNs, open po">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"openziti/mcp-gateway","codeRepository":"https://github.com/openziti/mcp-gateway","programmingLanguage":"Go","url":"https://linny006.github.io/mcp-servers-live/r/openziti/mcp-gateway/","description":"Zero trust gateway for MCP servers. Aggregate, filter, and securely access MCP tools from anywhere without VPNs, open po","author":{"@type":"Person","name":"openziti","url":"https://github.com/openziti"},"dateModified":"2026-06-01"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,48 +41,44 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>icoretech/codex-pooler</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>openziti/mcp-gateway</span></nav>
 <main>
-<h1>icoretech/codex-pooler</h1>
-<p class="lead">🤖 Pool and route Codex accounts behind one Gateway. WIP.</p>
+<h1>openziti/mcp-gateway</h1>
+<p class="lead">Zero trust gateway for MCP servers. Aggregate, filter, and securely access MCP tools from anywhere without VPNs, open po</p>
 <div class="meta">
-<span><strong>Stars</strong> 2</span>
-<span><strong>Language</strong> Elixir</span>
+<span><strong>Stars</strong> 35</span>
+<span><strong>Language</strong> Go</span>
 <span><strong>Last updated</strong> 2026-06-01</span>
-<span><a href="https://github.com/icoretech/codex-pooler" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/icoretech" rel="external">@icoretech</a></span>
+<span><a href="https://github.com/openziti/mcp-gateway" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/openziti" rel="external">@openziti</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;codex_pooler&quot;: {
-      &quot;url&quot;: &quot;http://localhost:4000/mcp&quot;,
-      &quot;headers&quot;: {
-        &quot;Authorization&quot;: &quot;Bearer &lt;operator-mcp-token&gt;&quot;
-      },
-      &quot;disabled&quot;: false,
-      &quot;autoApprove&quot;: []
+    &quot;my-tools&quot;: {
+      &quot;command&quot;: &quot;mcp-tools&quot;,
+      &quot;args&quot;: [&quot;run&quot;, &quot;abc123...&quot;]
     }
   }
 }</code></pre>
-<p><a href="https://github.com/icoretech/codex-pooler#readme" rel="external">View full README on GitHub</a></p>
+<p><a href="https://github.com/openziti/mcp-gateway#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/brokermr810/QuantDinger/">brokermr810/QuantDinger (stars:7087)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/neomjs/neo/">neomjs/neo (stars:3191)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/DeusData/codebase-memory-mcp/">DeusData/codebase-memory-mcp (stars:2869)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/luuuc/sense/">luuuc/sense (stars:6)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/infanputra/nettune/">infanputra/nettune (stars:0)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/Ethan-sonic/Data-store-engine/">Ethan-sonic/Data-store-engine (stars:0)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/elixir/">All Elixir entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/go/">All Go entries</a></li>
 </ul></section>
 </main>
 <footer>
