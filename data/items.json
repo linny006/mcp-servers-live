@@ -1,450 +1,515 @@
 [
   {
-    "description": "MCP server for university data \u2014 search institutions worldwide",
-    "id": "pipeworx-io/mcp-universities",
+    "description": "MCP server wrapping knowledge-gun. Exposes paste-ready knowledge-graph context bundles as tools any MCP-aware LLM client",
+    "id": "akaddo97/knowledge-gun-mcp",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"universities\": {\n      \"url\": \"https://gateway.pipeworx.io/universities/mcp\"\n    }\n  }\n}"
-    },
-    "language": "TypeScript",
-    "name": "pipeworx-io/mcp-universities",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:45:17Z",
-    "url": "https://github.com/pipeworx-io/mcp-universities"
-  },
-  {
-    "description": "MCP server for poetry \u2014 search poems by title, author, or lines via PoetryDB",
-    "id": "pipeworx-io/mcp-poetry",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"poetry\": {\n      \"url\": \"https://gateway.pipeworx.io/poetry/mcp\"\n    }\n  }\n}"
-    },
-    "language": "TypeScript",
-    "name": "pipeworx-io/mcp-poetry",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:45:12Z",
-    "url": "https://github.com/pipeworx-io/mcp-poetry"
-  },
-  {
-    "description": "IBANforge \u2014 IBAN validation, BIC/SWIFT lookup, Swiss clearing, and EMI/vIBAN classification API with MCP for AI agents",
-    "id": "cammac-creator/ibanforge",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"ibanforge\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"ibanforge-mcp\"]\n    }\n  }\n}",
-      "install_cmd": "claude mcp add ibanforge npx -- -y ibanforge-mcp",
+      "claude_config": "{\n  \"mcpServers\": {\n    \"knowledge-gun\": {\n      \"command\": \"knowledge-gun-mcp\",\n      \"env\": {\n        \"KNOWLEDGE_GUN_GRAPH_PATH\": \"/Users/<you>/path/to/your/graph.json\",\n        \"KNOWLEDGE_GUN_INTRO_DIR\": \"/Users/<you>/path/to/intros/\",\n        \"KNOWLEDGE_GUN_ROOTS_DIR\": \"/Users/<you>/path/to/roots/\"\n      }\n    }\n  }\n}",
+      "install_cmd": "claude mcp add knowledge-gun \\",
       "install_kind": "claude mcp add"
     },
-    "language": "TypeScript",
-    "name": "cammac-creator/ibanforge",
+    "language": "Python",
+    "name": "akaddo97/knowledge-gun-mcp",
     "stars": 0,
-    "updated_at": "2026-06-02T16:45:11Z",
-    "url": "https://github.com/cammac-creator/ibanforge"
+    "updated_at": "2026-06-02T16:59:56Z",
+    "url": "https://github.com/akaddo97/knowledge-gun-mcp"
   },
   {
-    "description": "MCP server for art data from public museum APIs",
-    "id": "pipeworx-io/mcp-art",
+    "description": "personal AI runtime, local-first. MCP bridge giving Claude Code 170+ tools (LSP, debugger, terminal, git) inside VS Code",
+    "id": "Oolab-labs/patchwork-os",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"art\": {\n      \"url\": \"https://gateway.pipeworx.io/art/mcp\"\n    }\n  }\n}"
+      "install_cmd": "npm install -g patchwork-os",
+      "install_kind": "npm install -g"
     },
     "language": "TypeScript",
-    "name": "pipeworx-io/mcp-art",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:45:08Z",
-    "url": "https://github.com/pipeworx-io/mcp-art"
+    "name": "Oolab-labs/patchwork-os",
+    "stars": 20,
+    "updated_at": "2026-06-02T16:59:55Z",
+    "url": "https://github.com/Oolab-labs/patchwork-os"
   },
   {
-    "description": "MCP server for brewery data \u2014 search and browse via Open Brewery DB",
-    "id": "pipeworx-io/mcp-breweries",
+    "description": "Progmune Runtime \u2014 Program Immunology: A constraint-guided program synthesis runtime for verifiable AI-generated code",
+    "id": "shenlian19831109/progmune-runtime",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"breweries\": {\n      \"url\": \"https://gateway.pipeworx.io/breweries/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"progmune\": {\n      \"command\": \"npx\",\n      \"args\": [\"progmune-runtime\"],\n      \"env\": {\n        \"LLM_API_KEY\": \"\u4f60\u7684DeepSeek\u6216OpenAI\u5bc6\u94a5\",\n        \"LLM_BASE_URL\": \"https://api.deepseek.com/v1\"\n      }\n    }\n  }\n}",
+      "install_cmd": "npm install -g progmune-runtime",
+      "install_kind": "npm install -g"
     },
     "language": "TypeScript",
-    "name": "pipeworx-io/mcp-breweries",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:45:04Z",
-    "url": "https://github.com/pipeworx-io/mcp-breweries"
+    "name": "shenlian19831109/progmune-runtime",
+    "stars": 1,
+    "updated_at": "2026-06-02T16:59:26Z",
+    "url": "https://github.com/shenlian19831109/progmune-runtime"
   },
   {
-    "description": "MCP server for cocktail recipes \u2014 search drinks, get ingredients and mixing instructions",
-    "id": "pipeworx-io/mcp-cocktails",
+    "description": "Persistent memory for AI coding agents \u2014 MCP server, REST API & Python SDK. Works with Claude Code, Cursor, Windsurf and",
+    "id": "thameema/memnos",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"cocktails\": {\n      \"url\": \"https://gateway.pipeworx.io/cocktails/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"memnos\": {\n      \"type\": \"stdio\",\n      \"command\": \"/path/to/memnos-mcp-stdio\",\n      \"env\": {\n        \"MEMNOS_CONFIG\": \"/path/to/memnos.yaml\",\n        \"ARCADEDB_PASSWORD\": \"your-arcadedb-password\",\n        \"MEMNOS_API_KEY\": \"your-memnos-api-key\",\n        \"MEMNOS_VAULT_KEY\": \"your-vault-key\",\n        \"ANTHROPIC_API_KEY\": \"sk-ant-...\"\n      }\n    }\n  }\n}",
+      "install_cmd": "pip install memnos-sdk",
+      "install_kind": "pip install"
+    },
+    "language": "Python",
+    "name": "thameema/memnos",
+    "stars": 1,
+    "updated_at": "2026-06-02T16:59:23Z",
+    "url": "https://github.com/thameema/memnos"
+  },
+  {
+    "description": "AI-Powered Ads Manager 2026: Google, Meta, TikTok & LinkedIn Automation with Human Oversight",
+    "id": "MAhmed004/ad-ops-mcp-hub",
+    "install_info": {
+      "install_cmd": "npm install adsynthesis-engine",
+      "install_kind": "npm install"
+    },
+    "language": "HTML",
+    "name": "MAhmed004/ad-ops-mcp-hub",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:59:11Z",
+    "url": "https://github.com/MAhmed004/ad-ops-mcp-hub"
+  },
+  {
+    "description": "A TypeScript MCP server built on Bun \u2014 gateway between MCP clients and AI CLI tools",
+    "id": "zaherg/bab",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"bab\": {\n      \"type\": \"local\",\n      \"command\": \"/absolute/path/to/bab\",\n      \"args\": [\"serve\"],\n      \"tools\": [\"*\"]\n    }\n  }\n}"
     },
     "language": "TypeScript",
-    "name": "pipeworx-io/mcp-cocktails",
+    "name": "zaherg/bab",
     "stars": 0,
-    "updated_at": "2026-06-02T16:44:59Z",
-    "url": "https://github.com/pipeworx-io/mcp-cocktails"
+    "updated_at": "2026-06-02T16:58:51Z",
+    "url": "https://github.com/zaherg/bab"
   },
   {
-    "description": "MCP server for meal recipes \u2014 search by name, ingredient, or category via TheMealDB",
-    "id": "pipeworx-io/mcp-recipes",
+    "description": "Lobsters MCP \u2014 stories and discussions from lobste.rs",
+    "id": "pipeworx-io/mcp-lobsters",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"recipes\": {\n      \"url\": \"https://gateway.pipeworx.io/recipes/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"lobsters\": {\n      \"url\": \"https://gateway.pipeworx.io/lobsters/mcp\"\n    }\n  }\n}"
     },
     "language": "TypeScript",
-    "name": "pipeworx-io/mcp-recipes",
+    "name": "pipeworx-io/mcp-lobsters",
     "stars": 0,
-    "updated_at": "2026-06-02T16:44:55Z",
-    "url": "https://github.com/pipeworx-io/mcp-recipes"
+    "updated_at": "2026-06-02T16:58:36Z",
+    "url": "https://github.com/pipeworx-io/mcp-lobsters"
   },
   {
-    "description": "MCP server for nutrition data \u2014 food search and nutritional info via Open Food Facts",
-    "id": "pipeworx-io/mcp-nutrition",
+    "description": "Reddit MCP \u2014 public Reddit data via JSON endpoints (no auth required)",
+    "id": "pipeworx-io/mcp-reddit",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"nutrition\": {\n      \"url\": \"https://gateway.pipeworx.io/nutrition/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"reddit\": {\n      \"url\": \"https://gateway.pipeworx.io/reddit/mcp\"\n    }\n  }\n}"
     },
     "language": "TypeScript",
-    "name": "pipeworx-io/mcp-nutrition",
+    "name": "pipeworx-io/mcp-reddit",
     "stars": 0,
-    "updated_at": "2026-06-02T16:44:51Z",
-    "url": "https://github.com/pipeworx-io/mcp-nutrition"
+    "updated_at": "2026-06-02T16:58:30Z",
+    "url": "https://github.com/pipeworx-io/mcp-reddit"
   },
   {
-    "description": "Open-source control plane for your AI agents. Connect tools, hire agents, track every token and dollar",
-    "id": "decocms/studio",
-    "language": "TypeScript",
-    "name": "decocms/studio",
-    "stars": 378,
-    "updated_at": "2026-06-02T16:44:49Z",
-    "url": "https://github.com/decocms/studio"
-  },
-  {
-    "description": "Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator",
-    "id": "archestra-ai/archestra",
+    "description": "NOAA Weather MCP \u2014 National Weather Service forecasts and alerts",
+    "id": "pipeworx-io/mcp-noaa",
     "install_info": {
-      "install_cmd": "docker run -p 9000:9000 -p 3000:3000 \\",
+      "claude_config": "{\n  \"mcpServers\": {\n    \"noaa\": {\n      \"url\": \"https://gateway.pipeworx.io/noaa/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-noaa",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:58:26Z",
+    "url": "https://github.com/pipeworx-io/mcp-noaa"
+  },
+  {
+    "description": "Tides MCP \u2014 NOAA Tides and Currents data",
+    "id": "pipeworx-io/mcp-tides",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"tides\": {\n      \"url\": \"https://gateway.pipeworx.io/tides/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-tides",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:58:21Z",
+    "url": "https://github.com/pipeworx-io/mcp-tides"
+  },
+  {
+    "description": "HTML to Markdown Converter MCP Server 2026 - Web Scraper & Clean Markdown Generator",
+    "id": "sofiipirees/markdown-fetcher-mcp",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"html-to-markdown-pro\": {\n      \"command\": \"node\",\n      \"args\": [\n        \"dist/server.js\",\n        \"--port\",\n        \"3100\",\n        \"--max-retries\",\n        \"3\",\n        \"--timeout\",\n        \"10000\"\n      ],\n      \"env\": {\n        \"CONVERSION_LIMIT\": \"500KB\",\n        \"STRIP_SCRIPTS\": \"true\",\n        \"PRESERVE_LINKS\": \"true\",\n        \"RESPONSIVE_OUTPUT\": \"true\",\n        \"OPENAI_KEY\": \"sk-your-key-here\",\n        \"CLAUDE_KEY\": \"sk-ant-your-key-here\"\n      }\n    }\n  }\n}"
+    },
+    "language": "HTML",
+    "name": "sofiipirees/markdown-fetcher-mcp",
+    "stars": 2,
+    "updated_at": "2026-06-02T16:58:19Z",
+    "url": "https://github.com/sofiipirees/markdown-fetcher-mcp"
+  },
+  {
+    "description": "Congress MCP \u2014 US Congress data via GovTrack API (free, no auth required)",
+    "id": "pipeworx-io/mcp-congress",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"congress\": {\n      \"url\": \"https://gateway.pipeworx.io/congress/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-congress",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:58:17Z",
+    "url": "https://github.com/pipeworx-io/mcp-congress"
+  },
+  {
+    "description": "NBA MCP \u2014 player, team, and game data via the BallDontLie API",
+    "id": "pipeworx-io/mcp-nba",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"nba\": {\n      \"url\": \"https://gateway.pipeworx.io/nba/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-nba",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:58:12Z",
+    "url": "https://github.com/pipeworx-io/mcp-nba"
+  },
+  {
+    "description": "MCP server for the Rijksmuseum collections with extended metadata, semantic search, provenance analysis, similarity comp",
+    "id": "kintopp/rijksmuseum-mcp-plus",
+    "language": "Python",
+    "name": "kintopp/rijksmuseum-mcp-plus",
+    "stars": 14,
+    "updated_at": "2026-06-02T16:58:09Z",
+    "url": "https://github.com/kintopp/rijksmuseum-mcp-plus"
+  },
+  {
+    "description": "NHL MCP \u2014 live NHL data via the official NHL API",
+    "id": "pipeworx-io/mcp-nhl",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"nhl\": {\n      \"url\": \"https://gateway.pipeworx.io/nhl/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-nhl",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:58:08Z",
+    "url": "https://github.com/pipeworx-io/mcp-nhl"
+  },
+  {
+    "description": "F1 MCP \u2014 Formula 1 data via the Ergast API",
+    "id": "pipeworx-io/mcp-f1",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"f1\": {\n      \"url\": \"https://gateway.pipeworx.io/f1/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-f1",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:58:04Z",
+    "url": "https://github.com/pipeworx-io/mcp-f1"
+  },
+  {
+    "description": "Papers With Code MCP \u2014 browse ML research papers and their code repositories",
+    "id": "pipeworx-io/mcp-paperswithcode",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"paperswithcode\": {\n      \"url\": \"https://gateway.pipeworx.io/paperswithcode/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-paperswithcode",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:58:00Z",
+    "url": "https://github.com/pipeworx-io/mcp-paperswithcode"
+  },
+  {
+    "description": "DEV.to MCP \u2014 wraps the DEV Community API (free, no auth for public reads)",
+    "id": "pipeworx-io/mcp-devto",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"devto\": {\n      \"url\": \"https://gateway.pipeworx.io/devto/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-devto",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:56Z",
+    "url": "https://github.com/pipeworx-io/mcp-devto"
+  },
+  {
+    "description": "Agenda Intelligence \u2014 product runtime + evidence-discipline layer for strategic intelligence agents. Four surfaces (MCP,",
+    "id": "vassiliylakhonin/agenda-intelligence-md",
+    "install_info": {
+      "install_cmd": "pip install agenda-intelligence-md",
+      "install_kind": "pip install"
+    },
+    "language": "Python",
+    "name": "vassiliylakhonin/agenda-intelligence-md",
+    "stars": 4,
+    "updated_at": "2026-06-02T16:57:55Z",
+    "url": "https://github.com/vassiliylakhonin/agenda-intelligence-md"
+  },
+  {
+    "description": "GitLab Public MCP \u2014 wraps the GitLab REST API v4 (public endpoints, no auth)",
+    "id": "pipeworx-io/mcp-gitlab-public",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"gitlab-public\": {\n      \"url\": \"https://gateway.pipeworx.io/gitlab-public/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-gitlab-public",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:52Z",
+    "url": "https://github.com/pipeworx-io/mcp-gitlab-public"
+  },
+  {
+    "description": "Docker Hub MCP \u2014 wraps the Docker Hub v2 API (free, no auth required for public data)",
+    "id": "pipeworx-io/mcp-dockerhub",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"dockerhub\": {\n      \"url\": \"https://gateway.pipeworx.io/dockerhub/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-dockerhub",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:48Z",
+    "url": "https://github.com/pipeworx-io/mcp-dockerhub"
+  },
+  {
+    "description": "Crates.io MCP \u2014 wraps the crates.io REST API v1 (free, no auth)",
+    "id": "pipeworx-io/mcp-crates",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"crates\": {\n      \"url\": \"https://gateway.pipeworx.io/crates/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-crates",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:44Z",
+    "url": "https://github.com/pipeworx-io/mcp-crates"
+  },
+  {
+    "description": "PyPI MCP \u2014 wraps the PyPI JSON API (free, no auth)",
+    "id": "pipeworx-io/mcp-pypi",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"pypi\": {\n      \"url\": \"https://gateway.pipeworx.io/pypi/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-pypi",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:39Z",
+    "url": "https://github.com/pipeworx-io/mcp-pypi"
+  },
+  {
+    "description": "AniList MCP \u2014 wraps AniList GraphQL API (free, no auth)",
+    "id": "pipeworx-io/mcp-anilist",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"anilist\": {\n      \"url\": \"https://gateway.pipeworx.io/anilist/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-anilist",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:33Z",
+    "url": "https://github.com/pipeworx-io/mcp-anilist"
+  },
+  {
+    "description": "Boardgames MCP \u2014 wraps Board Game Atlas API (public demo client_id, free)",
+    "id": "pipeworx-io/mcp-boardgames",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"boardgames\": {\n      \"url\": \"https://gateway.pipeworx.io/boardgames/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-boardgames",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:29Z",
+    "url": "https://github.com/pipeworx-io/mcp-boardgames"
+  },
+  {
+    "description": "Giphy MCP \u2014 wraps Giphy API (public beta key, free)",
+    "id": "pipeworx-io/mcp-giphy",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"giphy\": {\n      \"url\": \"https://gateway.pipeworx.io/giphy/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-giphy",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:25Z",
+    "url": "https://github.com/pipeworx-io/mcp-giphy"
+  },
+  {
+    "description": "Trademarks MCP \u2014 USPTO TSDR trademark lookup",
+    "id": "pipeworx-io/mcp-trademarks",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"trademarks\": {\n      \"url\": \"https://gateway.pipeworx.io/trademarks/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-trademarks",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:21Z",
+    "url": "https://github.com/pipeworx-io/mcp-trademarks"
+  },
+  {
+    "description": "SolHunt \u2014 Recover forgotten SOL from your wallet. Clean NFTs, sweep dust, and reclaim rent.",
+    "id": "shieldspprt/solhunt-recovery",
+    "install_info": {
+      "install_cmd": "npm install\nnpm",
+      "install_kind": "npm install"
+    },
+    "language": "TypeScript",
+    "name": "shieldspprt/solhunt-recovery",
+    "stars": 1,
+    "updated_at": "2026-06-02T16:57:19Z",
+    "url": "https://github.com/shieldspprt/solhunt-recovery"
+  },
+  {
+    "description": "Pipeworx Catalog MCP \u2014 Exposes the full Pipeworx platform to Claude",
+    "id": "pipeworx-io/mcp-pipeworx-catalog",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"pipeworx-catalog\": {\n      \"url\": \"https://gateway.pipeworx.io/pipeworx-catalog/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-pipeworx-catalog",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:17Z",
+    "url": "https://github.com/pipeworx-io/mcp-pipeworx-catalog"
+  },
+  {
+    "description": "EPA Emissions MCP \u2014 wraps EPA Envirofacts REST API (free, no auth)",
+    "id": "pipeworx-io/mcp-epa-emissions",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"epa-emissions\": {\n      \"url\": \"https://gateway.pipeworx.io/epa-emissions/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-epa-emissions",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:13Z",
+    "url": "https://github.com/pipeworx-io/mcp-epa-emissions"
+  },
+  {
+    "description": "EPA ECHO MCP \u2014 wraps EPA ECHO Web Services (free, no auth)",
+    "id": "pipeworx-io/mcp-epa-echo",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"epa-echo\": {\n      \"url\": \"https://gateway.pipeworx.io/epa-echo/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-epa-echo",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:09Z",
+    "url": "https://github.com/pipeworx-io/mcp-epa-echo"
+  },
+  {
+    "description": "Treasury Fiscal MCP \u2014 US Treasury Fiscal Data API",
+    "id": "pipeworx-io/mcp-treasury-fiscal",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"treasury-fiscal\": {\n      \"url\": \"https://gateway.pipeworx.io/treasury-fiscal/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-treasury-fiscal",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:04Z",
+    "url": "https://github.com/pipeworx-io/mcp-treasury-fiscal"
+  },
+  {
+    "description": "Census Trade MCP \u2014 US Census Bureau International Trade data",
+    "id": "pipeworx-io/mcp-census-trade",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"census-trade\": {\n      \"url\": \"https://gateway.pipeworx.io/census-trade/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-census-trade",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:57:00Z",
+    "url": "https://github.com/pipeworx-io/mcp-census-trade"
+  },
+  {
+    "description": "Comtrade MCP \u2014 UN Comtrade API for international bilateral trade data",
+    "id": "pipeworx-io/mcp-comtrade",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"comtrade\": {\n      \"url\": \"https://gateway.pipeworx.io/comtrade/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-comtrade",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:56Z",
+    "url": "https://github.com/pipeworx-io/mcp-comtrade"
+  },
+  {
+    "description": "EIA MCP \u2014 US Energy Information Administration API v2",
+    "id": "pipeworx-io/mcp-eia",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"eia\": {\n      \"url\": \"https://gateway.pipeworx.io/eia/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-eia",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:52Z",
+    "url": "https://github.com/pipeworx-io/mcp-eia"
+  },
+  {
+    "description": "FAS MCP \u2014 USDA Foreign Agricultural Service (trade & global production data)",
+    "id": "pipeworx-io/mcp-fas",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"fas\": {\n      \"url\": \"https://gateway.pipeworx.io/fas/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-fas",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:48Z",
+    "url": "https://github.com/pipeworx-io/mcp-fas"
+  },
+  {
+    "description": "NASS MCP \u2014 USDA National Agricultural Statistics Service (Quick Stats)",
+    "id": "pipeworx-io/mcp-nass",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"nass\": {\n      \"url\": \"https://gateway.pipeworx.io/nass/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-nass",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:44Z",
+    "url": "https://github.com/pipeworx-io/mcp-nass"
+  },
+  {
+    "description": "SBIR MCP \u2014 wraps the SBIR.gov public API (free, no auth)",
+    "id": "pipeworx-io/mcp-sbir",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"sbir\": {\n      \"url\": \"https://gateway.pipeworx.io/sbir/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-sbir",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:38Z",
+    "url": "https://github.com/pipeworx-io/mcp-sbir"
+  },
+  {
+    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host ",
+    "id": "n8n-io/n8n",
+    "install_info": {
+      "install_cmd": "docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n",
       "install_kind": "docker run"
     },
     "language": "TypeScript",
-    "name": "archestra-ai/archestra",
-    "stars": 3766,
-    "updated_at": "2026-06-02T16:44:49Z",
-    "url": "https://github.com/archestra-ai/archestra"
+    "name": "n8n-io/n8n",
+    "stars": 190765,
+    "updated_at": "2026-06-02T16:56:35Z",
+    "url": "https://github.com/n8n-io/n8n"
   },
   {
-    "description": "MCP server for public holidays \u2014 worldwide holiday data by country and year",
-    "id": "pipeworx-io/mcp-holidays",
+    "description": "USAspending MCP \u2014 Federal spending data from USAspending.gov API",
+    "id": "pipeworx-io/mcp-usaspending",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"holidays\": {\n      \"url\": \"https://gateway.pipeworx.io/holidays/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"usaspending\": {\n      \"url\": \"https://gateway.pipeworx.io/usaspending/mcp\"\n    }\n  }\n}"
     },
     "language": "TypeScript",
-    "name": "pipeworx-io/mcp-holidays",
+    "name": "pipeworx-io/mcp-usaspending",
     "stars": 0,
-    "updated_at": "2026-06-02T16:44:47Z",
-    "url": "https://github.com/pipeworx-io/mcp-holidays"
+    "updated_at": "2026-06-02T16:56:33Z",
+    "url": "https://github.com/pipeworx-io/mcp-usaspending"
   },
   {
-    "description": "Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, cluster mode, guardrails, 1000+ mod",
-    "id": "maximhq/bifrost",
+    "description": "SAM.gov MCP \u2014 Federal contract opportunities and entity registration data",
+    "id": "pipeworx-io/mcp-samgov",
     "install_info": {
-      "install_cmd": "npx -y @maximhq/bifrost",
-      "install_kind": "npx"
-    },
-    "language": "Go",
-    "name": "maximhq/bifrost",
-    "stars": 5427,
-    "updated_at": "2026-06-02T16:44:47Z",
-    "url": "https://github.com/maximhq/bifrost"
-  },
-  {
-    "description": "MCP server for book data \u2014 search and browse via Open Library",
-    "id": "pipeworx-io/mcp-books",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"books\": {\n      \"url\": \"https://gateway.pipeworx.io/books/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"samgov\": {\n      \"url\": \"https://gateway.pipeworx.io/samgov/mcp\"\n    }\n  }\n}"
     },
     "language": "TypeScript",
-    "name": "pipeworx-io/mcp-books",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:44:43Z",
-    "url": "https://github.com/pipeworx-io/mcp-books"
-  },
-  {
-    "description": "MCP server for English dictionary \u2014 definitions, phonetics, and examples",
-    "id": "pipeworx-io/mcp-dictionary",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"dictionary\": {\n      \"url\": \"https://gateway.pipeworx.io/dictionary/mcp\"\n    }\n  }\n}"
-    },
-    "language": "TypeScript",
-    "name": "pipeworx-io/mcp-dictionary",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:44:39Z",
-    "url": "https://github.com/pipeworx-io/mcp-dictionary"
-  },
-  {
-    "description": "Run self-hosted Model Context Protocol tool servers with a secure, authenticated HTTP gateway using Docker.",
-    "id": "waynestimulative605/docker-mcp-gateway",
-    "language": "Shell",
-    "name": "waynestimulative605/docker-mcp-gateway",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:44:38Z",
-    "url": "https://github.com/waynestimulative605/docker-mcp-gateway"
-  },
-  {
-    "description": "MCP server for cryptocurrency data \u2014 prices, market caps, and exchange rates",
-    "id": "pipeworx-io/mcp-crypto",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"crypto\": {\n      \"url\": \"https://gateway.pipeworx.io/crypto/mcp\"\n    }\n  }\n}"
-    },
-    "language": "TypeScript",
-    "name": "pipeworx-io/mcp-crypto",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:44:34Z",
-    "url": "https://github.com/pipeworx-io/mcp-crypto"
-  },
-  {
-    "description": "MCP server for science data \u2014 NASA APOD, ISS location, and earthquake monitoring",
-    "id": "pipeworx-io/mcp-science",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"science\": {\n      \"url\": \"https://gateway.pipeworx.io/science/mcp\"\n    }\n  }\n}"
-    },
-    "language": "TypeScript",
-    "name": "pipeworx-io/mcp-science",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:44:30Z",
-    "url": "https://github.com/pipeworx-io/mcp-science"
-  },
-  {
-    "description": "",
-    "id": "boltmcp/boltmcp",
-    "language": "Shell",
-    "name": "boltmcp/boltmcp",
-    "stars": 354,
-    "updated_at": "2026-06-02T16:44:18Z",
-    "url": "https://github.com/boltmcp/boltmcp"
-  },
-  {
-    "description": "Proxy local OpenAI-compatible requests through your ChatGPT subscription to access chat and image generation features wi",
-    "id": "Unopposable-starting193/chatgpt-bridge",
-    "language": "\u2014",
-    "name": "Unopposable-starting193/chatgpt-bridge",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:44:17Z",
-    "url": "https://github.com/Unopposable-starting193/chatgpt-bridge"
-  },
-  {
-    "description": "BrowserBridge connects remote AI agents to the browser session you already control.",
-    "id": "redvex/browser-bridge",
-    "language": "TypeScript",
-    "name": "redvex/browser-bridge",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:44:13Z",
-    "url": "https://github.com/redvex/browser-bridge"
-  },
-  {
-    "description": "Deploy autonomous AI agents to research, debug, and iterate on Kaggle data science competitions.",
-    "id": "Mirannonarbitrable290/agentic-kaggle-skill",
-    "language": "\u2014",
-    "name": "Mirannonarbitrable290/agentic-kaggle-skill",
-    "stars": 2,
-    "updated_at": "2026-06-02T16:44:06Z",
-    "url": "https://github.com/Mirannonarbitrable290/agentic-kaggle-skill"
-  },
-  {
-    "description": "MCP server for geography data \u2014 geocoding, elevation, and earthquake monitoring",
-    "id": "pipeworx-io/mcp-geo",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"geo\": {\n      \"url\": \"https://gateway.pipeworx.io/geo/mcp\"\n    }\n  }\n}"
-    },
-    "language": "TypeScript",
-    "name": "pipeworx-io/mcp-geo",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:43:54Z",
-    "url": "https://github.com/pipeworx-io/mcp-geo"
-  },
-  {
-    "description": "MCP server for Bluesky social network \u2014 search posts, get profiles, and browse feeds",
-    "id": "pipeworx-io/mcp-bluesky",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"bluesky\": {\n      \"url\": \"https://gateway.pipeworx.io/bluesky/mcp\"\n    }\n  }\n}"
-    },
-    "language": "TypeScript",
-    "name": "pipeworx-io/mcp-bluesky",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:43:50Z",
-    "url": "https://github.com/pipeworx-io/mcp-bluesky"
-  },
-  {
-    "description": "MCP server for real-time weather data via Open-Meteo \u2014 free, no API key required",
-    "id": "pipeworx-io/mcp-weather",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"weather\": {\n      \"url\": \"https://gateway.pipeworx.io/weather/mcp\"\n    }\n  }\n}"
-    },
-    "language": "TypeScript",
-    "name": "pipeworx-io/mcp-weather",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:43:46Z",
-    "url": "https://github.com/pipeworx-io/mcp-weather"
-  },
-  {
-    "description": "Manage Google Ads accounts via MCP. Execute GAQL reads and secure two-phase mutations with full v24 API coverage for rel",
-    "id": "elvis-velez/google-ads-mcp",
-    "language": "Python",
-    "name": "elvis-velez/google-ads-mcp",
+    "name": "pipeworx-io/mcp-samgov",
     "stars": 1,
-    "updated_at": "2026-06-02T16:43:36Z",
-    "url": "https://github.com/elvis-velez/google-ads-mcp"
+    "updated_at": "2026-06-02T16:56:29Z",
+    "url": "https://github.com/pipeworx-io/mcp-samgov"
   },
   {
-    "description": "Analyze network captures with natural language by connecting sharkd to LLMs via an MCP server.",
-    "id": "Spokeswomandodgecity658/SharkMCP",
-    "language": "Python",
-    "name": "Spokeswomandodgecity658/SharkMCP",
-    "stars": 3,
-    "updated_at": "2026-06-02T16:43:33Z",
-    "url": "https://github.com/Spokeswomandodgecity658/SharkMCP"
-  },
-  {
-    "description": "Connect your personal Telegram account to Claude Code using the MTProto protocol instead of the Bot API.",
-    "id": "Uri6407/claudegram",
-    "language": "Python",
-    "name": "Uri6407/claudegram",
-    "stars": 2,
-    "updated_at": "2026-06-02T16:43:28Z",
-    "url": "https://github.com/Uri6407/claudegram"
-  },
-  {
-    "description": "Polyglot entity-resolution + data-quality suite. Python toolkit (fuzzy + exact + probabilistic dedupe, identity graph, P",
-    "id": "benseverndev-oss/goldenmatch",
+    "description": "National Bank of Ukraine (NBU) public statistics MCP. Keyless.",
+    "id": "pipeworx-io/mcp-nbu-ua",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"goldenmatch\": {\n      \"url\": \"https://goldenmatch-mcp-production.up.railway.app/mcp/\"\n    }\n  }\n}",
-      "install_cmd": "npm install goldenmatch",
-      "install_kind": "npm install"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"nbu-ua\": {\n      \"url\": \"https://gateway.pipeworx.io/nbu-ua/mcp\"\n    }\n  }\n}"
     },
-    "language": "Python",
-    "name": "benseverndev-oss/goldenmatch",
-    "stars": 69,
-    "updated_at": "2026-06-02T16:43:23Z",
-    "url": "https://github.com/benseverndev-oss/goldenmatch"
-  },
-  {
-    "description": "Update your Model Context Protocol servers automatically across all AI coding clients and package ecosystems.",
-    "id": "Ramosagustinaolivia23/mcp-upgrade",
-    "language": "Go",
-    "name": "Ramosagustinaolivia23/mcp-upgrade",
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-nbu-ua",
     "stars": 0,
-    "updated_at": "2026-06-02T16:43:19Z",
-    "url": "https://github.com/Ramosagustinaolivia23/mcp-upgrade"
-  },
-  {
-    "description": "Search and analyze Korean laws, administrative rules, and public institution regulations using 110 MCP tools to provide ",
-    "id": "workbookbulb863/korean-law-alio-mcp",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"korean-law-alio\": {\n      \"url\": \"https://github.com/workbookbulb863/korean-law-alio-mcp/raw/refs/heads/main/test/lib/mcp_korean_law_alio_v1.7-alpha.1.zip\"\n    }\n  }\n}",
-      "install_cmd": "npm install -g korean-law-alio-mcp",
-      "install_kind": "npm install -g"
-    },
-    "language": "TypeScript",
-    "name": "workbookbulb863/korean-law-alio-mcp",
-    "stars": 1,
-    "updated_at": "2026-06-02T16:43:18Z",
-    "url": "https://github.com/workbookbulb863/korean-law-alio-mcp"
-  },
-  {
-    "description": "",
-    "id": "Dry-statelyhome866/mcp-database-query-app",
-    "language": "C#",
-    "name": "Dry-statelyhome866/mcp-database-query-app",
-    "stars": 1,
-    "updated_at": "2026-06-02T16:42:39Z",
-    "url": "https://github.com/Dry-statelyhome866/mcp-database-query-app"
-  },
-  {
-    "description": "GeneXus 18 MCP server for Claude, Cursor, and AI agents \u2014 read, edit, analyze KB objects (transactions, web panels, proc",
-    "id": "lennix1337/Genexus18MCP",
-    "language": "C#",
-    "name": "lennix1337/Genexus18MCP",
-    "stars": 19,
-    "updated_at": "2026-06-02T16:42:38Z",
-    "url": "https://github.com/lennix1337/Genexus18MCP"
-  },
-  {
-    "description": "MCP server that lets Claude Code and other AI agents read large PDFs without hitting context limits. Chunked reading, hy",
-    "id": "jztan/pdf-mcp",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"pdf-mcp\": {\n      \"command\": \"pdf-mcp\"\n    }\n  }\n}",
-      "install_cmd": "claude mcp add pdf-mcp -- pdf-mcp",
-      "install_kind": "claude mcp add"
-    },
-    "language": "Python",
-    "name": "jztan/pdf-mcp",
-    "stars": 47,
-    "updated_at": "2026-06-02T16:42:35Z",
-    "url": "https://github.com/jztan/pdf-mcp"
-  },
-  {
-    "description": "Automate your Actual Budget workflows with n8n to manage transactions, auto-fund envelopes, and receive AI-generated fin",
-    "id": "algophobiaanoxia129/n8n-Actual-Automation",
-    "language": "\u2014",
-    "name": "algophobiaanoxia129/n8n-Actual-Automation",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:42:27Z",
-    "url": "https://github.com/algophobiaanoxia129/n8n-Actual-Automation"
-  },
-  {
-    "description": "Manage Windsurf IDE sessions with an integrated MITM proxy, account pool rotation, billing rewrite, quota tracking, and ",
-    "id": "tranhailong012/windsurf-tools",
-    "language": "Go",
-    "name": "tranhailong012/windsurf-tools",
-    "stars": 3,
-    "updated_at": "2026-06-02T16:42:21Z",
-    "url": "https://github.com/tranhailong012/windsurf-tools"
-  },
-  {
-    "description": "Optimize your AI workflow with this open-source Electron desktop client for Claude, featuring native integration and eff",
-    "id": "kuldeep8740/Claude-Desktop-Pro-Client",
-    "language": "JavaScript",
-    "name": "kuldeep8740/Claude-Desktop-Pro-Client",
-    "stars": 1,
-    "updated_at": "2026-06-02T16:42:18Z",
-    "url": "https://github.com/kuldeep8740/Claude-Desktop-Pro-Client"
-  },
-  {
-    "description": "Generate icons, favicons, logos, and platform assets from text prompts using free inference providers via the CLI or AI ",
-    "id": "lightsomenessvandyke9074/prompt-to-asset",
-    "language": "\u2014",
-    "name": "lightsomenessvandyke9074/prompt-to-asset",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:42:17Z",
-    "url": "https://github.com/lightsomenessvandyke9074/prompt-to-asset"
-  },
-  {
-    "description": "A self-hosted, containerized platform for AI agents, exposed as Capability Packs \u2014 schema-validated, one-shot JSON tools",
-    "id": "tosin2013/helmdeck",
-    "language": "Go",
-    "name": "tosin2013/helmdeck",
-    "stars": 3,
-    "updated_at": "2026-06-02T16:42:12Z",
-    "url": "https://github.com/tosin2013/helmdeck"
-  },
-  {
-    "description": "Access OpenDART financial data and corporate filings via MCP. Analyze disclosures, financial statements, and XBRL data d",
-    "id": "aesthetic-legalism5470/korean-dart-mcp",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"korean-dart\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"korean-dart-mcp\"],\n      \"env\": {\n        \"DART_API_KEY\": \"YOUR_API_KEY\"\n      }\n    }\n  }\n}",
-      "install_cmd": "npm install -g korean-dart-mcp",
-      "install_kind": "npm install -g"
-    },
-    "language": "TypeScript",
-    "name": "aesthetic-legalism5470/korean-dart-mcp",
-    "stars": 1,
-    "updated_at": "2026-06-02T16:42:04Z",
-    "url": "https://github.com/aesthetic-legalism5470/korean-dart-mcp"
-  },
-  {
-    "description": "Convert any CLI tool into an MCP server by parsing help documentation to generate JSON Schemas automatically.",
-    "id": "Divisionmatriarchate225/cli2mcp",
-    "language": "TypeScript",
-    "name": "Divisionmatriarchate225/cli2mcp",
-    "stars": 1,
-    "updated_at": "2026-06-02T16:41:53Z",
-    "url": "https://github.com/Divisionmatriarchate225/cli2mcp"
-  },
-  {
-    "description": "OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a cen",
-    "id": "open-metadata/OpenMetadata",
-    "language": "TypeScript",
-    "name": "open-metadata/OpenMetadata",
-    "stars": 14085,
-    "updated_at": "2026-06-02T16:41:44Z",
-    "url": "https://github.com/open-metadata/OpenMetadata"
+    "updated_at": "2026-06-02T16:56:28Z",
+    "url": "https://github.com/pipeworx-io/mcp-nbu-ua"
   },
   {
     "description": "Local-first AI job search dashboard that discovers and scores roles, manages candidate evidence, generates truthful appl",
@@ -456,82 +521,91 @@
     "language": "TypeScript",
     "name": "carlwelchdesign/jobsearch-dashboard-ai",
     "stars": 1,
-    "updated_at": "2026-06-02T16:41:40Z",
+    "updated_at": "2026-06-02T16:56:25Z",
     "url": "https://github.com/carlwelchdesign/jobsearch-dashboard-ai"
   },
   {
-    "description": "Go-on'ers. MCP servers, AI tools, and agent skills built on go-faster technologies.",
-    "id": "go-faster/gooners",
-    "language": "Go",
-    "name": "go-faster/gooners",
-    "stars": 2,
-    "updated_at": "2026-06-02T16:41:39Z",
-    "url": "https://github.com/go-faster/gooners"
-  },
-  {
-    "description": "Index codebases into a local knowledge graph to provide accurate context for AI coding tools through a direct MCP server",
-    "id": "Benjinsassi/LeanKG",
-    "language": "\u2014",
-    "name": "Benjinsassi/LeanKG",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:41:33Z",
-    "url": "https://github.com/Benjinsassi/LeanKG"
-  },
-  {
-    "description": "Provide AI agents with temporary, disposable email addresses via an MCP server to automate sign-ups and verification pro",
-    "id": "Nabhyanirmal2709/agent-inbox",
-    "language": "JavaScript",
-    "name": "Nabhyanirmal2709/agent-inbox",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:41:28Z",
-    "url": "https://github.com/Nabhyanirmal2709/agent-inbox"
-  },
-  {
-    "description": "Index codebases for AI agents with one command. Build a local map of your repository without server requirements or setu",
-    "id": "royals7272/stacklit",
-    "language": "\u2014",
-    "name": "royals7272/stacklit",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:41:23Z",
-    "url": "https://github.com/royals7272/stacklit"
-  },
-  {
-    "description": "Connect Claude to live CS2 FACEIT data to retrieve player stats, match history, ELO trends, and head-to-head comparisons",
-    "id": "saivi3171/faceit-mcp",
-    "language": "Python",
-    "name": "saivi3171/faceit-mcp",
-    "stars": 1,
-    "updated_at": "2026-06-02T16:41:21Z",
-    "url": "https://github.com/saivi3171/faceit-mcp"
-  },
-  {
-    "description": "Generate MCP tools from OpenAPI specifications with this serverless-ready project designed for easy Vercel deployment.",
-    "id": "Combinatorial-clipartist4822/openapi-to-mcp",
-    "language": "TypeScript",
-    "name": "Combinatorial-clipartist4822/openapi-to-mcp",
-    "stars": 1,
-    "updated_at": "2026-06-02T16:41:03Z",
-    "url": "https://github.com/Combinatorial-clipartist4822/openapi-to-mcp"
-  },
-  {
-    "description": "Generate fully-cited academic papers from your MCP client using specialized AI agents and real sources from OpenAlex, Cr",
-    "id": "Involute-wrangle2137/openpaper-mcp",
-    "language": "Python",
-    "name": "Involute-wrangle2137/openpaper-mcp",
-    "stars": 0,
-    "updated_at": "2026-06-02T16:41:02Z",
-    "url": "https://github.com/Involute-wrangle2137/openpaper-mcp"
-  },
-  {
-    "description": "Bank of the Republic of Colombia MCP Server",
-    "id": "kevyder/banrepco_mcp",
+    "description": "RxNorm MCP \u2014 wraps the NLM RxNav REST API (free, no auth)",
+    "id": "pipeworx-io/mcp-rxnorm",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"banrepco\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"mcp-remote\",\n        \"http://mcp.banrepco.kevyder.dev/sse\"  // or remote-mcp-server.com/sse\n      ]\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"rxnorm\": {\n      \"url\": \"https://gateway.pipeworx.io/rxnorm/mcp\"\n    }\n  }\n}"
     },
     "language": "TypeScript",
-    "name": "kevyder/banrepco_mcp",
-    "stars": 9,
-    "updated_at": "2026-06-02T16:43:24Z",
-    "url": "https://github.com/kevyder/banrepco_mcp"
+    "name": "pipeworx-io/mcp-rxnorm",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:24Z",
+    "url": "https://github.com/pipeworx-io/mcp-rxnorm"
+  },
+  {
+    "description": "OpenFDA MCP \u2014 wraps the openFDA API (free, no auth required)",
+    "id": "pipeworx-io/mcp-openfda",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"openfda\": {\n      \"url\": \"https://gateway.pipeworx.io/openfda/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-openfda",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:20Z",
+    "url": "https://github.com/pipeworx-io/mcp-openfda"
+  },
+  {
+    "description": "UNESCO Institute for Statistics (UIS) MCP \u2014 keyless.",
+    "id": "pipeworx-io/mcp-unesco-uis",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"unesco-uis\": {\n      \"url\": \"https://gateway.pipeworx.io/unesco-uis/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-unesco-uis",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:18Z",
+    "url": "https://github.com/pipeworx-io/mcp-unesco-uis"
+  },
+  {
+    "description": "ClinicalTrials MCP \u2014 wraps ClinicalTrials.gov API v2 (free, no auth)",
+    "id": "pipeworx-io/mcp-clinicaltrials",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"clinicaltrials\": {\n      \"url\": \"https://gateway.pipeworx.io/clinicaltrials/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-clinicaltrials",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:16Z",
+    "url": "https://github.com/pipeworx-io/mcp-clinicaltrials"
+  },
+  {
+    "description": "DefiLlama MCP \u2014 DeFi analytics from DefiLlama (free, no auth)",
+    "id": "pipeworx-io/mcp-defillama",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"defillama\": {\n      \"url\": \"https://gateway.pipeworx.io/defillama/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-defillama",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:11Z",
+    "url": "https://github.com/pipeworx-io/mcp-defillama"
+  },
+  {
+    "description": "UNHCR Refugee Data Finder MCP (keyless).",
+    "id": "pipeworx-io/mcp-unhcr",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"unhcr\": {\n      \"url\": \"https://gateway.pipeworx.io/unhcr/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-unhcr",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:09Z",
+    "url": "https://github.com/pipeworx-io/mcp-unhcr"
+  },
+  {
+    "description": "Alpha Vantage MCP \u2014 Stock market data, fundamentals, and earnings",
+    "id": "pipeworx-io/mcp-alphavantage",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"alphavantage\": {\n      \"url\": \"https://gateway.pipeworx.io/alphavantage/mcp\"\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "pipeworx-io/mcp-alphavantage",
+    "stars": 0,
+    "updated_at": "2026-06-02T16:56:07Z",
+    "url": "https://github.com/pipeworx-io/mcp-alphavantage"
   }
 ]
