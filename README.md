@@ -44,7 +44,7 @@ expired items removed — so you can rely on what you see being current.
 
 ## 📋 Current Items
 
-> ⏰ Last updated: 2026-06-02 17:30 UTC
+> ⏰ Last updated: 2026-06-02 17:45 UTC
 >
 > Data source: `GitHub Search API`
 >
@@ -53,56 +53,56 @@ expired items removed — so you can rely on what you see being current.
 <!-- TRACKER_TABLE_START -->
 | # | Name | ⭐ | Lang | Updated | Install | Description |
 |---|------|---|------|---------|---------|-------------|
-| 1 | [pipeworx-io/mcp-polygon-io](https://github.com/pipeworx-io/mcp-polygon-io) | 0 | TypeScript | 2026-06-02 | — | Polygon.io stock/options/crypto: tickers, aggregates, news, splits, dividends. |
-| 2 | [pipeworx-io/mcp-pirate-weather](https://github.com/pipeworx-io/mcp-pirate-weather) | 0 | TypeScript | 2026-06-02 | — | Pirate Weather forecast API (Dark Sky-compatible). Free key required. |
-| 3 | [pipeworx-io/mcp-guild-wars-2](https://github.com/pipeworx-io/mcp-guild-wars-2) | 0 | TypeScript | 2026-06-02 | — | Guild Wars 2 keyless public endpoints (worlds, items, achievements, build, commerce). |
-| 4 | [pipeworx-io/mcp-wynncraft](https://github.com/pipeworx-io/mcp-wynncraft) | 0 | TypeScript | 2026-06-02 | — | Wynncraft MMO player + guild + leaderboard + item DB lookups. |
-| 5 | [ariffazil/wealth](https://github.com/ariffazil/wealth) | 0 | Python | 2026-06-02 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/ariffazil/wealth/) |  WEALTH — the valuation, capital, and economic reasoning organ of arifOS |
-| 6 | [radimsem/remindb](https://github.com/radimsem/remindb) | 108 | Go | 2026-06-02 | — | An agentic memory database that cuts session tokens by 82–99%. One portable SQLite file — your agent's memory, anywhere. |
-| 7 | [goreleaser/mcp](https://github.com/goreleaser/mcp) | 22 | Go | 2026-06-02 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/goreleaser/mcp/) | The GoReleaser MCP |
-| 8 | [pipeworx-io/mcp-roblox](https://github.com/pipeworx-io/mcp-roblox) | 0 | TypeScript | 2026-06-02 | — | Roblox public profile + friends + badges + games + groups lookups. |
-| 9 | [pipeworx-io/mcp-nist-beacon](https://github.com/pipeworx-io/mcp-nist-beacon) | 0 | TypeScript | 2026-06-02 | — | NIST Randomness Beacon v2 — signed public random pulses every 60s. |
-| 10 | [pipeworx-io/mcp-foodish](https://github.com/pipeworx-io/mcp-foodish) | 0 | TypeScript | 2026-06-02 | — | Random food images by category (pizza, burger, dosa, etc.) via Foodish. Keyless. |
-| 11 | [pipeworx-io/mcp-leetcode](https://github.com/pipeworx-io/mcp-leetcode) | 0 | TypeScript | 2026-06-02 | — | LeetCode public profiles, solved counts, daily question, problem detail. |
-| 12 | [pipeworx-io/mcp-codewars](https://github.com/pipeworx-io/mcp-codewars) | 0 | TypeScript | 2026-06-02 | — | Codewars user profiles, completed kata, authored kata, kata detail. Keyless. |
-| 13 | [pipeworx-io/mcp-cheapshark](https://github.com/pipeworx-io/mcp-cheapshark) | 0 | TypeScript | 2026-06-02 | — | PC game deals across Steam/Epic/GOG/Humble via CheapShark. Keyless. |
-| 14 | [pipeworx-io/mcp-mojang](https://github.com/pipeworx-io/mcp-mojang) | 0 | TypeScript | 2026-06-02 | — | Minecraft profile lookups (UUID, profile, name history, blocked servers). |
-| 15 | [pipeworx-io/mcp-urlscan-io](https://github.com/pipeworx-io/mcp-urlscan-io) | 0 | TypeScript | 2026-06-02 | — | urlscan.io URL scanner — search/result keyless, submit needs key |
-| 16 | [pipeworx-io/mcp-data360](https://github.com/pipeworx-io/mcp-data360) | 0 | TypeScript | 2026-06-02 | — | World Bank Data360 MCP — the World Bank's modern unified data platform. |
-| 17 | [pipeworx-io/mcp-giantbomb](https://github.com/pipeworx-io/mcp-giantbomb) | 0 | TypeScript | 2026-06-02 | — | Giant Bomb video-game catalog (free key) |
-| 18 | [pipeworx-io/mcp-opentopography](https://github.com/pipeworx-io/mcp-opentopography) | 0 | TypeScript | 2026-06-02 | — | OpenTopography global DEM rasters + point queries (free key) |
-| 19 | [MuhDur/plsql-intelligence](https://github.com/MuhDur/plsql-intelligence) | 1 | Rust | 2026-06-02 | ✅ [cargo install](https://linny006.github.io/mcp-servers-live/r/MuhDur/plsql-intelligence/) | Offline, package-aware Oracle PL/SQL code intelligence in Rust — change impact, dependency graph, honest uncertainty, se |
-| 20 | [pipeworx-io/mcp-opencages](https://github.com/pipeworx-io/mcp-opencages) | 0 | TypeScript | 2026-06-02 | — | OpenCage forward + reverse geocoding (free key, 2500/day) |
-| 21 | [pipeworx-io/mcp-un-sdg](https://github.com/pipeworx-io/mcp-un-sdg) | 0 | TypeScript | 2026-06-02 | — | UN Sustainable Development Goals (SDG) Indicators MCP — UN Statistics Division. |
-| 22 | [pipeworx-io/mcp-last-fm](https://github.com/pipeworx-io/mcp-last-fm) | 0 | TypeScript | 2026-06-02 | — | Last.fm artist/album/track metadata (free API key required) |
-| 23 | [millsymills-com/gandi-mcp](https://github.com/millsymills-com/gandi-mcp) | 0 | Python | 2026-06-02 | — | Python MCP server for the Gandi v5 API: domains, LiveDNS, email, billing, organizations, and certificates. Three-tier sa |
-| 24 | [pipeworx-io/mcp-balldontlie](https://github.com/pipeworx-io/mcp-balldontlie) | 0 | TypeScript | 2026-06-02 | — | balldontlie.io NBA stats (free API key required) |
-| 25 | [pipeworx-io/mcp-hdx](https://github.com/pipeworx-io/mcp-hdx) | 0 | TypeScript | 2026-06-02 | — | Humanitarian Data Exchange (HDX) MCP — data.humdata.org, the open |
-| 26 | [pvliesdonk/markdown-vault-mcp](https://github.com/pvliesdonk/markdown-vault-mcp) | 11 | Python | 2026-06-02 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/pvliesdonk/markdown-vault-mcp/) | Generic markdown collection MCP server with FTS5 + semantic search, frontmatter-aware indexing, and incremental reindexi |
-| 27 | [pipeworx-io/mcp-lens-org](https://github.com/pipeworx-io/mcp-lens-org) | 0 | TypeScript | 2026-06-02 | — | Lens.org patent + scholarly search (free academic key required) |
-| 28 | [pipeworx-io/mcp-opendatasoft](https://github.com/pipeworx-io/mcp-opendatasoft) | 0 | TypeScript | 2026-06-02 | — | Generic Opendatasoft portal client (3000+ public OpenDataSoft instances) |
-| 29 | [pipeworx-io/mcp-hpo-api](https://github.com/pipeworx-io/mcp-hpo-api) | 0 | TypeScript | 2026-06-02 | — | Human Phenotype Ontology — clinical phenotype terms + gene/disease annotations |
-| 30 | [pipeworx-io/mcp-datos-gob-es](https://github.com/pipeworx-io/mcp-datos-gob-es) | 0 | TypeScript | 2026-06-02 | — | datos.gob.es — Spanish open-data catalogue |
-| 31 | [pipeworx-io/mcp-rdap](https://github.com/pipeworx-io/mcp-rdap) | 0 | TypeScript | 2026-06-02 | — | RDAP — Registration Data Access Protocol (domains, IPs, ASNs) via IANA bootstrap |
-| 32 | [pipeworx-io/mcp-deno-land](https://github.com/pipeworx-io/mcp-deno-land) | 0 | TypeScript | 2026-06-02 | — | deno.land/x third-party Deno module registry |
-| 33 | [pipeworx-io/mcp-goproxy](https://github.com/pipeworx-io/mcp-goproxy) | 0 | TypeScript | 2026-06-02 | — | Go module proxy — module info, versions, go.mod |
-| 34 | [maximhq/bifrost](https://github.com/maximhq/bifrost) | 5428 | Go | 2026-06-02 | ✅ [npx](https://linny006.github.io/mcp-servers-live/r/maximhq/bifrost/) | Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, cluster mode, guardrails, 1000+ mod |
-| 35 | [pipeworx-io/mcp-figshare](https://github.com/pipeworx-io/mcp-figshare) | 0 | TypeScript | 2026-06-02 | — | Figshare research outputs (datasets, papers, posters) |
-| 36 | [pipeworx-io/mcp-zenodo](https://github.com/pipeworx-io/mcp-zenodo) | 0 | TypeScript | 2026-06-02 | — | Zenodo (CERN) open research data repository |
-| 37 | [vassiliylakhonin/agenda-intelligence-md](https://github.com/vassiliylakhonin/agenda-intelligence-md) | 4 | Python | 2026-06-02 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/vassiliylakhonin/agenda-intelligence-md/) | Agenda Intelligence — product runtime + evidence-discipline layer for strategic intelligence agents. Four surfaces (MCP, |
-| 38 | [pipeworx-io/mcp-pypi-stats](https://github.com/pipeworx-io/mcp-pypi-stats) | 0 | TypeScript | 2026-06-02 | — | PyPIStats.org — PyPI download statistics |
-| 39 | [pipeworx-io/mcp-mast-nasa](https://github.com/pipeworx-io/mcp-mast-nasa) | 0 | TypeScript | 2026-06-02 | — | MAST (Mikulski Archive for Space Telescopes) — Hubble/JWST/Kepler/TESS |
-| 40 | [pipeworx-io/mcp-noaa-spc](https://github.com/pipeworx-io/mcp-noaa-spc) | 0 | TypeScript | 2026-06-02 | — | NOAA Storm Prediction Center — outlooks, storm reports, watches |
-| 41 | [pipeworx-io/mcp-cdec-ca](https://github.com/pipeworx-io/mcp-cdec-ca) | 0 | TypeScript | 2026-06-02 | — | California Data Exchange Center (CDEC) hydrology, reservoirs, snow water |
-| 42 | [hyperpolymath/hyperpolymath](https://github.com/hyperpolymath/hyperpolymath) | 2 | PHP | 2026-06-02 | — | Jonathan D.A. Jewell - Polyglot software architecture portfolio |
-| 43 | [pipeworx-io/mcp-lemmy](https://github.com/pipeworx-io/mcp-lemmy) | 0 | TypeScript | 2026-06-02 | — | Lemmy federated link-aggregator public reads (any instance) |
-| 44 | [pipeworx-io/mcp-openfoodfacts](https://github.com/pipeworx-io/mcp-openfoodfacts) | 0 | TypeScript | 2026-06-02 | — | Open Food Facts — collaborative food product database |
-| 45 | [pipeworx-io/mcp-opentopodata](https://github.com/pipeworx-io/mcp-opentopodata) | 0 | TypeScript | 2026-06-02 | — | Open Topo Data — global elevation lookups (multiple DEM datasets) |
-| 46 | [pipeworx-io/mcp-bioregistry](https://github.com/pipeworx-io/mcp-bioregistry) | 0 | TypeScript | 2026-06-02 | — | Bioregistry — meta-registry of biomedical identifier prefixes |
-| 47 | [pipeworx-io/mcp-rfc-editor](https://github.com/pipeworx-io/mcp-rfc-editor) | 0 | TypeScript | 2026-06-02 | — | RFC Editor — full RFC text + metadata + errata + BCP/STD mappings |
-| 48 | [pipeworx-io/mcp-tldr-pages](https://github.com/pipeworx-io/mcp-tldr-pages) | 0 | TypeScript | 2026-06-02 | — | tldr-pages community simplified man pages (cached 24h) |
-| 49 | [pipeworx-io/mcp-homebrew-formulae](https://github.com/pipeworx-io/mcp-homebrew-formulae) | 0 | TypeScript | 2026-06-02 | — | Homebrew formulae + casks + install analytics (formulae.brew.sh) |
-| 50 | [triggerdotdev/trigger.dev](https://github.com/triggerdotdev/trigger.dev) | 15185 | TypeScript | 2026-06-02 | — | Trigger.dev – build and deploy fully‑managed AI agents and workflows |
+| 1 | [pipeworx-io/mcp-schrodingers-boolean](https://github.com/pipeworx-io/mcp-schrodingers-boolean) | 0 | TypeScript | 2026-06-02 | — | schrodingers-boolean MCP — wraps StupidAPIs (requires X-API-Key) |
+| 2 | [pipeworx-io/mcp-quotable](https://github.com/pipeworx-io/mcp-quotable) | 0 | TypeScript | 2026-06-02 | — | Quotable MCP — wraps Quotable API (free, no auth) |
+| 3 | [pipeworx-io/mcp-press-release](https://github.com/pipeworx-io/mcp-press-release) | 0 | TypeScript | 2026-06-02 | — | press-release MCP — wraps StupidAPIs (requires X-API-Key) |
+| 4 | [pipeworx-io/mcp-phoenix-number](https://github.com/pipeworx-io/mcp-phoenix-number) | 0 | TypeScript | 2026-06-02 | — | phoenix-number MCP — wraps StupidAPIs (requires X-API-Key) |
+| 5 | [pipeworx-io/mcp-performance-review](https://github.com/pipeworx-io/mcp-performance-review) | 0 | TypeScript | 2026-06-02 | — | performance-review MCP — wraps StupidAPIs (requires X-API-Key) |
+| 6 | [pipeworx-io/mcp-passive-aggression](https://github.com/pipeworx-io/mcp-passive-aggression) | 0 | TypeScript | 2026-06-02 | — | passive-aggression MCP — wraps StupidAPIs (requires X-API-Key) |
+| 7 | [pipeworx-io/mcp-openaq](https://github.com/pipeworx-io/mcp-openaq) | 0 | TypeScript | 2026-06-02 | — | OpenAQ MCP — wraps OpenAQ v2 API (free, no auth required) |
+| 8 | [pipeworx-io/mcp-mercury-number](https://github.com/pipeworx-io/mcp-mercury-number) | 0 | TypeScript | 2026-06-02 | — | mercury-number MCP — wraps StupidAPIs (requires X-API-Key) |
+| 9 | [pipeworx-io/mcp-magic-8-ball](https://github.com/pipeworx-io/mcp-magic-8-ball) | 0 | TypeScript | 2026-06-02 | — | magic-8-ball MCP — wraps StupidAPIs (requires X-API-Key) |
+| 10 | [pipeworx-io/mcp-linkedin-humblebrag](https://github.com/pipeworx-io/mcp-linkedin-humblebrag) | 0 | TypeScript | 2026-06-02 | — | linkedin-humblebrag MCP — wraps StupidAPIs (requires X-API-Key) |
+| 11 | [pipeworx-io/mcp-jargon-translator](https://github.com/pipeworx-io/mcp-jargon-translator) | 0 | TypeScript | 2026-06-02 | — | jargon-translator MCP — wraps StupidAPIs (requires X-API-Key) |
+| 12 | [archestra-ai/archestra](https://github.com/archestra-ai/archestra) | 3768 | TypeScript | 2026-06-02 | ✅ [docker run](https://linny006.github.io/mcp-servers-live/r/archestra-ai/archestra/) | Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator |
+| 13 | [pipeworx-io/mcp-iss-number](https://github.com/pipeworx-io/mcp-iss-number) | 0 | TypeScript | 2026-06-02 | — | iss-number MCP — wraps StupidAPIs (requires X-API-Key) |
+| 14 | [pipeworx-io/mcp-excuse](https://github.com/pipeworx-io/mcp-excuse) | 0 | TypeScript | 2026-06-02 | — | excuse MCP — wraps StupidAPIs (requires X-API-Key) |
+| 15 | [pipeworx-io/mcp-emoji-oracle](https://github.com/pipeworx-io/mcp-emoji-oracle) | 0 | TypeScript | 2026-06-02 | — | emoji-oracle MCP — wraps StupidAPIs (requires X-API-Key) |
+| 16 | [pipulate/pipulate](https://github.com/pipulate/pipulate) | 11 | Python | 2026-06-02 | ✅ [pipx install](https://linny006.github.io/mcp-servers-live/r/pipulate/pipulate/) | Local First AI SEO Software on Nix, FastHTML & HTMX |
+| 17 | [pipeworx-io/mcp-could-have-been-email](https://github.com/pipeworx-io/mcp-could-have-been-email) | 0 | TypeScript | 2026-06-02 | — | could-have-been-email MCP — wraps StupidAPIs (requires X-API-Key) |
+| 18 | [VelvetSP/web-retrieval-mcp](https://github.com/VelvetSP/web-retrieval-mcp) | 0 | Python | 2026-06-02 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/VelvetSP/web-retrieval-mcp/) | MCP server for AI agents: high-fidelity web search (Exa) + tiered web fetch (Exa→browser→Firecrawl) with SSRF guard. Dro |
+| 19 | [pipeworx-io/mcp-corporate-apology](https://github.com/pipeworx-io/mcp-corporate-apology) | 0 | TypeScript | 2026-06-02 | — | corporate-apology MCP — wraps StupidAPIs (requires X-API-Key) |
+| 20 | [ariffazil/arifos](https://github.com/ariffazil/arifos) | 45 | Python | 2026-06-02 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/ariffazil/arifos/) | ArifOS — Constitutional MCP kernel for governed AI execution. AAA architecture: Architect · Auditor · Agent. Built for t |
+| 21 | [pipeworx-io/mcp-conspiracy-theory](https://github.com/pipeworx-io/mcp-conspiracy-theory) | 0 | TypeScript | 2026-06-02 | — | conspiracy-theory MCP — wraps StupidAPIs (requires X-API-Key) |
+| 22 | [pipeworx-io/mcp-chaos-index](https://github.com/pipeworx-io/mcp-chaos-index) | 0 | TypeScript | 2026-06-02 | — | chaos-index MCP — wraps StupidAPIs (requires X-API-Key) |
+| 23 | [pipeworx-io/mcp-buzzword-density](https://github.com/pipeworx-io/mcp-buzzword-density) | 0 | TypeScript | 2026-06-02 | — | buzzword-density MCP — wraps StupidAPIs (requires X-API-Key) |
+| 24 | [pipeworx-io/mcp-bored](https://github.com/pipeworx-io/mcp-bored) | 0 | TypeScript | 2026-06-02 | — | MCP server for the Bored API — random activity suggestions by type or participant count |
+| 25 | [pipeworx-io/mcp-apology](https://github.com/pipeworx-io/mcp-apology) | 0 | TypeScript | 2026-06-02 | — | apology MCP — wraps StupidAPIs (requires X-API-Key) |
+| 26 | [pipeworx-io/mcp-animequotes](https://github.com/pipeworx-io/mcp-animequotes) | 0 | TypeScript | 2026-06-02 | — | MCP server for Animechan — random anime quotes, search by anime or character |
+| 27 | [pipeworx-io/mcp-always-seven](https://github.com/pipeworx-io/mcp-always-seven) | 0 | TypeScript | 2026-06-02 | — | always-seven MCP — wraps StupidAPIs (requires X-API-Key) |
+| 28 | [pipeworx-io/mcp-trakt](https://github.com/pipeworx-io/mcp-trakt) | 0 | TypeScript | 2026-06-02 | — | Trakt MCP — TV/movie metadata + watch tracking signals |
+| 29 | [pipeworx-io/mcp-tastedive](https://github.com/pipeworx-io/mcp-tastedive) | 0 | TypeScript | 2026-06-02 | — | TasteDive MCP — cross-media recommendations (free with key) |
+| 30 | [pipeworx-io/mcp-spotify](https://github.com/pipeworx-io/mcp-spotify) | 0 | TypeScript | 2026-06-02 | — | Spotify MCP — Web API via client_credentials OAuth |
+| 31 | [pipeworx-io/mcp-genius](https://github.com/pipeworx-io/mcp-genius) | 0 | TypeScript | 2026-06-02 | — | Genius MCP — songs, artists, annotations metadata |
+| 32 | [pipeworx-io/mcp-discogs](https://github.com/pipeworx-io/mcp-discogs) | 0 | TypeScript | 2026-06-02 | — | Discogs MCP — music release / artist / label database |
+| 33 | [pipeworx-io/mcp-malwarebazaar](https://github.com/pipeworx-io/mcp-malwarebazaar) | 0 | TypeScript | 2026-06-02 | — | MalwareBazaar MCP — abuse.ch malware sample database (free, key required) |
+| 34 | [pipeworx-io/mcp-threatfox](https://github.com/pipeworx-io/mcp-threatfox) | 0 | TypeScript | 2026-06-02 | — | ThreatFox MCP — abuse.ch indicator-of-compromise feed (free, key required) |
+| 35 | [pipeworx-io/mcp-opencellid](https://github.com/pipeworx-io/mcp-opencellid) | 0 | TypeScript | 2026-06-02 | — | OpenCellID MCP — cell tower geolocation database (free with key) |
+| 36 | [pipeworx-io/mcp-what3words](https://github.com/pipeworx-io/mcp-what3words) | 0 | TypeScript | 2026-06-02 | — | what3words MCP — 3-word grid geocoding |
+| 37 | [pipeworx-io/mcp-open-elevation](https://github.com/pipeworx-io/mcp-open-elevation) | 0 | TypeScript | 2026-06-02 | — | Open-Elevation MCP — terrain elevation by lat/lon (no auth) |
+| 38 | [quangdang46/fast_file_search](https://github.com/quangdang46/fast_file_search) | 3 | Rust | 2026-06-02 | — | Ultra-fast file search toolkit for AI agents, Neovim, and code editors. MCP server for Claude Code/Cursor/Codex, frecenc |
+| 39 | [pipeworx-io/mcp-trefle](https://github.com/pipeworx-io/mcp-trefle) | 0 | TypeScript | 2026-06-02 | — | Trefle MCP — global plant database (1M+ species) |
+| 40 | [dougborg/katana-openapi-client](https://github.com/dougborg/katana-openapi-client) | 2 | Python | 2026-06-02 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/dougborg/katana-openapi-client/) | Modern TypeScript and Python Katana Manufacturing MRP API clients with automatic retries, rate limiting, and smart pagin |
+| 41 | [pipeworx-io/mcp-ebird](https://github.com/pipeworx-io/mcp-ebird) | 0 | TypeScript | 2026-06-02 | — | eBird MCP — Cornell Lab of Ornithology citizen-science bird observations |
+| 42 | [decocms/studio](https://github.com/decocms/studio) | 378 | TypeScript | 2026-06-02 | — | Open-source control plane for your AI agents. Connect tools, hire agents, track every token and dollar |
+| 43 | [pipeworx-io/mcp-bis](https://github.com/pipeworx-io/mcp-bis) | 0 | TypeScript | 2026-06-02 | — | BIS MCP — Bank for International Settlements statistics (no auth) |
+| 44 | [vassiliylakhonin/agenda-intelligence-md](https://github.com/vassiliylakhonin/agenda-intelligence-md) | 4 | Python | 2026-06-02 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/vassiliylakhonin/agenda-intelligence-md/) | Agenda Intelligence — product runtime + evidence-discipline layer for strategic intelligence agents. Four surfaces (MCP, |
+| 45 | [pipeworx-io/mcp-uk-ons](https://github.com/pipeworx-io/mcp-uk-ons) | 0 | TypeScript | 2026-06-02 | — | UK ONS MCP — Office for National Statistics (no auth) |
+| 46 | [pipeworx-io/mcp-statscan](https://github.com/pipeworx-io/mcp-statscan) | 0 | TypeScript | 2026-06-02 | — | Statistics Canada (StatCan) WDS MCP — Canadian official statistics (no auth) |
+| 47 | [ImpactMojo/ImpactMojo](https://github.com/ImpactMojo/ImpactMojo) | 1 | HTML | 2026-06-02 | — | Free development education platform for South Asia — 48 courses, 16 games, 11 labs, 400+ handouts, 200 case studies, MCP |
+| 48 | [pipeworx-io/mcp-govinfo](https://github.com/pipeworx-io/mcp-govinfo) | 0 | TypeScript | 2026-06-02 | — | GovInfo.gov MCP — full text of US government publications |
+| 49 | [pipeworx-io/mcp-regulations-gov](https://github.com/pipeworx-io/mcp-regulations-gov) | 0 | TypeScript | 2026-06-02 | — | Regulations.gov MCP — federal regulatory dockets, documents, public comments |
+| 50 | [pipeworx-io/mcp-fbi-crime](https://github.com/pipeworx-io/mcp-fbi-crime) | 0 | TypeScript | 2026-06-02 | — | FBI Crime Data Explorer MCP — UCR/NIBRS statistics |
 <!-- TRACKER_TABLE_END -->
 
 ---
