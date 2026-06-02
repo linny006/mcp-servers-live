@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>awslabs/mcp - entry on MCP Servers Live</title>
-<meta name="description" content="Open source MCP Servers for AWS">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/awslabs/mcp/">
+<title>reaatech/tool-use-firewall - entry on MCP Servers Live</title>
+<meta name="description" content="Policy enforcement proxy between agents and MCP tools. Cost caps, rate limits, argument validation, human-in-the-loop ap">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/reaatech/tool-use-firewall/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="awslabs/mcp - entry on MCP Servers Live">
-<meta property="og:description" content="Open source MCP Servers for AWS">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/awslabs/mcp/">
+<meta property="og:title" content="reaatech/tool-use-firewall - entry on MCP Servers Live">
+<meta property="og:description" content="Policy enforcement proxy between agents and MCP tools. Cost caps, rate limits, argument validation, human-in-the-loop ap">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/reaatech/tool-use-firewall/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="awslabs/mcp - entry on MCP Servers Live">
-<meta name="twitter:description" content="Open source MCP Servers for AWS">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"awslabs/mcp","codeRepository":"https://github.com/awslabs/mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/awslabs/mcp/","description":"Open source MCP Servers for AWS","author":{"@type":"Person","name":"awslabs","url":"https://github.com/awslabs"},"dateModified":"2026-06-02"}</script>
+<meta name="twitter:title" content="reaatech/tool-use-firewall - entry on MCP Servers Live">
+<meta name="twitter:description" content="Policy enforcement proxy between agents and MCP tools. Cost caps, rate limits, argument validation, human-in-the-loop ap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"reaatech/tool-use-firewall","codeRepository":"https://github.com/reaatech/tool-use-firewall","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/reaatech/tool-use-firewall/","description":"Policy enforcement proxy between agents and MCP tools. Cost caps, rate limits, argument validation, human-in-the-loop ap","author":{"@type":"Person","name":"reaatech","url":"https://github.com/reaatech"},"dateModified":"2026-06-02"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,49 +41,51 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>awslabs/mcp</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>reaatech/tool-use-firewall</span></nav>
 <main>
-<h1>awslabs/mcp</h1>
-<p class="lead">Open source MCP Servers for AWS</p>
+<h1>reaatech/tool-use-firewall</h1>
+<p class="lead">Policy enforcement proxy between agents and MCP tools. Cost caps, rate limits, argument validation, human-in-the-loop ap</p>
 <div class="meta">
-<span><strong>Stars</strong> 9183</span>
-<span><strong>Language</strong> Python</span>
+<span><strong>Stars</strong> 0</span>
+<span><strong>Language</strong> TypeScript</span>
 <span><strong>Last updated</strong> 2026-06-02</span>
-<span><a href="https://github.com/awslabs/mcp" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/awslabs" rel="external">@awslabs</a></span>
+<span><a href="https://github.com/reaatech/tool-use-firewall" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/reaatech" rel="external">@reaatech</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
+<p>Install method detected from README: <code>npm install -g</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>npm install -g tool-use-firewall</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;awslabs-core-mcp-server&quot;: {
-      &quot;command&quot;: &quot;uvx&quot;,
+    &quot;my-server&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
       &quot;args&quot;: [
-        &quot;awslabs.core-mcp-server@latest&quot;
-      ],
-      &quot;env&quot;: {
-        &quot;FASTMCP_LOG_LEVEL&quot;: &quot;ERROR&quot;
-      }
+        &quot;@reaatech/tool-use-firewall-server&quot;,
+        &quot;--config&quot;, &quot;/abs/path/to/policy.yaml&quot;,
+        &quot;--upstream&quot;, &quot;node&quot;,
+        &quot;--&quot;, &quot;/abs/path/to/my-mcp-server.js&quot;
+      ]
     }
   }
 }</code></pre>
-<p><a href="https://github.com/awslabs/mcp#readme" rel="external">View full README on GitHub</a></p>
+<p><a href="https://github.com/reaatech/tool-use-firewall#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/heymrun/heym/">heymrun/heym (stars:572)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/leshchenko1979/fast-mcp-telegram/">leshchenko1979/fast-mcp-telegram (stars:46)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/pzfreo/build123d-mcp/">pzfreo/build123d-mcp (stars:6)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/google-gemini/gemini-cli/">google-gemini/gemini-cli (stars:104863)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/decocms/studio/">decocms/studio (stars:378)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/speakeasy-api/gram/">speakeasy-api/gram (stars:244)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/python/">All Python entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/typescript/">All TypeScript entries</a></li>
 </ul></section>
 </main>
 <footer>
