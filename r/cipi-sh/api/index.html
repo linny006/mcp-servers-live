@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>0xRake/mcp-guard - entry on MCP Servers Live</title>
-<meta name="description" content="Find hardcoded secrets, command injection, SSRF, and policy violations in MCP server configs before they ship. Scanner +">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/0xRake/mcp-guard/">
+<title>cipi-sh/api - entry on MCP Servers Live</title>
+<meta name="description" content="Cipi API integration">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/cipi-sh/api/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="0xRake/mcp-guard - entry on MCP Servers Live">
-<meta property="og:description" content="Find hardcoded secrets, command injection, SSRF, and policy violations in MCP server configs before they ship. Scanner +">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/0xRake/mcp-guard/">
+<meta property="og:title" content="cipi-sh/api - entry on MCP Servers Live">
+<meta property="og:description" content="Cipi API integration">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/cipi-sh/api/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="0xRake/mcp-guard - entry on MCP Servers Live">
-<meta name="twitter:description" content="Find hardcoded secrets, command injection, SSRF, and policy violations in MCP server configs before they ship. Scanner +">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"0xRake/mcp-guard","codeRepository":"https://github.com/0xRake/mcp-guard","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/0xRake/mcp-guard/","description":"Find hardcoded secrets, command injection, SSRF, and policy violations in MCP server configs before they ship. Scanner +","author":{"@type":"Person","name":"0xRake","url":"https://github.com/0xRake"},"dateModified":"2026-06-02"}</script>
+<meta name="twitter:title" content="cipi-sh/api - entry on MCP Servers Live">
+<meta name="twitter:description" content="Cipi API integration">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"cipi-sh/api","codeRepository":"https://github.com/cipi-sh/api","programmingLanguage":"PHP","url":"https://linny006.github.io/mcp-servers-live/r/cipi-sh/api/","description":"Cipi API integration","author":{"@type":"Person","name":"cipi-sh","url":"https://github.com/cipi-sh"},"dateModified":"2026-06-02"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,36 +41,46 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>0xRake/mcp-guard</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>cipi-sh/api</span></nav>
 <main>
-<h1>0xRake/mcp-guard</h1>
-<p class="lead">Find hardcoded secrets, command injection, SSRF, and policy violations in MCP server configs before they ship. Scanner +</p>
+<h1>cipi-sh/api</h1>
+<p class="lead">Cipi API integration</p>
 <div class="meta">
-<span><strong>Stars</strong> 0</span>
-<span><strong>Language</strong> TypeScript</span>
+<span><strong>Stars</strong> 4</span>
+<span><strong>Language</strong> PHP</span>
 <span><strong>Last updated</strong> 2026-06-02</span>
-<span><a href="https://github.com/0xRake/mcp-guard" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/0xRake" rel="external">@0xRake</a></span>
+<span><a href="https://github.com/cipi-sh/api" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/cipi-sh" rel="external">@cipi-sh</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>npm install -g</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>npm install -g @mcp-guard/cli</code></pre>
-<p><a href="https://github.com/0xRake/mcp-guard#readme" rel="external">View full README on GitHub</a></p>
+<p>Install method detected from README: <code>claude mcp add</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add --transport http cipi-api https://your-server.com/mcp \</code></pre>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;cipi-api&quot;: {
+      &quot;url&quot;: &quot;https://your-server.com/mcp&quot;,
+      &quot;headers&quot;: {
+        &quot;Authorization&quot;: &quot;Bearer YOUR_TOKEN&quot;
+      }
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/cipi-sh/api#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:190785)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/archestra-ai/archestra/">archestra-ai/archestra (stars:3771)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/ridafkih/keeper.sh/">ridafkih/keeper.sh (stars:1095)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/Astrotomic/mcp.myarchivist.ai/">Astrotomic/mcp.myarchivist.ai (stars:2)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/typescript/">All TypeScript entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/php/">All PHP entries</a></li>
 </ul></section>
 </main>
 <footer>
