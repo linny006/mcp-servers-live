@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>archestra-ai/archestra - entry on MCP Servers Live</title>
-<meta name="description" content="Enterprise AI Platform with guardrails, MCP registry, gateway &amp; orchestrator">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/archestra-ai/archestra/">
+<title>crepererum-oss/common-sense-coder - entry on MCP Servers Live</title>
+<meta name="description" content="An LSP-MCP bridge for code assistants.">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/crepererum-oss/common-sense-coder/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="archestra-ai/archestra - entry on MCP Servers Live">
-<meta property="og:description" content="Enterprise AI Platform with guardrails, MCP registry, gateway &amp; orchestrator">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/archestra-ai/archestra/">
+<meta property="og:title" content="crepererum-oss/common-sense-coder - entry on MCP Servers Live">
+<meta property="og:description" content="An LSP-MCP bridge for code assistants.">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/crepererum-oss/common-sense-coder/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="archestra-ai/archestra - entry on MCP Servers Live">
-<meta name="twitter:description" content="Enterprise AI Platform with guardrails, MCP registry, gateway &amp; orchestrator">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"archestra-ai/archestra","codeRepository":"https://github.com/archestra-ai/archestra","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/archestra-ai/archestra/","description":"Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator","author":{"@type":"Person","name":"archestra-ai","url":"https://github.com/archestra-ai"},"dateModified":"2026-06-03"}</script>
+<meta name="twitter:title" content="crepererum-oss/common-sense-coder - entry on MCP Servers Live">
+<meta name="twitter:description" content="An LSP-MCP bridge for code assistants.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"crepererum-oss/common-sense-coder","codeRepository":"https://github.com/crepererum-oss/common-sense-coder","programmingLanguage":"Rust","url":"https://linny006.github.io/mcp-servers-live/r/crepererum-oss/common-sense-coder/","description":"An LSP-MCP bridge for code assistants.","author":{"@type":"Person","name":"crepererum-oss","url":"https://github.com/crepererum-oss"},"dateModified":"2026-06-03"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,36 +41,47 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>archestra-ai/archestra</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>crepererum-oss/common-sense-coder</span></nav>
 <main>
-<h1>archestra-ai/archestra</h1>
-<p class="lead">Enterprise AI Platform with guardrails, MCP registry, gateway &amp; orchestrator</p>
+<h1>crepererum-oss/common-sense-coder</h1>
+<p class="lead">An LSP-MCP bridge for code assistants.</p>
 <div class="meta">
-<span><strong>Stars</strong> 3776</span>
-<span><strong>Language</strong> TypeScript</span>
+<span><strong>Stars</strong> 3</span>
+<span><strong>Language</strong> Rust</span>
 <span><strong>Last updated</strong> 2026-06-03</span>
-<span><a href="https://github.com/archestra-ai/archestra" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/archestra-ai" rel="external">@archestra-ai</a></span>
+<span><a href="https://github.com/crepererum-oss/common-sense-coder" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/crepererum-oss" rel="external">@crepererum-oss</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>docker run</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -p 9000:9000 -p 3000:3000 \</code></pre>
-<p><a href="https://github.com/archestra-ai/archestra#readme" rel="external">View full README on GitHub</a></p>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;codeexplorer&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;/the/location/of/common-sense-coder/target/release/common-sense-coder&quot;,
+      &quot;args&quot;: [
+        &quot;--workspace=.&quot;
+      ],
+      &quot;env&quot;: {}
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/crepererum-oss/common-sense-coder#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:190920)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/google-gemini/gemini-cli/">google-gemini/gemini-cli (stars:104890)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/triggerdotdev/trigger.dev/">triggerdotdev/trigger.dev (stars:15201)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/systempromptio/systemprompt-core/">systempromptio/systemprompt-core (stars:4)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/NestRS/NestRS/">NestRS/NestRS (stars:0)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/typescript/">All TypeScript entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/rust/">All Rust entries</a></li>
 </ul></section>
 </main>
 <footer>
