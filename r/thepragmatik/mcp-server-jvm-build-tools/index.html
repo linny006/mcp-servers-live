@@ -54,16 +54,22 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
 <p>Install method detected from README: <code>docker run</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -i --rm mcp-server-jvm-build-tools</code></pre>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -i --rm \</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
-    &quot;mcpServers&quot;: {
-        &quot;jvm-build-tools&quot;: {
-            &quot;command&quot;: &quot;/path/to/java&quot;,
-            &quot;args&quot;: [&quot;-jar&quot;, &quot;/path/to/mcp-server-jvm-build-tools.jar&quot;]
-        }
+  &quot;mcpServers&quot;: {
+    &quot;jvm-build-tools&quot;: {
+      &quot;command&quot;: &quot;/path/to/java&quot;,
+      &quot;args&quot;: [
+        &quot;-jar&quot;,
+        &quot;/path/to/mcp-server-jvm-build-tools.jar&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;MAVEN_HOME&quot;: &quot;/opt/maven&quot;
+      }
     }
+  }
 }</code></pre>
 <p><a href="https://github.com/thepragmatik/mcp-server-jvm-build-tools#readme" rel="external">View full README on GitHub</a></p>
 </section>
@@ -71,7 +77,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:191226)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:191230)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/archestra-ai/archestra/">archestra-ai/archestra (stars:3804)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/yvgude/lean-ctx/">yvgude/lean-ctx (stars:2464)</a></li>
 </ul></section>
