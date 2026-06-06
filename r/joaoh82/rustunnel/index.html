@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>azerzeki/mcp-reticle - entry on MCP Servers Live</title>
-<meta name="description" content="📊 Analyze and visualize Model Context Protocol (MCP) traffic with RETICLE, your Wireshark-like tool for better network i">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/azerzeki/mcp-reticle/">
+<title>joaoh82/rustunnel - entry on MCP Servers Live</title>
+<meta name="description" content="Self-hosted, secure tunnel server in Rust. Expose local HTTP/HTTPS/TCP/UDP services to the public internet via TLS-encry">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/joaoh82/rustunnel/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="azerzeki/mcp-reticle - entry on MCP Servers Live">
-<meta property="og:description" content="📊 Analyze and visualize Model Context Protocol (MCP) traffic with RETICLE, your Wireshark-like tool for better network i">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/azerzeki/mcp-reticle/">
+<meta property="og:title" content="joaoh82/rustunnel - entry on MCP Servers Live">
+<meta property="og:description" content="Self-hosted, secure tunnel server in Rust. Expose local HTTP/HTTPS/TCP/UDP services to the public internet via TLS-encry">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/joaoh82/rustunnel/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="azerzeki/mcp-reticle - entry on MCP Servers Live">
-<meta name="twitter:description" content="📊 Analyze and visualize Model Context Protocol (MCP) traffic with RETICLE, your Wireshark-like tool for better network i">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"azerzeki/mcp-reticle","codeRepository":"https://github.com/azerzeki/mcp-reticle","programmingLanguage":"Rust","url":"https://linny006.github.io/mcp-servers-live/r/azerzeki/mcp-reticle/","description":"📊 Analyze and visualize Model Context Protocol (MCP) traffic with RETICLE, your Wireshark-like tool for better network i","author":{"@type":"Person","name":"azerzeki","url":"https://github.com/azerzeki"},"dateModified":"2026-06-06"}</script>
+<meta name="twitter:title" content="joaoh82/rustunnel - entry on MCP Servers Live">
+<meta name="twitter:description" content="Self-hosted, secure tunnel server in Rust. Expose local HTTP/HTTPS/TCP/UDP services to the public internet via TLS-encry">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"joaoh82/rustunnel","codeRepository":"https://github.com/joaoh82/rustunnel","programmingLanguage":"Rust","url":"https://linny006.github.io/mcp-servers-live/r/joaoh82/rustunnel/","description":"Self-hosted, secure tunnel server in Rust. Expose local HTTP/HTTPS/TCP/UDP services to the public internet via TLS-encry","author":{"@type":"Person","name":"joaoh82","url":"https://github.com/joaoh82"},"dateModified":"2026-06-06"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,23 +41,40 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>azerzeki/mcp-reticle</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>joaoh82/rustunnel</span></nav>
 <main>
-<h1>azerzeki/mcp-reticle</h1>
-<p class="lead">📊 Analyze and visualize Model Context Protocol (MCP) traffic with RETICLE, your Wireshark-like tool for better network i</p>
+<h1>joaoh82/rustunnel</h1>
+<p class="lead">Self-hosted, secure tunnel server in Rust. Expose local HTTP/HTTPS/TCP/UDP services to the public internet via TLS-encry</p>
 <div class="meta">
-<span><strong>Stars</strong> 1</span>
+<span><strong>Stars</strong> 631</span>
 <span><strong>Language</strong> Rust</span>
 <span><strong>Last updated</strong> 2026-06-06</span>
-<span><a href="https://github.com/azerzeki/mcp-reticle" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/azerzeki" rel="external">@azerzeki</a></span>
+<span><a href="https://github.com/joaoh82/rustunnel" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/joaoh82" rel="external">@joaoh82</a></span>
 </div>
+<section id="install"><h2>Install &amp; configure</h2>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;rustunnel&quot;: {
+      &quot;command&quot;: &quot;rustunnel-mcp&quot;,
+      &quot;args&quot;: [
+        &quot;--server&quot;, &quot;edge.rustunnel.com:4040&quot;,
+        &quot;--api&quot;,    &quot;https://edge.rustunnel.com:8443&quot;
+      ],
+      &quot;env&quot;: { &quot;RUSTUNNEL_TOKEN&quot;: &quot;&lt;your-token&gt;&quot; }
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/joaoh82/rustunnel#readme" rel="external">View full README on GitHub</a></p>
+</section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/joaoh82/rustunnel/">joaoh82/rustunnel (stars:631)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/epicsagas/Episteme/">epicsagas/Episteme (stars:3)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/azerzeki/mcp-reticle/">azerzeki/mcp-reticle (stars:1)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
