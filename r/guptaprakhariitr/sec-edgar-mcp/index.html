@@ -53,17 +53,19 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <span><a href="https://github.com/guptaprakhariitr" rel="external">@guptaprakhariitr</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>npm install</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>npm install
-wrangler</code></pre>
+<p>Install method detected from README: <code>npx</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>npx -y mcp-remote https</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;sec-edgar&quot;: {
+    &quot;sec-edgar-mcp&quot;: {
       &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@modelcontextprotocol/server-fetch&quot;, &quot;https://sec-edgar-mcp.workers.dev/mcp&quot;],
-      &quot;env&quot;: { &quot;MCP_AUTH_TOKEN&quot;: &quot;YOUR_API_KEY&quot; }
+      &quot;args&quot;: [
+        &quot;-y&quot;, &quot;mcp-remote&quot;,
+        &quot;https://sec-edgar-mcp.atlasword.workers.dev/mcp&quot;,
+        &quot;--header&quot;, &quot;Authorization: Bearer mck_YOUR_API_KEY&quot;
+      ]
     }
   }
 }</code></pre>
@@ -73,9 +75,9 @@ wrangler</code></pre>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:191949)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/inflowpayai/inflow-cli/">inflowpayai/inflow-cli (stars:9)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/PelleNybe/Crypto-MCP-Server---by-Corax-CoLAB/">PelleNybe/Crypto-MCP-Server---by-Corax-CoLAB (stars:7)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/activepieces/activepieces/">activepieces/activepieces (stars:22693)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/getsentry/sentry-mcp/">getsentry/sentry-mcp (stars:724)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/icoretech/airbroke/">icoretech/airbroke (stars:216)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
