@@ -52,13 +52,42 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <span><a href="https://github.com/igorolv/jdbc-mcp-server" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/igorolv" rel="external">@igorolv</a></span>
 </div>
+<section id="install"><h2>Install &amp; configure</h2>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;jdbc-orders&quot;: {
+      &quot;command&quot;: &quot;java&quot;,
+      &quot;args&quot;: [&quot;-jar&quot;, &quot;&lt;absolute-path&gt;/jdbc-mcp-server.jar&quot;],
+      &quot;env&quot;: {
+        &quot;JDBC_URL&quot;: &quot;jdbc:postgresql://db.example.com:5432/orders&quot;,
+        &quot;JDBC_USERNAME&quot;: &quot;ai_readonly&quot;,
+        &quot;JDBC_PASSWORD&quot;: &quot;secret&quot;,
+        &quot;JDBC_MCP_CATALOG&quot;: &quot;orders&quot;
+      }
+    },
+    &quot;jdbc-billing&quot;: {
+      &quot;command&quot;: &quot;java&quot;,
+      &quot;args&quot;: [&quot;-jar&quot;, &quot;&lt;absolute-path&gt;/jdbc-mcp-server.jar&quot;],
+      &quot;env&quot;: {
+        &quot;JDBC_URL&quot;: &quot;jdbc:oracle:thin:@//oracle.example.com:1521/BILLING&quot;,
+        &quot;JDBC_USERNAME&quot;: &quot;AI_READONLY&quot;,
+        &quot;JDBC_PASSWORD&quot;: &quot;secret&quot;,
+        &quot;JDBC_MCP_CATALOG&quot;: &quot;billing&quot;
+      }
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/igorolv/jdbc-mcp-server#readme" rel="external">View full README on GitHub</a></p>
+</section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/MCPJam/inspector/">MCPJam/inspector (stars:2012)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/chunkhound/chunkhound/">chunkhound/chunkhound (stars:1319)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/speakeasy-api/gram/">speakeasy-api/gram (stars:246)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/yvgude/lean-ctx/">yvgude/lean-ctx (stars:2683)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/kintopp/rijksmuseum-mcp-plus/">kintopp/rijksmuseum-mcp-plus (stars:15)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/IvanMurzak/Godot-MCP/">IvanMurzak/Godot-MCP (stars:13)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
