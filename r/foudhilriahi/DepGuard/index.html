@@ -61,15 +61,19 @@ npm</code></pre>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;depguard&quot;: {
-      &quot;command&quot;: &quot;node&quot;,
-      &quot;args&quot;: [&quot;/absolute/path/to/depguard/dist/index.js&quot;],
-      &quot;env&quot;: {
-        &quot;CACHE_TTL_SECONDS&quot;: &quot;86400&quot;,
-        &quot;DEPGUARD_CACHE_PATH&quot;: &quot;/absolute/path/to/depguard/.depguard-cache.sqlite&quot;,
-        &quot;DEPGUARD_HTTP_TIMEOUT_MS&quot;: &quot;7000&quot;,
-        &quot;DEPGUARD_HTTP_RETRIES&quot;: &quot;2&quot;,
-        &quot;DEPGUARD_HTTP_RETRY_DELAY_MS&quot;: &quot;250&quot;
-      }
+      &quot;command&quot;: &quot;docker&quot;,
+      &quot;args&quot;: [
+        &quot;run&quot;,
+        &quot;--rm&quot;,
+        &quot;-i&quot;,
+        &quot;-e&quot;,
+        &quot;CACHE_TTL_SECONDS=86400&quot;,
+        &quot;-e&quot;,
+        &quot;DEPGUARD_CACHE_PATH=/data/cache.sqlite&quot;,
+        &quot;-v&quot;,
+        &quot;depguard-cache:/data&quot;,
+        &quot;ghcr.io/foudhilriahi/depguard:latest&quot;
+      ]
     }
   }
 }</code></pre>
@@ -79,9 +83,9 @@ npm</code></pre>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/davepoon/buildwithclaude/">davepoon/buildwithclaude (stars:3065)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/optave/ops-codegraph-tool/">optave/ops-codegraph-tool (stars:69)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/ruvnet/agent-harness-generator/">ruvnet/agent-harness-generator (stars:17)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/ruvnet/agent-harness-generator/">ruvnet/agent-harness-generator (stars:19)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/jsuzanne/stigix/">jsuzanne/stigix (stars:13)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/edicarloslds/businessmap-mcp/">edicarloslds/businessmap-mcp (stars:11)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
