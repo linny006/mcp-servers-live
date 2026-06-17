@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>cbcoutinho/nextcloud-mcp-server - entry on MCP Servers Live</title>
-<meta name="description" content="Nextcloud MCP Server">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/cbcoutinho/nextcloud-mcp-server/">
+<title>gen0sec/mcp-server - entry on MCP Servers Live</title>
+<meta name="description" content="Generate WAF rules and exposing multiple scenarios">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/gen0sec/mcp-server/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cbcoutinho/nextcloud-mcp-server - entry on MCP Servers Live">
-<meta property="og:description" content="Nextcloud MCP Server">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/cbcoutinho/nextcloud-mcp-server/">
+<meta property="og:title" content="gen0sec/mcp-server - entry on MCP Servers Live">
+<meta property="og:description" content="Generate WAF rules and exposing multiple scenarios">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/gen0sec/mcp-server/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cbcoutinho/nextcloud-mcp-server - entry on MCP Servers Live">
-<meta name="twitter:description" content="Nextcloud MCP Server">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"cbcoutinho/nextcloud-mcp-server","codeRepository":"https://github.com/cbcoutinho/nextcloud-mcp-server","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/cbcoutinho/nextcloud-mcp-server/","description":"Nextcloud MCP Server","author":{"@type":"Person","name":"cbcoutinho","url":"https://github.com/cbcoutinho"},"dateModified":"2026-06-17"}</script>
+<meta name="twitter:title" content="gen0sec/mcp-server - entry on MCP Servers Live">
+<meta name="twitter:description" content="Generate WAF rules and exposing multiple scenarios">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"gen0sec/mcp-server","codeRepository":"https://github.com/gen0sec/mcp-server","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/gen0sec/mcp-server/","description":"Generate WAF rules and exposing multiple scenarios","author":{"@type":"Person","name":"gen0sec","url":"https://github.com/gen0sec"},"dateModified":"2026-06-17"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,36 +41,38 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>cbcoutinho/nextcloud-mcp-server</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>gen0sec/mcp-server</span></nav>
 <main>
-<h1>cbcoutinho/nextcloud-mcp-server</h1>
-<p class="lead">Nextcloud MCP Server</p>
+<h1>gen0sec/mcp-server</h1>
+<p class="lead">Generate WAF rules and exposing multiple scenarios</p>
 <div class="meta">
-<span><strong>Stars</strong> 271</span>
+<span><strong>Stars</strong> 1</span>
 <span><strong>Language</strong> Python</span>
 <span><strong>Last updated</strong> 2026-06-17</span>
-<span><a href="https://github.com/cbcoutinho/nextcloud-mcp-server" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/cbcoutinho" rel="external">@cbcoutinho</a></span>
+<span><a href="https://github.com/gen0sec/mcp-server" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/gen0sec" rel="external">@gen0sec</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
 <p>Install method detected from README: <code>docker run</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -p 127.0.0.1:8000:8000 --rm \</code></pre>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -p 8000:8000 waf-rule-mcp</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;nextcloud&quot;: {
-      &quot;command&quot;: &quot;uvx&quot;,
-      &quot;args&quot;: [&quot;nextcloud-mcp-server&quot;, &quot;run&quot;, &quot;--transport&quot;, &quot;stdio&quot;],
+    &quot;waf-rule-mcp&quot;: {
+      &quot;command&quot;: &quot;uv&quot;,
+      &quot;args&quot;: [
+        &quot;run&quot;,
+        &quot;--project&quot;, &quot;/absolute/path/to/mcp-server&quot;,
+        &quot;/absolute/path/to/mcp-server/server/main.py&quot;
+      ],
       &quot;env&quot;: {
-        &quot;NEXTCLOUD_HOST&quot;: &quot;https://your.nextcloud.instance.com&quot;,
-        &quot;NEXTCLOUD_USERNAME&quot;: &quot;your_username&quot;,
-        &quot;NEXTCLOUD_PASSWORD&quot;: &quot;your_app_password&quot;
+        &quot;WAF_VALIDATION_API_URL&quot;: &quot;https://public.gen0sec.com/v1/waf/validate&quot;
       }
     }
   }
 }</code></pre>
-<p><a href="https://github.com/cbcoutinho/nextcloud-mcp-server#readme" rel="external">View full README on GitHub</a></p>
+<p><a href="https://github.com/gen0sec/mcp-server#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
@@ -78,7 +80,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/r/jjang-ai/vmlx/">jjang-ai/vmlx (stars:692)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/sirkirby/unifi-mcp/">sirkirby/unifi-mcp (stars:442)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/lyonzin/knowledge-rag/">lyonzin/knowledge-rag (stars:96)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/cbcoutinho/nextcloud-mcp-server/">cbcoutinho/nextcloud-mcp-server (stars:271)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
