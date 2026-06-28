@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>giantswarm/mcp-kubernetes - entry on MCP Servers Live</title>
-<meta name="description" content="Model Context Protocol (MCP) server for Kubernetes">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/giantswarm/mcp-kubernetes/">
+<title>jialiuyang/MCP-Api-Gateway - entry on MCP Servers Live</title>
+<meta name="description" content="Enterprise MCP gateway that auto-discovers your microservices and exposes them as MCP tools for Cursor, Claude Code, Cod">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/jialiuyang/MCP-Api-Gateway/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="giantswarm/mcp-kubernetes - entry on MCP Servers Live">
-<meta property="og:description" content="Model Context Protocol (MCP) server for Kubernetes">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/giantswarm/mcp-kubernetes/">
+<meta property="og:title" content="jialiuyang/MCP-Api-Gateway - entry on MCP Servers Live">
+<meta property="og:description" content="Enterprise MCP gateway that auto-discovers your microservices and exposes them as MCP tools for Cursor, Claude Code, Cod">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/jialiuyang/MCP-Api-Gateway/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="giantswarm/mcp-kubernetes - entry on MCP Servers Live">
-<meta name="twitter:description" content="Model Context Protocol (MCP) server for Kubernetes">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"giantswarm/mcp-kubernetes","codeRepository":"https://github.com/giantswarm/mcp-kubernetes","programmingLanguage":"Go","url":"https://linny006.github.io/mcp-servers-live/r/giantswarm/mcp-kubernetes/","description":"Model Context Protocol (MCP) server for Kubernetes","author":{"@type":"Person","name":"giantswarm","url":"https://github.com/giantswarm"},"dateModified":"2026-06-28"}</script>
+<meta name="twitter:title" content="jialiuyang/MCP-Api-Gateway - entry on MCP Servers Live">
+<meta name="twitter:description" content="Enterprise MCP gateway that auto-discovers your microservices and exposes them as MCP tools for Cursor, Claude Code, Cod">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"jialiuyang/MCP-Api-Gateway","codeRepository":"https://github.com/jialiuyang/MCP-Api-Gateway","programmingLanguage":"Java","url":"https://linny006.github.io/mcp-servers-live/r/jialiuyang/MCP-Api-Gateway/","description":"Enterprise MCP gateway that auto-discovers your microservices and exposes them as MCP tools for Cursor, Claude Code, Cod","author":{"@type":"Person","name":"jialiuyang","url":"https://github.com/jialiuyang"},"dateModified":"2026-06-28"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,42 +41,43 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>giantswarm/mcp-kubernetes</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>jialiuyang/MCP-Api-Gateway</span></nav>
 <main>
-<h1>giantswarm/mcp-kubernetes</h1>
-<p class="lead">Model Context Protocol (MCP) server for Kubernetes</p>
+<h1>jialiuyang/MCP-Api-Gateway</h1>
+<p class="lead">Enterprise MCP gateway that auto-discovers your microservices and exposes them as MCP tools for Cursor, Claude Code, Cod</p>
 <div class="meta">
 <span><strong>Stars</strong> 1</span>
-<span><strong>Language</strong> Go</span>
+<span><strong>Language</strong> Java</span>
 <span><strong>Last updated</strong> 2026-06-28</span>
-<span><a href="https://github.com/giantswarm/mcp-kubernetes" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/giantswarm" rel="external">@giantswarm</a></span>
+<span><a href="https://github.com/jialiuyang/MCP-Api-Gateway" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/jialiuyang" rel="external">@jialiuyang</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
+<p>Install method detected from README: <code>docker run</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -d --name mcpg -p 8088:8088 ghcr.io/jialiuyang/mcp-api-gateway:latest</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;kubernetes&quot;: {
-      &quot;url&quot;: &quot;https://mcp.example.com/mcp&quot;
+    &quot;mcpg-local&quot;: {
+      &quot;url&quot;: &quot;http://localhost:8088/mcp&quot;
     }
   }
 }</code></pre>
-<p><a href="https://github.com/giantswarm/mcp-kubernetes#readme" rel="external">View full README on GitHub</a></p>
+<p><a href="https://github.com/jialiuyang/MCP-Api-Gateway#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/unitedideas/nothumansearch/">unitedideas/nothumansearch (stars:7)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/deepaksinghcs14/agent-nexus/">deepaksinghcs14/agent-nexus (stars:1)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/manojkumarjanapati/expense-tracker-mcp-server/">manojkumarjanapati/expense-tracker-mcp-server (stars:0)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/go/">All Go entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/java/">All Java entries</a></li>
 </ul></section>
 </main>
 <footer>
