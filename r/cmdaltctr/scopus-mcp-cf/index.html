@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>polygraphso/litmus - entry on MCP Servers Live</title>
-<meta name="description" content="Behavioral litmus harness for MCP servers — the open @polygraphso/litmus package (CLI, library, MCP server).">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/polygraphso/litmus/">
+<title>cmdaltctr/scopus-mcp-cf - entry on MCP Servers Live</title>
+<meta name="description" content="A remote MCP server for searching academic papers on Scopus, deployed on Cloudflare Workers. Also works locally via stdi">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/cmdaltctr/scopus-mcp-cf/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="polygraphso/litmus - entry on MCP Servers Live">
-<meta property="og:description" content="Behavioral litmus harness for MCP servers — the open @polygraphso/litmus package (CLI, library, MCP server).">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/polygraphso/litmus/">
+<meta property="og:title" content="cmdaltctr/scopus-mcp-cf - entry on MCP Servers Live">
+<meta property="og:description" content="A remote MCP server for searching academic papers on Scopus, deployed on Cloudflare Workers. Also works locally via stdi">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/cmdaltctr/scopus-mcp-cf/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="polygraphso/litmus - entry on MCP Servers Live">
-<meta name="twitter:description" content="Behavioral litmus harness for MCP servers — the open @polygraphso/litmus package (CLI, library, MCP server).">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"polygraphso/litmus","codeRepository":"https://github.com/polygraphso/litmus","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/polygraphso/litmus/","description":"Behavioral litmus harness for MCP servers — the open @polygraphso/litmus package (CLI, library, MCP server).","author":{"@type":"Person","name":"polygraphso","url":"https://github.com/polygraphso"},"dateModified":"2026-06-30"}</script>
+<meta name="twitter:title" content="cmdaltctr/scopus-mcp-cf - entry on MCP Servers Live">
+<meta name="twitter:description" content="A remote MCP server for searching academic papers on Scopus, deployed on Cloudflare Workers. Also works locally via stdi">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"cmdaltctr/scopus-mcp-cf","codeRepository":"https://github.com/cmdaltctr/scopus-mcp-cf","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/cmdaltctr/scopus-mcp-cf/","description":"A remote MCP server for searching academic papers on Scopus, deployed on Cloudflare Workers. Also works locally via stdi","author":{"@type":"Person","name":"cmdaltctr","url":"https://github.com/cmdaltctr"},"dateModified":"2026-06-30"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,17 +41,35 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>polygraphso/litmus</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>cmdaltctr/scopus-mcp-cf</span></nav>
 <main>
-<h1>polygraphso/litmus</h1>
-<p class="lead">Behavioral litmus harness for MCP servers — the open @polygraphso/litmus package (CLI, library, MCP server).</p>
+<h1>cmdaltctr/scopus-mcp-cf</h1>
+<p class="lead">A remote MCP server for searching academic papers on Scopus, deployed on Cloudflare Workers. Also works locally via stdi</p>
 <div class="meta">
-<span><strong>Stars</strong> 6</span>
+<span><strong>Stars</strong> 0</span>
 <span><strong>Language</strong> TypeScript</span>
 <span><strong>Last updated</strong> 2026-06-30</span>
-<span><a href="https://github.com/polygraphso/litmus" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/polygraphso" rel="external">@polygraphso</a></span>
+<span><a href="https://github.com/cmdaltctr/scopus-mcp-cf" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/cmdaltctr" rel="external">@cmdaltctr</a></span>
 </div>
+<section id="install"><h2>Install &amp; configure</h2>
+<p>Install method detected from README: <code>claude mcp add</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add scopus -- npx tsx /path/to/scopus-mcp-cf/src/local.ts</code></pre>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;scopus&quot;: {
+      &quot;url&quot;: &quot;https://scopus-mcp-cf.YOUR_ACCOUNT.workers.dev/mcp&quot;,
+      &quot;headers&quot;: {
+        &quot;Authorization&quot;: &quot;Bearer &lt;bearer-token-from-admin&gt;&quot;,
+        &quot;X-Scopus-Api-Key&quot;: &quot;&lt;your-own-scopus-api-key&gt;&quot;
+      }
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/cmdaltctr/scopus-mcp-cf#readme" rel="external">View full README on GitHub</a></p>
+</section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
