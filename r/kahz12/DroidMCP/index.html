@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>zpratt/lousy-agents - entry on MCP Servers Live</title>
-<meta name="description" content="Bootstrap projects with pre-configured instructions, tests, and linters that guide AI coding agents to produce reliable">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/zpratt/lousy-agents/">
+<title>kahz12/DroidMCP - entry on MCP Servers Live</title>
+<meta name="description" content="Native MCP servers for Android/Termux — ARM64 binaries, no dependencies required.">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/kahz12/DroidMCP/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="zpratt/lousy-agents - entry on MCP Servers Live">
-<meta property="og:description" content="Bootstrap projects with pre-configured instructions, tests, and linters that guide AI coding agents to produce reliable">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/zpratt/lousy-agents/">
+<meta property="og:title" content="kahz12/DroidMCP - entry on MCP Servers Live">
+<meta property="og:description" content="Native MCP servers for Android/Termux — ARM64 binaries, no dependencies required.">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/kahz12/DroidMCP/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zpratt/lousy-agents - entry on MCP Servers Live">
-<meta name="twitter:description" content="Bootstrap projects with pre-configured instructions, tests, and linters that guide AI coding agents to produce reliable">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"zpratt/lousy-agents","codeRepository":"https://github.com/zpratt/lousy-agents","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/zpratt/lousy-agents/","description":"Bootstrap projects with pre-configured instructions, tests, and linters that guide AI coding agents to produce reliable","author":{"@type":"Person","name":"zpratt","url":"https://github.com/zpratt"},"dateModified":"2026-07-01"}</script>
+<meta name="twitter:title" content="kahz12/DroidMCP - entry on MCP Servers Live">
+<meta name="twitter:description" content="Native MCP servers for Android/Termux — ARM64 binaries, no dependencies required.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"kahz12/DroidMCP","codeRepository":"https://github.com/kahz12/DroidMCP","programmingLanguage":"Go","url":"https://linny006.github.io/mcp-servers-live/r/kahz12/DroidMCP/","description":"Native MCP servers for Android/Termux — ARM64 binaries, no dependencies required.","author":{"@type":"Person","name":"kahz12","url":"https://github.com/kahz12"},"dateModified":"2026-07-01"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,21 +41,35 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>zpratt/lousy-agents</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>kahz12/DroidMCP</span></nav>
 <main>
-<h1>zpratt/lousy-agents</h1>
-<p class="lead">Bootstrap projects with pre-configured instructions, tests, and linters that guide AI coding agents to produce reliable</p>
+<h1>kahz12/DroidMCP</h1>
+<p class="lead">Native MCP servers for Android/Termux — ARM64 binaries, no dependencies required.</p>
 <div class="meta">
-<span><strong>Stars</strong> 11</span>
-<span><strong>Language</strong> TypeScript</span>
+<span><strong>Stars</strong> 1</span>
+<span><strong>Language</strong> Go</span>
 <span><strong>Last updated</strong> 2026-07-01</span>
-<span><a href="https://github.com/zpratt/lousy-agents" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/zpratt" rel="external">@zpratt</a></span>
+<span><a href="https://github.com/kahz12/DroidMCP" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/kahz12" rel="external">@kahz12</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>npm install -g</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>npm install -g @lousy-agents/cli</code></pre>
-<p><a href="https://github.com/zpratt/lousy-agents#readme" rel="external">View full README on GitHub</a></p>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;filesystem&quot;: {
+      &quot;type&quot;: &quot;sse&quot;,
+      &quot;url&quot;: &quot;http://localhost:3000/sse&quot;,
+      &quot;headers&quot;: { &quot;X-DroidMCP-Key&quot;: &quot;&lt;paste-the-key&gt;&quot; }
+    },
+    &quot;github&quot;: {
+      &quot;type&quot;: &quot;sse&quot;,
+      &quot;url&quot;: &quot;http://localhost:3001/sse&quot;,
+      &quot;headers&quot;: { &quot;X-DroidMCP-Key&quot;: &quot;&lt;paste-the-key&gt;&quot; }
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/kahz12/DroidMCP#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
@@ -63,14 +77,14 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/r/archestra-ai/archestra/">archestra-ai/archestra (stars:3919)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/TabularisDB/tabularis/">TabularisDB/tabularis (stars:3488)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/MCPJam/inspector/">MCPJam/inspector (stars:2038)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/yvgude/lean-ctx/">yvgude/lean-ctx (stars:3046)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/typescript/">All TypeScript entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/go/">All Go entries</a></li>
 </ul></section>
 </main>
 <footer>
