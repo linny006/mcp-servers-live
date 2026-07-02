@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Knuckles-Team/leanix-agent - entry on MCP Servers Live">
 <meta name="twitter:description" content="Knuckles-Team/leanix-agent - entry on MCP Servers Live">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/leanix-agent","codeRepository":"https://github.com/Knuckles-Team/leanix-agent","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/leanix-agent/","description":"Knuckles-Team/leanix-agent - entry on MCP Servers Live","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-06-25"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/leanix-agent","codeRepository":"https://github.com/Knuckles-Team/leanix-agent","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/leanix-agent/","description":"Knuckles-Team/leanix-agent - entry on MCP Servers Live","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-07-02"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -48,7 +48,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <div class="meta">
 <span><strong>Stars</strong> 0</span>
 <span><strong>Language</strong> Python</span>
-<span><strong>Last updated</strong> 2026-06-25</span>
+<span><strong>Last updated</strong> 2026-07-02</span>
 <span><a href="https://github.com/Knuckles-Team/leanix-agent" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/Knuckles-Team" rel="external">@Knuckles-Team</a></span>
 </div>
@@ -59,7 +59,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;leanix-agent&quot;: {
+    &quot;leanix-mcp&quot;: {
       &quot;command&quot;: &quot;uvx&quot;,
       &quot;args&quot;: [
         &quot;--from&quot;,
@@ -67,12 +67,54 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
         &quot;leanix-mcp&quot;
       ],
       &quot;env&quot;: {
-        &quot;LEANIX_WORKSPACE&quot;: &quot;your_leanix_workspace_here&quot;,
+        &quot;MCP_TOOL_MODE&quot;: &quot;condensed&quot;,
+        &quot;AUDIENCE&quot;: &quot;https://app.leanix.net&quot;,
+        &quot;DELEGATED_SCOPES&quot;: &quot;api&quot;,
+        &quot;GRAPHQLTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_AGENT_VERIFY&quot;: &quot;True&quot;,
+        &quot;LEANIX_AI_INVENTORY_BUILDERTOOL&quot;: &quot;True&quot;,
         &quot;LEANIX_API_TOKEN&quot;: &quot;your_leanix_api_token_here&quot;,
-        &quot;SSL_VERIFY&quot;: &quot;your_ssl_verify_here&quot;,
-        &quot;DEBUG&quot;: &quot;your_debug_here&quot;,
-        &quot;PYTHONUNBUFFERED&quot;: &quot;your_pythonunbuffered_here&quot;,
-        &quot;LEANIX_TOKEN&quot;: &quot;your_leanix_token_here&quot;
+        &quot;LEANIX_APPTIO_CONNECTORTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_AUTH_METHOD&quot;: &quot;technical&quot;,
+        &quot;LEANIX_AUTOMATIONSTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_BROWSER_LOGIN&quot;: &quot;False&quot;,
+        &quot;LEANIX_DISCOVERY_AI_AGENTSTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_DISCOVERY_LINKING_V1TOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_DISCOVERY_LINKING_V2TOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_DISCOVERY_SAASTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_DISCOVERY_SAPTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_DISCOVERY_SAP_EXTENSIONTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_DOCUMENTSTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_IMPACTSTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_INTEGRATION_APITOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_INTEGRATION_COLLIBRATOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_INTEGRATION_SERVICENOWTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_INTEGRATION_SIGNAVIOTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_INVENTORY_DATA_QUALITYTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_MANAGED_CODE_EXECUTIONTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_METRICSTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_MTMTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_NAVIGATIONTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_OAUTH_CLIENT_ID&quot;: &quot;leanix-mcp&quot;,
+        &quot;LEANIX_OAUTH_REDIRECT_PORT&quot;: &quot;56122&quot;,
+        &quot;LEANIX_OAUTH_SCOPE&quot;: &quot;openid offline_access&quot;,
+        &quot;LEANIX_PATHFINDERTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_POLLTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_REFERENCE_DATATOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_REFERENCE_DATA_CATALOGTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_STORAGETOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_SURVEYTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_SYNCLOGTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_TECHNICAL_USER&quot;: &quot;your_leanix_technical_user_here&quot;,
+        &quot;LEANIX_TECHNICAL_USER_PASSWORD&quot;: &quot;your_leanix_technical_user_password_here&quot;,
+        &quot;LEANIX_TECHNOLOGY_DISCOVERYTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_TODOTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_TOKEN&quot;: &quot;your_alternative_token_here&quot;,
+        &quot;LEANIX_TRANSFORMATIONSTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_WEBHOOKSTOOL&quot;: &quot;True&quot;,
+        &quot;LEANIX_WORKSPACE&quot;: &quot;https://app.leanix.net&quot;,
+        &quot;SSL_VERIFY&quot;: &quot;True&quot;,
+        &quot;TESTING_FALLBACK&quot;: &quot;False&quot;
       }
     }
   }
@@ -83,9 +125,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/awslabs/mcp/">awslabs/mcp (stars:9335)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/msaad00/agent-bom/">msaad00/agent-bom (stars:24)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/servicenow-api/">Knuckles-Team/servicenow-api (stars:19)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/vector-mcp/">Knuckles-Team/vector-mcp (stars:14)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/vector-mcp/">Knuckles-Team/vector-mcp (stars:15)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">

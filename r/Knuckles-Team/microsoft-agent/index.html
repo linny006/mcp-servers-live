@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Knuckles-Team/microsoft-agent - entry on MCP Servers Live">
 <meta name="twitter:description" content="Microsoft A2A / AG-UI Agent">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/microsoft-agent","codeRepository":"https://github.com/Knuckles-Team/microsoft-agent","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/microsoft-agent/","description":"Microsoft A2A / AG-UI Agent","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-06-29"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/microsoft-agent","codeRepository":"https://github.com/Knuckles-Team/microsoft-agent","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/microsoft-agent/","description":"Microsoft A2A / AG-UI Agent","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-07-02"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -48,7 +48,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <div class="meta">
 <span><strong>Stars</strong> 0</span>
 <span><strong>Language</strong> Python</span>
-<span><strong>Last updated</strong> 2026-06-29</span>
+<span><strong>Last updated</strong> 2026-07-02</span>
 <span><a href="https://github.com/Knuckles-Team/microsoft-agent" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/Knuckles-Team" rel="external">@Knuckles-Team</a></span>
 </div>
@@ -59,7 +59,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;microsoft&quot;: {
+    &quot;microsoft-mcp&quot;: {
       &quot;command&quot;: &quot;uvx&quot;,
       &quot;args&quot;: [
         &quot;--from&quot;,
@@ -67,9 +67,48 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
         &quot;microsoft-mcp&quot;
       ],
       &quot;env&quot;: {
-        &quot;MICROSOFT_CLIENT_ID&quot;: &quot;&quot;,
-        &quot;MICROSOFT_CLIENT_SECRET&quot;: &quot;&quot;,
-        &quot;MICROSOFT_TENANT_ID&quot;: &quot;&quot;
+        &quot;MCP_TOOL_MODE&quot;: &quot;condensed&quot;,
+        &quot;ADMINTOOL&quot;: &quot;true&quot;,
+        &quot;AGREEMENTSTOOL&quot;: &quot;true&quot;,
+        &quot;APPLICATIONSTOOL&quot;: &quot;true&quot;,
+        &quot;AUDIENCE&quot;: &quot;https://graph.microsoft.com&quot;,
+        &quot;AUDITTOOL&quot;: &quot;true&quot;,
+        &quot;AUTHTOOL&quot;: &quot;true&quot;,
+        &quot;CALENDARTOOL&quot;: &quot;true&quot;,
+        &quot;CHATTOOL&quot;: &quot;true&quot;,
+        &quot;COMMUNICATIONSTOOL&quot;: &quot;true&quot;,
+        &quot;CONNECTIONSTOOL&quot;: &quot;true&quot;,
+        &quot;CONTACTSTOOL&quot;: &quot;true&quot;,
+        &quot;DELEGATED_SCOPES&quot;: &quot;true&quot;,
+        &quot;DEVICESTOOL&quot;: &quot;true&quot;,
+        &quot;DIRECTORYTOOL&quot;: &quot;true&quot;,
+        &quot;DOMAINSTOOL&quot;: &quot;true&quot;,
+        &quot;EDUCATIONTOOL&quot;: &quot;true&quot;,
+        &quot;EMPLOYEE_EXPERIENCETOOL&quot;: &quot;true&quot;,
+        &quot;FILESTOOL&quot;: &quot;true&quot;,
+        &quot;GROUPSTOOL&quot;: &quot;true&quot;,
+        &quot;IDENTITYTOOL&quot;: &quot;true&quot;,
+        &quot;MAILTOOL&quot;: &quot;true&quot;,
+        &quot;METATOOL&quot;: &quot;true&quot;,
+        &quot;MICROSOFT_ENDPOINTS_JSON&quot;: &quot;./endpoints.json&quot;,
+        &quot;NOTESTOOL&quot;: &quot;true&quot;,
+        &quot;ORGANIZATIONTOOL&quot;: &quot;true&quot;,
+        &quot;PLACESTOOL&quot;: &quot;true&quot;,
+        &quot;POLICIESTOOL&quot;: &quot;true&quot;,
+        &quot;PRINTTOOL&quot;: &quot;true&quot;,
+        &quot;PRIVACYTOOL&quot;: &quot;true&quot;,
+        &quot;REPORTSTOOL&quot;: &quot;true&quot;,
+        &quot;SEARCHTOOL&quot;: &quot;true&quot;,
+        &quot;SECURITYTOOL&quot;: &quot;true&quot;,
+        &quot;SITESTOOL&quot;: &quot;true&quot;,
+        &quot;SOLUTIONSTOOL&quot;: &quot;true&quot;,
+        &quot;STORAGETOOL&quot;: &quot;true&quot;,
+        &quot;SUBSCRIPTIONSTOOL&quot;: &quot;true&quot;,
+        &quot;TASKSTOOL&quot;: &quot;true&quot;,
+        &quot;TEAMSTOOL&quot;: &quot;true&quot;,
+        &quot;TESTING&quot;: &quot;&quot;,
+        &quot;USERTOOL&quot;: &quot;true&quot;,
+        &quot;XDG_DATA_HOME&quot;: &quot;&quot;
       }
     }
   }
@@ -80,9 +119,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/lucasastorian/llmwiki/">lucasastorian/llmwiki (stars:1230)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/msaad00/agent-bom/">msaad00/agent-bom (stars:24)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/servicenow-api/">Knuckles-Team/servicenow-api (stars:19)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Cognitohazard/ltspice-mcp/">Cognitohazard/ltspice-mcp (stars:17)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/vector-mcp/">Knuckles-Team/vector-mcp (stars:15)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">

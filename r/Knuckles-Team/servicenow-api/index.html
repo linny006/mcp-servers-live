@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Knuckles-Team/servicenow-api - entry on MCP Servers Live">
 <meta name="twitter:description" content="ServiceNow MCP Server and API Wrapper">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/servicenow-api","codeRepository":"https://github.com/Knuckles-Team/servicenow-api","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/servicenow-api/","description":"ServiceNow MCP Server and API Wrapper","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-06-29"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/servicenow-api","codeRepository":"https://github.com/Knuckles-Team/servicenow-api","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/servicenow-api/","description":"ServiceNow MCP Server and API Wrapper","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-07-02"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -48,7 +48,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <div class="meta">
 <span><strong>Stars</strong> 19</span>
 <span><strong>Language</strong> Python</span>
-<span><strong>Last updated</strong> 2026-06-29</span>
+<span><strong>Last updated</strong> 2026-07-02</span>
 <span><a href="https://github.com/Knuckles-Team/servicenow-api" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/Knuckles-Team" rel="external">@Knuckles-Team</a></span>
 </div>
@@ -59,7 +59,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;servicenow-api&quot;: {
+    &quot;servicenow-mcp&quot;: {
       &quot;command&quot;: &quot;uvx&quot;,
       &quot;args&quot;: [
         &quot;--from&quot;,
@@ -67,14 +67,48 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
         &quot;servicenow-mcp&quot;
       ],
       &quot;env&quot;: {
-        &quot;SERVICENOW_INSTANCE&quot;: &quot;your_servicenow_instance_here&quot;,
-        &quot;SERVICENOW_USERNAME&quot;: &quot;your_servicenow_username_here&quot;,
-        &quot;SERVICENOW_CLIENT_ID&quot;: &quot;your_servicenow_client_id_here&quot;,
-        &quot;SERVICENOW_SSL_VERIFY&quot;: &quot;your_servicenow_ssl_verify_here&quot;,
-        &quot;DEBUG&quot;: &quot;your_debug_here&quot;,
-        &quot;PYTHONUNBUFFERED&quot;: &quot;your_pythonunbuffered_here&quot;,
+        &quot;MCP_TOOL_MODE&quot;: &quot;condensed&quot;,
+        &quot;ACCOUNTTOOL&quot;: &quot;True&quot;,
+        &quot;ACTIVITY_SUBSCRIPTIONSTOOL&quot;: &quot;True&quot;,
+        &quot;AGGREGATETOOL&quot;: &quot;True&quot;,
+        &quot;APPLICATIONTOOL&quot;: &quot;True&quot;,
+        &quot;ATTACHMENTTOOL&quot;: &quot;True&quot;,
+        &quot;AUDIENCE&quot;: &quot;&quot;,
+        &quot;AUTHTOOL&quot;: &quot;True&quot;,
+        &quot;BATCHTOOL&quot;: &quot;True&quot;,
+        &quot;CHANGE_MANAGEMENTTOOL&quot;: &quot;True&quot;,
+        &quot;CICDTOOL&quot;: &quot;True&quot;,
+        &quot;CILIFECYCLETOOL&quot;: &quot;True&quot;,
+        &quot;CMDBTOOL&quot;: &quot;True&quot;,
+        &quot;CUSTOM_APITOOL&quot;: &quot;True&quot;,
+        &quot;DATA_CLASSIFICATIONTOOL&quot;: &quot;True&quot;,
+        &quot;DELEGATED_SCOPES&quot;: &quot;api&quot;,
+        &quot;DEVOPSTOOL&quot;: &quot;True&quot;,
+        &quot;EMAILTOOL&quot;: &quot;True&quot;,
+        &quot;FLOWSTOOL&quot;: &quot;True&quot;,
+        &quot;HRTOOL&quot;: &quot;True&quot;,
+        &quot;IMPORT_SETSTOOL&quot;: &quot;True&quot;,
+        &quot;INCIDENTSTOOL&quot;: &quot;True&quot;,
+        &quot;KNOWLEDGE_MANAGEMENTTOOL&quot;: &quot;True&quot;,
+        &quot;METRICBASETOOL&quot;: &quot;True&quot;,
+        &quot;MISCTOOL&quot;: &quot;True&quot;,
+        &quot;OPENAPI_CLIENT_ID&quot;: &quot;your_openapi_client_id_here&quot;,
+        &quot;OPENAPI_PASSWORD&quot;: &quot;your_openapi_password_here&quot;,
+        &quot;OPENAPI_USERNAME&quot;: &quot;your_openapi_username_here&quot;,
+        &quot;PLUGINSTOOL&quot;: &quot;True&quot;,
+        &quot;PPMTOOL&quot;: &quot;True&quot;,
+        &quot;PRODUCT_INVENTORYTOOL&quot;: &quot;True&quot;,
+        &quot;SERVICENOW_CLIENT_ID&quot;: &quot;&quot;,
+        &quot;SERVICENOW_CLIENT_SECRET&quot;: &quot;your_servicenow_client_secret_here&quot;,
+        &quot;SERVICENOW_INSTANCE&quot;: &quot;https://dev350360.service-now.com&quot;,
         &quot;SERVICENOW_PASSWORD&quot;: &quot;your_servicenow_password_here&quot;,
-        &quot;SERVICENOW_CLIENT_SECRET&quot;: &quot;your_servicenow_client_secret_here&quot;
+        &quot;SERVICENOW_URL&quot;: &quot;https://dev350360.service-now.com&quot;,
+        &quot;SERVICENOW_USERNAME&quot;: &quot;admin&quot;,
+        &quot;SERVICE_QUALIFICATIONTOOL&quot;: &quot;True&quot;,
+        &quot;SOURCE_CONTROLTOOL&quot;: &quot;True&quot;,
+        &quot;TABLE_APITOOL&quot;: &quot;True&quot;,
+        &quot;TESTINGTOOL&quot;: &quot;True&quot;,
+        &quot;UPDATE_SETSTOOL&quot;: &quot;True&quot;
       }
     }
   }
@@ -85,9 +119,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/lucasastorian/llmwiki/">lucasastorian/llmwiki (stars:1230)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Cognitohazard/ltspice-mcp/">Cognitohazard/ltspice-mcp (stars:17)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/msaad00/agent-bom/">msaad00/agent-bom (stars:24)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/vector-mcp/">Knuckles-Team/vector-mcp (stars:15)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/linny006/trending-claude-skills/">linny006/trending-claude-skills (stars:8)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
