@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Knuckles-Team/atlassian-agent - entry on MCP Servers Live">
 <meta name="twitter:description" content="Atlassian Agent uses Atlassian Fast MCP and Pydantic Graph">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/atlassian-agent","codeRepository":"https://github.com/Knuckles-Team/atlassian-agent","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/atlassian-agent/","description":"Atlassian Agent uses Atlassian Fast MCP and Pydantic Graph","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-06-17"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/atlassian-agent","codeRepository":"https://github.com/Knuckles-Team/atlassian-agent","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/atlassian-agent/","description":"Atlassian Agent uses Atlassian Fast MCP and Pydantic Graph","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-07-02"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -48,31 +48,54 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <div class="meta">
 <span><strong>Stars</strong> 0</span>
 <span><strong>Language</strong> Python</span>
-<span><strong>Last updated</strong> 2026-06-17</span>
+<span><strong>Last updated</strong> 2026-07-02</span>
 <span><a href="https://github.com/Knuckles-Team/atlassian-agent" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/Knuckles-Team" rel="external">@Knuckles-Team</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>uv pip install</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>uv pip install atlassian-agent</code></pre>
+<p>Install method detected from README: <code>docker run</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -d \</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;atlassian-agent&quot;: {
+    &quot;atlassian-mcp&quot;: {
       &quot;command&quot;: &quot;uvx&quot;,
       &quot;args&quot;: [
         &quot;--from&quot;,
-        &quot;atlassian-agent&quot;,
+        &quot;atlassian-agent[mcp]&quot;,
         &quot;atlassian-mcp&quot;
       ],
       &quot;env&quot;: {
-        &quot;ATLASSIAN_AGENT_URL&quot;: &quot;your_atlassian_agent_url_here&quot;,
-        &quot;ATLASSIAN_AGENT_USER&quot;: &quot;your_atlassian_agent_user_here&quot;,
-        &quot;ATLASSIAN_AGENT_TOKEN&quot;: &quot;your_atlassian_agent_token_here&quot;,
-        &quot;ATLASSIAN_AGENT_VERIFY&quot;: &quot;your_atlassian_agent_verify_here&quot;,
-        &quot;DEBUG&quot;: &quot;your_debug_here&quot;,
-        &quot;PYTHONUNBUFFERED&quot;: &quot;your_pythonunbuffered_here&quot;
+        &quot;MCP_TOOL_MODE&quot;: &quot;condensed&quot;,
+        &quot;ATLASSIANTOOL&quot;: &quot;True&quot;,
+        &quot;ATLASSIAN_ADMINTOOL&quot;: &quot;True&quot;,
+        &quot;ATLASSIAN_AGENT_TOKEN&quot;: &quot;your_token_here&quot;,
+        &quot;ATLASSIAN_AGENT_URL&quot;: &quot;http://localhost:8080&quot;,
+        &quot;ATLASSIAN_AGENT_USER&quot;: &quot;your-email@example.com&quot;,
+        &quot;ATLASSIAN_AGENT_VERIFY&quot;: &quot;True&quot;,
+        &quot;ATLASSIAN_API_ACCESSTOOL&quot;: &quot;True&quot;,
+        &quot;ATLASSIAN_BEARER_TOKEN&quot;: &quot;your_personal_access_token&quot;,
+        &quot;ATLASSIAN_CONTROLTOOL&quot;: &quot;True&quot;,
+        &quot;ATLASSIAN_DLPTOOL&quot;: &quot;True&quot;,
+        &quot;ATLASSIAN_OAUTH_TOKEN&quot;: &quot;your_3lo_access_token&quot;,
+        &quot;ATLASSIAN_ORGTOOL&quot;: &quot;True&quot;,
+        &quot;ATLASSIAN_USER_MGMTTOOL&quot;: &quot;True&quot;,
+        &quot;ATLASSIAN_USER_PROVISIONINGTOOL&quot;: &quot;True&quot;,
+        &quot;AUDIENCE&quot;: &quot;https://your-instance.atlassian.net&quot;,
+        &quot;CONFLUENCE_OTHERTOOL&quot;: &quot;True&quot;,
+        &quot;CONFLUENCE_PAGETOOL&quot;: &quot;True&quot;,
+        &quot;CONFLUENCE_SPACETOOL&quot;: &quot;True&quot;,
+        &quot;CONFLUENCE_USERTOOL&quot;: &quot;True&quot;,
+        &quot;DELEGATED_SCOPES&quot;: &quot;read:jira-work write:jira-work&quot;,
+        &quot;JIRA_COMMENTTOOL&quot;: &quot;True&quot;,
+        &quot;JIRA_FIELDTOOL&quot;: &quot;True&quot;,
+        &quot;JIRA_ISSUETOOL&quot;: &quot;True&quot;,
+        &quot;JIRA_OTHERTOOL&quot;: &quot;True&quot;,
+        &quot;JIRA_PROJECTTOOL&quot;: &quot;True&quot;,
+        &quot;JIRA_SCREENTOOL&quot;: &quot;True&quot;,
+        &quot;JIRA_USERTOOL&quot;: &quot;True&quot;,
+        &quot;JIRA_WORKFLOWTOOL&quot;: &quot;True&quot;
       }
     }
   }
@@ -83,9 +106,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/msaad00/agent-bom/">msaad00/agent-bom (stars:22)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/gitlab-api/">Knuckles-Team/gitlab-api (stars:9)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/genius-agent/">Knuckles-Team/genius-agent (stars:6)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/benseverndev-oss/goldenmatch/">benseverndev-oss/goldenmatch (stars:119)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/PlateerLab/synaptic-memory/">PlateerLab/synaptic-memory (stars:32)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/samerfarida/mcp-ssh-orchestrator/">samerfarida/mcp-ssh-orchestrator (stars:26)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">

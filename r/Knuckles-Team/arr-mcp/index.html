@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Knuckles-Team/arr-mcp - entry on MCP Servers Live">
 <meta name="twitter:description" content="Arr related MCP and A2A / AG-UI Agent">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/arr-mcp","codeRepository":"https://github.com/Knuckles-Team/arr-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/arr-mcp/","description":"Arr related MCP and A2A / AG-UI Agent","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-06-17"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/arr-mcp","codeRepository":"https://github.com/Knuckles-Team/arr-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/arr-mcp/","description":"Arr related MCP and A2A / AG-UI Agent","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-07-02"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -48,13 +48,13 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <div class="meta">
 <span><strong>Stars</strong> 1</span>
 <span><strong>Language</strong> Python</span>
-<span><strong>Last updated</strong> 2026-06-17</span>
+<span><strong>Last updated</strong> 2026-07-02</span>
 <span><a href="https://github.com/Knuckles-Team/arr-mcp" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/Knuckles-Team" rel="external">@Knuckles-Team</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>uv pip install</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>uv pip install arr-mcp</code></pre>
+<p>Install method detected from README: <code>docker run</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -d \</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
@@ -63,14 +63,32 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
       &quot;command&quot;: &quot;uvx&quot;,
       &quot;args&quot;: [
         &quot;--from&quot;,
-        &quot;arr-mcp&quot;,
+        &quot;arr-mcp[mcp]&quot;,
         &quot;arr-mcp&quot;
       ],
       &quot;env&quot;: {
-        &quot;ARR_HOST&quot;: &quot;your_arr_host_here&quot;,
-        &quot;ARR_API_KEY&quot;: &quot;your_arr_api_key_here&quot;,
-        &quot;PVR_API_KEY&quot;: &quot;your_pvr_api_key_here&quot;,
-        &quot;PLEX_TOKEN&quot;: &quot;your_plex_token_here&quot;
+        &quot;MCP_TOOL_MODE&quot;: &quot;condensed&quot;,
+        &quot;BAZARRTOOL&quot;: &quot;True&quot;,
+        &quot;BAZARR_API_KEY&quot;: &quot;your_bazarr_api_key_here&quot;,
+        &quot;BAZARR_BASE_URL&quot;: &quot;http://localhost:6767&quot;,
+        &quot;CHAPTARRTOOL&quot;: &quot;True&quot;,
+        &quot;CHAPTARR_BASE_URL&quot;: &quot;http://localhost:8006&quot;,
+        &quot;CHAPTARR_TOKEN&quot;: &quot;your_chaptarr_token_here&quot;,
+        &quot;LIDARRTOOL&quot;: &quot;True&quot;,
+        &quot;LIDARR_BASE_URL&quot;: &quot;http://localhost:8686&quot;,
+        &quot;LIDARR_TOKEN&quot;: &quot;your_lidarr_token_here&quot;,
+        &quot;PROWLARRTOOL&quot;: &quot;True&quot;,
+        &quot;PROWLARR_BASE_URL&quot;: &quot;http://localhost:9696&quot;,
+        &quot;PROWLARR_TOKEN&quot;: &quot;your_prowlarr_token_here&quot;,
+        &quot;RADARRTOOL&quot;: &quot;True&quot;,
+        &quot;RADARR_BASE_URL&quot;: &quot;http://localhost:7878&quot;,
+        &quot;RADARR_TOKEN&quot;: &quot;your_radarr_token_here&quot;,
+        &quot;SEERRTOOL&quot;: &quot;True&quot;,
+        &quot;SEERR_API_KEY&quot;: &quot;your_seerr_api_key_here&quot;,
+        &quot;SEERR_BASE_URL&quot;: &quot;http://localhost:5055&quot;,
+        &quot;SONARRTOOL&quot;: &quot;True&quot;,
+        &quot;SONARR_BASE_URL&quot;: &quot;http://localhost:8989&quot;,
+        &quot;SONARR_TOKEN&quot;: &quot;your_sonarr_token_here&quot;
       }
     }
   }
@@ -81,9 +99,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/msaad00/agent-bom/">msaad00/agent-bom (stars:22)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/gitlab-api/">Knuckles-Team/gitlab-api (stars:9)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/genius-agent/">Knuckles-Team/genius-agent (stars:6)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/benseverndev-oss/goldenmatch/">benseverndev-oss/goldenmatch (stars:119)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/PlateerLab/synaptic-memory/">PlateerLab/synaptic-memory (stars:32)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/samerfarida/mcp-ssh-orchestrator/">samerfarida/mcp-ssh-orchestrator (stars:26)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
