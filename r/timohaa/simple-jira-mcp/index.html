@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>grafana/mcp-k6 - entry on MCP Servers Live</title>
-<meta name="description" content="k6 MCP server">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/grafana/mcp-k6/">
+<title>timohaa/simple-jira-mcp - entry on MCP Servers Live</title>
+<meta name="description" content="Very light MCP server for Jira Cloud integration with Claude, Gemini, Cursor, and other AI agents">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/timohaa/simple-jira-mcp/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="grafana/mcp-k6 - entry on MCP Servers Live">
-<meta property="og:description" content="k6 MCP server">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/grafana/mcp-k6/">
+<meta property="og:title" content="timohaa/simple-jira-mcp - entry on MCP Servers Live">
+<meta property="og:description" content="Very light MCP server for Jira Cloud integration with Claude, Gemini, Cursor, and other AI agents">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/timohaa/simple-jira-mcp/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="grafana/mcp-k6 - entry on MCP Servers Live">
-<meta name="twitter:description" content="k6 MCP server">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"grafana/mcp-k6","codeRepository":"https://github.com/grafana/mcp-k6","programmingLanguage":"Go","url":"https://linny006.github.io/mcp-servers-live/r/grafana/mcp-k6/","description":"k6 MCP server","author":{"@type":"Person","name":"grafana","url":"https://github.com/grafana"},"dateModified":"2026-07-03"}</script>
+<meta name="twitter:title" content="timohaa/simple-jira-mcp - entry on MCP Servers Live">
+<meta name="twitter:description" content="Very light MCP server for Jira Cloud integration with Claude, Gemini, Cursor, and other AI agents">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"timohaa/simple-jira-mcp","codeRepository":"https://github.com/timohaa/simple-jira-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/timohaa/simple-jira-mcp/","description":"Very light MCP server for Jira Cloud integration with Claude, Gemini, Cursor, and other AI agents","author":{"@type":"Person","name":"timohaa","url":"https://github.com/timohaa"},"dateModified":"2026-07-03"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,45 +41,50 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>grafana/mcp-k6</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>timohaa/simple-jira-mcp</span></nav>
 <main>
-<h1>grafana/mcp-k6</h1>
-<p class="lead">k6 MCP server</p>
+<h1>timohaa/simple-jira-mcp</h1>
+<p class="lead">Very light MCP server for Jira Cloud integration with Claude, Gemini, Cursor, and other AI agents</p>
 <div class="meta">
-<span><strong>Stars</strong> 42</span>
-<span><strong>Language</strong> Go</span>
+<span><strong>Stars</strong> 0</span>
+<span><strong>Language</strong> Python</span>
 <span><strong>Last updated</strong> 2026-07-03</span>
-<span><a href="https://github.com/grafana/mcp-k6" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/grafana" rel="external">@grafana</a></span>
+<span><a href="https://github.com/timohaa/simple-jira-mcp" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/timohaa" rel="external">@timohaa</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>claude mcp add</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add --scope=user --transport=stdio k6 -- docker run --rm -i grafana/mcp-k6</code></pre>
+<p>Install method detected from README: <code>pip install</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>pip install -e</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;remote-k6&quot;: {
-      &quot;url&quot;: &quot;http://your-server-ip:8080/mcp&quot;
+    &quot;jira&quot;: {
+      &quot;command&quot;: &quot;python&quot;,
+      &quot;args&quot;: [&quot;-m&quot;, &quot;src&quot;],
+      &quot;cwd&quot;: &quot;/path/to/simple-jira-mcp&quot;,
+      &quot;env&quot;: {
+        &quot;JIRA_CONFIG_JSON&quot;: &quot;[{\&quot;id\&quot;: \&quot;work\&quot;, \&quot;url\&quot;: \&quot;https://your-domain.atlassian.net\&quot;, \&quot;email\&quot;: \&quot;your-email@example.com\&quot;, \&quot;token\&quot;: \&quot;your-api-token\&quot;}]&quot;
+      }
     }
   }
 }</code></pre>
-<p><a href="https://github.com/grafana/mcp-k6#readme" rel="external">View full README on GitHub</a></p>
+<p><a href="https://github.com/timohaa/simple-jira-mcp#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/skyhook-io/radar/">skyhook-io/radar (stars:2517)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/denn-gubsky/loomcycle/">denn-gubsky/loomcycle (stars:10)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/klarlabs-studio/scout/">klarlabs-studio/scout (stars:4)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/dunetrace/dunetrace/">dunetrace/dunetrace (stars:55)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/ariffazil/arifos/">ariffazil/arifos (stars:48)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/zycaskevin/Vault-for-LLM/">zycaskevin/Vault-for-LLM (stars:40)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/go/">All Go entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/python/">All Python entries</a></li>
 </ul></section>
 </main>
 <footer>
