@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Knuckles-Team/documentdb-mcp - entry on MCP Servers Live">
 <meta name="twitter:description" content="DocumentDB A2A + MCP Server">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/documentdb-mcp","codeRepository":"https://github.com/Knuckles-Team/documentdb-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/documentdb-mcp/","description":"DocumentDB A2A + MCP Server","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-06-17"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Knuckles-Team/documentdb-mcp","codeRepository":"https://github.com/Knuckles-Team/documentdb-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/documentdb-mcp/","description":"DocumentDB A2A + MCP Server","author":{"@type":"Person","name":"Knuckles-Team","url":"https://github.com/Knuckles-Team"},"dateModified":"2026-07-05"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -48,13 +48,13 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <div class="meta">
 <span><strong>Stars</strong> 2</span>
 <span><strong>Language</strong> Python</span>
-<span><strong>Last updated</strong> 2026-06-17</span>
+<span><strong>Last updated</strong> 2026-07-05</span>
 <span><a href="https://github.com/Knuckles-Team/documentdb-mcp" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/Knuckles-Team" rel="external">@Knuckles-Team</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>uv pip install</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>uv pip install documentdb-mcp</code></pre>
+<p>Install method detected from README: <code>docker run</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -d \</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
@@ -63,15 +63,19 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
       &quot;command&quot;: &quot;uvx&quot;,
       &quot;args&quot;: [
         &quot;--from&quot;,
-        &quot;documentdb-mcp&quot;,
+        &quot;documentdb-mcp[mcp]&quot;,
         &quot;documentdb-mcp&quot;
       ],
       &quot;env&quot;: {
-        &quot;DOCUMENT_DB_HOST&quot;: &quot;your_document_db_host_here&quot;,
-        &quot;DOCUMENT_DB_PORT&quot;: &quot;your_document_db_port_here&quot;,
-        &quot;DOCUMENT_DB_USERNAME&quot;: &quot;your_document_db_username_here&quot;,
-        &quot;DOCUMENT_DB_NAME&quot;: &quot;your_document_db_name_here&quot;,
-        &quot;DOCUMENT_DB_PASSWORD&quot;: &quot;your_document_db_password_here&quot;
+        &quot;MCP_TOOL_MODE&quot;: &quot;condensed&quot;,
+        &quot;ANALYSISTOOL&quot;: &quot;True&quot;,
+        &quot;COLLECTIONSTOOL&quot;: &quot;True&quot;,
+        &quot;CRUDTOOL&quot;: &quot;True&quot;,
+        &quot;MONGODB_HOST&quot;: &quot;localhost&quot;,
+        &quot;MONGODB_PORT&quot;: &quot;27017&quot;,
+        &quot;MONGODB_URI&quot;: &quot;mongodb://localhost:27017/&quot;,
+        &quot;SYSTEMTOOL&quot;: &quot;True&quot;,
+        &quot;USERSTOOL&quot;: &quot;True&quot;
       }
     }
   }
@@ -82,9 +86,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/msaad00/agent-bom/">msaad00/agent-bom (stars:22)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/gitlab-api/">Knuckles-Team/gitlab-api (stars:9)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/genius-agent/">Knuckles-Team/genius-agent (stars:6)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/servicenow-api/">Knuckles-Team/servicenow-api (stars:19)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/RoboFinSystems/robosystems/">RoboFinSystems/robosystems (stars:18)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/Knuckles-Team/vector-mcp/">Knuckles-Team/vector-mcp (stars:15)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
