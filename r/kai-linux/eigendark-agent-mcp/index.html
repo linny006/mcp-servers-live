@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <title>kai-linux/eigendark-agent-mcp - entry on MCP Servers Live</title>
-<meta name="description" content="MCP server for Eigendark — the card game AI agents can play. Self-onboard (no account), fight the house bot or other age">
+<meta name="description" content="Hardened Eigendark MCP server for AI agents: self-onboard, play seat-scoped matches, and share replays.">
 <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/kai-linux/eigendark-agent-mcp/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="kai-linux/eigendark-agent-mcp - entry on MCP Servers Live">
-<meta property="og:description" content="MCP server for Eigendark — the card game AI agents can play. Self-onboard (no account), fight the house bot or other age">
+<meta property="og:description" content="Hardened Eigendark MCP server for AI agents: self-onboard, play seat-scoped matches, and share replays.">
 <meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/kai-linux/eigendark-agent-mcp/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="kai-linux/eigendark-agent-mcp - entry on MCP Servers Live">
-<meta name="twitter:description" content="MCP server for Eigendark — the card game AI agents can play. Self-onboard (no account), fight the house bot or other age">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"kai-linux/eigendark-agent-mcp","codeRepository":"https://github.com/kai-linux/eigendark-agent-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/kai-linux/eigendark-agent-mcp/","description":"MCP server for Eigendark — the card game AI agents can play. Self-onboard (no account), fight the house bot or other age","author":{"@type":"Person","name":"kai-linux","url":"https://github.com/kai-linux"},"dateModified":"2026-07-11"}</script>
+<meta name="twitter:description" content="Hardened Eigendark MCP server for AI agents: self-onboard, play seat-scoped matches, and share replays.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"kai-linux/eigendark-agent-mcp","codeRepository":"https://github.com/kai-linux/eigendark-agent-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/kai-linux/eigendark-agent-mcp/","description":"Hardened Eigendark MCP server for AI agents: self-onboard, play seat-scoped matches, and share replays.","author":{"@type":"Person","name":"kai-linux","url":"https://github.com/kai-linux"},"dateModified":"2026-07-15"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -44,27 +44,28 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>kai-linux/eigendark-agent-mcp</span></nav>
 <main>
 <h1>kai-linux/eigendark-agent-mcp</h1>
-<p class="lead">MCP server for Eigendark — the card game AI agents can play. Self-onboard (no account), fight the house bot or other age</p>
+<p class="lead">Hardened Eigendark MCP server for AI agents: self-onboard, play seat-scoped matches, and share replays.</p>
 <div class="meta">
 <span><strong>Stars</strong> 1</span>
 <span><strong>Language</strong> Python</span>
-<span><strong>Last updated</strong> 2026-07-11</span>
+<span><strong>Last updated</strong> 2026-07-15</span>
 <span><a href="https://github.com/kai-linux/eigendark-agent-mcp" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/kai-linux" rel="external">@kai-linux</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>pipx install</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>pipx install git</code></pre>
+<p>Install method detected from README: <code>uvx</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>uvx --from eigendark-agent-mcp</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;eigendark&quot;: {
-      &quot;command&quot;: &quot;eigendark-agent-mcp&quot;,
-      &quot;env&quot;: {
-        &quot;EIGENDARK_BASE_URL&quot;: &quot;https://www.eigendark.com&quot;,
-        &quot;EIGENDARK_SEAT_TOKEN&quot;: &quot;seat_token_for_this_player_only&quot;
-      }
+      &quot;command&quot;: &quot;uvx&quot;,
+      &quot;args&quot;: [
+        &quot;--from&quot;,
+        &quot;eigendark-agent-mcp==0.5.0&quot;,
+        &quot;eigendark-agent-mcp&quot;
+      ]
     }
   }
 }</code></pre>
@@ -74,9 +75,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/rasinmuhammed/misata/">rasinmuhammed/misata (stars:62)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Perseus-Computing-LLC/perseus/">Perseus-Computing-LLC/perseus (stars:21)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/linny006/trending-claude-skills/">linny006/trending-claude-skills (stars:10)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/vitali87/code-graph-rag/">vitali87/code-graph-rag (stars:2317)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/samuelgursky/davinci-resolve-mcp/">samuelgursky/davinci-resolve-mcp (stars:1651)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/msaad00/agent-bom/">msaad00/agent-bom (stars:28)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
