@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="infimium-ai/infimium-agent - entry on MCP Servers Live">
 <meta name="twitter:description" content="Infimium helps agents find the right code, docs, and dependencies — before they edit. Local-first, open-source, MCP-comp">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"infimium-ai/infimium-agent","codeRepository":"https://github.com/infimium-ai/infimium-agent","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/infimium-ai/infimium-agent/","description":"Infimium helps agents find the right code, docs, and dependencies — before they edit. Local-first, open-source, MCP-comp","author":{"@type":"Person","name":"infimium-ai","url":"https://github.com/infimium-ai"},"dateModified":"2026-07-16"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"infimium-ai/infimium-agent","codeRepository":"https://github.com/infimium-ai/infimium-agent","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/infimium-ai/infimium-agent/","description":"Infimium helps agents find the right code, docs, and dependencies — before they edit. Local-first, open-source, MCP-comp","author":{"@type":"Person","name":"infimium-ai","url":"https://github.com/infimium-ai"},"dateModified":"2026-07-17"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -46,29 +46,35 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <h1>infimium-ai/infimium-agent</h1>
 <p class="lead">Infimium helps agents find the right code, docs, and dependencies — before they edit. Local-first, open-source, MCP-comp</p>
 <div class="meta">
-<span><strong>Stars</strong> 2</span>
+<span><strong>Stars</strong> 4</span>
 <span><strong>Language</strong> TypeScript</span>
-<span><strong>Last updated</strong> 2026-07-16</span>
+<span><strong>Last updated</strong> 2026-07-17</span>
 <span><a href="https://github.com/infimium-ai/infimium-agent" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/infimium-ai" rel="external">@infimium-ai</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>docker run</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -p 8000:8000 -v ./chroma_db:/chroma/chroma chromadb/chroma</code></pre>
+<p>Install method detected from README: <code>npm install</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>npm install
+npm</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;infimium&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;infimium&quot;, &quot;serve&quot;],
-      &quot;env&quot;: {
-        &quot;SEARCH_API_KEY&quot;: &quot;your_brave_search_api_key&quot;,
-        &quot;LOCAL_DOCS_PATH&quot;: &quot;/absolute/path/to/docs&quot;,
-        &quot;CODEBASE_PATH&quot;: &quot;/absolute/path/to/code&quot;,
-        &quot;OLLAMA_HOST&quot;: &quot;http://localhost:11434&quot;,
-        &quot;CHROMADB_HOST&quot;: &quot;http://localhost:8000&quot;
-      }
+      &quot;command&quot;: &quot;docker&quot;,
+      &quot;args&quot;: [
+        &quot;compose&quot;,
+        &quot;-f&quot;,
+        &quot;/absolute/path/to/infimium-agent/docker-compose.yml&quot;,
+        &quot;run&quot;,
+        &quot;--rm&quot;,
+        &quot;-T&quot;,
+        &quot;infimium&quot;,
+        &quot;npm&quot;,
+        &quot;start&quot;,
+        &quot;--&quot;,
+        &quot;serve&quot;
+      ]
     }
   }
 }</code></pre>
@@ -78,9 +84,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Fractera/Agent-Engineering-Infrastructure/">Fractera/Agent-Engineering-Infrastructure (stars:34)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/mission69b/t2000/">mission69b/t2000 (stars:22)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/brianonbased-dev/HoloScript/">brianonbased-dev/HoloScript (stars:3)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:196776)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/chrisdoc/hevy-mcp/">chrisdoc/hevy-mcp (stars:328)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/n24q02m/better-notion-mcp/">n24q02m/better-notion-mcp (stars:35)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
