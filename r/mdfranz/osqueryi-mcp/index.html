@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>moxno/privacyscrubber-mcp - entry on MCP Servers Live</title>
-<meta name="description" content="Zero-Trust PII &amp; secrets sanitizer. Locally scrubs data in-memory before sending context to LLMs.">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/moxno/privacyscrubber-mcp/">
+<title>mdfranz/osqueryi-mcp - entry on MCP Servers Live</title>
+<meta name="description" content="Simple Local STDIO MCP Server">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/mdfranz/osqueryi-mcp/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="moxno/privacyscrubber-mcp - entry on MCP Servers Live">
-<meta property="og:description" content="Zero-Trust PII &amp; secrets sanitizer. Locally scrubs data in-memory before sending context to LLMs.">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/moxno/privacyscrubber-mcp/">
+<meta property="og:title" content="mdfranz/osqueryi-mcp - entry on MCP Servers Live">
+<meta property="og:description" content="Simple Local STDIO MCP Server">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/mdfranz/osqueryi-mcp/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="moxno/privacyscrubber-mcp - entry on MCP Servers Live">
-<meta name="twitter:description" content="Zero-Trust PII &amp; secrets sanitizer. Locally scrubs data in-memory before sending context to LLMs.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"moxno/privacyscrubber-mcp","codeRepository":"https://github.com/moxno/privacyscrubber-mcp","programmingLanguage":"JavaScript","url":"https://linny006.github.io/mcp-servers-live/r/moxno/privacyscrubber-mcp/","description":"Zero-Trust PII & secrets sanitizer. Locally scrubs data in-memory before sending context to LLMs.","author":{"@type":"Person","name":"moxno","url":"https://github.com/moxno"},"dateModified":"2026-07-20"}</script>
+<meta name="twitter:title" content="mdfranz/osqueryi-mcp - entry on MCP Servers Live">
+<meta name="twitter:description" content="Simple Local STDIO MCP Server">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"mdfranz/osqueryi-mcp","codeRepository":"https://github.com/mdfranz/osqueryi-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/mdfranz/osqueryi-mcp/","description":"Simple Local STDIO MCP Server","author":{"@type":"Person","name":"mdfranz","url":"https://github.com/mdfranz"},"dateModified":"2026-07-20"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,49 +41,43 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>moxno/privacyscrubber-mcp</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>mdfranz/osqueryi-mcp</span></nav>
 <main>
-<h1>moxno/privacyscrubber-mcp</h1>
-<p class="lead">Zero-Trust PII &amp; secrets sanitizer. Locally scrubs data in-memory before sending context to LLMs.</p>
+<h1>mdfranz/osqueryi-mcp</h1>
+<p class="lead">Simple Local STDIO MCP Server</p>
 <div class="meta">
-<span><strong>Stars</strong> 0</span>
-<span><strong>Language</strong> JavaScript</span>
+<span><strong>Stars</strong> 1</span>
+<span><strong>Language</strong> Python</span>
 <span><strong>Last updated</strong> 2026-07-20</span>
-<span><a href="https://github.com/moxno/privacyscrubber-mcp" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/moxno" rel="external">@moxno</a></span>
+<span><a href="https://github.com/mdfranz/osqueryi-mcp" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/mdfranz" rel="external">@mdfranz</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>npx</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>npx -y @smithery/cli install @privacyscrubber/mcp-server --write-to-clients</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;privacyscrubber&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@privacyscrubber/mcp-server&quot;],
-      &quot;env&quot;: {
-        &quot;PRIVACYSCRUBBER_KEY&quot;: &quot;YOUR_OPTIONAL_PRO_LICENSE_KEY&quot;
-      }
+    &quot;osqueryi-mcp&quot;: {
+      &quot;command&quot;: &quot;osqueryi-mcp&quot; 
     }
   }
 }</code></pre>
-<p><a href="https://github.com/moxno/privacyscrubber-mcp#readme" rel="external">View full README on GitHub</a></p>
+<p><a href="https://github.com/mdfranz/osqueryi-mcp#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/neomjs/neo/">neomjs/neo (stars:3238)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/brilliantdirectories/brilliant-directories-mcp/">brilliantdirectories/brilliant-directories-mcp (stars:17)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/sergii-ziborov/weavatrix/">sergii-ziborov/weavatrix (stars:0)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/alibaizhanov/mengram/">alibaizhanov/mengram (stars:183)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/PyPtt/ptt_mcp_server/">PyPtt/ptt_mcp_server (stars:38)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/linny006/trending-claude-skills/">linny006/trending-claude-skills (stars:16)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/javascript/">All JavaScript entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/python/">All Python entries</a></li>
 </ul></section>
 </main>
 <footer>
