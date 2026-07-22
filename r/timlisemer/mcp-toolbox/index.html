@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="timlisemer/mcp-toolbox - entry on MCP Servers Live">
 <meta name="twitter:description" content="A Docker container that downloads and pre-builds MCP (Model Context Protocol) servers">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"timlisemer/mcp-toolbox","codeRepository":"https://github.com/timlisemer/mcp-toolbox","programmingLanguage":"Shell","url":"https://linny006.github.io/mcp-servers-live/r/timlisemer/mcp-toolbox/","description":"A Docker container that downloads and pre-builds MCP (Model Context Protocol) servers","author":{"@type":"Person","name":"timlisemer","url":"https://github.com/timlisemer"},"dateModified":"2026-07-21"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"timlisemer/mcp-toolbox","codeRepository":"https://github.com/timlisemer/mcp-toolbox","programmingLanguage":"Shell","url":"https://linny006.github.io/mcp-servers-live/r/timlisemer/mcp-toolbox/","description":"A Docker container that downloads and pre-builds MCP (Model Context Protocol) servers","author":{"@type":"Person","name":"timlisemer","url":"https://github.com/timlisemer"},"dateModified":"2026-07-22"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -48,77 +48,22 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <div class="meta">
 <span><strong>Stars</strong> 2</span>
 <span><strong>Language</strong> Shell</span>
-<span><strong>Last updated</strong> 2026-07-21</span>
+<span><strong>Last updated</strong> 2026-07-22</span>
 <span><a href="https://github.com/timlisemer/mcp-toolbox" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/timlisemer" rel="external">@timlisemer</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
 <p>Install method detected from README: <code>claude mcp add</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add nixos-search -- docker exec -i mcp-toolbox /app/tools/mcp-nixos/venv/bin/python3 -m mcp_nixos.server</code></pre>
-<h3>Claude Desktop config snippet</h3>
-<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
-  &quot;mcpServers&quot;: {
-    &quot;nixos-search&quot;: {
-      &quot;command&quot;: &quot;docker&quot;,
-      &quot;args&quot;: [
-        &quot;exec&quot;,
-        &quot;-i&quot;,
-        &quot;mcp-toolbox&quot;,
-        &quot;/app/tools/mcp-nixos/venv/bin/python3&quot;,
-        &quot;-m&quot;,
-        &quot;mcp_nixos.server&quot;
-      ]
-    },
-    &quot;context7&quot;: {
-      &quot;command&quot;: &quot;docker&quot;,
-      &quot;args&quot;: [
-        &quot;exec&quot;,
-        &quot;-i&quot;,
-        &quot;mcp-toolbox&quot;,
-        &quot;npx&quot;,
-        &quot;-y&quot;,
-        &quot;@upstash/context7-mcp&quot;
-      ]
-    },
-    &quot;playwright&quot;: {
-      &quot;command&quot;: &quot;docker&quot;,
-      &quot;args&quot;: [
-        &quot;exec&quot;,
-        &quot;-i&quot;,
-        &quot;mcp-toolbox&quot;,
-        &quot;node&quot;,
-        &quot;/app/tools/playwright/cli.js&quot;,
-        &quot;--headless&quot;,
-        &quot;--browser&quot;,
-        &quot;chromium&quot;,
-        &quot;--no-sandbox&quot;
-      ]
-    },
-    &quot;figma&quot;: {
-      &quot;type&quot;: &quot;http&quot;,
-      &quot;url&quot;: &quot;https://mcp.figma.com/mcp&quot;
-    },
-    &quot;blender&quot;: {
-      &quot;command&quot;: &quot;docker&quot;,
-      &quot;args&quot;: [
-        &quot;exec&quot;,
-        &quot;-i&quot;,
-        &quot;mcp-toolbox&quot;,
-        &quot;/app/tools/blender/venv/bin/blender-mcp&quot;
-      ]
-    }
-  }
-}</code></pre>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add nixos-search -- docker exec -i mcp-toolbox sh -c \</code></pre>
 <p><a href="https://github.com/timlisemer/mcp-toolbox#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:197303)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/koala73/worldmonitor/">koala73/worldmonitor (stars:63192)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/activepieces/activepieces/">activepieces/activepieces (stars:23358)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:197479)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/modelscope/FunASR/">modelscope/FunASR (stars:19407)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/modelcontextprotocol/csharp-sdk/">modelcontextprotocol/csharp-sdk (stars:4405)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
