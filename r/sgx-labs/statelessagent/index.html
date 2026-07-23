@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>jcentner/azure-ai-agent-demos - entry on MCP Servers Live</title>
-<meta name="description" content="Azure AI Foundry Agent service demos and resources">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/jcentner/azure-ai-agent-demos/">
+<title>sgx-labs/statelessagent - entry on MCP Servers Live</title>
+<meta name="description" content="Your AI forgets everything between sessions. SAME fixes that. Local-first, no API keys, single binary.">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/sgx-labs/statelessagent/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jcentner/azure-ai-agent-demos - entry on MCP Servers Live">
-<meta property="og:description" content="Azure AI Foundry Agent service demos and resources">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/jcentner/azure-ai-agent-demos/">
+<meta property="og:title" content="sgx-labs/statelessagent - entry on MCP Servers Live">
+<meta property="og:description" content="Your AI forgets everything between sessions. SAME fixes that. Local-first, no API keys, single binary.">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/sgx-labs/statelessagent/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jcentner/azure-ai-agent-demos - entry on MCP Servers Live">
-<meta name="twitter:description" content="Azure AI Foundry Agent service demos and resources">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"jcentner/azure-ai-agent-demos","codeRepository":"https://github.com/jcentner/azure-ai-agent-demos","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/jcentner/azure-ai-agent-demos/","description":"Azure AI Foundry Agent service demos and resources","author":{"@type":"Person","name":"jcentner","url":"https://github.com/jcentner"},"dateModified":"2026-07-23"}</script>
+<meta name="twitter:title" content="sgx-labs/statelessagent - entry on MCP Servers Live">
+<meta name="twitter:description" content="Your AI forgets everything between sessions. SAME fixes that. Local-first, no API keys, single binary.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"sgx-labs/statelessagent","codeRepository":"https://github.com/sgx-labs/statelessagent","programmingLanguage":"Go","url":"https://linny006.github.io/mcp-servers-live/r/sgx-labs/statelessagent/","description":"Your AI forgets everything between sessions. SAME fixes that. Local-first, no API keys, single binary.","author":{"@type":"Person","name":"sgx-labs","url":"https://github.com/sgx-labs"},"dateModified":"2026-07-23"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,36 +41,42 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>jcentner/azure-ai-agent-demos</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>sgx-labs/statelessagent</span></nav>
 <main>
-<h1>jcentner/azure-ai-agent-demos</h1>
-<p class="lead">Azure AI Foundry Agent service demos and resources</p>
+<h1>sgx-labs/statelessagent</h1>
+<p class="lead">Your AI forgets everything between sessions. SAME fixes that. Local-first, no API keys, single binary.</p>
 <div class="meta">
-<span><strong>Stars</strong> 4</span>
-<span><strong>Language</strong> Python</span>
+<span><strong>Stars</strong> 22</span>
+<span><strong>Language</strong> Go</span>
 <span><strong>Last updated</strong> 2026-07-23</span>
-<span><a href="https://github.com/jcentner/azure-ai-agent-demos" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/jcentner" rel="external">@jcentner</a></span>
+<span><a href="https://github.com/sgx-labs/statelessagent" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/sgx-labs" rel="external">@sgx-labs</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>pip install</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>pip install -r</code></pre>
-<p><a href="https://github.com/jcentner/azure-ai-agent-demos#readme" rel="external">View full README on GitHub</a></p>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;same&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;@sgx-labs/same&quot;, &quot;mcp&quot;, &quot;--vault&quot;, &quot;/path/to/your/notes&quot;]
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/sgx-labs/statelessagent#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/benseverndev-oss/goldenmatch/">benseverndev-oss/goldenmatch (stars:125)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/KyaniteLabs/kinocut/">KyaniteLabs/kinocut (stars:88)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/msaad00/agent-bom/">msaad00/agent-bom (stars:28)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/inth3shadows/runecho/">inth3shadows/runecho (stars:0)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/python/">All Python entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/go/">All Go entries</a></li>
 </ul></section>
 </main>
 <footer>
