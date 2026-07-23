@@ -54,7 +54,17 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
 <p>Install method detected from README: <code>claude mcp add</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add libgen -- /usr/local/bin/libgen-mcp</code></pre>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add libgen -- docker run -i --rm ghcr.io/jmrplens/libgen-mcp:latest</code></pre>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;libgen&quot;: {
+      &quot;command&quot;: &quot;docker&quot;,
+      &quot;args&quot;: [&quot;run&quot;, &quot;-i&quot;, &quot;--rm&quot;, &quot;ghcr.io/jmrplens/libgen-mcp:latest&quot;]
+    }
+  }
+}</code></pre>
 <p><a href="https://github.com/jmrplens/libgen-mcp#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
@@ -62,8 +72,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/r/devantler-tech/ksail/">devantler-tech/ksail (stars:156)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/rhobs/obs-mcp/">rhobs/obs-mcp (stars:9)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Continuum-AI-Corp/orcadub-mcp-server/">Continuum-AI-Corp/orcadub-mcp-server (stars:2)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/PxyUp/fitter/">PxyUp/fitter (stars:126)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
