@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>nirholas/extract-llms-docs - entry on MCP Servers Live</title>
-<meta name="description" content="Extract documentation for AI agents from any site with llms.txt support. Features MCP server, REST API, batch processing">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/nirholas/extract-llms-docs/">
+<title>jorelcb/codify-og - entry on MCP Servers Live</title>
+<meta name="description" content="Give your AI agent the blueprint it needs. MCP server &amp; CLI that generates context, specs, and Agent Skills from project">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/jorelcb/codify-og/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="nirholas/extract-llms-docs - entry on MCP Servers Live">
-<meta property="og:description" content="Extract documentation for AI agents from any site with llms.txt support. Features MCP server, REST API, batch processing">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/nirholas/extract-llms-docs/">
+<meta property="og:title" content="jorelcb/codify-og - entry on MCP Servers Live">
+<meta property="og:description" content="Give your AI agent the blueprint it needs. MCP server &amp; CLI that generates context, specs, and Agent Skills from project">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/jorelcb/codify-og/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nirholas/extract-llms-docs - entry on MCP Servers Live">
-<meta name="twitter:description" content="Extract documentation for AI agents from any site with llms.txt support. Features MCP server, REST API, batch processing">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"nirholas/extract-llms-docs","codeRepository":"https://github.com/nirholas/extract-llms-docs","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/nirholas/extract-llms-docs/","description":"Extract documentation for AI agents from any site with llms.txt support. Features MCP server, REST API, batch processing","author":{"@type":"Person","name":"nirholas","url":"https://github.com/nirholas"},"dateModified":"2026-07-30"}</script>
+<meta name="twitter:title" content="jorelcb/codify-og - entry on MCP Servers Live">
+<meta name="twitter:description" content="Give your AI agent the blueprint it needs. MCP server &amp; CLI that generates context, specs, and Agent Skills from project">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"jorelcb/codify-og","codeRepository":"https://github.com/jorelcb/codify-og","programmingLanguage":"Go","url":"https://linny006.github.io/mcp-servers-live/r/jorelcb/codify-og/","description":"Give your AI agent the blueprint it needs. MCP server & CLI that generates context, specs, and Agent Skills from project","author":{"@type":"Person","name":"jorelcb","url":"https://github.com/jorelcb"},"dateModified":"2026-07-30"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,44 +41,48 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>nirholas/extract-llms-docs</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>jorelcb/codify-og</span></nav>
 <main>
-<h1>nirholas/extract-llms-docs</h1>
-<p class="lead">Extract documentation for AI agents from any site with llms.txt support. Features MCP server, REST API, batch processing</p>
+<h1>jorelcb/codify-og</h1>
+<p class="lead">Give your AI agent the blueprint it needs. MCP server &amp; CLI that generates context, specs, and Agent Skills from project</p>
 <div class="meta">
-<span><strong>Stars</strong> 32</span>
-<span><strong>Language</strong> TypeScript</span>
+<span><strong>Stars</strong> 1</span>
+<span><strong>Language</strong> Go</span>
 <span><strong>Last updated</strong> 2026-07-30</span>
-<span><a href="https://github.com/nirholas/extract-llms-docs" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/nirholas" rel="external">@nirholas</a></span>
+<span><a href="https://github.com/jorelcb/codify-og" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/jorelcb" rel="external">@jorelcb</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;llm-energy&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;-y&quot;, &quot;@llm-energy/mcp-server&quot;]
+    &quot;codify&quot;: {
+      &quot;command&quot;: &quot;codify&quot;,
+      &quot;args&quot;: [&quot;serve&quot;],
+      &quot;env&quot;: {
+        &quot;ANTHROPIC_API_KEY&quot;: &quot;sk-ant-...&quot;,
+        &quot;GEMINI_API_KEY&quot;: &quot;AI...&quot;
+      }
     }
   }
 }</code></pre>
-<p><a href="https://github.com/nirholas/extract-llms-docs#readme" rel="external">View full README on GitHub</a></p>
+<p><a href="https://github.com/jorelcb/codify-og#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:198720)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/koala73/worldmonitor/">koala73/worldmonitor (stars:76913)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/ChromeDevTools/chrome-devtools-mcp/">ChromeDevTools/chrome-devtools-mcp (stars:47984)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/zzet/gortex/">zzet/gortex (stars:1000)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/vshulcz/deja-vu/">vshulcz/deja-vu (stars:497)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/gridctl/gridctl/">gridctl/gridctl (stars:34)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/typescript/">All TypeScript entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/go/">All Go entries</a></li>
 </ul></section>
 </main>
 <footer>
