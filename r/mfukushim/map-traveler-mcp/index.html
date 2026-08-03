@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>mfukushim/map-traveler-mcp - entry on MCP Servers Live</title>
+<meta name="description" content="Virtual traveler library for MCP">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/mfukushim/map-traveler-mcp/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mfukushim/map-traveler-mcp - entry on MCP Servers Live">
+<meta property="og:description" content="Virtual traveler library for MCP">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/mfukushim/map-traveler-mcp/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="mfukushim/map-traveler-mcp - entry on MCP Servers Live">
+<meta name="twitter:description" content="Virtual traveler library for MCP">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"mfukushim/map-traveler-mcp","codeRepository":"https://github.com/mfukushim/map-traveler-mcp","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/mfukushim/map-traveler-mcp/","description":"Virtual traveler library for MCP","author":{"@type":"Person","name":"mfukushim","url":"https://github.com/mfukushim"},"dateModified":"2026-08-03"}</script>
+<style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
+         --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 16px; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--fg); background: var(--bg); }
+.wrap { max-width: var(--max); margin: 0 auto; }
+nav.bc { font-size: 14px; color: var(--muted); margin-bottom: 16px; }
+nav.bc a { color: var(--muted); }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 24px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+p.lead { font-size: 18px; color: var(--muted); margin: 0 0 24px; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+th { background: var(--card); font-weight: 600; }
+ul.crosslinks { list-style: none; padding: 0; }
+ul.crosslinks li { padding: 6px 0; }
+ul.crosslinks li a { font-weight: 500; }
+.meta { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); font-size: 14px; margin: 12px 0; }
+.meta span::before { content: "\00b7"; margin-right: 8px; color: var(--border); }
+.meta span:first-child::before { content: ""; }
+footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 14px; color: var(--muted); }</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>mfukushim/map-traveler-mcp</span></nav>
+<main>
+<h1>mfukushim/map-traveler-mcp</h1>
+<p class="lead">Virtual traveler library for MCP</p>
+<div class="meta">
+<span><strong>Stars</strong> 23</span>
+<span><strong>Language</strong> TypeScript</span>
+<span><strong>Last updated</strong> 2026-08-03</span>
+<span><a href="https://github.com/mfukushim/map-traveler-mcp" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/mfukushim" rel="external">@mfukushim</a></span>
+</div>
+<section id="install"><h2>Install &amp; configure</h2>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;traveler&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;@mfukushim/map-traveler-mcp&quot;],
+      &quot;env&quot;:{
+        &quot;MT_GOOGLE_MAP_KEY&quot;:&quot;(Google Map API key)&quot;,
+        &quot;MT_GEMINI_IMAGE_KEY&quot;: &quot;(Gemini Image Api key)&quot;,
+        &quot;MT_MAX_RETRY_GEMINI&quot;: &quot;(Number of retries when generating Gemini images Default: 0)&quot;,
+        &quot;MT_AVATAR_IMAGE_URI&quot;: &quot;(Character reference image uri (file:// or https://) when generating Gemini image. Multiple settings can be made by separating them with the &#x27;|&#x27;. When multiple settings are made, they will be selected randomly.)&quot;,
+        &quot;MT_MAP_API_URL&quot;: &quot;(Optional: Map API custom endpoint. Example: direction=https://xxxx,places=https://yyyy )&quot;,
+        &quot;MT_TIME_SCALE&quot;: &quot;(Optional:Scale of travel time on real roads duration. default 4)&quot;,
+        &quot;MT_SQLITE_PATH&quot;:&quot;(db save path: e.g. %USERPROFILE%/Desktop/traveler.sqlite ,$HOME/traveler.sqlite )&quot;,
+        &quot;MT_TURSO_URL&quot;:&quot;(Turso sqlite API URL)&quot;,
+        &quot;MT_TURSO_TOKEN&quot;:&quot;(Turso sqlite API access token)&quot;,
+        &quot;MT_REMBG_PATH&quot;: &quot;(absolute path of the installed rembg cli)&quot;,
+        &quot;MT_REMBG_URL&quot;: &quot;(rembg API URL)&quot;,
+        &quot;MT_REMBG_WO_KEY&quot;: &quot;(withoutbg.com rembg API key)&quot;,
+        &quot;MT_PIXAI_KEY&quot;:&quot;(pixAi API key)&quot;,
+        &quot;MT_SD_KEY&quot;:&quot;(or Stability.ai image generation API key&quot;,
+        &quot;MT_PIXAI_MODEL_ID&quot;: &quot;(Optional: pixAi ModelId, if not set use default model 1648918127446573124 &quot;,
+        &quot;MT_COMFY_URL&quot;: &quot;(Option: Generate image using ComfyUI API at specified URL. Example: http://192.168.1.100:8188)&quot;,
+        &quot;MT_COMFY_WORKFLOW_T2I&quot;: &quot;(Optional: Path to API workflow file when using text to image with ComfyUI. If not specified: assets/comfy/t2i_sample.json)&quot;,
+        &quot;MT_COMFY_WORKFLOW_I2I&quot;: &quot;(Optional: Path of API workflow file when image to image in ComfyUI. If not specified: assets/comfy/i2i_sample.json)&quot;,
+        &quot;MT_COMFY_PARAMS&quot;: &quot;(Optional: Variable values to send to the workflow via comfyUI API)&quot;,
+        &quot;MT_FIXED_MODEL_PROMPT&quot;: &quot;(Optional: Fixed avatar generation prompt. You will no longer be able to change your avatar during conversations.)&quot;,
+        &quot;MT_BODY_AREA_RATIO&quot;: &quot;(Optional: Acceptable avatar image area ratio. default 0.042)&quot;,
+        &quot;MT_BODY_HW_RATIO&quot;: &quot;(Optional: Acceptable avatar image aspect ratios. default 1.5~2.3)&quot;,
+        &quot;MT_BODY_WINDOW_RATIO_W&quot;: &quot;(Optional: Avatar composite window horizontal ratio. default 0.5)&quot;,
+        &quot;MT_BODY_WINDOW_RATIO_H&quot;: &quot;(Optional: Avatar composite window aspect ratio. default 0.75)&quot;,
+        &quot;MT_BS_ID&quot;:&quot;(Bluesky sns registration address)&quot;,
+        &quot;MT_BS_PASS&quot;:&quot;(bluesky sns password)&quot;,
+        &quot;MT_BS_HANDLE&quot;:&quot;(bluesky sns handle name: e.g. xxxxxxxx.bsky.social )&quot;,
+        &quot;MT_FILTER_TOOLS&quot;: &quot;(Optional: Directly filter the tools to be used. All are available if not specified. e.g. tips,set_traveler_location)&quot;,
+        &quot;MT_MOVE_MODE&quot;: &quot;(Option: Specify whether the movement mode is realtime or skip. default realtime)&quot;,
+        &quot;MT_IMAGE_WIDTH&quot;: &quot;(Option: Output image width (pixels) Default is 512)&quot;,
+        &quot;MT_NO_IMAGE&quot;: &quot;(Options: true = do not output image, not specified = output image if possible, default is not specified)&quot;,
+        &quot;MT_NO_AVATAR&quot;: &quot;(Option: true = Output StreetView image as is without avatar superimposition. Not specified = Superimpose avatar image. Default is not specified.)&quot;,
+        &quot;MT_FEED_TAG&quot;: &quot;(Optional: Specify the feed tag when posting to SNS (#required, 15 characters or more) Default is #geo_less_traveler)&quot;,
+        &quot;MT_MAX_SESSIONS&quot;: &quot;(Maximum number of sessions when using Streamable-http)&quot;,
+        &quot;MT_SESSION_TTL_MS&quot;: &quot;(Session TTL when using Streamable-http)&quot;,
+        &quot;MT_SERVICE_TTL_MS&quot;: &quot;(Service TTL when using Streamable-http)&quot;
+      }
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/mfukushim/map-traveler-mcp#readme" rel="external">View full README on GitHub</a></p>
+</section>
+<section><h2>Why this is listed</h2>
+<p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
+<section><h2>Similar in this tracker</h2>
+<ul class="crosslinks">
+<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:199168)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/ChiR24/Unreal_mcp/">ChiR24/Unreal_mcp (stars:810)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/decocms/studio/">decocms/studio (stars:396)</a></li>
+</ul></section>
+<section><h2>Explore by category</h2>
+<ul class="crosslinks">
+<li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/typescript/">All TypeScript entries</a></li>
+</ul></section>
+</main>
+<footer>
+Auto-updated every 15 minutes via GitHub Actions &#183; <a href="https://linny006.github.io/mcp-servers-live/">tracker root</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/sitemap.xml">sitemap</a>
+</footer>
+</div>
+</body>
+</html>
