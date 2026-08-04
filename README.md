@@ -44,7 +44,7 @@ expired items removed — so you can rely on what you see being current.
 
 ## 📋 Current Items
 
-> ⏰ Last updated: 2026-08-04 06:15 UTC
+> ⏰ Last updated: 2026-08-04 06:30 UTC
 >
 > Data source: `GitHub Search API`
 >
@@ -53,56 +53,56 @@ expired items removed — so you can rely on what you see being current.
 <!-- TRACKER_TABLE_START -->
 | # | Name | ⭐ | Lang | Updated | Install | Description |
 |---|------|---|------|---------|---------|-------------|
-| 1 | [pipeworx-io/mcp-arcgis-irvine](https://github.com/pipeworx-io/mcp-arcgis-irvine) | 0 | TypeScript | 2026-08-04 | — | City of Irvine GIS — Irvine, California open geospatial data (ArcGIS). |
-| 2 | [pipeworx-io/mcp-arcgis-indianriver](https://github.com/pipeworx-io/mcp-arcgis-indianriver) | 0 | TypeScript | 2026-08-04 | — | Indian River County GIS — Indian River County, Florida open geospatial data (ArcGIS). |
+| 1 | [pipeworx-io/mcp-data-santaclara](https://github.com/pipeworx-io/mcp-data-santaclara) | 0 | TypeScript | 2026-08-04 | — | Santa Clara County Open Data (data.sccgov.org) Socrata MCP. |
+| 2 | [pipeworx-io/mcp-data-reunion](https://github.com/pipeworx-io/mcp-data-reunion) | 0 | TypeScript | 2026-08-04 | — | Réunion Open Data (data.regionreunion.com) — OpenDataSoft MCP. |
 | 3 | [linny006/trending-claude-skills](https://github.com/linny006/trending-claude-skills) | 22 | Python | 2026-08-04 | — | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
-| 4 | [pipeworx-io/mcp-arcgis-hub](https://github.com/pipeworx-io/mcp-arcgis-hub) | 0 | TypeScript | 2026-08-04 | — | ArcGIS Hub — open government geospatial data (search + Feature Service query). |
-| 5 | [pipeworx-io/mcp-arcgis-houston](https://github.com/pipeworx-io/mcp-arcgis-houston) | 0 | TypeScript | 2026-08-04 | — | City of Houston GIS — Houston, Texas open geospatial data (ArcGIS). |
-| 6 | [pipeworx-io/mcp-arcgis-honolulu](https://github.com/pipeworx-io/mcp-arcgis-honolulu) | 0 | TypeScript | 2026-08-04 | — | Honolulu GIS — Honolulu, Hawaii open geospatial data (ArcGIS). |
-| 7 | [pipeworx-io/mcp-arcgis-henderson](https://github.com/pipeworx-io/mcp-arcgis-henderson) | 0 | TypeScript | 2026-08-04 | — | City of Henderson GIS — Henderson, Nevada open geospatial data (ArcGIS). |
-| 8 | [pipeworx-io/mcp-arcgis-harrisburg](https://github.com/pipeworx-io/mcp-arcgis-harrisburg) | 0 | TypeScript | 2026-08-04 | — | City of Harrisburg GIS — Harrisburg, Pennsylvania open geospatial data (ArcGIS). |
-| 9 | [pipeworx-io/mcp-arcgis-greenwood](https://github.com/pipeworx-io/mcp-arcgis-greenwood) | 0 | TypeScript | 2026-08-04 | — | City of Greenwood GIS — Greenwood, Indiana open geospatial data (ArcGIS). |
-| 10 | [pipeworx-io/mcp-arcgis-grandchute](https://github.com/pipeworx-io/mcp-arcgis-grandchute) | 0 | TypeScript | 2026-08-04 | — | Town of Grand Chute GIS — Grand Chute, Wisconsin open geospatial data (ArcGIS). |
-| 11 | [pipeworx-io/mcp-arcgis-glynncounty](https://github.com/pipeworx-io/mcp-arcgis-glynncounty) | 0 | TypeScript | 2026-08-04 | — | Glynn County GIS — Glynn County, Georgia open geospatial data (ArcGIS). |
-| 12 | [pipeworx-io/mcp-arcgis-glasgow](https://github.com/pipeworx-io/mcp-arcgis-glasgow) | 0 | TypeScript | 2026-08-04 | — | Glasgow City Council GIS — Glasgow, Scotland (UK) open geospatial data (ArcGIS). |
-| 13 | [pipeworx-io/mcp-arcgis-fontana](https://github.com/pipeworx-io/mcp-arcgis-fontana) | 0 | TypeScript | 2026-08-04 | — | City of Fontana GIS — Fontana, California open geospatial data (ArcGIS). |
-| 14 | [pipeworx-io/mcp-arcgis-flagstaff](https://github.com/pipeworx-io/mcp-arcgis-flagstaff) | 0 | TypeScript | 2026-08-04 | — | City of Flagstaff GIS — Flagstaff, Arizona open geospatial data (ArcGIS). |
-| 15 | [pipeworx-io/mcp-arcgis-fauquier](https://github.com/pipeworx-io/mcp-arcgis-fauquier) | 0 | TypeScript | 2026-08-04 | — | Fauquier County GIS — Fauquier County, Virginia open geospatial data (ArcGIS). |
-| 16 | [pipeworx-io/mcp-arcgis-fallschurch](https://github.com/pipeworx-io/mcp-arcgis-fallschurch) | 0 | TypeScript | 2026-08-04 | — | City of Falls Church GIS — Falls Church, Virginia open geospatial data (ArcGIS). |
-| 17 | [zhurong2020/pyobfus](https://github.com/zhurong2020/pyobfus) | 3 | Python | 2026-08-04 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/zhurong2020/pyobfus/) | 🛡️ Modern Python code obfuscator - Enterprise-grade protection at 50% lower cost than PyArmor |
-| 18 | [pipeworx-io/mcp-arcgis-fairfield](https://github.com/pipeworx-io/mcp-arcgis-fairfield) | 0 | TypeScript | 2026-08-04 | — | City of Fairfield GIS — Fairfield, California open geospatial data (ArcGIS). |
-| 19 | [pipeworx-io/mcp-arcgis-fairfax](https://github.com/pipeworx-io/mcp-arcgis-fairfax) | 0 | TypeScript | 2026-08-04 | — | Fairfax County GIS — Fairfax County, Virginia open geospatial data (ArcGIS). |
-| 20 | [pipeworx-io/mcp-arcgis-eastbatonrouge](https://github.com/pipeworx-io/mcp-arcgis-eastbatonrouge) | 0 | TypeScript | 2026-08-04 | — | East Baton Rouge GIS — East Baton Rouge Parish, Louisiana open geospatial data (ArcGIS). |
-| 21 | [pipeworx-io/mcp-arcgis-eagan](https://github.com/pipeworx-io/mcp-arcgis-eagan) | 0 | TypeScript | 2026-08-04 | — | City of Eagan GIS — Eagan, Minnesota open geospatial data (ArcGIS). |
-| 22 | [pipeworx-io/mcp-arcgis-durham](https://github.com/pipeworx-io/mcp-arcgis-durham) | 0 | TypeScript | 2026-08-04 | — | Durham City-County GIS — Durham, North Carolina open geospatial data (ArcGIS). |
-| 23 | [pipeworx-io/mcp-arcgis-dukescounty](https://github.com/pipeworx-io/mcp-arcgis-dukescounty) | 0 | TypeScript | 2026-08-04 | — | Dukes County GIS — Dukes County, Massachusetts open geospatial data (ArcGIS). |
-| 24 | [pipeworx-io/mcp-arcgis-dublinoh](https://github.com/pipeworx-io/mcp-arcgis-dublinoh) | 0 | TypeScript | 2026-08-04 | — | City of Dublin GIS — Dublin, Ohio open geospatial data (ArcGIS). |
-| 25 | [pipeworx-io/mcp-arcgis-detroit](https://github.com/pipeworx-io/mcp-arcgis-detroit) | 0 | TypeScript | 2026-08-04 | — | City of Detroit GIS — Detroit, Michigan open geospatial data (ArcGIS). |
-| 26 | [pipeworx-io/mcp-arcgis-delawareco](https://github.com/pipeworx-io/mcp-arcgis-delawareco) | 0 | TypeScript | 2026-08-04 | — | Delaware County GIS — Delaware County, Indiana open geospatial data (ArcGIS). |
-| 27 | [pipeworx-io/mcp-arcgis-dc](https://github.com/pipeworx-io/mcp-arcgis-dc) | 0 | TypeScript | 2026-08-04 | — | Washington DC GIS — Washington, DC open geospatial data (ArcGIS). |
-| 28 | [pipeworx-io/mcp-arcgis-darlington](https://github.com/pipeworx-io/mcp-arcgis-darlington) | 0 | TypeScript | 2026-08-04 | — | Darlington County GIS — Darlington County, South Carolina open geospatial data (ArcGIS). |
-| 29 | [sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) | 780 | Python | 2026-08-04 | ✅ [pipx install](https://linny006.github.io/mcp-servers-live/r/sipyourdrink-ltd/bernstein/) | Deterministic orchestrator for CLI coding agents (Claude Code, Codex, Gemini CLI, +40 more). No model in the coordinatio |
-| 30 | [pipeworx-io/mcp-arcgis-cupertino](https://github.com/pipeworx-io/mcp-arcgis-cupertino) | 0 | TypeScript | 2026-08-04 | — | City of Cupertino GIS — Cupertino, California open geospatial data (ArcGIS). |
-| 31 | [pipeworx-io/mcp-arcgis-cumberland](https://github.com/pipeworx-io/mcp-arcgis-cumberland) | 0 | TypeScript | 2026-08-04 | — | Cumberland County GIS — Cumberland County, North Carolina open geospatial data (ArcGIS). |
-| 32 | [pipeworx-io/mcp-arcgis-cranston](https://github.com/pipeworx-io/mcp-arcgis-cranston) | 0 | TypeScript | 2026-08-04 | — | Cranston GIS — Cranston, Rhode Island open geospatial data (ArcGIS). |
-| 33 | [pipeworx-io/mcp-arcgis-courtenay](https://github.com/pipeworx-io/mcp-arcgis-courtenay) | 0 | TypeScript | 2026-08-04 | — | City of Courtenay GIS — Courtenay, BC (Canada) open geospatial data (ArcGIS). |
-| 34 | [jlivingston-Cipher/godot-breakpoint-mcp](https://github.com/jlivingston-Cipher/godot-breakpoint-mcp) | 5 | TypeScript | 2026-08-04 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/jlivingston-Cipher/godot-breakpoint-mcp/) | MCP for Godot (4.2+) |
-| 35 | [pipeworx-io/mcp-arcgis-coquitlam](https://github.com/pipeworx-io/mcp-arcgis-coquitlam) | 0 | TypeScript | 2026-08-04 | — | City of Coquitlam GIS — Coquitlam, BC (Canada) open geospatial data (ArcGIS). |
-| 36 | [pipeworx-io/mcp-arcgis-chestercounty](https://github.com/pipeworx-io/mcp-arcgis-chestercounty) | 0 | TypeScript | 2026-08-04 | — | Chester County GIS — Chester County, Pennsylvania open geospatial data (ArcGIS). |
-| 37 | [pipeworx-io/mcp-arcgis-chatham](https://github.com/pipeworx-io/mcp-arcgis-chatham) | 0 | TypeScript | 2026-08-04 | — | Chatham County GIS — Chatham County, Georgia open geospatial data (ArcGIS). |
-| 38 | [eriknewton/sanctuary-framework](https://github.com/eriknewton/sanctuary-framework) | 6 | TypeScript | 2026-08-04 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/eriknewton/sanctuary-framework/) | Open-source security for AI agents: kernel-enforced egress control on macOS and Linux, keys only the operator holds, tam |
-| 39 | [pipeworx-io/mcp-arcgis-charlotte](https://github.com/pipeworx-io/mcp-arcgis-charlotte) | 0 | TypeScript | 2026-08-04 | — | City of Charlotte GIS — Charlotte, North Carolina open geospatial data (ArcGIS). |
-| 40 | [datacharter/datacharter](https://github.com/datacharter/datacharter) | 3 | Python | 2026-08-04 | ✅ [uvx](https://linny006.github.io/mcp-servers-live/r/datacharter/datacharter/) | Your data, explored locally — and your AI agents kept on a leash. A federated data explorer with governed agentic access |
-| 41 | [pipeworx-io/mcp-arcgis-charleston](https://github.com/pipeworx-io/mcp-arcgis-charleston) | 0 | TypeScript | 2026-08-04 | — | Charleston County GIS — Charleston County, South Carolina open geospatial data (ArcGIS). |
-| 42 | [pipeworx-io/mcp-arcgis-chapelhill](https://github.com/pipeworx-io/mcp-arcgis-chapelhill) | 0 | TypeScript | 2026-08-04 | — | Town of Chapel Hill GIS — Chapel Hill, North Carolina open geospatial data (ArcGIS). |
-| 43 | [pipeworx-io/mcp-arcgis-centennial](https://github.com/pipeworx-io/mcp-arcgis-centennial) | 0 | TypeScript | 2026-08-04 | — | City of Centennial GIS — Centennial, Colorado open geospatial data (ArcGIS). |
-| 44 | [pipeworx-io/mcp-arcgis-cedarpark](https://github.com/pipeworx-io/mcp-arcgis-cedarpark) | 0 | TypeScript | 2026-08-04 | — | City of Cedar Park GIS — Cedar Park, Texas open geospatial data (ArcGIS). |
-| 45 | [pipeworx-io/mcp-arcgis-castateparks](https://github.com/pipeworx-io/mcp-arcgis-castateparks) | 0 | TypeScript | 2026-08-04 | — | California State Parks GIS — California State Parks open geospatial data (ArcGIS). |
-| 46 | [pipeworx-io/mcp-arcgis-cary](https://github.com/pipeworx-io/mcp-arcgis-cary) | 0 | TypeScript | 2026-08-04 | — | Town of Cary GIS — Cary, North Carolina open geospatial data (ArcGIS). |
-| 47 | [pipeworx-io/mcp-arcgis-carlsbad](https://github.com/pipeworx-io/mcp-arcgis-carlsbad) | 0 | TypeScript | 2026-08-04 | — | City of Carlsbad GIS — Carlsbad, California open geospatial data (ArcGIS). |
-| 48 | [pipeworx-io/mcp-arcgis-branson](https://github.com/pipeworx-io/mcp-arcgis-branson) | 0 | TypeScript | 2026-08-04 | — | City of Branson GIS — Branson, Missouri open geospatial data (ArcGIS). |
-| 49 | [pipeworx-io/mcp-arcgis-brampton](https://github.com/pipeworx-io/mcp-arcgis-brampton) | 0 | TypeScript | 2026-08-04 | — | City of Brampton GIS — Brampton, Ontario (Canada) open geospatial data (ArcGIS). |
-| 50 | [pipeworx-io/mcp-arcgis-berkscounty](https://github.com/pipeworx-io/mcp-arcgis-berkscounty) | 0 | TypeScript | 2026-08-04 | — | Berks County GIS — Berks County, Pennsylvania open geospatial data (ArcGIS). |
+| 4 | [pipeworx-io/mcp-data-rennes](https://github.com/pipeworx-io/mcp-data-rennes) | 0 | TypeScript | 2026-08-04 | — | Rennes Métropole Open Data (data.rennesmetropole.fr) — OpenDataSoft MCP. |
+| 5 | [pipeworx-io/mcp-data-providence](https://github.com/pipeworx-io/mcp-data-providence) | 0 | TypeScript | 2026-08-04 | — | Providence Open Data (data.providenceri.gov) Socrata MCP. |
+| 6 | [pipeworx-io/mcp-data-piercecounty](https://github.com/pipeworx-io/mcp-data-piercecounty) | 0 | TypeScript | 2026-08-04 | — | Pierce County Open Data (internal.open.piercecountywa.gov) Socrata MCP. |
+| 7 | [pipeworx-io/mcp-data-paris](https://github.com/pipeworx-io/mcp-data-paris) | 0 | TypeScript | 2026-08-04 | — | Paris Open Data (opendata.paris.fr) — OpenDataSoft MCP. |
+| 8 | [pipeworx-io/mcp-data-pa](https://github.com/pipeworx-io/mcp-data-pa) | 0 | TypeScript | 2026-08-04 | — | Pennsylvania Open Data (data.pa.gov) Socrata MCP. |
+| 9 | [pipeworx-io/mcp-data-orlando](https://github.com/pipeworx-io/mcp-data-orlando) | 0 | TypeScript | 2026-08-04 | — | Orlando Open Data (data.cityoforlando.net) Socrata MCP. |
+| 10 | [pipeworx-io/mcp-data-oregon](https://github.com/pipeworx-io/mcp-data-oregon) | 0 | TypeScript | 2026-08-04 | — | Oregon Open Data — US government open data (data.oregon.gov) via the Socrata SoQL API: state agencies, business, health  |
+| 11 | [pipeworx-io/mcp-data-odre](https://github.com/pipeworx-io/mcp-data-odre) | 0 | TypeScript | 2026-08-04 | — | ODRE Energy Open Data (odre.opendatasoft.com) — OpenDataSoft MCP. |
+| 12 | [pipeworx-io/mcp-data-occitanie](https://github.com/pipeworx-io/mcp-data-occitanie) | 0 | TypeScript | 2026-08-04 | — | Occitanie Region Open Data (data.laregion.fr) — OpenDataSoft MCP. |
+| 13 | [johalputt/VayuPress](https://github.com/johalputt/VayuPress) | 11 | Go | 2026-08-04 | — | Your whole online presence in one sovereign Go binary — website, blog, PGP mail, E2E-encrypted chat, anti-DDoS bot shiel |
+| 14 | [pipeworx-io/mcp-data-oakland](https://github.com/pipeworx-io/mcp-data-oakland) | 0 | TypeScript | 2026-08-04 | — | Oakland Open Data (data.oaklandca.gov) Socrata MCP. |
+| 15 | [vigot876-arch/base-agent-airdrop-mcp](https://github.com/vigot876-arch/base-agent-airdrop-mcp) | 1 | HTML | 2026-08-04 | ✅ [docker run](https://linny006.github.io/mcp-servers-live/r/vigot876-arch/base-agent-airdrop-mcp/) | Base Airdrop MCP Server 2026 🚀 \| AI Agent Token & ETH Tools |
+| 16 | [pipeworx-io/mcp-data-ny](https://github.com/pipeworx-io/mcp-data-ny) | 0 | TypeScript | 2026-08-04 | — | data.ny.gov — New York State open-data Socrata portal |
+| 17 | [AdrianSQA/agent-feedback-hub](https://github.com/AdrianSQA/agent-feedback-hub) | 0 | HTML | 2026-08-04 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/AdrianSQA/agent-feedback-hub/) | User Dispatch MCP: AI Feedback Widget + Server 2026 - One Command Install |
+| 18 | [pipeworx-io/mcp-data-novascotia](https://github.com/pipeworx-io/mcp-data-novascotia) | 0 | TypeScript | 2026-08-04 | — | Nova Scotia Open Data (data.novascotia.ca) Socrata MCP. |
+| 19 | [pipeworx-io/mcp-data-norfolk](https://github.com/pipeworx-io/mcp-data-norfolk) | 0 | TypeScript | 2026-08-04 | — | Norfolk Open Data (data.norfolk.gov) Socrata MCP. |
+| 20 | [pipeworx-io/mcp-data-nola](https://github.com/pipeworx-io/mcp-data-nola) | 0 | TypeScript | 2026-08-04 | — | DataNewOrleans MCP — New Orleans open data (data.nola.gov, Socrata SODA API). |
+| 21 | [pipeworx-io/mcp-data-nl](https://github.com/pipeworx-io/mcp-data-nl) | 0 | TypeScript | 2026-08-04 | — | Netherlands Open Data (data.overheid.nl/data) CKAN MCP. |
+| 22 | [pipeworx-io/mcp-data-nj](https://github.com/pipeworx-io/mcp-data-nj) | 0 | TypeScript | 2026-08-04 | — | New Jersey Open Data (data.nj.gov) Socrata MCP. |
+| 23 | [pipeworx-io/mcp-data-newcaledonia](https://github.com/pipeworx-io/mcp-data-newcaledonia) | 0 | TypeScript | 2026-08-04 | — | New Caledonia Open Data (data.gouv.nc) — OpenDataSoft MCP. |
+| 24 | [pipeworx-io/mcp-data-nashville](https://github.com/pipeworx-io/mcp-data-nashville) | 0 | TypeScript | 2026-08-04 | — | DataNashville MCP — Nashville open data (data.nashville.gov, ArcGIS REST API). |
+| 25 | [shno-labs/mem-forge](https://github.com/shno-labs/mem-forge) | 4 | Python | 2026-08-04 | — | Self-evolving, evidence-based memory layer for coding agents and development teams. |
+| 26 | [pipeworx-io/mcp-data-nantes](https://github.com/pipeworx-io/mcp-data-nantes) | 0 | TypeScript | 2026-08-04 | — | Nantes Métropole Open Data (data.nantesmetropole.fr) — OpenDataSoft MCP. |
+| 27 | [nikolas-sapa/branch-ai](https://github.com/nikolas-sapa/branch-ai) | 3 | TypeScript | 2026-08-04 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/nikolas-sapa/branch-ai/) | Reasoning canvas for AI CLIs — captures extended thinking from Claude Code, Codex, Gemini, and Droid as a navigable, for |
+| 28 | [pipeworx-io/mcp-data-montreal](https://github.com/pipeworx-io/mcp-data-montreal) | 0 | TypeScript | 2026-08-04 | — | DataMontreal MCP — City of Montreal open data (donnees.montreal.ca, CKAN API). |
+| 29 | [pipeworx-io/mcp-data-montgomery](https://github.com/pipeworx-io/mcp-data-montgomery) | 0 | TypeScript | 2026-08-04 | — | DataMontgomeryCountyMD MCP — Montgomery County, MD open data (data.montgomerycountymd.gov, Socrata SODA API). |
+| 30 | [DannylydST/sorftime-seller-agent](https://github.com/DannylydST/sorftime-seller-agent) | 13 | Python | 2026-08-04 | — | Free AI-powered Amazon product research & marketplace intelligence for 6 platforms. Hidden Profit Index — Sorftime's pro |
+| 31 | [pipeworx-io/mcp-data-mo](https://github.com/pipeworx-io/mcp-data-mo) | 0 | TypeScript | 2026-08-04 | — | Missouri Open Data (data.mo.gov) Socrata MCP. |
+| 32 | [pipeworx-io/mcp-data-michigan](https://github.com/pipeworx-io/mcp-data-michigan) | 0 | TypeScript | 2026-08-04 | — | Michigan Open Data (data.michigan.gov) Socrata MCP. |
+| 33 | [dinglebear-ai/rtailscale](https://github.com/dinglebear-ai/rtailscale) | 4 | Rust | 2026-08-04 | ✅ [npx](https://linny006.github.io/mcp-servers-live/r/dinglebear-ai/rtailscale/) | Rust MCP server and CLI for Tailscale tailnet operations: devices, users, keys, policies, auth, and agent-friendly autom |
+| 34 | [pipeworx-io/mcp-data-mesa](https://github.com/pipeworx-io/mcp-data-mesa) | 0 | TypeScript | 2026-08-04 | — | Mesa Open Data (citydata.mesaaz.gov) Socrata MCP. |
+| 35 | [dinglebear-ai/rgotify](https://github.com/dinglebear-ai/rgotify) | 1 | Rust | 2026-08-04 | ✅ [npx](https://linny006.github.io/mcp-servers-live/r/dinglebear-ai/rgotify/) | Rust MCP server and CLI for Gotify push notifications, with stdio/HTTP transports, auth, Claude/Codex plugin packaging,  |
+| 36 | [nikolas-sapa/clientcast](https://github.com/nikolas-sapa/clientcast) | 2 | TypeScript | 2026-08-04 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/nikolas-sapa/clientcast/) | CLI + MCP server that drafts client update emails from your git commits, classifies replies as approval/feedback/scope-c |
+| 37 | [pipeworx-io/mcp-data-maryland](https://github.com/pipeworx-io/mcp-data-maryland) | 0 | TypeScript | 2026-08-04 | — | Maryland Open Data — US government open data (opendata.maryland.gov) via the Socrata SoQL API: state government, health, |
+| 38 | [pipeworx-io/mcp-data-lv](https://github.com/pipeworx-io/mcp-data-lv) | 0 | TypeScript | 2026-08-04 | — | Latvia Open Data (data.gov.lv) CKAN MCP. |
+| 39 | [pipeworx-io/mcp-data-loireatlantique](https://github.com/pipeworx-io/mcp-data-loireatlantique) | 0 | TypeScript | 2026-08-04 | — | Loire-Atlantique Open Data (data.loire-atlantique.fr) — OpenDataSoft MCP. |
+| 40 | [pipeworx-io/mcp-data-la](https://github.com/pipeworx-io/mcp-data-la) | 0 | TypeScript | 2026-08-04 | — | DataLA MCP — Los Angeles open data (data.lacity.org, Socrata SODA API). |
+| 41 | [pipeworx-io/mcp-data-kingcounty](https://github.com/pipeworx-io/mcp-data-kingcounty) | 0 | TypeScript | 2026-08-04 | — | King County Open Data (data.kingcounty.gov) Socrata MCP. |
+| 42 | [pipeworx-io/mcp-data-kcmo](https://github.com/pipeworx-io/mcp-data-kcmo) | 0 | TypeScript | 2026-08-04 | — | DataKansasCityMO MCP — Kansas City, MO open data (data.kcmo.org, Socrata SODA API). |
+| 43 | [pipeworx-io/mcp-data-issy](https://github.com/pipeworx-io/mcp-data-issy) | 0 | TypeScript | 2026-08-04 | — | Issy-les-Moulineaux Open Data (data.issy.com) — OpenDataSoft MCP. |
+| 44 | [pipeworx-io/mcp-data-iledefrance](https://github.com/pipeworx-io/mcp-data-iledefrance) | 0 | TypeScript | 2026-08-04 | — | Île-de-France Open Data (data.iledefrance.fr) — OpenDataSoft MCP. |
+| 45 | [pipeworx-io/mcp-data-howardcounty](https://github.com/pipeworx-io/mcp-data-howardcounty) | 0 | TypeScript | 2026-08-04 | — | Howard County Open Data (opendata.howardcountymd.gov) Socrata MCP. |
+| 46 | [pipeworx-io/mcp-data-grandparissud](https://github.com/pipeworx-io/mcp-data-grandparissud) | 0 | TypeScript | 2026-08-04 | — | Grand Paris Sud Open Data (data.grandparissud.fr) — OpenDataSoft MCP. |
+| 47 | [MadaBurns/bv-mcp](https://github.com/MadaBurns/bv-mcp) | 6 | TypeScript | 2026-08-04 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/MadaBurns/bv-mcp/) | Open-source DNS & email security scanner. One MCP endpoint, 57 checks, zero install. Cloudflare Workers. |
+| 48 | [pipeworx-io/mcp-data-gr](https://github.com/pipeworx-io/mcp-data-gr) | 0 | TypeScript | 2026-08-04 | — | Greece Open Data (data.gov.gr) CKAN MCP. |
+| 49 | [pipeworx-io/mcp-data-govt-nz](https://github.com/pipeworx-io/mcp-data-govt-nz) | 0 | TypeScript | 2026-08-04 | — | data.govt.nz CKAN MCP. |
+| 50 | [VidGuiCode/assemblash](https://github.com/VidGuiCode/assemblash) | 0 | Rust | 2026-08-04 | ✅ [cargo install](https://linny006.github.io/mcp-servers-live/r/VidGuiCode/assemblash/) | A local-first visual document engine and MCP server for humans and AI agents |
 <!-- TRACKER_TABLE_END -->
 
 ---
