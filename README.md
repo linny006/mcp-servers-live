@@ -44,7 +44,7 @@ expired items removed — so you can rely on what you see being current.
 
 ## 📋 Current Items
 
-> ⏰ Last updated: 2026-08-04 06:30 UTC
+> ⏰ Last updated: 2026-08-04 06:45 UTC
 >
 > Data source: `GitHub Search API`
 >
@@ -53,56 +53,56 @@ expired items removed — so you can rely on what you see being current.
 <!-- TRACKER_TABLE_START -->
 | # | Name | ⭐ | Lang | Updated | Install | Description |
 |---|------|---|------|---------|---------|-------------|
-| 1 | [pipeworx-io/mcp-data-santaclara](https://github.com/pipeworx-io/mcp-data-santaclara) | 0 | TypeScript | 2026-08-04 | — | Santa Clara County Open Data (data.sccgov.org) Socrata MCP. |
-| 2 | [pipeworx-io/mcp-data-reunion](https://github.com/pipeworx-io/mcp-data-reunion) | 0 | TypeScript | 2026-08-04 | — | Réunion Open Data (data.regionreunion.com) — OpenDataSoft MCP. |
+| 1 | [pipeworx-io/mcp-jersey-opendata](https://github.com/pipeworx-io/mcp-jersey-opendata) | 0 | TypeScript | 2026-08-04 | — | Jersey Open Data MCP — opendata.gov.je, the official statistics / open-data |
+| 2 | [pipeworx-io/mcp-jargon-translator](https://github.com/pipeworx-io/mcp-jargon-translator) | 0 | TypeScript | 2026-08-04 | — | jargon-translator MCP — wraps StupidAPIs (requires X-API-Key) |
 | 3 | [linny006/trending-claude-skills](https://github.com/linny006/trending-claude-skills) | 22 | Python | 2026-08-04 | — | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
-| 4 | [pipeworx-io/mcp-data-rennes](https://github.com/pipeworx-io/mcp-data-rennes) | 0 | TypeScript | 2026-08-04 | — | Rennes Métropole Open Data (data.rennesmetropole.fr) — OpenDataSoft MCP. |
-| 5 | [pipeworx-io/mcp-data-providence](https://github.com/pipeworx-io/mcp-data-providence) | 0 | TypeScript | 2026-08-04 | — | Providence Open Data (data.providenceri.gov) Socrata MCP. |
-| 6 | [pipeworx-io/mcp-data-piercecounty](https://github.com/pipeworx-io/mcp-data-piercecounty) | 0 | TypeScript | 2026-08-04 | — | Pierce County Open Data (internal.open.piercecountywa.gov) Socrata MCP. |
-| 7 | [pipeworx-io/mcp-data-paris](https://github.com/pipeworx-io/mcp-data-paris) | 0 | TypeScript | 2026-08-04 | — | Paris Open Data (opendata.paris.fr) — OpenDataSoft MCP. |
-| 8 | [pipeworx-io/mcp-data-pa](https://github.com/pipeworx-io/mcp-data-pa) | 0 | TypeScript | 2026-08-04 | — | Pennsylvania Open Data (data.pa.gov) Socrata MCP. |
-| 9 | [pipeworx-io/mcp-data-orlando](https://github.com/pipeworx-io/mcp-data-orlando) | 0 | TypeScript | 2026-08-04 | — | Orlando Open Data (data.cityoforlando.net) Socrata MCP. |
-| 10 | [pipeworx-io/mcp-data-oregon](https://github.com/pipeworx-io/mcp-data-oregon) | 0 | TypeScript | 2026-08-04 | — | Oregon Open Data — US government open data (data.oregon.gov) via the Socrata SoQL API: state agencies, business, health  |
-| 11 | [pipeworx-io/mcp-data-odre](https://github.com/pipeworx-io/mcp-data-odre) | 0 | TypeScript | 2026-08-04 | — | ODRE Energy Open Data (odre.opendatasoft.com) — OpenDataSoft MCP. |
-| 12 | [pipeworx-io/mcp-data-occitanie](https://github.com/pipeworx-io/mcp-data-occitanie) | 0 | TypeScript | 2026-08-04 | — | Occitanie Region Open Data (data.laregion.fr) — OpenDataSoft MCP. |
-| 13 | [johalputt/VayuPress](https://github.com/johalputt/VayuPress) | 11 | Go | 2026-08-04 | — | Your whole online presence in one sovereign Go binary — website, blog, PGP mail, E2E-encrypted chat, anti-DDoS bot shiel |
-| 14 | [pipeworx-io/mcp-data-oakland](https://github.com/pipeworx-io/mcp-data-oakland) | 0 | TypeScript | 2026-08-04 | — | Oakland Open Data (data.oaklandca.gov) Socrata MCP. |
-| 15 | [vigot876-arch/base-agent-airdrop-mcp](https://github.com/vigot876-arch/base-agent-airdrop-mcp) | 1 | HTML | 2026-08-04 | ✅ [docker run](https://linny006.github.io/mcp-servers-live/r/vigot876-arch/base-agent-airdrop-mcp/) | Base Airdrop MCP Server 2026 🚀 \| AI Agent Token & ETH Tools |
-| 16 | [pipeworx-io/mcp-data-ny](https://github.com/pipeworx-io/mcp-data-ny) | 0 | TypeScript | 2026-08-04 | — | data.ny.gov — New York State open-data Socrata portal |
-| 17 | [AdrianSQA/agent-feedback-hub](https://github.com/AdrianSQA/agent-feedback-hub) | 0 | HTML | 2026-08-04 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/AdrianSQA/agent-feedback-hub/) | User Dispatch MCP: AI Feedback Widget + Server 2026 - One Command Install |
-| 18 | [pipeworx-io/mcp-data-novascotia](https://github.com/pipeworx-io/mcp-data-novascotia) | 0 | TypeScript | 2026-08-04 | — | Nova Scotia Open Data (data.novascotia.ca) Socrata MCP. |
-| 19 | [pipeworx-io/mcp-data-norfolk](https://github.com/pipeworx-io/mcp-data-norfolk) | 0 | TypeScript | 2026-08-04 | — | Norfolk Open Data (data.norfolk.gov) Socrata MCP. |
-| 20 | [pipeworx-io/mcp-data-nola](https://github.com/pipeworx-io/mcp-data-nola) | 0 | TypeScript | 2026-08-04 | — | DataNewOrleans MCP — New Orleans open data (data.nola.gov, Socrata SODA API). |
-| 21 | [pipeworx-io/mcp-data-nl](https://github.com/pipeworx-io/mcp-data-nl) | 0 | TypeScript | 2026-08-04 | — | Netherlands Open Data (data.overheid.nl/data) CKAN MCP. |
-| 22 | [pipeworx-io/mcp-data-nj](https://github.com/pipeworx-io/mcp-data-nj) | 0 | TypeScript | 2026-08-04 | — | New Jersey Open Data (data.nj.gov) Socrata MCP. |
-| 23 | [pipeworx-io/mcp-data-newcaledonia](https://github.com/pipeworx-io/mcp-data-newcaledonia) | 0 | TypeScript | 2026-08-04 | — | New Caledonia Open Data (data.gouv.nc) — OpenDataSoft MCP. |
-| 24 | [pipeworx-io/mcp-data-nashville](https://github.com/pipeworx-io/mcp-data-nashville) | 0 | TypeScript | 2026-08-04 | — | DataNashville MCP — Nashville open data (data.nashville.gov, ArcGIS REST API). |
-| 25 | [shno-labs/mem-forge](https://github.com/shno-labs/mem-forge) | 4 | Python | 2026-08-04 | — | Self-evolving, evidence-based memory layer for coding agents and development teams. |
-| 26 | [pipeworx-io/mcp-data-nantes](https://github.com/pipeworx-io/mcp-data-nantes) | 0 | TypeScript | 2026-08-04 | — | Nantes Métropole Open Data (data.nantesmetropole.fr) — OpenDataSoft MCP. |
-| 27 | [nikolas-sapa/branch-ai](https://github.com/nikolas-sapa/branch-ai) | 3 | TypeScript | 2026-08-04 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/nikolas-sapa/branch-ai/) | Reasoning canvas for AI CLIs — captures extended thinking from Claude Code, Codex, Gemini, and Droid as a navigable, for |
-| 28 | [pipeworx-io/mcp-data-montreal](https://github.com/pipeworx-io/mcp-data-montreal) | 0 | TypeScript | 2026-08-04 | — | DataMontreal MCP — City of Montreal open data (donnees.montreal.ca, CKAN API). |
-| 29 | [pipeworx-io/mcp-data-montgomery](https://github.com/pipeworx-io/mcp-data-montgomery) | 0 | TypeScript | 2026-08-04 | — | DataMontgomeryCountyMD MCP — Montgomery County, MD open data (data.montgomerycountymd.gov, Socrata SODA API). |
-| 30 | [DannylydST/sorftime-seller-agent](https://github.com/DannylydST/sorftime-seller-agent) | 13 | Python | 2026-08-04 | — | Free AI-powered Amazon product research & marketplace intelligence for 6 platforms. Hidden Profit Index — Sorftime's pro |
-| 31 | [pipeworx-io/mcp-data-mo](https://github.com/pipeworx-io/mcp-data-mo) | 0 | TypeScript | 2026-08-04 | — | Missouri Open Data (data.mo.gov) Socrata MCP. |
-| 32 | [pipeworx-io/mcp-data-michigan](https://github.com/pipeworx-io/mcp-data-michigan) | 0 | TypeScript | 2026-08-04 | — | Michigan Open Data (data.michigan.gov) Socrata MCP. |
-| 33 | [dinglebear-ai/rtailscale](https://github.com/dinglebear-ai/rtailscale) | 4 | Rust | 2026-08-04 | ✅ [npx](https://linny006.github.io/mcp-servers-live/r/dinglebear-ai/rtailscale/) | Rust MCP server and CLI for Tailscale tailnet operations: devices, users, keys, policies, auth, and agent-friendly autom |
-| 34 | [pipeworx-io/mcp-data-mesa](https://github.com/pipeworx-io/mcp-data-mesa) | 0 | TypeScript | 2026-08-04 | — | Mesa Open Data (citydata.mesaaz.gov) Socrata MCP. |
-| 35 | [dinglebear-ai/rgotify](https://github.com/dinglebear-ai/rgotify) | 1 | Rust | 2026-08-04 | ✅ [npx](https://linny006.github.io/mcp-servers-live/r/dinglebear-ai/rgotify/) | Rust MCP server and CLI for Gotify push notifications, with stdio/HTTP transports, auth, Claude/Codex plugin packaging,  |
-| 36 | [nikolas-sapa/clientcast](https://github.com/nikolas-sapa/clientcast) | 2 | TypeScript | 2026-08-04 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/nikolas-sapa/clientcast/) | CLI + MCP server that drafts client update emails from your git commits, classifies replies as approval/feedback/scope-c |
-| 37 | [pipeworx-io/mcp-data-maryland](https://github.com/pipeworx-io/mcp-data-maryland) | 0 | TypeScript | 2026-08-04 | — | Maryland Open Data — US government open data (opendata.maryland.gov) via the Socrata SoQL API: state government, health, |
-| 38 | [pipeworx-io/mcp-data-lv](https://github.com/pipeworx-io/mcp-data-lv) | 0 | TypeScript | 2026-08-04 | — | Latvia Open Data (data.gov.lv) CKAN MCP. |
-| 39 | [pipeworx-io/mcp-data-loireatlantique](https://github.com/pipeworx-io/mcp-data-loireatlantique) | 0 | TypeScript | 2026-08-04 | — | Loire-Atlantique Open Data (data.loire-atlantique.fr) — OpenDataSoft MCP. |
-| 40 | [pipeworx-io/mcp-data-la](https://github.com/pipeworx-io/mcp-data-la) | 0 | TypeScript | 2026-08-04 | — | DataLA MCP — Los Angeles open data (data.lacity.org, Socrata SODA API). |
-| 41 | [pipeworx-io/mcp-data-kingcounty](https://github.com/pipeworx-io/mcp-data-kingcounty) | 0 | TypeScript | 2026-08-04 | — | King County Open Data (data.kingcounty.gov) Socrata MCP. |
-| 42 | [pipeworx-io/mcp-data-kcmo](https://github.com/pipeworx-io/mcp-data-kcmo) | 0 | TypeScript | 2026-08-04 | — | DataKansasCityMO MCP — Kansas City, MO open data (data.kcmo.org, Socrata SODA API). |
-| 43 | [pipeworx-io/mcp-data-issy](https://github.com/pipeworx-io/mcp-data-issy) | 0 | TypeScript | 2026-08-04 | — | Issy-les-Moulineaux Open Data (data.issy.com) — OpenDataSoft MCP. |
-| 44 | [pipeworx-io/mcp-data-iledefrance](https://github.com/pipeworx-io/mcp-data-iledefrance) | 0 | TypeScript | 2026-08-04 | — | Île-de-France Open Data (data.iledefrance.fr) — OpenDataSoft MCP. |
-| 45 | [pipeworx-io/mcp-data-howardcounty](https://github.com/pipeworx-io/mcp-data-howardcounty) | 0 | TypeScript | 2026-08-04 | — | Howard County Open Data (opendata.howardcountymd.gov) Socrata MCP. |
-| 46 | [pipeworx-io/mcp-data-grandparissud](https://github.com/pipeworx-io/mcp-data-grandparissud) | 0 | TypeScript | 2026-08-04 | — | Grand Paris Sud Open Data (data.grandparissud.fr) — OpenDataSoft MCP. |
-| 47 | [MadaBurns/bv-mcp](https://github.com/MadaBurns/bv-mcp) | 6 | TypeScript | 2026-08-04 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/MadaBurns/bv-mcp/) | Open-source DNS & email security scanner. One MCP endpoint, 57 checks, zero install. Cloudflare Workers. |
-| 48 | [pipeworx-io/mcp-data-gr](https://github.com/pipeworx-io/mcp-data-gr) | 0 | TypeScript | 2026-08-04 | — | Greece Open Data (data.gov.gr) CKAN MCP. |
-| 49 | [pipeworx-io/mcp-data-govt-nz](https://github.com/pipeworx-io/mcp-data-govt-nz) | 0 | TypeScript | 2026-08-04 | — | data.govt.nz CKAN MCP. |
-| 50 | [VidGuiCode/assemblash](https://github.com/VidGuiCode/assemblash) | 0 | Rust | 2026-08-04 | ✅ [cargo install](https://linny006.github.io/mcp-servers-live/r/VidGuiCode/assemblash/) | A local-first visual document engine and MCP server for humans and AI agents |
+| 4 | [pipeworx-io/mcp-japan-law](https://github.com/pipeworx-io/mcp-japan-law) | 0 | TypeScript | 2026-08-04 | — | Japan Law MCP — Japanese national laws & ordinances via the e-Gov Law API. |
+| 5 | [pipeworx-io/mcp-itunes-search](https://github.com/pipeworx-io/mcp-itunes-search) | 0 | TypeScript | 2026-08-04 | — | iTunes Search MCP — Apple's public catalog search |
+| 6 | [pipeworx-io/mcp-itis](https://github.com/pipeworx-io/mcp-itis) | 0 | TypeScript | 2026-08-04 | — | ITIS (Integrated Taxonomic Information System) MCP. |
+| 7 | [pipeworx-io/mcp-istat-it](https://github.com/pipeworx-io/mcp-istat-it) | 0 | TypeScript | 2026-08-04 | — | ISTAT (Istituto Nazionale di Statistica) MCP — Italy's national statistics |
+| 8 | [pipeworx-io/mcp-iss-number](https://github.com/pipeworx-io/mcp-iss-number) | 0 | TypeScript | 2026-08-04 | — | iss-number MCP — wraps StupidAPIs (requires X-API-Key) |
+| 9 | [pipeworx-io/mcp-israel-tenders](https://github.com/pipeworx-io/mcp-israel-tenders) | 0 | TypeScript | 2026-08-04 | — | Israel Government Procurement MCP — public tenders & exemption contracts (keyless). |
+| 10 | [pipeworx-io/mcp-iso-codes](https://github.com/pipeworx-io/mcp-iso-codes) | 0 | TypeScript | 2026-08-04 | — | ISO country/language/currency/script code lookups (Debian iso-codes JSON) |
+| 11 | [pipeworx-io/mcp-iso](https://github.com/pipeworx-io/mcp-iso) | 0 | TypeScript | 2026-08-04 | — | Look up ISO standards (27001, 42001, 9001…): live status & price, a curated compliance catalogue, and ISO Open Data file |
+| 12 | [pipeworx-io/mcp-isin](https://github.com/pipeworx-io/mcp-isin) | 0 | TypeScript | 2026-08-04 | — | Securities-identifier validation MCP (ISIN / CUSIP). |
+| 13 | [pipeworx-io/mcp-isc-sans](https://github.com/pipeworx-io/mcp-isc-sans) | 0 | TypeScript | 2026-08-04 | — | SANS Internet Storm Center (ISC) MCP. |
+| 14 | [pipeworx-io/mcp-isbn](https://github.com/pipeworx-io/mcp-isbn) | 0 | TypeScript | 2026-08-04 | — | ISBN validation & conversion MCP. |
+| 15 | [pipeworx-io/mcp-irail](https://github.com/pipeworx-io/mcp-irail) | 0 | TypeScript | 2026-08-04 | — | iRail MCP — Belgian rail (SNCB/NMBS) real-time via the community iRail API |
+| 16 | [pipeworx-io/mcp-ipquery](https://github.com/pipeworx-io/mcp-ipquery) | 0 | TypeScript | 2026-08-04 | — | IPQuery MCP. |
+| 17 | [pipeworx-io/mcp-ipqualityscore](https://github.com/pipeworx-io/mcp-ipqualityscore) | 0 | TypeScript | 2026-08-04 | — | IPQualityScore MCP — wraps the IPQualityScore fraud-prevention API |
+| 18 | [pipeworx-io/mcp-ipma-pt](https://github.com/pipeworx-io/mcp-ipma-pt) | 0 | TypeScript | 2026-08-04 | — | IPMA Portugal MCP — weather, UV, sea state, and earthquakes from the |
+| 19 | [pipeworx-io/mcp-iplookup](https://github.com/pipeworx-io/mcp-iplookup) | 0 | TypeScript | 2026-08-04 | — | MCP server for IP geolocation — look up location, ISP, and network info for any IP |
+| 20 | [pipeworx-io/mcp-ipinfo](https://github.com/pipeworx-io/mcp-ipinfo) | 0 | TypeScript | 2026-08-04 | — | MCP server for IP geolocation and network info via ipinfo.io |
+| 21 | [pipeworx-io/mcp-ipify](https://github.com/pipeworx-io/mcp-ipify) | 0 | TypeScript | 2026-08-04 | — | ipify: caller IPv4/IPv6 echo. Useful for verifying gateway egress. |
+| 22 | [pipeworx-io/mcp-ipaddress](https://github.com/pipeworx-io/mcp-ipaddress) | 0 | TypeScript | 2026-08-04 | — | IP address utilities MCP. |
+| 23 | [pipeworx-io/mcp-interpro](https://github.com/pipeworx-io/mcp-interpro) | 0 | TypeScript | 2026-08-04 | — | InterPro MCP (EBI) — protein family / domain / functional-site classification. |
+| 24 | [pipeworx-io/mcp-intercom](https://github.com/pipeworx-io/mcp-intercom) | 0 | TypeScript | 2026-08-04 | — | Intercom MCP Pack — contacts, conversations, companies via OAuth. |
+| 25 | [JuanSPZ/agent-ready-index](https://github.com/JuanSPZ/agent-ready-index) | 2 | HTML | 2026-08-04 | — | Agent Search 2026: Best AI-Ready Site Indexer & MCP Tools 🚀 |
+| 26 | [pipeworx-io/mcp-intact](https://github.com/pipeworx-io/mcp-intact) | 0 | TypeScript | 2026-08-04 | — | IntAct (EBI) molecular-interaction database MCP. Keyless. |
+| 27 | [pipeworx-io/mcp-inspire-hep](https://github.com/pipeworx-io/mcp-inspire-hep) | 0 | TypeScript | 2026-08-04 | — | INSPIRE-HEP high-energy physics literature database |
+| 28 | [pipeworx-io/mcp-insee](https://github.com/pipeworx-io/mcp-insee) | 0 | TypeScript | 2026-08-04 | — | INSEE MCP — France's SIRENE business registry (INSEE). |
+| 29 | [pipeworx-io/mcp-inegi](https://github.com/pipeworx-io/mcp-inegi) | 0 | TypeScript | 2026-08-04 | — | INEGI MCP — Mexico's national statistics office (INEGI) Indicators API. |
+| 30 | [pipeworx-io/mcp-ine-pt](https://github.com/pipeworx-io/mcp-ine-pt) | 0 | TypeScript | 2026-08-04 | — | Statistics Portugal (INE) JSON indicator MCP. |
+| 31 | [polytrackers/polymarket-copy-trading-skill](https://github.com/polytrackers/polymarket-copy-trading-skill) | 0 | — | 2026-08-04 | — | Copy trading & paper trading for Polymarket — built for AI agents. MCP server, whale tracking, $10k mock wallets. Instal |
+| 32 | [pipeworx-io/mcp-ine-es](https://github.com/pipeworx-io/mcp-ine-es) | 0 | TypeScript | 2026-08-04 | — | INE Spain (Instituto Nacional de Estadística) Tempus3 JSON API MCP. |
+| 33 | [pipeworx-io/mcp-inaturalist](https://github.com/pipeworx-io/mcp-inaturalist) | 0 | TypeScript | 2026-08-04 | — | iNaturalist MCP — citizen-science species observations (free, no auth for read-only) |
+| 34 | [pipeworx-io/mcp-in-bmv](https://github.com/pipeworx-io/mcp-in-bmv) | 0 | TypeScript | 2026-08-04 | — | Indiana BMV branches, kiosks, BMV Connect and motorcycle skills-test locations |
+| 35 | [lm203688/aishield](https://github.com/lm203688/aishield) | 0 | Python | 2026-08-04 | ✅ [docker run](https://linny006.github.io/mcp-servers-live/r/lm203688/aishield/) | 🛡️ Agent-native AI tool security scanner. Scan MCP/Skill/GPT/Prompt for security risks. 4-dimensional scoring. Certified |
+| 36 | [pipeworx-io/mcp-imgflip](https://github.com/pipeworx-io/mcp-imgflip) | 0 | TypeScript | 2026-08-04 | — | MCP server for popular meme templates via Imgflip API |
+| 37 | [pipeworx-io/mcp-imf-portwatch](https://github.com/pipeworx-io/mcp-imf-portwatch) | 0 | TypeScript | 2026-08-04 | — | IMF PortWatch MCP — global maritime trade & chokepoint signals (free, no auth) |
+| 38 | [pipeworx-io/mcp-imf](https://github.com/pipeworx-io/mcp-imf) | 0 | TypeScript | 2026-08-04 | — | IMF MCP — wraps IMF SDMX JSON REST API (dataservices.imf.org) |
+| 39 | [pipeworx-io/mcp-imei](https://github.com/pipeworx-io/mcp-imei) | 0 | TypeScript | 2026-08-04 | — | IMEI validation MCP. |
+| 40 | [pipeworx-io/mcp-imdb](https://github.com/pipeworx-io/mcp-imdb) | 0 | TypeScript | 2026-08-04 | — | IMDB MCP — title metadata, ratings, episodes, and crew from IMDB's |
+| 41 | [pipeworx-io/mcp-ilostat](https://github.com/pipeworx-io/mcp-ilostat) | 0 | TypeScript | 2026-08-04 | — | ILOSTAT (International Labour Organization statistics) MCP — global labour |
+| 42 | [pipeworx-io/mcp-ifsc-in](https://github.com/pipeworx-io/mcp-ifsc-in) | 0 | TypeScript | 2026-08-04 | — | ifsc-in MCP — Indian bank branch IFSC code lookup via Razorpay's open |
+| 43 | [pipeworx-io/mcp-ietf-datatracker](https://github.com/pipeworx-io/mcp-ietf-datatracker) | 0 | TypeScript | 2026-08-04 | — | IETF Datatracker RFCs / drafts / working groups / people |
+| 44 | [johalputt/VayuPress](https://github.com/johalputt/VayuPress) | 11 | Go | 2026-08-04 | — | Your whole online presence in one sovereign Go binary — website, blog, PGP mail, E2E-encrypted chat, anti-DDoS bot shiel |
+| 45 | [gefsikatsinelou/MetaSearchMCP](https://github.com/gefsikatsinelou/MetaSearchMCP) | 52 | Python | 2026-08-04 | ✅ [uv pip install](https://linny006.github.io/mcp-servers-live/r/gefsikatsinelou/MetaSearchMCP/) | Open-source metasearch backend, MCP server, and AI search API for LLM agents. Python FastAPI search gateway with Google  |
+| 46 | [pipeworx-io/mcp-ieee-standards](https://github.com/pipeworx-io/mcp-ieee-standards) | 0 | TypeScript | 2026-08-04 | — | IEEE Xplore MCP — BYOK wrapper over the IEEE Xplore Metadata Search API |
+| 47 | [pipeworx-io/mcp-idigbio](https://github.com/pipeworx-io/mcp-idigbio) | 0 | TypeScript | 2026-08-04 | — | iDigBio biodiversity specimen MCP. |
+| 48 | [pipeworx-io/mcp-idf-events](https://github.com/pipeworx-io/mcp-idf-events) | 0 | TypeScript | 2026-08-04 | — | Île-de-France (Greater Paris) Events MCP. |
+| 49 | [pipeworx-io/mcp-iconify](https://github.com/pipeworx-io/mcp-iconify) | 1 | TypeScript | 2026-08-04 | — | MCP server for searching and retrieving icons via Iconify API |
+| 50 | [pipeworx-io/mcp-ibge-br](https://github.com/pipeworx-io/mcp-ibge-br) | 0 | TypeScript | 2026-08-04 | — | IBGE (Instituto Brasileiro de Geografia e Estatística) MCP. |
 <!-- TRACKER_TABLE_END -->
 
 ---
