@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="glassity/focus-mcp - entry on MCP Servers Live">
 <meta name="twitter:description" content="MCP server for FinOps cloud cost analysis using FOCUS billing data. Query AWS, Azure &amp; GCP costs with AI assistants like">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"glassity/focus-mcp","codeRepository":"https://github.com/glassity/focus-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/glassity/focus-mcp/","description":"MCP server for FinOps cloud cost analysis using FOCUS billing data. Query AWS, Azure & GCP costs with AI assistants like","author":{"@type":"Person","name":"glassity","url":"https://github.com/glassity"},"dateModified":"2026-08-06"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"glassity/focus-mcp","codeRepository":"https://github.com/glassity/focus-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/glassity/focus-mcp/","description":"MCP server for FinOps cloud cost analysis using FOCUS billing data. Query AWS, Azure & GCP costs with AI assistants like","author":{"@type":"Person","name":"glassity","url":"https://github.com/glassity"},"dateModified":"2026-08-07"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -48,26 +48,24 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <div class="meta">
 <span><strong>Stars</strong> 11</span>
 <span><strong>Language</strong> Python</span>
-<span><strong>Last updated</strong> 2026-08-06</span>
+<span><strong>Last updated</strong> 2026-08-07</span>
 <span><a href="https://github.com/glassity/focus-mcp" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/glassity" rel="external">@glassity</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
 <p>Install method detected from README: <code>claude mcp add</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add focus -- docker run -i --rm \</code></pre>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add focus -e FOCUS_DATA_LOCATION=/path/to/your/focus/data -- uvx focus-mcp</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;focus&quot;: {
-      &quot;command&quot;: &quot;docker&quot;,
-      &quot;args&quot;: [
-        &quot;run&quot;, &quot;-i&quot;, &quot;--rm&quot;,
-        &quot;-v&quot;, &quot;/path/to/your/focus/data:/data:ro&quot;,
-        &quot;-e&quot;, &quot;FOCUS_DATA_LOCATION=/data&quot;,
-        &quot;-e&quot;, &quot;FOCUS_VERSION=1.0&quot;,
-        &quot;glassity/focus-mcp:latest&quot;
-      ]
+      &quot;command&quot;: &quot;uvx&quot;,
+      &quot;args&quot;: [&quot;focus-mcp&quot;],
+      &quot;env&quot;: {
+        &quot;FOCUS_DATA_LOCATION&quot;: &quot;/path/to/your/focus/data&quot;,
+        &quot;FOCUS_VERSION&quot;: &quot;1.0&quot;
+      }
     }
   }
 }</code></pre>
@@ -77,8 +75,8 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Anil-matcha/Wan-3.0-API/">Anil-matcha/Wan-3.0-API (stars:73)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/cdeust/Cortex/">cdeust/Cortex (stars:70)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/1Panel-dev/MaxKB/">1Panel-dev/MaxKB (stars:22431)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/gensecaihq/pfsense-mcp-server/">gensecaihq/pfsense-mcp-server (stars:83)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/linny006/trending-claude-skills/">linny006/trending-claude-skills (stars:22)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
