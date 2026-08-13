@@ -1,5 +1,87 @@
 [
   {
+    "description": "Serve multiple stdio MCP servers from one container: path routing, hub meta-tools, built-in OAuth 2.1 for Claude Web",
+    "id": "ni-c/mcp-hub",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"paperless\": {\n      \"command\": \"paperless-mcp\",\n      \"args\": [],\n      \"env\": { \"PAPERLESS_API_TOKEN\": \"${PAPERLESS_API_TOKEN}\" }\n    },\n    \"homeassistant\": {\n      \"type\": \"http\",\n      \"url\": \"http://homeassistant:8123/api/mcp\",\n      \"headers\": { \"Authorization\": \"Bearer ${HA_TOKEN}\" }\n    },\n    \"private-thing\": { \"command\": \"some-mcp\", \"args\": [], \"hub\": false }\n  }\n}",
+      "install_cmd": "npm install\nnpm",
+      "install_kind": "npm install"
+    },
+    "language": "TypeScript",
+    "name": "ni-c/mcp-hub",
+    "stars": 0,
+    "updated_at": "2026-08-13T22:02:50Z",
+    "url": "https://github.com/ni-c/mcp-hub"
+  },
+  {
+    "description": "A record of what your AI sessions decided \u2014 and the receipts behind it. An MCP memory-of-use server over markdown notes:",
+    "id": "shinytoyrobots/rutter",
+    "install_info": {
+      "install_cmd": "claude mcp add rutter --scope user -- node \"$PWD/dist/stdio.js\"",
+      "install_kind": "claude mcp add"
+    },
+    "language": "TypeScript",
+    "name": "shinytoyrobots/rutter",
+    "stars": 0,
+    "updated_at": "2026-08-13T22:02:42Z",
+    "url": "https://github.com/shinytoyrobots/rutter"
+  },
+  {
+    "description": "Power BI MCP server for AI agents: edit .pbix files, author the semantic model, report, and Power Query (DAX, TMDL, PBIR",
+    "id": "cyphonica/powerbi-pbix-mcp",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"super-bi\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"github:cyphonica/powerbi-pbix-mcp\"]\n    }\n  }\n}"
+    },
+    "language": "C#",
+    "name": "cyphonica/powerbi-pbix-mcp",
+    "stars": 0,
+    "updated_at": "2026-08-13T22:02:15Z",
+    "url": "https://github.com/cyphonica/powerbi-pbix-mcp"
+  },
+  {
+    "description": "Agentic control layer for the Censurado self-hosted AI news portal: a stdlib Python CLI plus an MCP server (32 tools) an",
+    "id": "hec-ovi/censurado-web-brain",
+    "language": "Python",
+    "name": "hec-ovi/censurado-web-brain",
+    "stars": 1,
+    "updated_at": "2026-08-13T22:01:20Z",
+    "url": "https://github.com/hec-ovi/censurado-web-brain"
+  },
+  {
+    "description": "MCP server for Autodesk Flame \u2014 clip control, timelines, and effects with RAG search, anti-hallucination safety, and sel",
+    "id": "abrahamADSK/flame-mcp",
+    "install_info": {
+      "install_cmd": "claude mcp add flame -- \"$(pwd)/.venv/bin/python\" -m flame_mcp.server",
+      "install_kind": "claude mcp add"
+    },
+    "language": "Python",
+    "name": "abrahamADSK/flame-mcp",
+    "stars": 7,
+    "updated_at": "2026-08-13T22:01:12Z",
+    "url": "https://github.com/abrahamADSK/flame-mcp"
+  },
+  {
+    "description": "codegraph is a local-first code context engine and MCP server for repositories. It incrementally indexes source code int",
+    "id": "isink17/codegraph",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"codegraph\": {\n      \"command\": \"codegraph\",\n      \"args\": [\"serve\"]\n    }\n  }\n}"
+    },
+    "language": "Go",
+    "name": "isink17/codegraph",
+    "stars": 1,
+    "updated_at": "2026-08-13T22:01:00Z",
+    "url": "https://github.com/isink17/codegraph"
+  },
+  {
+    "description": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes",
+    "id": "linny006/mcp-servers-live",
+    "language": "HTML",
+    "name": "linny006/mcp-servers-live",
+    "stars": 3,
+    "updated_at": "2026-08-13T22:00:44Z",
+    "url": "https://github.com/linny006/mcp-servers-live"
+  },
+  {
     "description": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes",
     "id": "linny006/trending-claude-skills",
     "language": "Python",
@@ -137,7 +219,7 @@
     "language": "Python",
     "name": "robotrocketscience/aelfrice",
     "stars": 7,
-    "updated_at": "2026-08-13T21:56:40Z",
+    "updated_at": "2026-08-13T22:02:24Z",
     "url": "https://github.com/robotrocketscience/aelfrice"
   },
   {
@@ -177,7 +259,7 @@
     "language": "TypeScript",
     "name": "aliasunder/vault-cortex",
     "stars": 17,
-    "updated_at": "2026-08-13T21:55:30Z",
+    "updated_at": "2026-08-13T22:00:29Z",
     "url": "https://github.com/aliasunder/vault-cortex"
   },
   {
@@ -258,7 +340,7 @@
     "language": "TypeScript",
     "name": "ridafkih/keeper.sh",
     "stars": 1242,
-    "updated_at": "2026-08-13T21:56:31Z",
+    "updated_at": "2026-08-13T22:02:53Z",
     "url": "https://github.com/ridafkih/keeper.sh"
   },
   {
@@ -362,20 +444,6 @@
     "stars": 1,
     "updated_at": "2026-08-13T21:52:04Z",
     "url": "https://github.com/lm203688/aishield"
-  },
-  {
-    "description": "Serve multiple stdio MCP servers from one container: path routing, hub meta-tools, built-in OAuth 2.1 for Claude Web",
-    "id": "ni-c/mcp-hub",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"paperless\": {\n      \"command\": \"paperless-mcp\",\n      \"args\": [],\n      \"env\": { \"PAPERLESS_API_TOKEN\": \"${PAPERLESS_API_TOKEN}\" }\n    },\n    \"homeassistant\": {\n      \"type\": \"http\",\n      \"url\": \"http://homeassistant:8123/api/mcp\",\n      \"headers\": { \"Authorization\": \"Bearer ${HA_TOKEN}\" }\n    },\n    \"private-thing\": { \"command\": \"some-mcp\", \"args\": [], \"hub\": false }\n  }\n}",
-      "install_cmd": "npm install\nnpm",
-      "install_kind": "npm install"
-    },
-    "language": "TypeScript",
-    "name": "ni-c/mcp-hub",
-    "stars": 0,
-    "updated_at": "2026-08-13T21:51:56Z",
-    "url": "https://github.com/ni-c/mcp-hub"
   },
   {
     "description": "MCP server giving LLM agents a seven-verb API over papers, documents, code, state, patents, and cached web/Wolfram/YouTu",
@@ -508,76 +576,5 @@
     "stars": 397,
     "updated_at": "2026-08-13T21:48:16Z",
     "url": "https://github.com/decocms/studio"
-  },
-  {
-    "description": "Read-only MCP server for the WHOOP API v2 \u2014 query and analyse your own recovery, sleep, strain and workout data from any",
-    "id": "kurok/whoopmcp",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"whoop\": {\n      \"command\": \"uvx\",\n      \"args\": [\"whoopmcp\"],\n      \"env\": {\n        \"WHOOP_CLIENT_ID\": \"your-client-id\",\n        \"WHOOP_CLIENT_SECRET\": \"your-client-secret\",\n        \"WHOOP_REDIRECT_URI\": \"whoopmcp://callback\"\n      }\n    }\n  }\n}",
-      "install_cmd": "uv pip install -e",
-      "install_kind": "uv pip install"
-    },
-    "language": "Python",
-    "name": "kurok/whoopmcp",
-    "stars": 1,
-    "updated_at": "2026-08-13T21:47:45Z",
-    "url": "https://github.com/kurok/whoopmcp"
-  },
-  {
-    "description": "MCP server + watcher for PVR/INOX cinemas in India: showtimes, live seat maps, and an alert the moment booking opens",
-    "id": "notprashanth/pvr-inox-mcp",
-    "install_info": {
-      "install_cmd": "claude mcp add pvr-inox -- python3 /path/to/pvr-inox-mcp/mcp_server.py",
-      "install_kind": "claude mcp add"
-    },
-    "language": "Python",
-    "name": "notprashanth/pvr-inox-mcp",
-    "stars": 0,
-    "updated_at": "2026-08-13T21:47:29Z",
-    "url": "https://github.com/notprashanth/pvr-inox-mcp"
-  },
-  {
-    "description": "MCP server for Autodesk Flame \u2014 clip control, timelines, and effects with RAG search, anti-hallucination safety, and sel",
-    "id": "abrahamADSK/flame-mcp",
-    "install_info": {
-      "install_cmd": "claude mcp add flame -- \"$(pwd)/.venv/bin/python\" -m flame_mcp.server",
-      "install_kind": "claude mcp add"
-    },
-    "language": "Python",
-    "name": "abrahamADSK/flame-mcp",
-    "stars": 7,
-    "updated_at": "2026-08-13T21:58:01Z",
-    "url": "https://github.com/abrahamADSK/flame-mcp"
-  },
-  {
-    "description": "AI\uac00 HWP\u00b7HWPX\ub97c \uc9c1\uc811 \uc77d\uac8c \ud558\ub294 \uc2a4\ud0ac. SKILL.md\uc640 \ud55c\uae00 \ubb38\uc11c\ub97c \ucc57\ubd07\uc5d0 \ud568\uaed8 \ucca8\ubd80\ud558\uba74 \ub05d. \ubcd1\ud569 \ud45c\u00b72\u00b73\ub2e8 \ud5e4\ub354\u00b7\ud45c \uc548\uc758 \ud45c\u00b7\uc228\uc740 \uba54\ubaa8\u00b7\ubcc0\uacbd\ucd94\uc801\uae4c\uc9c0 \ubcf4\uc874. \uc758\uc874\uc131 0, \uc77d\uae30 \uc804\uc6a9.",
-    "id": "renovys/ai-hwp-reader",
-    "install_info": {
-      "install_cmd": "pip install ai-hwp-reader",
-      "install_kind": "pip install"
-    },
-    "language": "Python",
-    "name": "renovys/ai-hwp-reader",
-    "stars": 0,
-    "updated_at": "2026-08-13T21:46:50Z",
-    "url": "https://github.com/renovys/ai-hwp-reader"
-  },
-  {
-    "description": "Agent eXperience Interface (AXI) for project venv introspection",
-    "id": "andyrids/venv-axi",
-    "language": "Python",
-    "name": "andyrids/venv-axi",
-    "stars": 0,
-    "updated_at": "2026-08-13T21:46:22Z",
-    "url": "https://github.com/andyrids/venv-axi"
-  },
-  {
-    "description": "Java test automation framework for web, mobile, API, CLI, database, and desktop E2E testing with a fluent API and built-",
-    "id": "ShaftHQ/SHAFT_ENGINE",
-    "language": "Java",
-    "name": "ShaftHQ/SHAFT_ENGINE",
-    "stars": 404,
-    "updated_at": "2026-08-13T21:48:09Z",
-    "url": "https://github.com/ShaftHQ/SHAFT_ENGINE"
   }
 ]
