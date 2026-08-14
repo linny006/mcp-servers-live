@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>sunerpy/yunjian - entry on MCP Servers Live</title>
-<meta name="description" content="Offline Chinese classical poetry toolkit with local search, AI appreciation and an MCP server">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/sunerpy/yunjian/">
+<title>veronchenko/inkwell-memory - entry on MCP Servers Live</title>
+<meta name="description" content="MCP server giving AI agents persistent memory: Markdown files as source of truth, hybrid BM25 + embedding search, typed">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/veronchenko/inkwell-memory/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sunerpy/yunjian - entry on MCP Servers Live">
-<meta property="og:description" content="Offline Chinese classical poetry toolkit with local search, AI appreciation and an MCP server">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/sunerpy/yunjian/">
+<meta property="og:title" content="veronchenko/inkwell-memory - entry on MCP Servers Live">
+<meta property="og:description" content="MCP server giving AI agents persistent memory: Markdown files as source of truth, hybrid BM25 + embedding search, typed">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/veronchenko/inkwell-memory/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sunerpy/yunjian - entry on MCP Servers Live">
-<meta name="twitter:description" content="Offline Chinese classical poetry toolkit with local search, AI appreciation and an MCP server">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"sunerpy/yunjian","codeRepository":"https://github.com/sunerpy/yunjian","programmingLanguage":"Rust","url":"https://linny006.github.io/mcp-servers-live/r/sunerpy/yunjian/","description":"Offline Chinese classical poetry toolkit with local search, AI appreciation and an MCP server","author":{"@type":"Person","name":"sunerpy","url":"https://github.com/sunerpy"},"dateModified":"2026-08-14"}</script>
+<meta name="twitter:title" content="veronchenko/inkwell-memory - entry on MCP Servers Live">
+<meta name="twitter:description" content="MCP server giving AI agents persistent memory: Markdown files as source of truth, hybrid BM25 + embedding search, typed">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"veronchenko/inkwell-memory","codeRepository":"https://github.com/veronchenko/inkwell-memory","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/veronchenko/inkwell-memory/","description":"MCP server giving AI agents persistent memory: Markdown files as source of truth, hybrid BM25 + embedding search, typed","author":{"@type":"Person","name":"veronchenko","url":"https://github.com/veronchenko"},"dateModified":"2026-08-14"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,44 +41,49 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>sunerpy/yunjian</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>veronchenko/inkwell-memory</span></nav>
 <main>
-<h1>sunerpy/yunjian</h1>
-<p class="lead">Offline Chinese classical poetry toolkit with local search, AI appreciation and an MCP server</p>
+<h1>veronchenko/inkwell-memory</h1>
+<p class="lead">MCP server giving AI agents persistent memory: Markdown files as source of truth, hybrid BM25 + embedding search, typed</p>
 <div class="meta">
-<span><strong>Stars</strong> 0</span>
-<span><strong>Language</strong> Rust</span>
+<span><strong>Stars</strong> 2</span>
+<span><strong>Language</strong> Python</span>
 <span><strong>Last updated</strong> 2026-08-14</span>
-<span><a href="https://github.com/sunerpy/yunjian" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/sunerpy" rel="external">@sunerpy</a></span>
+<span><a href="https://github.com/veronchenko/inkwell-memory" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/veronchenko" rel="external">@veronchenko</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
+<p>Install method detected from README: <code>claude mcp add</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add --transport stdio inkwell -- \</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;yunjian&quot;: {
-      &quot;command&quot;: &quot;yunjian&quot;,
-      &quot;args&quot;: [&quot;mcp&quot;]
+    &quot;inkwell&quot;: {
+      &quot;type&quot;: &quot;http&quot;,
+      &quot;url&quot;: &quot;https://your-host/mcp&quot;,
+      &quot;headers&quot;: {
+        &quot;Authorization&quot;: &quot;Bearer &lt;TEAM_API_KEY&gt;&quot;
+      }
     }
   }
 }</code></pre>
-<p><a href="https://github.com/sunerpy/yunjian#readme" rel="external">View full README on GitHub</a></p>
+<p><a href="https://github.com/veronchenko/inkwell-memory#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/zenolab124/monet/">zenolab124/monet (stars:167)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/zhitongblog/unterm/">zhitongblog/unterm (stars:11)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/cdeust/ai-architect-mcp-codebase/">cdeust/ai-architect-mcp-codebase (stars:3)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/vitali87/code-graph-rag/">vitali87/code-graph-rag (stars:4272)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/jgravelle/jcodemunch-mcp/">jgravelle/jcodemunch-mcp (stars:2558)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/benseverndev-oss/goldenmatch/">benseverndev-oss/goldenmatch (stars:128)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/rust/">All Rust entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/python/">All Python entries</a></li>
 </ul></section>
 </main>
 <footer>
