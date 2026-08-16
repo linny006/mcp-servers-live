@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>Bevel-Software/Hexis - entry on MCP Servers Live</title>
-<meta name="description" content="Git-backed control plane for AI-agent skills, tools, context, permissions, and identity. Self-hosted and MCP-native.">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/Bevel-Software/Hexis/">
+<title>kanjialive/kanjialive-mcp-server - entry on MCP Servers Live</title>
+<meta name="description" content="A Model Context Protocol (MCP) server that provides access to the Kanji Alive API">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/kanjialive/kanjialive-mcp-server/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Bevel-Software/Hexis - entry on MCP Servers Live">
-<meta property="og:description" content="Git-backed control plane for AI-agent skills, tools, context, permissions, and identity. Self-hosted and MCP-native.">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/Bevel-Software/Hexis/">
+<meta property="og:title" content="kanjialive/kanjialive-mcp-server - entry on MCP Servers Live">
+<meta property="og:description" content="A Model Context Protocol (MCP) server that provides access to the Kanji Alive API">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/kanjialive/kanjialive-mcp-server/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bevel-Software/Hexis - entry on MCP Servers Live">
-<meta name="twitter:description" content="Git-backed control plane for AI-agent skills, tools, context, permissions, and identity. Self-hosted and MCP-native.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Bevel-Software/Hexis","codeRepository":"https://github.com/Bevel-Software/Hexis","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/Bevel-Software/Hexis/","description":"Git-backed control plane for AI-agent skills, tools, context, permissions, and identity. Self-hosted and MCP-native.","author":{"@type":"Person","name":"Bevel-Software","url":"https://github.com/Bevel-Software"},"dateModified":"2026-08-16"}</script>
+<meta name="twitter:title" content="kanjialive/kanjialive-mcp-server - entry on MCP Servers Live">
+<meta name="twitter:description" content="A Model Context Protocol (MCP) server that provides access to the Kanji Alive API">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"kanjialive/kanjialive-mcp-server","codeRepository":"https://github.com/kanjialive/kanjialive-mcp-server","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/kanjialive/kanjialive-mcp-server/","description":"A Model Context Protocol (MCP) server that provides access to the Kanji Alive API","author":{"@type":"Person","name":"kanjialive","url":"https://github.com/kanjialive"},"dateModified":"2026-08-16"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,17 +41,33 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>Bevel-Software/Hexis</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>kanjialive/kanjialive-mcp-server</span></nav>
 <main>
-<h1>Bevel-Software/Hexis</h1>
-<p class="lead">Git-backed control plane for AI-agent skills, tools, context, permissions, and identity. Self-hosted and MCP-native.</p>
+<h1>kanjialive/kanjialive-mcp-server</h1>
+<p class="lead">A Model Context Protocol (MCP) server that provides access to the Kanji Alive API</p>
 <div class="meta">
-<span><strong>Stars</strong> 68</span>
+<span><strong>Stars</strong> 3</span>
 <span><strong>Language</strong> TypeScript</span>
 <span><strong>Last updated</strong> 2026-08-16</span>
-<span><a href="https://github.com/Bevel-Software/Hexis" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/Bevel-Software" rel="external">@Bevel-Software</a></span>
+<span><a href="https://github.com/kanjialive/kanjialive-mcp-server" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/kanjialive" rel="external">@kanjialive</a></span>
 </div>
+<section id="install"><h2>Install &amp; configure</h2>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;Kanji Alive&quot;: {
+      &quot;command&quot;: &quot;/path/to/kanjialive-mcp-server/ka-mcp-local/.venv/bin/python&quot;,
+      &quot;args&quot;: [&quot;/path/to/kanjialive-mcp-server/ka-mcp-local/kanjialive_mcp.py&quot;],
+      &quot;env&quot;: {
+        &quot;RAPIDAPI_KEY&quot;: &quot;your_api_key_here&quot;
+      }
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/kanjialive/kanjialive-mcp-server#readme" rel="external">View full README on GitHub</a></p>
+</section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
