@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hypnguyen1209/codex-free - entry on MCP Servers Live">
 <meta name="twitter:description" content="Local MCP bridge server that turns ChatGPT into a Codex-like coding agent">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"hypnguyen1209/codex-free","codeRepository":"https://github.com/hypnguyen1209/codex-free","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/hypnguyen1209/codex-free/","description":"Local MCP bridge server that turns ChatGPT into a Codex-like coding agent","author":{"@type":"Person","name":"hypnguyen1209","url":"https://github.com/hypnguyen1209"},"dateModified":"2026-08-15"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"hypnguyen1209/codex-free","codeRepository":"https://github.com/hypnguyen1209/codex-free","programmingLanguage":"Rust","url":"https://linny006.github.io/mcp-servers-live/r/hypnguyen1209/codex-free/","description":"Local MCP bridge server that turns ChatGPT into a Codex-like coding agent","author":{"@type":"Person","name":"hypnguyen1209","url":"https://github.com/hypnguyen1209"},"dateModified":"2026-08-19"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -46,26 +46,77 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <h1>hypnguyen1209/codex-free</h1>
 <p class="lead">Local MCP bridge server that turns ChatGPT into a Codex-like coding agent</p>
 <div class="meta">
-<span><strong>Stars</strong> 10</span>
-<span><strong>Language</strong> TypeScript</span>
-<span><strong>Last updated</strong> 2026-08-15</span>
+<span><strong>Stars</strong> 13</span>
+<span><strong>Language</strong> Rust</span>
+<span><strong>Last updated</strong> 2026-08-19</span>
 <span><a href="https://github.com/hypnguyen1209/codex-free" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/hypnguyen1209" rel="external">@hypnguyen1209</a></span>
 </div>
+<section id="install"><h2>Install &amp; configure</h2>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;allowedCommands&quot;: [&quot;bun&quot;, &quot;npm&quot;, &quot;npx&quot;, &quot;node&quot;, &quot;git&quot;, &quot;python&quot;, &quot;pip&quot;, &quot;cargo&quot;, &quot;make&quot;],
+  &quot;port&quot;: 3000,
+  &quot;tree&quot;: {
+    &quot;defaultDepth&quot;: 3,
+    &quot;ignore&quot;: [&quot;node_modules&quot;, &quot;.git&quot;, &quot;dist&quot;, &quot;.next&quot;, &quot;__pycache__&quot;, &quot;.venv&quot;, &quot;venv&quot;]
+  },
+  &quot;ignore&quot;: {
+    &quot;useGitignore&quot;: true,
+    &quot;useDefaultPatterns&quot;: true,
+    &quot;customPatterns&quot;: []
+  },
+  &quot;command&quot;: {
+    &quot;defaultTimeout&quot;: 30000,
+    &quot;maxTimeout&quot;: 120000
+  },
+  &quot;exec&quot;: {
+    &quot;mode&quot;: &quot;allowlist&quot;,
+    &quot;extraAllowedCommands&quot;: [
+      &quot;ls&quot;, &quot;cat&quot;, &quot;grep&quot;, &quot;find&quot;, &quot;head&quot;, &quot;tail&quot;, &quot;wc&quot;, &quot;echo&quot;, &quot;pwd&quot;,
+      &quot;which&quot;, &quot;rg&quot;, &quot;sed&quot;, &quot;awk&quot;, &quot;sort&quot;, &quot;uniq&quot;, &quot;diff&quot;, &quot;true&quot;, &quot;false&quot;
+    ],
+    &quot;maxSessions&quot;: 8
+  },
+  &quot;projectDoc&quot;: {
+    &quot;maxBytes&quot;: 32768,
+    &quot;fallbackFilenames&quot;: [],
+    &quot;rootMarkers&quot;: [&quot;.git&quot;]
+  },
+  &quot;output&quot;: {
+    &quot;maxFileLines&quot;: 1000,
+    &quot;maxFileBytes&quot;: 131072,
+    &quot;maxEntries&quot;: 500,
+    &quot;maxTreeNodes&quot;: 1000
+  },
+  &quot;memory&quot;: {
+    &quot;enabled&quot;: true,
+    &quot;maxBytes&quot;: 16384
+  },
+  &quot;skills&quot;: {
+    &quot;enabled&quot;: true,
+    &quot;includePlugins&quot;: true
+  },
+  &quot;allowedHosts&quot;: [],
+  &quot;mcpServers&quot;: {}
+}</code></pre>
+<p><a href="https://github.com/hypnguyen1209/codex-free#readme" rel="external">View full README on GitHub</a></p>
+</section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/KnockOutEZ/wigolo/">KnockOutEZ/wigolo (stars:4552)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/cappyeo/discord-mcp/">cappyeo/discord-mcp (stars:63)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/houtini-ai/geo-analyzer/">houtini-ai/geo-analyzer (stars:21)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/yvgude/lean-ctx/">yvgude/lean-ctx (stars:3599)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/samyama-ai/samyama-graph/">samyama-ai/samyama-graph (stars:168)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/Eilodon/CALM/">Eilodon/CALM (stars:15)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/typescript/">All TypeScript entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/rust/">All Rust entries</a></li>
 </ul></section>
 </main>
 <footer>
