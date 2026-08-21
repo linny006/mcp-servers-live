@@ -1,5 +1,42 @@
 [
   {
+    "description": "Get live scores, schedules, standings, team and player data for NFL, NBA, MLB, NHL, soccer, and more via MCP. STDIO or S",
+    "id": "cyanheads/sports-mcp-server",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"sports\": {\n      \"type\": \"stdio\",\n      \"command\": \"bunx\",\n      \"args\": [\"@cyanheads/sports-mcp-server@latest\"],\n      \"env\": {\n        \"MCP_TRANSPORT_TYPE\": \"stdio\",\n        \"MCP_LOG_LEVEL\": \"info\"\n      }\n    }\n  }\n}",
+      "install_cmd": "docker run --rm -p 3010:3010 sports-mcp-server",
+      "install_kind": "docker run"
+    },
+    "language": "TypeScript",
+    "name": "cyanheads/sports-mcp-server",
+    "stars": 1,
+    "updated_at": "2026-08-21T15:16:22Z",
+    "url": "https://github.com/cyanheads/sports-mcp-server"
+  },
+  {
+    "description": "90+ tool Model Context Protocol server for AI coding agents: workflow flight recorder, quality-gated memory, release doc",
+    "id": "Snehgabani/elite-reasoning-mcp",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"elite-reasoning\": {\n      \"command\": \"elite-reasoning-mcp\",\n      \"args\": [],\n      \"env\": {\n        \"ELITE_BRAIN_DIR\": \"~/.elite-reasoning/brain\",\n        \"ELITE_TOOL_PROFILE\": \"core\"\n      }\n    }\n  }\n}",
+      "install_cmd": "pip install elite-reasoning-mcp",
+      "install_kind": "pip install"
+    },
+    "language": "Python",
+    "name": "Snehgabani/elite-reasoning-mcp",
+    "stars": 1,
+    "updated_at": "2026-08-21T15:16:06Z",
+    "url": "https://github.com/Snehgabani/elite-reasoning-mcp"
+  },
+  {
+    "description": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes",
+    "id": "linny006/mcp-servers-live",
+    "language": "HTML",
+    "name": "linny006/mcp-servers-live",
+    "stars": 3,
+    "updated_at": "2026-08-21T15:15:53Z",
+    "url": "https://github.com/linny006/mcp-servers-live"
+  },
+  {
     "description": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes",
     "id": "linny006/trending-claude-skills",
     "language": "Python",
@@ -7,6 +44,55 @@
     "stars": 31,
     "updated_at": "2026-08-21T15:15:17Z",
     "url": "https://github.com/linny006/trending-claude-skills"
+  },
+  {
+    "description": "Teamwork.com MCP server",
+    "id": "Teamwork/mcp",
+    "language": "Go",
+    "name": "Teamwork/mcp",
+    "stars": 24,
+    "updated_at": "2026-08-21T15:15:00Z",
+    "url": "https://github.com/Teamwork/mcp"
+  },
+  {
+    "description": "Standalone MCP server for Obsidian vaults \u2014 hybrid search, notes & files, memory, tasks, OAuth 2.1.",
+    "id": "aliasunder/vault-cortex",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"vault-cortex\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"http://localhost:8000/mcp\",\n        \"--header\",\n        \"Authorization: Bearer <your MCP_AUTH_TOKEN>\"\n      ]\n    }\n  }\n}",
+      "install_cmd": "claude mcp add --scope user --transport http vault-cortex http://localhost:8000/mcp   # local (or <PUBLIC_URL>/mcp)",
+      "install_kind": "claude mcp add"
+    },
+    "language": "TypeScript",
+    "name": "aliasunder/vault-cortex",
+    "stars": 17,
+    "updated_at": "2026-08-21T15:14:54Z",
+    "url": "https://github.com/aliasunder/vault-cortex"
+  },
+  {
+    "description": "MCP server for the ITIN finance network: verified ITIN lender directory + 290 bilingual guides on US loans, cards & cred",
+    "id": "bguillow-rgb/itin-finance-mcp",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"itin-finance\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"itin-finance-mcp\"]\n    }\n  }\n}"
+    },
+    "language": "TypeScript",
+    "name": "bguillow-rgb/itin-finance-mcp",
+    "stars": 0,
+    "updated_at": "2026-08-21T15:14:49Z",
+    "url": "https://github.com/bguillow-rgb/itin-finance-mcp"
+  },
+  {
+    "description": "MCP server for the Perfume Picks fragrance database \u2014 read-only catalog, dupes, and wear data for AI assistants",
+    "id": "bguillow-rgb/perfume-picks-mcp",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"perfume-picks\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"perfume-picks-mcp\"]\n    }\n  }\n}",
+      "install_cmd": "npm install\nnpm",
+      "install_kind": "npm install"
+    },
+    "language": "TypeScript",
+    "name": "bguillow-rgb/perfume-picks-mcp",
+    "stars": 0,
+    "updated_at": "2026-08-21T15:14:47Z",
+    "url": "https://github.com/bguillow-rgb/perfume-picks-mcp"
   },
   {
     "description": "Embedded MQTT broker + MCP server for multi-agent coordination",
@@ -32,20 +118,6 @@
     "stars": 0,
     "updated_at": "2026-08-21T15:14:07Z",
     "url": "https://github.com/Big-Pi100/vibedollar-skill"
-  },
-  {
-    "description": "Standalone MCP server for Obsidian vaults \u2014 hybrid search, notes & files, memory, tasks, OAuth 2.1.",
-    "id": "aliasunder/vault-cortex",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"vault-cortex\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"http://localhost:8000/mcp\",\n        \"--header\",\n        \"Authorization: Bearer <your MCP_AUTH_TOKEN>\"\n      ]\n    }\n  }\n}",
-      "install_cmd": "claude mcp add --scope user --transport http vault-cortex http://localhost:8000/mcp   # local (or <PUBLIC_URL>/mcp)",
-      "install_kind": "claude mcp add"
-    },
-    "language": "TypeScript",
-    "name": "aliasunder/vault-cortex",
-    "stars": 17,
-    "updated_at": "2026-08-21T15:14:54Z",
-    "url": "https://github.com/aliasunder/vault-cortex"
   },
   {
     "description": "AI-powered career copilot \u2014 search, track, and land your dream job via CLI, MCP, and Agent. Compatible with WorkBuddy / ",
@@ -187,20 +259,6 @@
     "url": "https://github.com/smeet666/mcp-lyricscom"
   },
   {
-    "description": "90+ tool Model Context Protocol server for AI coding agents: workflow flight recorder, quality-gated memory, release doc",
-    "id": "Snehgabani/elite-reasoning-mcp",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"elite-reasoning\": {\n      \"command\": \"elite-reasoning-mcp\",\n      \"args\": [],\n      \"env\": {\n        \"ELITE_BRAIN_DIR\": \"~/.elite-reasoning/brain\",\n        \"ELITE_TOOL_PROFILE\": \"core\"\n      }\n    }\n  }\n}",
-      "install_cmd": "pip install elite-reasoning-mcp",
-      "install_kind": "pip install"
-    },
-    "language": "Python",
-    "name": "Snehgabani/elite-reasoning-mcp",
-    "stars": 1,
-    "updated_at": "2026-08-21T15:12:37Z",
-    "url": "https://github.com/Snehgabani/elite-reasoning-mcp"
-  },
-  {
     "description": "MCP server for LRCLIB: search tracks and fetch plain or time-synced (LRC) lyrics. No API key.",
     "id": "smeet666/mcp-lrclib",
     "install_info": {
@@ -286,7 +344,7 @@
     "language": "Java",
     "name": "labsai/EDDI",
     "stars": 365,
-    "updated_at": "2026-08-21T15:08:16Z",
+    "updated_at": "2026-08-21T15:16:22Z",
     "url": "https://github.com/labsai/EDDI"
   },
   {
@@ -479,7 +537,7 @@
     },
     "language": "TypeScript",
     "name": "koala73/worldmonitor",
-    "stars": 83627,
+    "stars": 83628,
     "updated_at": "2026-08-21T15:04:10Z",
     "url": "https://github.com/koala73/worldmonitor"
   },
@@ -549,63 +607,5 @@
     "stars": 2,
     "updated_at": "2026-08-21T15:02:07Z",
     "url": "https://github.com/BuyWhere/buywhere"
-  },
-  {
-    "description": "The LLM Council works together to answer your hardest questions",
-    "id": "amiable-dev/llm-council",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"llm-council\": {\n      \"command\": \"llm-council\"\n    }\n  }\n}",
-      "install_cmd": "claude mcp add --transport stdio llm-council --scope user -- llm-council",
-      "install_kind": "claude mcp add"
-    },
-    "language": "Python",
-    "name": "amiable-dev/llm-council",
-    "stars": 39,
-    "updated_at": "2026-08-21T15:01:57Z",
-    "url": "https://github.com/amiable-dev/llm-council"
-  },
-  {
-    "description": "AI-Powered Ads Manager 2026: Google, Meta, TikTok & LinkedIn Automation with Human Oversight",
-    "id": "MAhmed004/ad-ops-mcp-hub",
-    "install_info": {
-      "install_cmd": "npm install adsynthesis-engine",
-      "install_kind": "npm install"
-    },
-    "language": "HTML",
-    "name": "MAhmed004/ad-ops-mcp-hub",
-    "stars": 2,
-    "updated_at": "2026-08-21T15:01:24Z",
-    "url": "https://github.com/MAhmed004/ad-ops-mcp-hub"
-  },
-  {
-    "description": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes",
-    "id": "linny006/mcp-servers-live",
-    "language": "HTML",
-    "name": "linny006/mcp-servers-live",
-    "stars": 3,
-    "updated_at": "2026-08-21T15:00:45Z",
-    "url": "https://github.com/linny006/mcp-servers-live"
-  },
-  {
-    "description": "MCP-native service registry with capability discovery and health checks \u2014 single Go binary, SQLite, zero-dependency Dock",
-    "id": "KontractKoder/meshdns",
-    "install_info": {
-      "install_cmd": "pip install meshdns-client",
-      "install_kind": "pip install"
-    },
-    "language": "Python",
-    "name": "KontractKoder/meshdns",
-    "stars": 0,
-    "updated_at": "2026-08-21T15:00:07Z",
-    "url": "https://github.com/KontractKoder/meshdns"
-  },
-  {
-    "description": "A shared library for the AI skills your team recommends\u2014across Claude, Codex, Cursor, and more.",
-    "id": "TommyBez/skillsboard",
-    "language": "TypeScript",
-    "name": "TommyBez/skillsboard",
-    "stars": 5,
-    "updated_at": "2026-08-21T15:03:52Z",
-    "url": "https://github.com/TommyBez/skillsboard"
   }
 ]
