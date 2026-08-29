@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>MCPJam/inspector - entry on MCP Servers Live</title>
-<meta name="description" content="Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/MCPJam/inspector/">
+<title>kilwizac/jobboss2-mcp - entry on MCP Servers Live</title>
+<meta name="description" content="Unofficial Model Context Protocol server for the JobBOSS² Public API">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/kilwizac/jobboss2-mcp/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MCPJam/inspector - entry on MCP Servers Live">
-<meta property="og:description" content="Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/MCPJam/inspector/">
+<meta property="og:title" content="kilwizac/jobboss2-mcp - entry on MCP Servers Live">
+<meta property="og:description" content="Unofficial Model Context Protocol server for the JobBOSS² Public API">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/kilwizac/jobboss2-mcp/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MCPJam/inspector - entry on MCP Servers Live">
-<meta name="twitter:description" content="Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"MCPJam/inspector","codeRepository":"https://github.com/MCPJam/inspector","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/MCPJam/inspector/","description":"Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.","author":{"@type":"Person","name":"MCPJam","url":"https://github.com/MCPJam"},"dateModified":"2026-08-29"}</script>
+<meta name="twitter:title" content="kilwizac/jobboss2-mcp - entry on MCP Servers Live">
+<meta name="twitter:description" content="Unofficial Model Context Protocol server for the JobBOSS² Public API">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"kilwizac/jobboss2-mcp","codeRepository":"https://github.com/kilwizac/jobboss2-mcp","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/kilwizac/jobboss2-mcp/","description":"Unofficial Model Context Protocol server for the JobBOSS² Public API","author":{"@type":"Person","name":"kilwizac","url":"https://github.com/kilwizac"},"dateModified":"2026-08-29"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,29 +41,41 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>MCPJam/inspector</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>kilwizac/jobboss2-mcp</span></nav>
 <main>
-<h1>MCPJam/inspector</h1>
-<p class="lead">Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.</p>
+<h1>kilwizac/jobboss2-mcp</h1>
+<p class="lead">Unofficial Model Context Protocol server for the JobBOSS² Public API</p>
 <div class="meta">
-<span><strong>Stars</strong> 2178</span>
+<span><strong>Stars</strong> 0</span>
 <span><strong>Language</strong> TypeScript</span>
 <span><strong>Last updated</strong> 2026-08-29</span>
-<span><a href="https://github.com/MCPJam/inspector" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/MCPJam" rel="external">@MCPJam</a></span>
+<span><a href="https://github.com/kilwizac/jobboss2-mcp" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/kilwizac" rel="external">@kilwizac</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>docker run</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -p 127.0.0.1:6274:6274 mcpjam/mcp-inspector:local</code></pre>
-<p><a href="https://github.com/MCPJam/inspector#readme" rel="external">View full README on GitHub</a></p>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;jobboss2&quot;: {
+      &quot;command&quot;: &quot;node&quot;,
+      &quot;args&quot;: [&quot;C:\\absolute\\path\\to\\jobboss2-mcp\\dist\\cli.js&quot;],
+      &quot;env&quot;: {
+        &quot;JOBBOSS2_CLIENT_ID&quot;: &quot;your-client-id&quot;,
+        &quot;JOBBOSS2_CLIENT_SECRET&quot;: &quot;your-client-secret&quot;
+      }
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/kilwizac/jobboss2-mcp#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/r/crbnos/carbon/">crbnos/carbon (stars:2384)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/MCPJam/inspector/">MCPJam/inspector (stars:2178)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/morluto/rea/">morluto/rea (stars:384)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/nikolai-vysotskyi/trace-mcp/">nikolai-vysotskyi/trace-mcp (stars:101)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
