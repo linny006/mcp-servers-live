@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="igorolv/jdbc-mcp-server - entry on MCP Servers Live">
 <meta name="twitter:description" content="Read-only JDBC MCP server for PostgreSQL and Oracle, giving AI agents safe SQL access, schema discovery, query   validat">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"igorolv/jdbc-mcp-server","codeRepository":"https://github.com/igorolv/jdbc-mcp-server","programmingLanguage":"Java","url":"https://linny006.github.io/mcp-servers-live/r/igorolv/jdbc-mcp-server/","description":"Read-only JDBC MCP server for PostgreSQL and Oracle, giving AI agents safe SQL access, schema discovery, query   validat","author":{"@type":"Person","name":"igorolv","url":"https://github.com/igorolv"},"dateModified":"2026-08-23"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"igorolv/jdbc-mcp-server","codeRepository":"https://github.com/igorolv/jdbc-mcp-server","programmingLanguage":"Java","url":"https://linny006.github.io/mcp-servers-live/r/igorolv/jdbc-mcp-server/","description":"Read-only JDBC MCP server for PostgreSQL and Oracle, giving AI agents safe SQL access, schema discovery, query   validat","author":{"@type":"Person","name":"igorolv","url":"https://github.com/igorolv"},"dateModified":"2026-08-30"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -48,11 +48,13 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <div class="meta">
 <span><strong>Stars</strong> 0</span>
 <span><strong>Language</strong> Java</span>
-<span><strong>Last updated</strong> 2026-08-23</span>
+<span><strong>Last updated</strong> 2026-08-30</span>
 <span><a href="https://github.com/igorolv/jdbc-mcp-server" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/igorolv" rel="external">@igorolv</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
+<p>Install method detected from README: <code>claude mcp add</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add --scope user jdbc java -jar /path/to/jdbc-mcp-server.jar</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
@@ -60,22 +62,12 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
     &quot;jdbc-orders&quot;: {
       &quot;command&quot;: &quot;java&quot;,
       &quot;args&quot;: [&quot;-jar&quot;, &quot;&lt;absolute-path&gt;/jdbc-mcp-server.jar&quot;],
-      &quot;env&quot;: {
-        &quot;JDBC_URL&quot;: &quot;jdbc:postgresql://db.example.com:5432/orders&quot;,
-        &quot;JDBC_USERNAME&quot;: &quot;ai_readonly&quot;,
-        &quot;JDBC_PASSWORD&quot;: &quot;secret&quot;,
-        &quot;JDBC_MCP_CATALOG&quot;: &quot;orders&quot;
-      }
+      &quot;env&quot;: {&quot;JDBC_MCP_CONNECTIONS_FILE&quot;: &quot;&lt;absolute-path&gt;/orders-connections.json&quot;}
     },
     &quot;jdbc-billing&quot;: {
       &quot;command&quot;: &quot;java&quot;,
       &quot;args&quot;: [&quot;-jar&quot;, &quot;&lt;absolute-path&gt;/jdbc-mcp-server.jar&quot;],
-      &quot;env&quot;: {
-        &quot;JDBC_URL&quot;: &quot;jdbc:oracle:thin:@//oracle.example.com:1521/BILLING&quot;,
-        &quot;JDBC_USERNAME&quot;: &quot;AI_READONLY&quot;,
-        &quot;JDBC_PASSWORD&quot;: &quot;secret&quot;,
-        &quot;JDBC_MCP_CATALOG&quot;: &quot;billing&quot;
-      }
+      &quot;env&quot;: {&quot;JDBC_MCP_CONNECTIONS_FILE&quot;: &quot;&lt;absolute-path&gt;/billing-connections.json&quot;}
     }
   }
 }</code></pre>
@@ -85,9 +77,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/open-metadata/OpenMetadata/">open-metadata/OpenMetadata (stars:14948)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/archestra-ai/archestra/">archestra-ai/archestra (stars:4213)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/vshulcz/deja-vu/">vshulcz/deja-vu (stars:667)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/activepieces/activepieces/">activepieces/activepieces (stars:24130)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/osaurus-ai/osaurus/">osaurus-ai/osaurus (stars:7744)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/samuelgursky/davinci-resolve-mcp/">samuelgursky/davinci-resolve-mcp (stars:2331)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
