@@ -53,26 +53,19 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <span><a href="https://github.com/lukegskw" rel="external">@lukegskw</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>docker run</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -d \</code></pre>
+<p>Install method detected from README: <code>claude mcp add</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add --transport stdio --scope user \</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;icloud-calendar&quot;: {
-      &quot;command&quot;: &quot;/absolute/path/to/docker&quot;,
-      &quot;args&quot;: [
-        &quot;run&quot;,
-        &quot;-i&quot;,
-        &quot;--rm&quot;,
-        &quot;--env-file&quot;,
-        &quot;/absolute/path/to/caldav-mcp.env&quot;,
-        &quot;-e&quot;,
-        &quot;CALDAV_PROVIDER=icloud&quot;,
-        &quot;-e&quot;,
-        &quot;CALDAV_MCP_TRANSPORT=stdio&quot;,
-        &quot;ghcr.io/lukegskw/caldav-mcp@sha256:&lt;digest&gt;&quot;
-      ]
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;--yes&quot;, &quot;@lukegskw/caldav-mcp@0.1.4&quot;],
+      &quot;env&quot;: {
+        &quot;CALDAV_USERNAME&quot;: &quot;user@example.com&quot;,
+        &quot;CALDAV_PASSWORD&quot;: &quot;xxxx-xxxx-xxxx-xxxx&quot;
+      }
     }
   }
 }</code></pre>
@@ -82,9 +75,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:203243)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/koala73/worldmonitor/">koala73/worldmonitor (stars:85479)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/activepieces/activepieces/">activepieces/activepieces (stars:24219)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:203244)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/archestra-ai/archestra/">archestra-ai/archestra (stars:4243)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/hetpatel-11/Adobe_Premiere_Pro_MCP/">hetpatel-11/Adobe_Premiere_Pro_MCP (stars:521)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
