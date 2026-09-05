@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="RohanAnandPandit/trading212-mcp-server - entry on MCP Servers Live">
 <meta name="twitter:description" content="The Trading212 MCP server is a Model Context Protocol server implementation that provides seamless data connectivity to">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"RohanAnandPandit/trading212-mcp-server","codeRepository":"https://github.com/RohanAnandPandit/trading212-mcp-server","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/RohanAnandPandit/trading212-mcp-server/","description":"The Trading212 MCP server is a Model Context Protocol server implementation that provides seamless data connectivity to","author":{"@type":"Person","name":"RohanAnandPandit","url":"https://github.com/RohanAnandPandit"},"dateModified":"2026-09-04"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"RohanAnandPandit/trading212-mcp-server","codeRepository":"https://github.com/RohanAnandPandit/trading212-mcp-server","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/RohanAnandPandit/trading212-mcp-server/","description":"The Trading212 MCP server is a Model Context Protocol server implementation that provides seamless data connectivity to","author":{"@type":"Person","name":"RohanAnandPandit","url":"https://github.com/RohanAnandPandit"},"dateModified":"2026-09-05"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -48,29 +48,24 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <div class="meta">
 <span><strong>Stars</strong> 58</span>
 <span><strong>Language</strong> Python</span>
-<span><strong>Last updated</strong> 2026-09-04</span>
+<span><strong>Last updated</strong> 2026-09-05</span>
 <span><a href="https://github.com/RohanAnandPandit/trading212-mcp-server" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/RohanAnandPandit" rel="external">@RohanAnandPandit</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>pip install</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>pip install -r</code></pre>
+<p>Install method detected from README: <code>docker run</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run --rm -i --env-file .env trading212-mcp-server</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;trading212&quot;: {
-      &quot;command&quot;: &quot;docker&quot;,
-      &quot;args&quot;: [
-        &quot;run&quot;,
-        &quot;-i&quot;,
-        &quot;-e&quot;,
-        &quot;TRADING212_API_KEY&quot;,
-        &quot;mcp/trading212-mcp-server&quot;
-      ],
+      &quot;command&quot;: &quot;uv&quot;,
+      &quot;args&quot;: [&quot;run&quot;, &quot;--frozen&quot;, &quot;--directory&quot;, &quot;/absolute/path/to/trading212-mcp-server&quot;, &quot;trading212-mcp-server&quot;],
       &quot;env&quot;: {
-        &quot;TRADING212_API_KEY&quot;: &quot;REPLACE_API_KEY&quot;,
-        &quot;TRADING212_API_SECRET&quot;: &quot;OPTIONAL_API_SECRET&quot;
+        &quot;TRADING212_API_KEY&quot;: &quot;YOUR_API_KEY&quot;,
+        &quot;TRADING212_API_SECRET&quot;: &quot;YOUR_API_SECRET&quot;,
+        &quot;ENVIRONMENT&quot;: &quot;demo&quot;
       }
     }
   }
@@ -81,8 +76,8 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/jjang-ai/vmlx/">jjang-ai/vmlx (stars:839)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/sjkim1127/Reversecore_MCP/">sjkim1127/Reversecore_MCP (stars:197)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/Cranot/roam-code/">Cranot/roam-code (stars:514)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/jonashertner/opencaselaw/">jonashertner/opencaselaw (stars:60)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/linny006/trending-claude-skills/">linny006/trending-claude-skills (stars:36)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
