@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="no13productions/ai-agent-history-rag-mcp - entry on MCP Servers Live">
 <meta name="twitter:description" content="Full featured aggregation of all your AI agents in single vector database for full MCP search.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"no13productions/ai-agent-history-rag-mcp","codeRepository":"https://github.com/no13productions/ai-agent-history-rag-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/no13productions/ai-agent-history-rag-mcp/","description":"Full featured aggregation of all your AI agents in single vector database for full MCP search.","author":{"@type":"Person","name":"no13productions","url":"https://github.com/no13productions"},"dateModified":"2026-09-02"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"no13productions/ai-agent-history-rag-mcp","codeRepository":"https://github.com/no13productions/ai-agent-history-rag-mcp","programmingLanguage":"Go","url":"https://linny006.github.io/mcp-servers-live/r/no13productions/ai-agent-history-rag-mcp/","description":"Full featured aggregation of all your AI agents in single vector database for full MCP search.","author":{"@type":"Person","name":"no13productions","url":"https://github.com/no13productions"},"dateModified":"2026-09-09"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -47,58 +47,30 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p class="lead">Full featured aggregation of all your AI agents in single vector database for full MCP search.</p>
 <div class="meta">
 <span><strong>Stars</strong> 5</span>
-<span><strong>Language</strong> Python</span>
-<span><strong>Last updated</strong> 2026-09-02</span>
+<span><strong>Language</strong> Go</span>
+<span><strong>Last updated</strong> 2026-09-09</span>
 <span><a href="https://github.com/no13productions/ai-agent-history-rag-mcp" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/no13productions" rel="external">@no13productions</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>pip install</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>pip install -e</code></pre>
-<h3>Claude Desktop config snippet</h3>
-<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
-  &quot;mcpServers&quot;: {
-    &quot;ai-agent-history-rag&quot;: {
-      &quot;command&quot;: &quot;/path/to/claude-history-rag-mcp/scripts/history-rag-mcp-native.sh&quot;,
-      &quot;args&quot;: [],
-      &quot;env&quot;: {
-        &quot;CLAUDE_HISTORY_RAG_RUNTIME_CONTRACT&quot;: &quot;production&quot;,
-        &quot;CLAUDE_HISTORY_RAG_STORAGE_BACKEND&quot;: &quot;spanner&quot;,
-        &quot;CLAUDE_HISTORY_RAG_SPANNER_PROJECT&quot;: &quot;&lt;your-gcp-project&gt;&quot;,
-        &quot;CLAUDE_HISTORY_RAG_SPANNER_INSTANCE&quot;: &quot;&lt;your-spanner-instance&gt;&quot;,
-        &quot;CLAUDE_HISTORY_RAG_SPANNER_DATABASE&quot;: &quot;ai-agent-history-rag&quot;,
-        &quot;CLAUDE_HISTORY_RAG_SPANNER_EMBEDDING_MODE&quot;: &quot;spanner&quot;,
-        &quot;CLAUDE_HISTORY_RAG_SPANNER_EMBEDDING_MODEL_ID&quot;: &quot;ConversationEmbeddingModel&quot;,
-        &quot;CLAUDE_HISTORY_RAG_EMBEDDING_PROVIDER&quot;: &quot;vertex&quot;,
-        &quot;CLAUDE_HISTORY_RAG_EMBEDDING_MODEL&quot;: &quot;gemini-embedding-001&quot;,
-        &quot;CLAUDE_HISTORY_RAG_EMBEDDING_DIMENSION&quot;: &quot;3072&quot;,
-        &quot;CLAUDE_HISTORY_RAG_STATUS_SERVER_HOST&quot;: &quot;127.0.0.1&quot;,
-        &quot;CLAUDE_HISTORY_RAG_STATUS_SERVER_PORT&quot;: &quot;4680&quot;,
-        &quot;CLAUDE_HISTORY_RAG_CREDENTIALS_SOURCE&quot;: &quot;application_default&quot;,
-        &quot;CLAUDE_HISTORY_RAG_CREDENTIALS_PROFILE&quot;: &quot;impersonated_service_account&quot;,
-        &quot;CLAUDE_HISTORY_RAG_CREDENTIALS_IDENTITY&quot;: &quot;&lt;dedicated-runtime-service-account&gt;&quot;,
-        &quot;GOOGLE_APPLICATION_CREDENTIALS&quot;: &quot;&lt;path-to-keyless-impersonated-adc-profile.json&gt;&quot;
-      }
-    }
-  }
-}</code></pre>
+<p>Install method detected from README: <code>docker run</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run --rm --env-file .env.docker -p 4680:4680 history-ragd:local</code></pre>
 <p><a href="https://github.com/no13productions/ai-agent-history-rag-mcp#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/benseverndev-oss/goldenmatch/">benseverndev-oss/goldenmatch (stars:131)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/cdeust/Cortex/">cdeust/Cortex (stars:71)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/morluto/flameox/">morluto/flameox (stars:64)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/vshulcz/deja-vu/">vshulcz/deja-vu (stars:796)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/markhuangai/dense-mem/">markhuangai/dense-mem (stars:39)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/vitas/evidra-bench/">vitas/evidra-bench (stars:0)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/python/">All Python entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/go/">All Go entries</a></li>
 </ul></section>
 </main>
 <footer>
