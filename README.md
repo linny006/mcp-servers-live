@@ -44,7 +44,7 @@ expired items removed — so you can rely on what you see being current.
 
 ## 📋 Current Items
 
-> ⏰ Last updated: 2026-09-13 06:30 UTC
+> ⏰ Last updated: 2026-09-13 06:45 UTC
 >
 > Data source: `GitHub Search API`
 >
@@ -53,56 +53,56 @@ expired items removed — so you can rely on what you see being current.
 <!-- TRACKER_TABLE_START -->
 | # | Name | ⭐ | Lang | Updated | Install | Description |
 |---|------|---|------|---------|---------|-------------|
-| 1 | [MrPeppersDev/agent-infrastructure-landscape](https://github.com/MrPeppersDev/agent-infrastructure-landscape) | 3 | HTML | 2026-09-13 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/MrPeppersDev/agent-infrastructure-landscape/) | AI agent memory & infrastructure landscape — comparative catalog of 912 systems × 68 columns covering memory layers, age |
-| 2 | [pipeworx-io/mcp-futuur](https://github.com/pipeworx-io/mcp-futuur) | 0 | TypeScript | 2026-09-13 | — | Futuur Prediction Market MCP. |
-| 3 | [pipeworx-io/mcp-funcheap](https://github.com/pipeworx-io/mcp-funcheap) | 0 | TypeScript | 2026-09-13 | — | Funcheap (SF Bay Area) MCP. |
-| 4 | [hproxy-com/free-proxy-list](https://github.com/hproxy-com/free-proxy-list) | 56 | — | 2026-09-13 | — | Free proxy list, verified around the clock: HTTP, HTTPS, SOCKS4 and SOCKS5 proxies with country, anonymity, latency and  |
-| 5 | [pipeworx-io/mcp-fruityvice](https://github.com/pipeworx-io/mcp-fruityvice) | 0 | TypeScript | 2026-09-13 | — | MCP server for fruit nutritional data via Fruityvice API |
-| 6 | [pipeworx-io/mcp-frinkiac](https://github.com/pipeworx-io/mcp-frinkiac) | 0 | TypeScript | 2026-09-13 | — | Quote-based screencap search for Simpsons, Futurama, Rick and Morty |
-| 7 | [pipeworx-io/mcp-freshdesk](https://github.com/pipeworx-io/mcp-freshdesk) | 0 | TypeScript | 2026-09-13 | — | Freshdesk MCP Pack — helpdesk ticket and contact management via Freshdesk API v2. |
-| 8 | [pipeworx-io/mcp-fred](https://github.com/pipeworx-io/mcp-fred) | 0 | TypeScript | 2026-09-13 | — | FRED MCP — Federal Reserve Economic Data (St. Louis Fed) |
-| 9 | [kire21b/fapony](https://github.com/kire21b/fapony) | 0 | TypeScript | 2026-09-13 | — | Measures what coding agents actually do (tokens, cost, rounds, pass/fail) and verifies their claims — 6 MCP tools, any a |
-| 10 | [hhopke/intervals-icu-mcp](https://github.com/hhopke/intervals-icu-mcp) | 65 | Python | 2026-09-13 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/hhopke/intervals-icu-mcp/) | Read/write MCP server for Intervals.icu — training data, planning, and structured workout generation. |
-| 11 | [Mytai20100/opencode-browser](https://github.com/Mytai20100/opencode-browser) | 7 | JavaScript | 2026-09-13 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/Mytai20100/opencode-browser/) | A extension chrome mcp server allow AI agent full remote same playwright |
-| 12 | [Jang-woo-AnnaSoft/execution-state-preflight](https://github.com/Jang-woo-AnnaSoft/execution-state-preflight) | 4 | JavaScript | 2026-09-13 | — | Move both the checklist and the verdict outside the model. Slot-based preconditions for irreversible tool calls — execut |
-| 13 | [pipeworx-io/mcp-frankfurter](https://github.com/pipeworx-io/mcp-frankfurter) | 0 | TypeScript | 2026-09-13 | — | Frankfurter MCP — wraps Frankfurter API (api.frankfurter.dev) |
-| 14 | [CSOAI-ORG/councilof-ai](https://github.com/CSOAI-ORG/councilof-ai) | 1 | HTML | 2026-09-13 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/CSOAI-ORG/councilof-ai/) | CSOAI flagship — 425 stablecoins indexed, 197 signed cards (root 0dd5a8d9, Bitcoin-confirmed), 22 axes · 22 measured, MC |
-| 15 | [MikkoParkkola/axterminator](https://github.com/MikkoParkkola/axterminator) | 3 | Rust | 2026-09-13 | ✅ [cargo install](https://linny006.github.io/mcp-servers-live/r/MikkoParkkola/axterminator/) | MCP server for macOS desktop automation. Background GUI testing, 30 tools, audio capture, camera, virtual desktops. Buil |
-| 16 | [pipeworx-io/mcp-france-boamp](https://github.com/pipeworx-io/mcp-france-boamp) | 0 | TypeScript | 2026-09-13 | — | France BOAMP MCP — French government public procurement notices (keyless). |
-| 17 | [pipeworx-io/mcp-foursquare](https://github.com/pipeworx-io/mcp-foursquare) | 0 | TypeScript | 2026-09-13 | — | Foursquare Places MCP (v3 Places API) |
-| 18 | [securemessage/mail-mcp](https://github.com/securemessage/mail-mcp) | 1 | PHP | 2026-09-13 | — |  MCP server for IMAP/SMTP email operations (mirror) |
-| 19 | [pipeworx-io/mcp-football-data](https://github.com/pipeworx-io/mcp-football-data) | 2 | TypeScript | 2026-09-13 | — | Football-Data.org MCP — soccer competitions, matches, standings |
-| 20 | [getopenpost/openpost](https://github.com/getopenpost/openpost) | 188 | TypeScript | 2026-09-13 | — | Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted. |
-| 21 | [pipeworx-io/mcp-foodish](https://github.com/pipeworx-io/mcp-foodish) | 0 | TypeScript | 2026-09-13 | — | Random food images by category (pizza, burger, dosa, etc.) via Foodish. Keyless. |
-| 22 | [pipeworx-io/mcp-food-feeds](https://github.com/pipeworx-io/mcp-food-feeds) | 0 | TypeScript | 2026-09-13 | — | Food Feeds MCP. |
-| 23 | [pipeworx-io/mcp-folketinget-dk](https://github.com/pipeworx-io/mcp-folketinget-dk) | 0 | TypeScript | 2026-09-13 | — | Danish Parliament (Folketinget) open data MCP — oda.ft.dk, an OData v3 API. |
-| 24 | [rust-works/omni-dev](https://github.com/rust-works/omni-dev) | 1 | Rust | 2026-09-13 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/rust-works/omni-dev/) | AI-powered git commit rewriter, PR generator, and MCP server for Jira, Confluence, and Datadog. Single Rust binary. |
-| 25 | [guaardvark/guaardvark](https://github.com/guaardvark/guaardvark) | 211 | Python | 2026-09-13 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/guaardvark/guaardvark/) | The self-hosted AI studio: local video, image, music, voice, LoRA training, coding swarms, RAG and screen agents on one  |
-| 26 | [pipeworx-io/mcp-fmp](https://github.com/pipeworx-io/mcp-fmp) | 0 | TypeScript | 2026-09-13 | — | Financial Modeling Prep MCP. |
-| 27 | [pipeworx-io/mcp-fmi](https://github.com/pipeworx-io/mcp-fmi) | 0 | TypeScript | 2026-09-13 | — | Finnish Meteorological Institute open data (forecast, observations, warnings) |
-| 28 | [pipeworx-io/mcp-fmcsa](https://github.com/pipeworx-io/mcp-fmcsa) | 0 | TypeScript | 2026-09-13 | — | US motor-carrier registry: DOT/MC/name lookup, operating authority, safety — keyless |
-| 29 | [pipeworx-io/mcp-flood](https://github.com/pipeworx-io/mcp-flood) | 0 | TypeScript | 2026-09-13 | — | MCP server for river discharge and flood forecasts via Open-Meteo |
-| 30 | [pipeworx-io/mcp-flights](https://github.com/pipeworx-io/mcp-flights) | 0 | TypeScript | 2026-09-13 | — | MCP server for tracking flights via OpenSky Network API |
-| 31 | [pipeworx-io/mcp-flickr-public](https://github.com/pipeworx-io/mcp-flickr-public) | 0 | TypeScript | 2026-09-13 | — | Flickr keyless public photo feeds (recent, by tag, by user, by group) |
-| 32 | [pipeworx-io/mcp-firecrawl](https://github.com/pipeworx-io/mcp-firecrawl) | 1 | TypeScript | 2026-09-13 | — | Firecrawl MCP — wraps the Firecrawl API (firecrawl.dev) for web |
-| 33 | [africanmarketos591/mvr-framework](https://github.com/africanmarketos591/mvr-framework) | 0 | HTML | 2026-09-13 | — | Relational-readiness and permission-to-operate tools for AI agents in African, emerging, and high-context markets. API/a |
-| 34 | [pipeworx-io/mcp-finra](https://github.com/pipeworx-io/mcp-finra) | 0 | TypeScript | 2026-09-13 | — | FINRA Reg SHO daily short-sale volume. |
-| 35 | [pipeworx-io/mcp-finnhub](https://github.com/pipeworx-io/mcp-finnhub) | 0 | TypeScript | 2026-09-13 | — | Finnhub MCP — wraps Finnhub Stock API (finnhub.io) |
-| 36 | [pipeworx-io/mcp-findymail](https://github.com/pipeworx-io/mcp-findymail) | 0 | TypeScript | 2026-09-13 | — | Findymail MCP — B2B email finder & reverse-email lookup (findymail.com) |
-| 37 | [smeet666/mcp-libraryofcongress](https://github.com/smeet666/mcp-libraryofcongress) | 0 | TypeScript | 2026-09-13 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/smeet666/mcp-libraryofcongress/) | MCP server for the Library of Congress. Search inside scanned newspapers, browse the catalogue, read records. No API key |
-| 38 | [pipeworx-io/mcp-finance-feeds](https://github.com/pipeworx-io/mcp-finance-feeds) | 0 | TypeScript | 2026-09-13 | — | Finance Feeds MCP. |
-| 39 | [pipeworx-io/mcp-figshare](https://github.com/pipeworx-io/mcp-figshare) | 0 | TypeScript | 2026-09-13 | — | Figshare research outputs (datasets, papers, posters) |
-| 40 | [pipeworx-io/mcp-figma](https://github.com/pipeworx-io/mcp-figma) | 0 | TypeScript | 2026-09-13 | — | Figma MCP Pack |
-| 41 | [buenapp/vcenter-mcp](https://github.com/buenapp/vcenter-mcp) | 0 | PHP | 2026-09-13 | — | VMware vCenter MCP server on the Enchilada Framework |
-| 42 | [pipeworx-io/mcp-feodotracker](https://github.com/pipeworx-io/mcp-feodotracker) | 0 | TypeScript | 2026-09-13 | — | abuse.ch Feodo Tracker botnet C&C IP blocklist |
-| 43 | [dryvist/nix-ai](https://github.com/dryvist/nix-ai) | 11 | Nix | 2026-09-13 | — | Your AI coding toolkit, declared in Nix — Claude, Gemini, Copilot, 15+ MCP servers, one flake |
-| 44 | [pipeworx-io/mcp-feeds](https://github.com/pipeworx-io/mcp-feeds) | 0 | TypeScript | 2026-09-13 | — | Live Feeds (RSS/Atom) MCP. |
-| 45 | [Dvorinka/cal](https://github.com/Dvorinka/cal) | 0 | TypeScript | 2026-09-13 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/Dvorinka/cal/) | Self-hosted daily toolkit — calendar, tasks, notes, links, files, kanban boards, time tracking, GitHub inbox. One Docker |
-| 46 | [pipeworx-io/mcp-federal-register](https://github.com/pipeworx-io/mcp-federal-register) | 0 | TypeScript | 2026-09-13 | — | Federal Register MCP — US Federal Register API (free, no auth) |
-| 47 | [777genius/agent-teams-ai](https://github.com/777genius/agent-teams-ai) | 2109 | TypeScript | 2026-09-13 | — | You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. |
-| 48 | [pipeworx-io/mcp-fdic](https://github.com/pipeworx-io/mcp-fdic) | 0 | TypeScript | 2026-09-13 | — | FDIC MCP — FDIC BankFind Suite API (free, no auth) |
-| 49 | [shinthink/blitzstrike](https://github.com/shinthink/blitzstrike) | 3 | TypeScript | 2026-09-13 | ✅ [npx](https://linny006.github.io/mcp-servers-live/r/shinthink/blitzstrike/) | ⚡ Blitz Strike — a universal MCP penetration-testing toolbelt. Structured methodology: reconnaissance & attack-surface m |
-| 50 | [pacyworld/selenium-mcp](https://github.com/pacyworld/selenium-mcp) | 0 | PHP | 2026-09-13 | — | Selenium Grid MCP server for browser automation (mirror) |
+| 1 | [linny006/trending-claude-skills](https://github.com/linny006/trending-claude-skills) | 40 | Python | 2026-09-13 | — | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
+| 2 | [pipeworx-io/mcp-iconify](https://github.com/pipeworx-io/mcp-iconify) | 1 | TypeScript | 2026-09-13 | — | MCP server for searching and retrieving icons via Iconify API |
+| 3 | [hproxy-com/free-proxy-list](https://github.com/hproxy-com/free-proxy-list) | 56 | — | 2026-09-13 | — | Free proxy list, verified around the clock: HTTP, HTTPS, SOCKS4 and SOCKS5 proxies with country, anonymity, latency and  |
+| 4 | [pipeworx-io/mcp-ibge-br](https://github.com/pipeworx-io/mcp-ibge-br) | 0 | TypeScript | 2026-09-13 | — | IBGE (Instituto Brasileiro de Geografia e Estatística) MCP. |
+| 5 | [pipeworx-io/mcp-ia-dmv](https://github.com/pipeworx-io/mcp-ia-dmv) | 0 | TypeScript | 2026-09-13 | — | Iowa DOT driver license stations with hours, CDL availability and queue cameras |
+| 6 | [pipeworx-io/mcp-hurricanes](https://github.com/pipeworx-io/mcp-hurricanes) | 0 | TypeScript | 2026-09-13 | — | Hurricanes / tropical cyclones MCP. |
+| 7 | [pipeworx-io/mcp-hunter](https://github.com/pipeworx-io/mcp-hunter) | 0 | TypeScript | 2026-09-13 | — | Hunter.io MCP — wraps the Hunter.io email finder & verification API (hunter.io) |
+| 8 | [MasayukiTa/m365-copilot-companion-mcp](https://github.com/MasayukiTa/m365-copilot-companion-mcp) | 6 | Python | 2026-09-13 | — | Personal-use MCP server that gives Microsoft 365 Copilot real hands on your own laptop: files, Python, Office, SQL, Web. |
+| 9 | [hellob1889/Pandaone-AI-Agent](https://github.com/hellob1889/Pandaone-AI-Agent) | 0 | Python | 2026-09-13 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/hellob1889/Pandaone-AI-Agent/) | AI Agent code audit & file protection tool — 让每一次代码改动都留下合规、可追溯的证据链 |
+| 10 | [ttalkkaklab/social-flow](https://github.com/ttalkkaklab/social-flow) | 0 | JavaScript | 2026-09-13 | — | Claude Code plugin: a channel-based short-form/long-form social content pipeline — storyboard with adversarial quality g |
+| 11 | [pipeworx-io/mcp-huggingface](https://github.com/pipeworx-io/mcp-huggingface) | 0 | TypeScript | 2026-09-13 | — | Hugging Face Hub MCP — models, datasets, spaces |
+| 12 | [pipeworx-io/mcp-hud](https://github.com/pipeworx-io/mcp-hud) | 0 | TypeScript | 2026-09-13 | — | HUD MCP — U.S. Department of Housing and Urban Development APIs. |
+| 13 | [pipeworx-io/mcp-hubspot](https://github.com/pipeworx-io/mcp-hubspot) | 0 | TypeScript | 2026-09-13 | — | HubSpot MCP Pack |
+| 14 | [ergut/mcp-logseq](https://github.com/ergut/mcp-logseq) | 327 | Python | 2026-09-13 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/ergut/mcp-logseq/) | MCP server to interact with LogSeq via its Local HTTP API - enabling AI assistants like Claude to seamlessly read, write |
+| 15 | [pipeworx-io/mcp-httpstatus](https://github.com/pipeworx-io/mcp-httpstatus) | 0 | TypeScript | 2026-09-13 | — | HTTP status code reference MCP. |
+| 16 | [pipeworx-io/mcp-httpcat](https://github.com/pipeworx-io/mcp-httpcat) | 0 | TypeScript | 2026-09-13 | — | MCP server for HTTP status code cat images via http.cat |
+| 17 | [meta-taro/zumen](https://github.com/meta-taro/zumen) | 0 | TypeScript | 2026-09-13 | — | Desktop diagram editor for architecture diagrams. The source of truth is text, so an AI agent can keep the diagram in sy |
+| 18 | [pipeworx-io/mcp-hts](https://github.com/pipeworx-io/mcp-hts) | 0 | TypeScript | 2026-09-13 | — | HTS MCP — US import tariff rates via the USITC Harmonized Tariff Schedule. |
+| 19 | [MikkoParkkola/axterminator](https://github.com/MikkoParkkola/axterminator) | 3 | Rust | 2026-09-13 | ✅ [cargo install](https://linny006.github.io/mcp-servers-live/r/MikkoParkkola/axterminator/) | MCP server for macOS desktop automation. Background GUI testing, 30 tools, audio capture, camera, virtual desktops. Buil |
+| 20 | [kire21b/fapony](https://github.com/kire21b/fapony) | 0 | TypeScript | 2026-09-13 | — | Measures what coding agents actually do (tokens, cost, rounds, pass/fail) and verifies their claims — 6 MCP tools, any a |
+| 21 | [pipeworx-io/mcp-htmltext](https://github.com/pipeworx-io/mcp-htmltext) | 0 | TypeScript | 2026-09-13 | — | HTML → text MCP. |
+| 22 | [jungjaehoon-lifegamez/MAMA](https://github.com/jungjaehoon-lifegamez/MAMA) | 13 | TypeScript | 2026-09-13 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/jungjaehoon-lifegamez/MAMA/) | Local-first operating memory for AI coding agents - Claude Code, Codex, and any MCP client. Tracks decisions and their e |
+| 23 | [pipeworx-io/mcp-htmlentities](https://github.com/pipeworx-io/mcp-htmlentities) | 0 | TypeScript | 2026-09-13 | — | HTML entities MCP. |
+| 24 | [pipeworx-io/mcp-hpo-api](https://github.com/pipeworx-io/mcp-hpo-api) | 0 | TypeScript | 2026-09-13 | — | Human Phenotype Ontology — clinical phenotype terms + gene/disease annotations |
+| 25 | [Artexis10/exomem](https://github.com/Artexis10/exomem) | 10 | Python | 2026-09-13 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/Artexis10/exomem/) | Self-hosted MCP server that makes your Obsidian/markdown vault searchable — text, PDFs, Office docs, images, audio — fro |
+| 26 | [meta-taro/dbboard](https://github.com/meta-taro/dbboard) | 0 | Rust | 2026-09-13 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/meta-taro/dbboard/) | Modern multi-database desktop client with pluggable AI providers |
+| 27 | [pipeworx-io/mcp-housing-intel](https://github.com/pipeworx-io/mcp-housing-intel) | 1 | TypeScript | 2026-09-13 | — | Housing Intel MCP — Meta-pack that chains FRED, BLS, ATTOM, and HUD APIs |
+| 28 | [pipeworx-io/mcp-horoscope](https://github.com/pipeworx-io/mcp-horoscope) | 0 | TypeScript | 2026-09-13 | — | Horoscope MCP — wraps the keyless Horoscope App API. |
+| 29 | [dryvist/nix-ai](https://github.com/dryvist/nix-ai) | 11 | Nix | 2026-09-13 | — | Your AI coding toolkit, declared in Nix — Claude, Gemini, Copilot, 15+ MCP servers, one flake |
+| 30 | [rajanaggarwal11/mcpcheck](https://github.com/rajanaggarwal11/mcpcheck) | 0 | TypeScript | 2026-09-13 | — | Correctness checks for MCP servers — prompt-injection lint, contract drift, over-broad tools, dishonest annotations. Nev |
+| 31 | [pipeworx-io/mcp-horizons-nasa](https://github.com/pipeworx-io/mcp-horizons-nasa) | 0 | TypeScript | 2026-09-13 | — | NASA JPL Horizons — solar-system body ephemerides |
+| 32 | [stickerdaniel/linkedin-mcp-server](https://github.com/stickerdaniel/linkedin-mcp-server) | 3450 | Python | 2026-09-13 | ✅ [uvx](https://linny006.github.io/mcp-servers-live/r/stickerdaniel/linkedin-mcp-server/) | Open-source MCP server for LinkedIn. Give Claude and any MCP-compatible AI agent access to profiles, companies, jobs, an |
+| 33 | [pipeworx-io/mcp-hongkong-procurement](https://github.com/pipeworx-io/mcp-hongkong-procurement) | 0 | TypeScript | 2026-09-13 | — | Hong Kong Government Procurement MCP — GLD 'Contracts Awarded' (keyless). |
+| 34 | [MCPJam/inspector](https://github.com/MCPJam/inspector) | 2199 | TypeScript | 2026-09-13 | ✅ [docker run](https://linny006.github.io/mcp-servers-live/r/MCPJam/inspector/) | Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps. |
+| 35 | [pipeworx-io/mcp-homebrew-formulae](https://github.com/pipeworx-io/mcp-homebrew-formulae) | 0 | TypeScript | 2026-09-13 | — | Homebrew formulae + casks + install analytics (formulae.brew.sh) |
+| 36 | [Inderwish/formlex](https://github.com/Inderwish/formlex) | 0 | JavaScript | 2026-09-13 | — | 形意词库 FormLex｜1,424 条设计灵感、10 份主题词库与个人自选，支持独立网站特色、冷暖筛选、HTTP API 和可选 MCP 工具。 |
+| 37 | [pipeworx-io/mcp-holidays](https://github.com/pipeworx-io/mcp-holidays) | 0 | TypeScript | 2026-09-13 | — | MCP server for public holidays — worldwide holiday data by country and year |
+| 38 | [pipeworx-io/mcp-hnb-hr](https://github.com/pipeworx-io/mcp-hnb-hr) | 0 | TypeScript | 2026-09-13 | — | Croatian National Bank (Hrvatska narodna banka, HNB) exchange-rate MCP. Keyless. |
+| 39 | [pipeworx-io/mcp-hkma-hk](https://github.com/pipeworx-io/mcp-hkma-hk) | 0 | TypeScript | 2026-09-13 | — | Hong Kong Monetary Authority (HKMA) public open API MCP. Keyless. |
+| 40 | [KyaniteLabs/kinocut](https://github.com/KyaniteLabs/kinocut) | 146 | Python | 2026-09-13 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/KyaniteLabs/kinocut/) | Guardrailed video editing MCP server for AI agents. FFmpeg, Hyperframes, repurposing tools, Python client, and CLI. Loca |
+| 41 | [pipeworx-io/mcp-hilma](https://github.com/pipeworx-io/mcp-hilma) | 0 | TypeScript | 2026-09-13 | — | Hilma MCP — Finnish government public procurement notices (keyed). |
+| 42 | [pipeworx-io/mcp-hibp](https://github.com/pipeworx-io/mcp-hibp) | 0 | TypeScript | 2026-09-13 | — | Have I Been Pwned MCP |
+| 43 | [skynetcmd/m3-memory](https://github.com/skynetcmd/m3-memory) | 24 | Python | 2026-09-13 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/skynetcmd/m3-memory/) | Local-first Memory Framework for AI Agents · 99.2% LongMemEval-S retrieval @ k=10 · Supports Claude · Antigravity · Lang |
+| 44 | [pipeworx-io/mcp-hi-dmv](https://github.com/pipeworx-io/mcp-hi-dmv) | 0 | TypeScript | 2026-09-13 | — | Hawaii: cumulative hybrid and electric vehicles registered statewide since 1999 |
+| 45 | [pipeworx-io/mcp-hgnc](https://github.com/pipeworx-io/mcp-hgnc) | 0 | TypeScript | 2026-09-13 | — | HGNC (HUGO Gene Nomenclature Committee) MCP. |
+| 46 | [morluto/jacobian](https://github.com/morluto/jacobian) | 192 | Python | 2026-09-13 | ✅ [uvx](https://linny006.github.io/mcp-servers-live/r/morluto/jacobian/) | Composable mathematics tools for agents |
+| 47 | [pipeworx-io/mcp-here](https://github.com/pipeworx-io/mcp-here) | 0 | TypeScript | 2026-09-13 | — | HERE MCP — premium geocoding, places, and TRAFFIC-AWARE routing from HERE |
+| 48 | [pipeworx-io/mcp-helsinki-events](https://github.com/pipeworx-io/mcp-helsinki-events) | 0 | TypeScript | 2026-09-13 | — | Helsinki Events MCP. |
+| 49 | [pipeworx-io/mcp-healthdata](https://github.com/pipeworx-io/mcp-healthdata) | 0 | TypeScript | 2026-09-13 | — | HealthData.gov MCP — wraps HealthData.gov CKAN API (free, no auth) |
+| 50 | [pipeworx-io/mcp-health-feeds](https://github.com/pipeworx-io/mcp-health-feeds) | 0 | TypeScript | 2026-09-13 | — | Health Feeds MCP. |
 <!-- TRACKER_TABLE_END -->
 
 ---
