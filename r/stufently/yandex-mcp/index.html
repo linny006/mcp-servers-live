@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="stufently/yandex-mcp - entry on MCP Servers Live">
 <meta name="twitter:description" content="MCP servers for Yandex APIs — Search, Wordstat, Webmaster, Metrika, Direct. 91 tools, Claude Code plugin included.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"stufently/yandex-mcp","codeRepository":"https://github.com/stufently/yandex-mcp","programmingLanguage":"JavaScript","url":"https://linny006.github.io/mcp-servers-live/r/stufently/yandex-mcp/","description":"MCP servers for Yandex APIs — Search, Wordstat, Webmaster, Metrika, Direct. 91 tools, Claude Code plugin included.","author":{"@type":"Person","name":"stufently","url":"https://github.com/stufently"},"dateModified":"2026-09-01"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"stufently/yandex-mcp","codeRepository":"https://github.com/stufently/yandex-mcp","programmingLanguage":"JavaScript","url":"https://linny006.github.io/mcp-servers-live/r/stufently/yandex-mcp/","description":"MCP servers for Yandex APIs — Search, Wordstat, Webmaster, Metrika, Direct. 91 tools, Claude Code plugin included.","author":{"@type":"Person","name":"stufently","url":"https://github.com/stufently"},"dateModified":"2026-09-18"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -46,38 +46,23 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <h1>stufently/yandex-mcp</h1>
 <p class="lead">MCP servers for Yandex APIs — Search, Wordstat, Webmaster, Metrika, Direct. 91 tools, Claude Code plugin included.</p>
 <div class="meta">
-<span><strong>Stars</strong> 17</span>
+<span><strong>Stars</strong> 19</span>
 <span><strong>Language</strong> JavaScript</span>
-<span><strong>Last updated</strong> 2026-09-01</span>
+<span><strong>Last updated</strong> 2026-09-18</span>
 <span><a href="https://github.com/stufently/yandex-mcp" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/stufently" rel="external">@stufently</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
 <p>Install method detected from README: <code>claude mcp add</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add yandex-wordstat --scope user \</code></pre>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add yandex-webmaster --scope user \</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;yandex-search&quot;: {
-      &quot;command&quot;: &quot;node&quot;,
-      &quot;args&quot;: [&quot;--env-file=.env&quot;, &quot;packages/yandex-search-mcp/src/index.mjs&quot;]
-    },
-    &quot;yandex-wordstat&quot;: {
-      &quot;command&quot;: &quot;node&quot;,
-      &quot;args&quot;: [&quot;--env-file=.env&quot;, &quot;packages/yandex-wordstat-mcp/src/index.mjs&quot;]
-    },
     &quot;yandex-webmaster&quot;: {
-      &quot;command&quot;: &quot;node&quot;,
-      &quot;args&quot;: [&quot;--env-file=.env&quot;, &quot;packages/yandex-webmaster-mcp/src/index.mjs&quot;]
-    },
-    &quot;yandex-metrika&quot;: {
-      &quot;command&quot;: &quot;node&quot;,
-      &quot;args&quot;: [&quot;--env-file=.env&quot;, &quot;packages/yandex-metrika-mcp/src/index.mjs&quot;]
-    },
-    &quot;yandex-direct&quot;: {
-      &quot;command&quot;: &quot;node&quot;,
-      &quot;args&quot;: [&quot;--env-file=.env&quot;, &quot;packages/yandex-direct-mcp/src/index.mjs&quot;]
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;@stufently/yandex-webmaster-mcp&quot;],
+      &quot;env&quot;: { &quot;YANDEX_WEBMASTER_TOKEN&quot;: &quot;your-oauth-token&quot; }
     }
   }
 }</code></pre>
@@ -87,7 +72,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/duhu2000/dsh-mcp-connector/">duhu2000/dsh-mcp-connector (stars:11)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/neomjs/neo/">neomjs/neo (stars:3278)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/zoharbabin/webrtc-inspector/">zoharbabin/webrtc-inspector (stars:1)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/zachristmas/baa-ton/">zachristmas/baa-ton (stars:1)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
