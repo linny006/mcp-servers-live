@@ -44,7 +44,7 @@ expired items removed — so you can rely on what you see being current.
 
 ## 📋 Current Items
 
-> ⏰ Last updated: 2026-09-17 23:45 UTC
+> ⏰ Last updated: 2026-09-18 00:00 UTC
 >
 > Data source: `GitHub Search API`
 >
@@ -53,56 +53,56 @@ expired items removed — so you can rely on what you see being current.
 <!-- TRACKER_TABLE_START -->
 | # | Name | ⭐ | Lang | Updated | Install | Description |
 |---|------|---|------|---------|---------|-------------|
-| 1 | [zaebee/codegraph-brain](https://github.com/zaebee/codegraph-brain) | 1 | Python | 2026-09-17 | ✅ [uvx](https://linny006.github.io/mcp-servers-live/r/zaebee/codegraph-brain/) | Code graph for AI agents: impact analysis and call tracing over MCP (Python, TypeScript). Local, deterministic, SQLite. |
-| 2 | [pipeworx-io/mcp-arcgis-pittsburgh](https://github.com/pipeworx-io/mcp-arcgis-pittsburgh) | 0 | TypeScript | 2026-09-17 | — | City of Pittsburgh GIS — Pittsburgh, Pennsylvania open geospatial data (ArcGIS). |
-| 3 | [linny006/trending-claude-skills](https://github.com/linny006/trending-claude-skills) | 43 | Python | 2026-09-17 | — | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
-| 4 | [pipeworx-io/mcp-arcgis-pima](https://github.com/pipeworx-io/mcp-arcgis-pima) | 0 | TypeScript | 2026-09-17 | — | Pima County GIS — Pima County, Arizona open geospatial data (ArcGIS). |
-| 5 | [pipeworx-io/mcp-arcgis-phoenix](https://github.com/pipeworx-io/mcp-arcgis-phoenix) | 0 | TypeScript | 2026-09-17 | — | City of Phoenix GIS — Phoenix, Arizona open geospatial data (ArcGIS). |
-| 6 | [pipeworx-io/mcp-arcgis-pflugerville](https://github.com/pipeworx-io/mcp-arcgis-pflugerville) | 0 | TypeScript | 2026-09-17 | — | City of Pflugerville GIS — Pflugerville, Texas open geospatial data (ArcGIS). |
-| 7 | [pipeworx-io/mcp-arcgis-peterborough](https://github.com/pipeworx-io/mcp-arcgis-peterborough) | 0 | TypeScript | 2026-09-17 | — | City of Peterborough GIS — Peterborough, Ontario (Canada) open geospatial data (ArcGIS). |
-| 8 | [pipeworx-io/mcp-arcgis-peoria](https://github.com/pipeworx-io/mcp-arcgis-peoria) | 0 | TypeScript | 2026-09-17 | — | City of Peoria GIS — Peoria, Arizona open geospatial data (ArcGIS). |
-| 9 | [pipeworx-io/mcp-arcgis-peachtreecorners](https://github.com/pipeworx-io/mcp-arcgis-peachtreecorners) | 0 | TypeScript | 2026-09-17 | — | City of Peachtree Corners GIS — Peachtree Corners, Georgia open geospatial data (ArcGIS). |
-| 10 | [chaytanc/longshore](https://github.com/chaytanc/longshore) | 0 | JavaScript | 2026-09-17 | — | The Reality Next Door — an open, cited worldbuilding commons: a post-extraction Seattle on the Salish Sea. Authored by L |
-| 11 | [ali-ulu/huqan](https://github.com/ali-ulu/huqan) | 6 | JavaScript | 2026-09-17 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/ali-ulu/huqan/) | Local-first verification layer for AI agents: evidence, provenance, policy gates, human approval, and auditable Trust Re |
-| 12 | [pipeworx-io/mcp-arcgis-palmbeach](https://github.com/pipeworx-io/mcp-arcgis-palmbeach) | 0 | TypeScript | 2026-09-17 | — | Palm Beach County GIS — Palm Beach County, Florida open geospatial data (ArcGIS). |
-| 13 | [pipeworx-io/mcp-arcgis-orovalley](https://github.com/pipeworx-io/mcp-arcgis-orovalley) | 0 | TypeScript | 2026-09-17 | — | Town of Oro Valley GIS — Oro Valley, Arizona open geospatial data (ArcGIS). |
-| 14 | [hproxy-com/free-proxy-list](https://github.com/hproxy-com/free-proxy-list) | 61 | — | 2026-09-17 | — | Free proxy list, verified around the clock: HTTP, HTTPS, SOCKS4 and SOCKS5 proxies with country, anonymity, latency and  |
-| 15 | [gabrielmaialva33/winx-code-agent](https://github.com/gabrielmaialva33/winx-code-agent) | 34 | Rust | 2026-09-17 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/gabrielmaialva33/winx-code-agent/) | 🦀 A high-performance code agent written in Rust, combining the best features of WCGW for maximum efficiency and semantic |
-| 16 | [pipeworx-io/mcp-arcgis-onkaparinga](https://github.com/pipeworx-io/mcp-arcgis-onkaparinga) | 0 | TypeScript | 2026-09-17 | — | City of Onkaparinga GIS — Onkaparinga, South Australia open geospatial data (ArcGIS). |
-| 17 | [pipeworx-io/mcp-arcgis-novi](https://github.com/pipeworx-io/mcp-arcgis-novi) | 0 | TypeScript | 2026-09-17 | — | City of Novi GIS — Novi, Michigan open geospatial data (ArcGIS). |
-| 18 | [pipeworx-io/mcp-arcgis-norman](https://github.com/pipeworx-io/mcp-arcgis-norman) | 0 | TypeScript | 2026-09-17 | — | City of Norman GIS — Norman, Oklahoma open geospatial data (ArcGIS). |
-| 19 | [pipeworx-io/mcp-arcgis-neworleans](https://github.com/pipeworx-io/mcp-arcgis-neworleans) | 0 | TypeScript | 2026-09-17 | — | City of New Orleans GIS — New Orleans, Louisiana open geospatial data (ArcGIS). |
-| 20 | [Brhiza/mingyu](https://github.com/Brhiza/mingyu) | 427 | TypeScript | 2026-09-17 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/Brhiza/mingyu/) | 八字、紫微、星盘、六爻、梅花、奇门、大六壬、小六壬、塔罗、雷诺曼、灵签、择日一站式玄学算命占卜工具包，输出结构化提示词与数据。提供公开 API、MCP Server 与 skill。 |
-| 21 | [pipeworx-io/mcp-arcgis-montana](https://github.com/pipeworx-io/mcp-arcgis-montana) | 0 | TypeScript | 2026-09-17 | — | Montana State GIS — Montana open geospatial data (ArcGIS). |
-| 22 | [zachristmas/baa-ton](https://github.com/zachristmas/baa-ton) | 1 | JavaScript | 2026-09-17 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/zachristmas/baa-ton/) | An orchestration baton for herding coding agents. |
-| 23 | [MCPJam/inspector](https://github.com/MCPJam/inspector) | 2214 | TypeScript | 2026-09-17 | ✅ [docker run](https://linny006.github.io/mcp-servers-live/r/MCPJam/inspector/) | Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps. |
-| 24 | [pipeworx-io/mcp-arcgis-monocounty](https://github.com/pipeworx-io/mcp-arcgis-monocounty) | 0 | TypeScript | 2026-09-17 | — | Mono County GIS — Mono County & Mammoth Lakes, California open geospatial data (ArcGIS). |
-| 25 | [speakeasy-api/gram](https://github.com/speakeasy-api/gram) | 268 | Go | 2026-09-17 | — | Securely scale AI usage across your organization. A single stack to Connect, Secure, Observe and Distribute agents, MCPs |
-| 26 | [pipeworx-io/mcp-arcgis-mobile](https://github.com/pipeworx-io/mcp-arcgis-mobile) | 0 | TypeScript | 2026-09-17 | — | City of Mobile GIS — Mobile, Alabama open geospatial data (ArcGIS). |
-| 27 | [samson-art/transcriptor-mcp](https://github.com/samson-art/transcriptor-mcp) | 21 | TypeScript | 2026-09-17 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/samson-art/transcriptor-mcp/) | One MCP server that gives Claude, ChatGPT, Cursor and any other AI app transcripts, chapters, metadata and frames from Y |
-| 28 | [JuanSPZ/agent-ready-index](https://github.com/JuanSPZ/agent-ready-index) | 2 | HTML | 2026-09-17 | — | Agent Search 2026: Best AI-Ready Site Indexer & MCP Tools 🚀 |
-| 29 | [pipeworx-io/mcp-arcgis-mckinney](https://github.com/pipeworx-io/mcp-arcgis-mckinney) | 0 | TypeScript | 2026-09-17 | — | City of McKinney GIS — McKinney, Texas open geospatial data (ArcGIS). |
-| 30 | [pipeworx-io/mcp-arcgis-marioncountyor](https://github.com/pipeworx-io/mcp-arcgis-marioncountyor) | 0 | TypeScript | 2026-09-17 | — | Marion County GIS — Marion County, Oregon open geospatial data (ArcGIS). |
-| 31 | [pipeworx-io/mcp-arcgis-maricopa](https://github.com/pipeworx-io/mcp-arcgis-maricopa) | 0 | TypeScript | 2026-09-17 | — | Maricopa County GIS — Maricopa County (Phoenix), Arizona open geospatial data (ArcGIS). |
-| 32 | [rbmuller/scherlok](https://github.com/rbmuller/scherlok) | 9 | Python | 2026-09-17 | ✅ [uvx](https://linny006.github.io/mcp-servers-live/r/rbmuller/scherlok/) | A detective for your data. Zero-config data quality monitoring — works with dbt, Postgres, BigQuery, Snowflake. No YAML. |
-| 33 | [Adrian-Sandwich/magi-council](https://github.com/Adrian-Sandwich/magi-council) | 0 | Python | 2026-09-17 | — | MAGI council of three AI heads (Melchior/Balthasar/Casper) that deliberate, vote and execute plans — local-first multi-a |
-| 34 | [pipeworx-io/mcp-arcgis-lubbock](https://github.com/pipeworx-io/mcp-arcgis-lubbock) | 0 | TypeScript | 2026-09-17 | — | City of Lubbock GIS — Lubbock, Texas open geospatial data (ArcGIS). |
-| 35 | [pipeworx-io/mcp-arcgis-loudoun](https://github.com/pipeworx-io/mcp-arcgis-loudoun) | 0 | TypeScript | 2026-09-17 | — | Loudoun County GIS — Loudoun County, Virginia open geospatial data (ArcGIS). |
-| 36 | [pipeworx-io/mcp-arcgis-lorain](https://github.com/pipeworx-io/mcp-arcgis-lorain) | 0 | TypeScript | 2026-09-17 | — | Lorain County GIS — Lorain County, Ohio open geospatial data (ArcGIS). |
-| 37 | [pipeworx-io/mcp-arcgis-longview](https://github.com/pipeworx-io/mcp-arcgis-longview) | 0 | TypeScript | 2026-09-17 | — | City of Longview GIS — Longview, Texas open geospatial data (ArcGIS). |
-| 38 | [pipeworx-io/mcp-arcgis-linncounty](https://github.com/pipeworx-io/mcp-arcgis-linncounty) | 0 | TypeScript | 2026-09-17 | — | Linn County GIS — Linn County, Iowa open geospatial data (ArcGIS). |
-| 39 | [pipeworx-io/mcp-arcgis-lincolnne](https://github.com/pipeworx-io/mcp-arcgis-lincolnne) | 0 | TypeScript | 2026-09-17 | — | Lincoln & Lancaster County GIS — Lincoln, Nebraska open geospatial data (ArcGIS). |
-| 40 | [Donk338/memory-mcp](https://github.com/Donk338/memory-mcp) | 0 | Python | 2026-09-17 | — | Persistent agent memory over MCP, paid per call via x402 USDC on Base. Your wallet is your namespace. |
-| 41 | [pipeworx-io/mcp-arcgis-lincolncountync](https://github.com/pipeworx-io/mcp-arcgis-lincolncountync) | 0 | TypeScript | 2026-09-17 | — | Lincoln County GIS — Lincoln County, North Carolina open geospatial data (ArcGIS). |
-| 42 | [pipeworx-io/mcp-arcgis-lancaster](https://github.com/pipeworx-io/mcp-arcgis-lancaster) | 0 | TypeScript | 2026-09-17 | — | Lancaster County GIS — Lancaster County, Pennsylvania open geospatial data (ArcGIS). |
-| 43 | [pipeworx-io/mcp-arcgis-lakeland](https://github.com/pipeworx-io/mcp-arcgis-lakeland) | 0 | TypeScript | 2026-09-17 | — | City of Lakeland GIS — Lakeland, Florida open geospatial data (ArcGIS). |
-| 44 | [pipeworx-io/mcp-arcgis-lakecountyil](https://github.com/pipeworx-io/mcp-arcgis-lakecountyil) | 0 | TypeScript | 2026-09-17 | — | Lake County GIS — Lake County, Illinois open geospatial data (ArcGIS). |
-| 45 | [pipeworx-io/mcp-arcgis-lacounty](https://github.com/pipeworx-io/mcp-arcgis-lacounty) | 0 | TypeScript | 2026-09-17 | — | Los Angeles County GIS — LA County, California open geospatial data (ArcGIS). |
-| 46 | [tmolavi/mcp-agent-skills-hub](https://github.com/tmolavi/mcp-agent-skills-hub) | 8 | JavaScript | 2026-09-17 | — | Molavi Agent Skills: Curated AI agent skills and MCP configs for Antigravity, Cursor, Codex & Claude — by Taghi Molavi |
-| 47 | [pipeworx-io/mcp-arcgis-kinston](https://github.com/pipeworx-io/mcp-arcgis-kinston) | 0 | TypeScript | 2026-09-17 | — | City of Kinston GIS — Kinston, North Carolina open geospatial data (ArcGIS). |
-| 48 | [manu-labs/patch-mcp-grok-plugin](https://github.com/manu-labs/patch-mcp-grok-plugin) | 0 | — | 2026-09-17 | — | Patch MCP plugin for Grok Bot: real phone calls from your own verified number through a hosted MCP server |
-| 49 | [pipeworx-io/mcp-arcgis-kingston](https://github.com/pipeworx-io/mcp-arcgis-kingston) | 0 | TypeScript | 2026-09-17 | — | City of Kingston GIS — Kingston, Ontario (Canada) open geospatial data (ArcGIS). |
-| 50 | [pipeworx-io/mcp-arcgis-kansas](https://github.com/pipeworx-io/mcp-arcgis-kansas) | 0 | TypeScript | 2026-09-17 | — | Kansas State GIS — Kansas open geospatial data (ArcGIS). |
+| 1 | [linny006/trending-claude-skills](https://github.com/linny006/trending-claude-skills) | 43 | Python | 2026-09-18 | — | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
+| 2 | [pipeworx-io/mcp-coresignal](https://github.com/pipeworx-io/mcp-coresignal) | 0 | TypeScript | 2026-09-18 | — | Coresignal MCP — LinkedIn-adjacent company + employee data (coresignal.com) |
+| 3 | [coreplanelabs/switchboard](https://github.com/coreplanelabs/switchboard) | 2 | TypeScript | 2026-09-18 | — | Mention it in Slack and an agent reviews the PR, ships the fix, or answers the question — on the model you choose, with  |
+| 4 | [pipeworx-io/mcp-coordinates](https://github.com/pipeworx-io/mcp-coordinates) | 0 | TypeScript | 2026-09-18 | — | Coordinate geometry MCP. |
+| 5 | [pipeworx-io/mcp-conspiracy-theory](https://github.com/pipeworx-io/mcp-conspiracy-theory) | 0 | TypeScript | 2026-09-18 | — | conspiracy-theory MCP — wraps StupidAPIs (requires X-API-Key) |
+| 6 | [pipeworx-io/mcp-congressional-documents](https://github.com/pipeworx-io/mcp-congressional-documents) | 0 | TypeScript | 2026-09-17 | — | Congressional Documents — full-text search and retrieval over the official |
+| 7 | [pipeworx-io/mcp-congress](https://github.com/pipeworx-io/mcp-congress) | 0 | TypeScript | 2026-09-17 | — | Congress MCP — US Congress data via GovTrack API (free, no auth required) |
+| 8 | [rubensgomes-org/calculator-mcp](https://github.com/rubensgomes-org/calculator-mcp) | 0 | Python | 2026-09-17 | — | AI-Powered MCP Math Calculator Server. |
+| 9 | [pipeworx-io/mcp-confluence](https://github.com/pipeworx-io/mcp-confluence) | 0 | TypeScript | 2026-09-17 | — | Confluence MCP — wraps the Confluence Cloud REST API v2 (OAuth) |
+| 10 | [hproxy-com/free-proxy-list](https://github.com/hproxy-com/free-proxy-list) | 61 | — | 2026-09-17 | — | Free proxy list, verified around the clock: HTTP, HTTPS, SOCKS4 and SOCKS5 proxies with country, anonymity, latency and  |
+| 11 | [pipeworx-io/mcp-conceptnet](https://github.com/pipeworx-io/mcp-conceptnet) | 0 | TypeScript | 2026-09-17 | — | ConceptNet MCP — open multilingual word/phrase relation graph |
+| 12 | [pipeworx-io/mcp-comtrade](https://github.com/pipeworx-io/mcp-comtrade) | 0 | TypeScript | 2026-09-17 | — | Comtrade MCP — UN Comtrade API for international bilateral trade data |
+| 13 | [pipeworx-io/mcp-complex-portal](https://github.com/pipeworx-io/mcp-complex-portal) | 0 | TypeScript | 2026-09-17 | — | EBI Complex Portal MCP. |
+| 14 | [pipeworx-io/mcp-companies-house](https://github.com/pipeworx-io/mcp-companies-house) | 0 | TypeScript | 2026-09-17 | — | Companies House MCP — UK statutory company registry (BYO key) |
+| 15 | [pipeworx-io/mcp-commons-wikimedia](https://github.com/pipeworx-io/mcp-commons-wikimedia) | 0 | TypeScript | 2026-09-17 | — | Wikimedia Commons file/image/audio/video search via MediaWiki Action API |
+| 16 | [LunarWerxs/SageThumbs-2k](https://github.com/LunarWerxs/SageThumbs-2k) | 189 | Rust | 2026-09-17 | — | Windows 11 shell extension (Rust): Explorer thumbnails for 331 file types Windows can't show, including camera RAW, PSD, |
+| 17 | [pipeworx-io/mcp-committee-releases](https://github.com/pipeworx-io/mcp-committee-releases) | 0 | TypeScript | 2026-09-17 | — | Committee Releases — documents congressional committees publish on their OWN |
+| 18 | [pipeworx-io/mcp-comicvine](https://github.com/pipeworx-io/mcp-comicvine) | 0 | TypeScript | 2026-09-17 | — | Comic Vine: characters, issues, volumes, creators, publishers. Free key. |
+| 19 | [pipeworx-io/mcp-colorapi](https://github.com/pipeworx-io/mcp-colorapi) | 0 | TypeScript | 2026-09-17 | — | MCP server for The Color API — color identification, scheme generation, and format conversion |
+| 20 | [pipeworx-io/mcp-color-pizza](https://github.com/pipeworx-io/mcp-color-pizza) | 0 | TypeScript | 2026-09-17 | — | Color Pizza MCP — names hex colors using human-friendly color-name lists. |
+| 21 | [pipeworx-io/mcp-color](https://github.com/pipeworx-io/mcp-color) | 0 | TypeScript | 2026-09-17 | — | Color utilities MCP. |
+| 22 | [Jersyfi/hubtask](https://github.com/Jersyfi/hubtask) | 0 | Go | 2026-09-17 | — | Self-hostable task management for individuals and service providers: five levels from Hub to Activity, REST API, MCP ser |
+| 23 | [pipeworx-io/mcp-colombia-secop](https://github.com/pipeworx-io/mcp-colombia-secop) | 0 | TypeScript | 2026-09-17 | — | Colombia SECOP MCP — Colombian government procurement (public contracting). |
+| 24 | [PranavGS2006/agent-thinktank-stack](https://github.com/PranavGS2006/agent-thinktank-stack) | 0 | HTML | 2026-09-17 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/PranavGS2006/agent-thinktank-stack/) | AI Coding Memory MCP 2026: 20 Tools for Persistent Sprint & Decision Management |
+| 25 | [pipeworx-io/mcp-college-scorecard](https://github.com/pipeworx-io/mcp-college-scorecard) | 0 | TypeScript | 2026-09-17 | — | College Scorecard MCP — US Department of Education College Scorecard API |
+| 26 | [pipeworx-io/mcp-coinpaprika](https://github.com/pipeworx-io/mcp-coinpaprika) | 0 | TypeScript | 2026-09-17 | — | Coinpaprika MCP — alternative crypto data source |
+| 27 | [pipeworx-io/mcp-coinmarketcap](https://github.com/pipeworx-io/mcp-coinmarketcap) | 0 | TypeScript | 2026-09-17 | — | CoinMarketCap MCP — crypto prices, market cap, rankings |
+| 28 | [pipeworx-io/mcp-coingecko](https://github.com/pipeworx-io/mcp-coingecko) | 0 | TypeScript | 2026-09-17 | — | CoinGecko MCP — wraps CoinGecko free API (no auth required) |
+| 29 | [pipeworx-io/mcp-codewars](https://github.com/pipeworx-io/mcp-codewars) | 0 | TypeScript | 2026-09-17 | — | Codewars user profiles, completed kata, authored kata, kata detail. Keyless. |
+| 30 | [pipeworx-io/mcp-codestats](https://github.com/pipeworx-io/mcp-codestats) | 0 | TypeScript | 2026-09-17 | — | Code::Stats public coding-XP profiles (codestats.net) |
+| 31 | [mcp-tool-shop-org/mcp-stress-test](https://github.com/mcp-tool-shop-org/mcp-stress-test) | 1 | Python | 2026-09-17 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/mcp-tool-shop-org/mcp-stress-test/) | Red team toolkit for stress-testing MCP security scanners — find detection gaps before attackers do |
+| 32 | [pipeworx-io/mcp-codeforces](https://github.com/pipeworx-io/mcp-codeforces) | 0 | TypeScript | 2026-09-17 | — | Codeforces competitive programming users, contests, problems |
+| 33 | [pipeworx-io/mcp-cocktails](https://github.com/pipeworx-io/mcp-cocktails) | 0 | TypeScript | 2026-09-17 | — | MCP server for cocktail recipes — search drinks, get ingredients and mixing instructions |
+| 34 | [pipeworx-io/mcp-cnpj-br](https://github.com/pipeworx-io/mcp-cnpj-br) | 0 | TypeScript | 2026-09-17 | — | CNPJ Brazil MCP — Brazilian company-registry (Receita Federal) lookup via |
+| 35 | [zhamanov-seabus/send-to-kindle](https://github.com/zhamanov-seabus/send-to-kindle) | 0 | Python | 2026-09-17 | ✅ [uvx](https://linny006.github.io/mcp-servers-live/r/zhamanov-seabus/send-to-kindle/) | kindlemcp: an MCP server + CLI that sends documents (Markdown/PDF/EPUB) to your Kindle from Claude, Codex or Gemini. Run |
+| 36 | [pipeworx-io/mcp-cnb-cz](https://github.com/pipeworx-io/mcp-cnb-cz) | 0 | TypeScript | 2026-09-17 | — | Czech National Bank (Česká národní banka, ČNB) public API MCP. Keyless. |
+| 37 | [Dominic-DK/askew-mcp](https://github.com/Dominic-DK/askew-mcp) | 0 | TypeScript | 2026-09-17 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/Dominic-DK/askew-mcp/) | Askew local connector — MCP server that lets any AI agent run Shortcuts on your iPhone, iPad or Mac (end-to-end encrypte |
+| 38 | [nicglazkov/commutescout](https://github.com/nicglazkov/commutescout) | 4 | Python | 2026-09-17 | — | Live road conditions across 37 US states: map, route planner, toll pricing, and AI assistant - plus an MCP server so any |
+| 39 | [pipeworx-io/mcp-cms-open-payments](https://github.com/pipeworx-io/mcp-cms-open-payments) | 0 | TypeScript | 2026-09-17 | — | CMS Open Payments, with annual dataset discovery through the official DKAN API. |
+| 40 | [pipeworx-io/mcp-cms](https://github.com/pipeworx-io/mcp-cms) | 1 | TypeScript | 2026-09-17 | — | CMS Open Data MCP — US Centers for Medicare & Medicaid Services. |
+| 41 | [pipeworx-io/mcp-cloudflare-radar](https://github.com/pipeworx-io/mcp-cloudflare-radar) | 0 | TypeScript | 2026-09-17 | — | Cloudflare Radar MCP — internet observatory (traffic, attacks, BGP, quality) |
+| 42 | [pipeworx-io/mcp-close-crm](https://github.com/pipeworx-io/mcp-close-crm) | 0 | TypeScript | 2026-09-17 | — | Close CRM MCP Pack — wraps the Close (close.com) API v1. |
+| 43 | [pipeworx-io/mcp-clinicaltrials](https://github.com/pipeworx-io/mcp-clinicaltrials) | 0 | TypeScript | 2026-09-17 | — | ClinicalTrials MCP — wraps ClinicalTrials.gov API v2 (free, no auth) |
+| 44 | [pipeworx-io/mcp-climatiq](https://github.com/pipeworx-io/mcp-climatiq) | 0 | TypeScript | 2026-09-17 | — | Climatiq MCP — carbon footprint calculator with emission factors |
+| 45 | [gist-info/immich-curator-mcp](https://github.com/gist-info/immich-curator-mcp) | 1 | HTML | 2026-09-17 | — | Best Immich Photo Manager Alternative 2026 - AI Search & Geographic Albums |
+| 46 | [pipeworx-io/mcp-climate-feeds](https://github.com/pipeworx-io/mcp-climate-feeds) | 0 | TypeScript | 2026-09-17 | — | Climate & Energy Feeds MCP. |
+| 47 | [pipeworx-io/mcp-climate](https://github.com/pipeworx-io/mcp-climate) | 0 | TypeScript | 2026-09-17 | — | MCP server for the Open-Meteo Climate API — long-term climate projections and model comparisons |
+| 48 | [mohammad-emad-dev/diagrams-mcp-server](https://github.com/mohammad-emad-dev/diagrams-mcp-server) | 1 | TypeScript | 2026-09-17 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/mohammad-emad-dev/diagrams-mcp-server/) | Local-first diagrams for AI agents: manage, render, and verify PlantUML & Mermaid against your codebase. |
+| 49 | [pipeworx-io/mcp-clickup](https://github.com/pipeworx-io/mcp-clickup) | 0 | TypeScript | 2026-09-17 | — | ClickUp MCP — wraps the ClickUp REST API v2 (BYO API key) |
+| 50 | [pipeworx-io/mcp-clevelandart](https://github.com/pipeworx-io/mcp-clevelandart) | 1 | TypeScript | 2026-09-17 | — | Cleveland Museum of Art Open Access API (~63k artworks, many CC0) |
 <!-- TRACKER_TABLE_END -->
 
 ---
