@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="andrewkushnerov/gsheets-mcp - entry on MCP Servers Live">
 <meta name="twitter:description" content="A small, self-hosted MCP server that gives Claude read/write access to your Google Sheets">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"andrewkushnerov/gsheets-mcp","codeRepository":"https://github.com/andrewkushnerov/gsheets-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/andrewkushnerov/gsheets-mcp/","description":"A small, self-hosted MCP server that gives Claude read/write access to your Google Sheets","author":{"@type":"Person","name":"andrewkushnerov","url":"https://github.com/andrewkushnerov"},"dateModified":"2026-09-22"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"andrewkushnerov/gsheets-mcp","codeRepository":"https://github.com/andrewkushnerov/gsheets-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/andrewkushnerov/gsheets-mcp/","description":"A small, self-hosted MCP server that gives Claude read/write access to your Google Sheets","author":{"@type":"Person","name":"andrewkushnerov","url":"https://github.com/andrewkushnerov"},"dateModified":"2026-09-25"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -46,25 +46,25 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <h1>andrewkushnerov/gsheets-mcp</h1>
 <p class="lead">A small, self-hosted MCP server that gives Claude read/write access to your Google Sheets</p>
 <div class="meta">
-<span><strong>Stars</strong> 3</span>
+<span><strong>Stars</strong> 4</span>
 <span><strong>Language</strong> Python</span>
-<span><strong>Last updated</strong> 2026-09-22</span>
+<span><strong>Last updated</strong> 2026-09-25</span>
 <span><a href="https://github.com/andrewkushnerov/gsheets-mcp" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/andrewkushnerov" rel="external">@andrewkushnerov</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
 <p>Install method detected from README: <code>claude mcp add</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add --transport http gsheets http://127.0.0.1:8077/mcp \</code></pre>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add gsheets -s user -e PYTHONPATH=&quot;$PWD&quot; -e GOOGLE_TOKEN_FILE=&quot;$PWD/token.json&quot; \</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;gsheets&quot;: {
-      &quot;command&quot;: &quot;/absolute/path/to/gsheets-mcp/.venv/bin/python&quot;,
+      &quot;command&quot;: &quot;/path/to/gsheets-mcp/.venv/bin/python&quot;,
       &quot;args&quot;: [&quot;-m&quot;, &quot;gsheets_mcp&quot;, &quot;stdio&quot;],
       &quot;env&quot;: {
-        &quot;PYTHONPATH&quot;: &quot;/absolute/path/to/gsheets-mcp&quot;,
-        &quot;GOOGLE_TOKEN_FILE&quot;: &quot;/absolute/path/to/gsheets-mcp/token.json&quot;
+        &quot;PYTHONPATH&quot;: &quot;/path/to/gsheets-mcp&quot;,
+        &quot;GOOGLE_TOKEN_FILE&quot;: &quot;/path/to/gsheets-mcp/token.json&quot;
       }
     }
   }
@@ -75,9 +75,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/stickerdaniel/linkedin-mcp-server/">stickerdaniel/linkedin-mcp-server (stars:3581)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/caura-ai/caura/">caura-ai/caura (stars:529)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/OWASP/www-project-agent-memory-guard/">OWASP/www-project-agent-memory-guard (stars:182)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/doobidoo/mcp-memory-service/">doobidoo/mcp-memory-service (stars:1965)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/comet-ml/opik-mcp/">comet-ml/opik-mcp (stars:221)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/activeing123/mcptoon/">activeing123/mcptoon (stars:204)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
