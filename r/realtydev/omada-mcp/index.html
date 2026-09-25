@@ -53,17 +53,26 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <span><a href="https://github.com/realtydev" rel="external">@realtydev</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>docker run</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -d \</code></pre>
+<p>Install method detected from README: <code>claude mcp add</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add omada \</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;omada&quot;: {
-      &quot;command&quot;: &quot;node&quot;,
-      &quot;args&quot;: [&quot;/path/to/omada-mcp/dist/index.js&quot;],
+      &quot;command&quot;: &quot;docker&quot;,
+      &quot;args&quot;: [
+        &quot;run&quot;, &quot;-i&quot;, &quot;--rm&quot;,
+        &quot;-e&quot;, &quot;OMADA_BASE_URL&quot;,
+        &quot;-e&quot;, &quot;OMADA_CLIENT_ID&quot;,
+        &quot;-e&quot;, &quot;OMADA_CLIENT_SECRET&quot;,
+        &quot;-e&quot;, &quot;OMADA_OMADAC_ID&quot;,
+        &quot;-e&quot;, &quot;OMADA_SITE_ID&quot;,
+        &quot;-e&quot;, &quot;OMADA_STRICT_SSL&quot;,
+        &quot;ghcr.io/realtydev/omada-mcp:latest&quot;
+      ],
       &quot;env&quot;: {
-        &quot;OMADA_BASE_URL&quot;: &quot;https://your-omada-controller.local&quot;,
+        &quot;OMADA_BASE_URL&quot;: &quot;https://omada.local:8043&quot;,
         &quot;OMADA_CLIENT_ID&quot;: &quot;your-client-id&quot;,
         &quot;OMADA_CLIENT_SECRET&quot;: &quot;your-client-secret&quot;,
         &quot;OMADA_OMADAC_ID&quot;: &quot;your-omadac-id&quot;,
@@ -79,9 +88,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/EtanHey/cmuxlayer/">EtanHey/cmuxlayer (stars:27)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/whiteknightonhorse/APIbase/">whiteknightonhorse/APIbase (stars:10)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/nanohype/nanohype/">nanohype/nanohype (stars:2)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/brianonbased-dev/HoloScript/">brianonbased-dev/HoloScript (stars:8)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/marketinglior-pixel/agentbill/">marketinglior-pixel/agentbill (stars:7)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
