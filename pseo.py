@@ -18,6 +18,7 @@ import datetime as _dt
 import html
 import json
 import re
+import shutil
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -311,6 +312,22 @@ def generate_pages(items, meta):
     base = meta["base_url"]
     interval = meta["update_interval_minutes"]
     lastmod = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    # The current GitHub Search snapshot is the source of truth. Without this
+    # cleanup, a repo that drops out of the feed keeps an indexed detail page
+    # forever, even though the README and sitemap no longer link to it.
+    detail_root = Path("r")
+    current_detail_paths = set()
+    for item in items:
+        name = item.get("name", "")
+        if "/" in name:
+            owner, repo = name.split("/", 1)
+            current_detail_paths.add(Path(owner) / repo)
+    if detail_root.exists():
+        for repo_index in detail_root.glob("*/*/index.html"):
+            detail_path = repo_index.parent.relative_to(detail_root)
+            if detail_path not in current_detail_paths:
+                shutil.rmtree(repo_index.parent)
 
     urls.append(f"{base}/")
 
