@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>Riztazz/claude-io-guard - entry on MCP Servers Live</title>
-<meta name="description" content="A Claude Code plugin that checks every file and shell call an AI agent makes, fixes what it safely can, and tells the ag">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/Riztazz/claude-io-guard/">
+<title>datalayer/earthdata-mcp-server - entry on MCP Servers Live</title>
+<meta name="description" content="🌎 🔧 MCP Server for NASA Earth Data.">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/datalayer/earthdata-mcp-server/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Riztazz/claude-io-guard - entry on MCP Servers Live">
-<meta property="og:description" content="A Claude Code plugin that checks every file and shell call an AI agent makes, fixes what it safely can, and tells the ag">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/Riztazz/claude-io-guard/">
+<meta property="og:title" content="datalayer/earthdata-mcp-server - entry on MCP Servers Live">
+<meta property="og:description" content="🌎 🔧 MCP Server for NASA Earth Data.">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/datalayer/earthdata-mcp-server/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Riztazz/claude-io-guard - entry on MCP Servers Live">
-<meta name="twitter:description" content="A Claude Code plugin that checks every file and shell call an AI agent makes, fixes what it safely can, and tells the ag">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Riztazz/claude-io-guard","codeRepository":"https://github.com/Riztazz/claude-io-guard","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/Riztazz/claude-io-guard/","description":"A Claude Code plugin that checks every file and shell call an AI agent makes, fixes what it safely can, and tells the ag","author":{"@type":"Person","name":"Riztazz","url":"https://github.com/Riztazz"},"dateModified":"2026-10-01"}</script>
+<meta name="twitter:title" content="datalayer/earthdata-mcp-server - entry on MCP Servers Live">
+<meta name="twitter:description" content="🌎 🔧 MCP Server for NASA Earth Data.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"datalayer/earthdata-mcp-server","codeRepository":"https://github.com/datalayer/earthdata-mcp-server","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/datalayer/earthdata-mcp-server/","description":"🌎 🔧 MCP Server for NASA Earth Data.","author":{"@type":"Person","name":"datalayer","url":"https://github.com/datalayer"},"dateModified":"2026-10-01"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,17 +41,43 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>Riztazz/claude-io-guard</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>datalayer/earthdata-mcp-server</span></nav>
 <main>
-<h1>Riztazz/claude-io-guard</h1>
-<p class="lead">A Claude Code plugin that checks every file and shell call an AI agent makes, fixes what it safely can, and tells the ag</p>
+<h1>datalayer/earthdata-mcp-server</h1>
+<p class="lead">🌎 🔧 MCP Server for NASA Earth Data.</p>
 <div class="meta">
-<span><strong>Stars</strong> 8</span>
+<span><strong>Stars</strong> 26</span>
 <span><strong>Language</strong> Python</span>
 <span><strong>Last updated</strong> 2026-10-01</span>
-<span><a href="https://github.com/Riztazz/claude-io-guard" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/Riztazz" rel="external">@Riztazz</a></span>
+<span><a href="https://github.com/datalayer/earthdata-mcp-server" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/datalayer" rel="external">@datalayer</a></span>
 </div>
+<section id="install"><h2>Install &amp; configure</h2>
+<p>Install method detected from README: <code>pip install</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>pip install earthdata-mcp-server</code></pre>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;earthdata&quot;: {
+      &quot;command&quot;: &quot;docker&quot;,
+      &quot;args&quot;: [
+        &quot;run&quot;,
+        &quot;-i&quot;,
+        &quot;--rm&quot;,
+        &quot;-e&quot;, &quot;EARTHDATA_USERNAME&quot;,
+        &quot;-e&quot;, &quot;EARTHDATA_PASSWORD&quot;,
+        &quot;datalayer/earthdata-mcp-server:latest&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;EARTHDATA_USERNAME&quot;: &quot;your_username&quot;,
+        &quot;EARTHDATA_PASSWORD&quot;: &quot;your_password&quot;
+      }
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/datalayer/earthdata-mcp-server#readme" rel="external">View full README on GitHub</a></p>
+</section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
