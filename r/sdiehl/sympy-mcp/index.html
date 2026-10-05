@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>mcp-telegram/mcp-telegram - entry on MCP Servers Live</title>
-<meta name="description" content="Telegram MCP server: connect your personal Telegram account to Claude, ChatGPT, Cursor and any MCP client. 182 tools ove">
-<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/mcp-telegram/mcp-telegram/">
+<title>sdiehl/sympy-mcp - entry on MCP Servers Live</title>
+<meta name="description" content="A MCP server for symbolic manipulation of mathematical expressions">
+<link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/sdiehl/sympy-mcp/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mcp-telegram/mcp-telegram - entry on MCP Servers Live">
-<meta property="og:description" content="Telegram MCP server: connect your personal Telegram account to Claude, ChatGPT, Cursor and any MCP client. 182 tools ove">
-<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/mcp-telegram/mcp-telegram/">
+<meta property="og:title" content="sdiehl/sympy-mcp - entry on MCP Servers Live">
+<meta property="og:description" content="A MCP server for symbolic manipulation of mathematical expressions">
+<meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/sdiehl/sympy-mcp/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mcp-telegram/mcp-telegram - entry on MCP Servers Live">
-<meta name="twitter:description" content="Telegram MCP server: connect your personal Telegram account to Claude, ChatGPT, Cursor and any MCP client. 182 tools ove">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"mcp-telegram/mcp-telegram","codeRepository":"https://github.com/mcp-telegram/mcp-telegram","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/mcp-telegram/mcp-telegram/","description":"Telegram MCP server: connect your personal Telegram account to Claude, ChatGPT, Cursor and any MCP client. 182 tools ove","author":{"@type":"Person","name":"mcp-telegram","url":"https://github.com/mcp-telegram"},"dateModified":"2026-10-05"}</script>
+<meta name="twitter:title" content="sdiehl/sympy-mcp - entry on MCP Servers Live">
+<meta name="twitter:description" content="A MCP server for symbolic manipulation of mathematical expressions">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"sdiehl/sympy-mcp","codeRepository":"https://github.com/sdiehl/sympy-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/sdiehl/sympy-mcp/","description":"A MCP server for symbolic manipulation of mathematical expressions","author":{"@type":"Person","name":"sdiehl","url":"https://github.com/sdiehl"},"dateModified":"2026-10-05"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -41,50 +41,59 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </head>
 <body>
 <div class="wrap">
-<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>mcp-telegram/mcp-telegram</span></nav>
+<nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>sdiehl/sympy-mcp</span></nav>
 <main>
-<h1>mcp-telegram/mcp-telegram</h1>
-<p class="lead">Telegram MCP server: connect your personal Telegram account to Claude, ChatGPT, Cursor and any MCP client. 182 tools ove</p>
+<h1>sdiehl/sympy-mcp</h1>
+<p class="lead">A MCP server for symbolic manipulation of mathematical expressions</p>
 <div class="meta">
-<span><strong>Stars</strong> 45</span>
-<span><strong>Language</strong> TypeScript</span>
+<span><strong>Stars</strong> 85</span>
+<span><strong>Language</strong> Python</span>
 <span><strong>Last updated</strong> 2026-10-05</span>
-<span><a href="https://github.com/mcp-telegram/mcp-telegram" rel="external">Source on GitHub</a></span>
-<span><a href="https://github.com/mcp-telegram" rel="external">@mcp-telegram</a></span>
+<span><a href="https://github.com/sdiehl/sympy-mcp" rel="external">Source on GitHub</a></span>
+<span><a href="https://github.com/sdiehl" rel="external">@sdiehl</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>claude mcp add</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add telegram -s user \</code></pre>
+<p>Install method detected from README: <code>docker run</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>docker run -p 8081:8081 sympy-mcp</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
-    &quot;telegram&quot;: {
-      &quot;command&quot;: &quot;npx&quot;,
-      &quot;args&quot;: [&quot;@overpod/mcp-telegram&quot;],
-      &quot;env&quot;: {
-        &quot;TELEGRAM_API_ID&quot;: &quot;YOUR_ID&quot;,
-        &quot;TELEGRAM_API_HASH&quot;: &quot;YOUR_HASH&quot;
-      }
+    &quot;sympy-mcp&quot;: {
+      &quot;command&quot;: &quot;/opt/homebrew/bin/uv&quot;,
+      &quot;args&quot;: [
+        &quot;run&quot;,
+        &quot;--with&quot;,
+        &quot;einsteinpy&quot;,
+        &quot;--with&quot;,
+        &quot;mcp[cli]&quot;,
+        &quot;--with&quot;,
+        &quot;pydantic&quot;,
+        &quot;--with&quot;,
+        &quot;sympy&quot;,
+        &quot;mcp&quot;,
+        &quot;run&quot;,
+        &quot;/ABSOLUTE_PATH_TO_SYMPY_MCP/server.py&quot;
+      ]
     }
   }
 }</code></pre>
-<p><a href="https://github.com/mcp-telegram/mcp-telegram#readme" rel="external">View full README on GitHub</a></p>
+<p><a href="https://github.com/sdiehl/sympy-mcp#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:206676)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/ruvnet/ruflo/">ruvnet/ruflo (stars:73881)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/reactive-resume/reactive-resume/">reactive-resume/reactive-resume (stars:43780)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/blogminhquy/javis-os/">blogminhquy/javis-os (stars:217)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/oaslananka/kicad-mcp-pro/">oaslananka/kicad-mcp-pro (stars:117)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/linny006/trending-claude-skills/">linny006/trending-claude-skills (stars:52)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/typescript/">All TypeScript entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/python/">All Python entries</a></li>
 </ul></section>
 </main>
 <footer>
