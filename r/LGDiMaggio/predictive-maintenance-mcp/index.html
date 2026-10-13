@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <title>LGDiMaggio/predictive-maintenance-mcp - entry on MCP Servers Live</title>
-<meta name="description" content="MCP server for predictive maintenance and machinery fault diagnosis. Gives AI assistants evidence-based vibration analys">
+<meta name="description" content="An open-source MCP server that turns LLMs into condition monitoring assistants for reliability engineers. It gives your">
 <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/LGDiMaggio/predictive-maintenance-mcp/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LGDiMaggio/predictive-maintenance-mcp - entry on MCP Servers Live">
-<meta property="og:description" content="MCP server for predictive maintenance and machinery fault diagnosis. Gives AI assistants evidence-based vibration analys">
+<meta property="og:description" content="An open-source MCP server that turns LLMs into condition monitoring assistants for reliability engineers. It gives your">
 <meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/LGDiMaggio/predictive-maintenance-mcp/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LGDiMaggio/predictive-maintenance-mcp - entry on MCP Servers Live">
-<meta name="twitter:description" content="MCP server for predictive maintenance and machinery fault diagnosis. Gives AI assistants evidence-based vibration analys">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"LGDiMaggio/predictive-maintenance-mcp","codeRepository":"https://github.com/LGDiMaggio/predictive-maintenance-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/LGDiMaggio/predictive-maintenance-mcp/","description":"MCP server for predictive maintenance and machinery fault diagnosis. Gives AI assistants evidence-based vibration analys","author":{"@type":"Person","name":"LGDiMaggio","url":"https://github.com/LGDiMaggio"},"dateModified":"2026-10-13"}</script>
+<meta name="twitter:description" content="An open-source MCP server that turns LLMs into condition monitoring assistants for reliability engineers. It gives your">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"LGDiMaggio/predictive-maintenance-mcp","codeRepository":"https://github.com/LGDiMaggio/predictive-maintenance-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/LGDiMaggio/predictive-maintenance-mcp/","description":"An open-source MCP server that turns LLMs into condition monitoring assistants for reliability engineers. It gives your","author":{"@type":"Person","name":"LGDiMaggio","url":"https://github.com/LGDiMaggio"},"dateModified":"2026-10-13"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -44,7 +44,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>LGDiMaggio/predictive-maintenance-mcp</span></nav>
 <main>
 <h1>LGDiMaggio/predictive-maintenance-mcp</h1>
-<p class="lead">MCP server for predictive maintenance and machinery fault diagnosis. Gives AI assistants evidence-based vibration analys</p>
+<p class="lead">An open-source MCP server that turns LLMs into condition monitoring assistants for reliability engineers. It gives your</p>
 <div class="meta">
 <span><strong>Stars</strong> 101</span>
 <span><strong>Language</strong> Python</span>
@@ -53,16 +53,16 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <span><a href="https://github.com/LGDiMaggio" rel="external">@LGDiMaggio</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>pip install</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>pip install predictive-maintenance-mcp</code></pre>
+<p>Install method detected from README: <code>uv pip install</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>uv pip install --python</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;predictive-maintenance&quot;: {
-      &quot;command&quot;: &quot;/full/path/to/uvx&quot;,
-      &quot;args&quot;: [&quot;predictive-maintenance-mcp&quot;],
-      &quot;env&quot;: { &quot;UV_LINK_MODE&quot;: &quot;copy&quot; }
+      &quot;command&quot;: &quot;/path/to/predictive-maintenance-mcp/.venv/bin/python&quot;,
+      &quot;args&quot;: [&quot;-m&quot;, &quot;predictive_maintenance_mcp&quot;],
+      &quot;env&quot;: { &quot;PDM_PROJECT_DIR&quot;: &quot;/path/to/predictive-maintenance-mcp&quot; }
     }
   }
 }</code></pre>
@@ -72,9 +72,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/chunkhound/chunkhound/">chunkhound/chunkhound (stars:1448)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/sirkirby/unifi-mcp/">sirkirby/unifi-mcp (stars:899)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/lemma-work/lemma-platform/">lemma-work/lemma-platform (stars:553)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/linny006/trending-claude-skills/">linny006/trending-claude-skills (stars:126)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/longsizhuo/openInvest/">longsizhuo/openInvest (stars:112)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
