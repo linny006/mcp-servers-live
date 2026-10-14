@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <title>denisok-ai/magicmaster-mcp - entry on MCP Servers Live</title>
-<meta name="description" content="Audio mastering for AI agents via MCP: LUFS/True Peak targets, Suno/Udio AI-fingerprint removal. Hosted server https://m">
+<meta name="description" content="Audio mastering for AI agents via MCP: LUFS/True Peak targets, album mode, 24-s preset previews, Suno/Udio AI-trace clea">
 <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/denisok-ai/magicmaster-mcp/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="denisok-ai/magicmaster-mcp - entry on MCP Servers Live">
-<meta property="og:description" content="Audio mastering for AI agents via MCP: LUFS/True Peak targets, Suno/Udio AI-fingerprint removal. Hosted server https://m">
+<meta property="og:description" content="Audio mastering for AI agents via MCP: LUFS/True Peak targets, album mode, 24-s preset previews, Suno/Udio AI-trace clea">
 <meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/denisok-ai/magicmaster-mcp/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="denisok-ai/magicmaster-mcp - entry on MCP Servers Live">
-<meta name="twitter:description" content="Audio mastering for AI agents via MCP: LUFS/True Peak targets, Suno/Udio AI-fingerprint removal. Hosted server https://m">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"denisok-ai/magicmaster-mcp","codeRepository":"https://github.com/denisok-ai/magicmaster-mcp","programmingLanguage":"Dockerfile","url":"https://linny006.github.io/mcp-servers-live/r/denisok-ai/magicmaster-mcp/","description":"Audio mastering for AI agents via MCP: LUFS/True Peak targets, Suno/Udio AI-fingerprint removal. Hosted server https://m","author":{"@type":"Person","name":"denisok-ai","url":"https://github.com/denisok-ai"},"dateModified":"2026-09-08"}</script>
+<meta name="twitter:description" content="Audio mastering for AI agents via MCP: LUFS/True Peak targets, album mode, 24-s preset previews, Suno/Udio AI-trace clea">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"denisok-ai/magicmaster-mcp","codeRepository":"https://github.com/denisok-ai/magicmaster-mcp","programmingLanguage":"Dockerfile","url":"https://linny006.github.io/mcp-servers-live/r/denisok-ai/magicmaster-mcp/","description":"Audio mastering for AI agents via MCP: LUFS/True Peak targets, album mode, 24-s preset previews, Suno/Udio AI-trace clea","author":{"@type":"Person","name":"denisok-ai","url":"https://github.com/denisok-ai"},"dateModified":"2026-10-14"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -44,11 +44,11 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>denisok-ai/magicmaster-mcp</span></nav>
 <main>
 <h1>denisok-ai/magicmaster-mcp</h1>
-<p class="lead">Audio mastering for AI agents via MCP: LUFS/True Peak targets, Suno/Udio AI-fingerprint removal. Hosted server https://m</p>
+<p class="lead">Audio mastering for AI agents via MCP: LUFS/True Peak targets, album mode, 24-s preset previews, Suno/Udio AI-trace clea</p>
 <div class="meta">
-<span><strong>Stars</strong> 0</span>
+<span><strong>Stars</strong> 2</span>
 <span><strong>Language</strong> Dockerfile</span>
-<span><strong>Last updated</strong> 2026-09-08</span>
+<span><strong>Last updated</strong> 2026-10-14</span>
 <span><a href="https://github.com/denisok-ai/magicmaster-mcp" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/denisok-ai" rel="external">@denisok-ai</a></span>
 </div>
@@ -57,16 +57,23 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add --transport http magicmaster https://magicmaster.pro/mcp</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{ &quot;mcpServers&quot;: { &quot;magicmaster&quot;: { &quot;type&quot;: &quot;http&quot;, &quot;url&quot;: &quot;https://magicmaster.pro/mcp&quot; } } }</code></pre>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;magicmaster&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;mcp-remote&quot;, &quot;https://magicmaster.pro/mcp/oauth&quot;]
+    }
+  }
+}</code></pre>
 <p><a href="https://github.com/denisok-ai/magicmaster-mcp#readme" rel="external">View full README on GitHub</a></p>
 </section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:203736)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/open-metadata/OpenMetadata/">open-metadata/OpenMetadata (stars:15143)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/maximhq/bifrost/">maximhq/bifrost (stars:7894)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:207354)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/activepieces/activepieces/">activepieces/activepieces (stars:25045)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/chrisryugj/kordoc/">chrisryugj/kordoc (stars:2444)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
