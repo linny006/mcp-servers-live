@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="stufently/yandex-s3-mcp-ai-cli - entry on MCP Servers Live">
 <meta name="twitter:description" content="Yandex Cloud S3 MCP server, CLI &amp; agent skill for Claude Code, Cursor and Codex. MCP-сервер и CLI для S3 Яндекс Облака:">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"stufently/yandex-s3-mcp-ai-cli","codeRepository":"https://github.com/stufently/yandex-s3-mcp-ai-cli","programmingLanguage":"Go","url":"https://linny006.github.io/mcp-servers-live/r/stufently/yandex-s3-mcp-ai-cli/","description":"Yandex Cloud S3 MCP server, CLI & agent skill for Claude Code, Cursor and Codex. MCP-сервер и CLI для S3 Яндекс Облака:","author":{"@type":"Person","name":"stufently","url":"https://github.com/stufently"},"dateModified":"2026-10-11"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"stufently/yandex-s3-mcp-ai-cli","codeRepository":"https://github.com/stufently/yandex-s3-mcp-ai-cli","programmingLanguage":"Shell","url":"https://linny006.github.io/mcp-servers-live/r/stufently/yandex-s3-mcp-ai-cli/","description":"Yandex Cloud S3 MCP server, CLI & agent skill for Claude Code, Cursor and Codex. MCP-сервер и CLI для S3 Яндекс Облака:","author":{"@type":"Person","name":"stufently","url":"https://github.com/stufently"},"dateModified":"2026-10-15"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -47,25 +47,54 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p class="lead">Yandex Cloud S3 MCP server, CLI &amp; agent skill for Claude Code, Cursor and Codex. MCP-сервер и CLI для S3 Яндекс Облака:</p>
 <div class="meta">
 <span><strong>Stars</strong> 0</span>
-<span><strong>Language</strong> Go</span>
-<span><strong>Last updated</strong> 2026-10-11</span>
+<span><strong>Language</strong> Shell</span>
+<span><strong>Last updated</strong> 2026-10-15</span>
 <span><a href="https://github.com/stufently/yandex-s3-mcp-ai-cli" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/stufently" rel="external">@stufently</a></span>
 </div>
+<section id="install"><h2>Install &amp; configure</h2>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;yandex-s3&quot;: {
+      &quot;command&quot;: &quot;docker&quot;,
+      &quot;args&quot;: [
+        &quot;run&quot;,
+        &quot;-i&quot;,
+        &quot;--rm&quot;,
+        &quot;-e&quot;,
+        &quot;YANDEX_S3_ACCESS_KEY_ID&quot;,
+        &quot;-e&quot;,
+        &quot;YANDEX_S3_SECRET_ACCESS_KEY&quot;,
+        &quot;-e&quot;,
+        &quot;YANDEX_S3_POOL&quot;,
+        &quot;ghcr.io/stufently/yandex-s3-mcp-ai-cli:0.1.0&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;YANDEX_S3_ACCESS_KEY_ID&quot;: &quot;${env:YANDEX_S3_ACCESS_KEY_ID}&quot;,
+        &quot;YANDEX_S3_SECRET_ACCESS_KEY&quot;: &quot;${env:YANDEX_S3_SECRET_ACCESS_KEY}&quot;,
+        &quot;YANDEX_S3_POOL&quot;: &quot;${env:YANDEX_S3_POOL}&quot;
+      }
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/stufently/yandex-s3-mcp-ai-cli#readme" rel="external">View full README on GitHub</a></p>
+</section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/sebastienrousseau/corralctl/">sebastienrousseau/corralctl (stars:1)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/neocode24/engram/">neocode24/engram (stars:0)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/stufently/s3-mcp-ai-cli-kit/">stufently/s3-mcp-ai-cli-kit (stars:0)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/stufently/beget-s3-mcp-ai-cli/">stufently/beget-s3-mcp-ai-cli (stars:1)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/stufently/cloudru-s3-mcp-ai-cli/">stufently/cloudru-s3-mcp-ai-cli (stars:0)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/stufently/mws-s3-mcp-ai-cli/">stufently/mws-s3-mcp-ai-cli (stars:0)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
 <li><a href="https://linny006.github.io/mcp-servers-live/popular/">Popular (by stars)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/recent/">Recent (by activity)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/new/">New this week</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/lang/go/">All Go entries</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/lang/shell/">All Shell entries</a></li>
 </ul></section>
 </main>
 <footer>
