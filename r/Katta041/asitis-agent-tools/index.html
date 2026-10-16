@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <title>Katta041/asitis-agent-tools - entry on MCP Servers Live</title>
-<meta name="description" content="Read-only MCP server and Claude Code plugin that lints CLAUDE.md, AGENTS.md and SKILL.md, counts approximate tokens per">
+<meta name="description" content="Read-only linter for CLAUDE.md, AGENTS.md, SKILL.md and agent rules files: vendor limits, tokens loaded per session, hid">
 <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/Katta041/asitis-agent-tools/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Katta041/asitis-agent-tools - entry on MCP Servers Live">
-<meta property="og:description" content="Read-only MCP server and Claude Code plugin that lints CLAUDE.md, AGENTS.md and SKILL.md, counts approximate tokens per">
+<meta property="og:description" content="Read-only linter for CLAUDE.md, AGENTS.md, SKILL.md and agent rules files: vendor limits, tokens loaded per session, hid">
 <meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/Katta041/asitis-agent-tools/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Katta041/asitis-agent-tools - entry on MCP Servers Live">
-<meta name="twitter:description" content="Read-only MCP server and Claude Code plugin that lints CLAUDE.md, AGENTS.md and SKILL.md, counts approximate tokens per">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Katta041/asitis-agent-tools","codeRepository":"https://github.com/Katta041/asitis-agent-tools","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/Katta041/asitis-agent-tools/","description":"Read-only MCP server and Claude Code plugin that lints CLAUDE.md, AGENTS.md and SKILL.md, counts approximate tokens per","author":{"@type":"Person","name":"Katta041","url":"https://github.com/Katta041"},"dateModified":"2026-10-14"}</script>
+<meta name="twitter:description" content="Read-only linter for CLAUDE.md, AGENTS.md, SKILL.md and agent rules files: vendor limits, tokens loaded per session, hid">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Katta041/asitis-agent-tools","codeRepository":"https://github.com/Katta041/asitis-agent-tools","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/Katta041/asitis-agent-tools/","description":"Read-only linter for CLAUDE.md, AGENTS.md, SKILL.md and agent rules files: vendor limits, tokens loaded per session, hid","author":{"@type":"Person","name":"Katta041","url":"https://github.com/Katta041"},"dateModified":"2026-10-16"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -44,24 +44,24 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>Katta041/asitis-agent-tools</span></nav>
 <main>
 <h1>Katta041/asitis-agent-tools</h1>
-<p class="lead">Read-only MCP server and Claude Code plugin that lints CLAUDE.md, AGENTS.md and SKILL.md, counts approximate tokens per</p>
+<p class="lead">Read-only linter for CLAUDE.md, AGENTS.md, SKILL.md and agent rules files: vendor limits, tokens loaded per session, hid</p>
 <div class="meta">
 <span><strong>Stars</strong> 0</span>
 <span><strong>Language</strong> TypeScript</span>
-<span><strong>Last updated</strong> 2026-10-14</span>
+<span><strong>Last updated</strong> 2026-10-16</span>
 <span><a href="https://github.com/Katta041/asitis-agent-tools" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/Katta041" rel="external">@Katta041</a></span>
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
-<p>Install method detected from README: <code>npx</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>npx -y @asitis/mcp@0.2.3 --root /absolute/path/to/project</code></pre>
+<p>Install method detected from README: <code>claude mcp add</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add asitis -- npx -y @asitis/mcp@0.3.0 --root &quot;$PWD&quot;</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;asitis&quot;: {
-      &quot;command&quot;: &quot;node&quot;,
-      &quot;args&quot;: [&quot;/absolute/path/to/asitis-agent-tools/plugins/asitis/server/asitis-mcp.mjs&quot;, &quot;--root&quot;, &quot;/absolute/path/to/project&quot;]
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;@asitis/mcp@0.3.0&quot;, &quot;--root&quot;, &quot;/absolute/path/to/project&quot;]
     }
   }
 }</code></pre>
@@ -71,9 +71,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:207321)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/imbenrabi/Financial-Modeling-Prep-MCP-Server/">imbenrabi/Financial-Modeling-Prep-MCP-Server (stars:150)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/timoncool/telegram-api-mcp/">timoncool/telegram-api-mcp (stars:32)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/ChromeDevTools/chrome-devtools-mcp/">ChromeDevTools/chrome-devtools-mcp (stars:53640)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/mksglu/context-mode/">mksglu/context-mode (stars:29967)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/LunarWerxs/AgentHydra/">LunarWerxs/AgentHydra (stars:44)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
