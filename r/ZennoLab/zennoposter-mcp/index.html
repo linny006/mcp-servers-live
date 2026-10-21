@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ZennoLab/zennoposter-mcp - entry on MCP Servers Live">
 <meta name="twitter:description" content="MCP servers for ZennoPoster and ZennoDroid: let AI agents edit automation projects, run tasks, drive browser instances a">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"ZennoLab/zennoposter-mcp","codeRepository":"https://github.com/ZennoLab/zennoposter-mcp","programmingLanguage":"—","url":"https://linny006.github.io/mcp-servers-live/r/ZennoLab/zennoposter-mcp/","description":"MCP servers for ZennoPoster and ZennoDroid: let AI agents edit automation projects, run tasks, drive browser instances a","author":{"@type":"Person","name":"ZennoLab","url":"https://github.com/ZennoLab"},"dateModified":"2026-09-25"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"ZennoLab/zennoposter-mcp","codeRepository":"https://github.com/ZennoLab/zennoposter-mcp","programmingLanguage":"—","url":"https://linny006.github.io/mcp-servers-live/r/ZennoLab/zennoposter-mcp/","description":"MCP servers for ZennoPoster and ZennoDroid: let AI agents edit automation projects, run tasks, drive browser instances a","author":{"@type":"Person","name":"ZennoLab","url":"https://github.com/ZennoLab"},"dateModified":"2026-10-21"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -46,19 +46,44 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <h1>ZennoLab/zennoposter-mcp</h1>
 <p class="lead">MCP servers for ZennoPoster and ZennoDroid: let AI agents edit automation projects, run tasks, drive browser instances a</p>
 <div class="meta">
-<span><strong>Stars</strong> 2</span>
+<span><strong>Stars</strong> 7</span>
 <span><strong>Language</strong> —</span>
-<span><strong>Last updated</strong> 2026-09-25</span>
+<span><strong>Last updated</strong> 2026-10-21</span>
 <span><a href="https://github.com/ZennoLab/zennoposter-mcp" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/ZennoLab" rel="external">@ZennoLab</a></span>
 </div>
+<section id="install"><h2>Install &amp; configure</h2>
+<p>Install method detected from README: <code>claude mcp add</code></p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add projectmaker --transport stdio -e &quot;ProjectMaker__ApiKey=$env:ProjectMaker__ApiKey&quot; -- &quot;C:\mcp\ZennoLab.AI.MCP.ProjectMaker.exe&quot; --stdio</code></pre>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;projectmaker&quot;: {
+      &quot;command&quot;: &quot;C:\\mcp\\ZennoLab.AI.MCP.ProjectMaker.exe&quot;,
+      &quot;args&quot;: [&quot;--stdio&quot;],
+      &quot;env&quot;: { &quot;ProjectMaker__ApiKey&quot;: &quot;&lt;your key&gt;&quot; }
+    },
+    &quot;instance-zp&quot;: {
+      &quot;command&quot;: &quot;C:\\mcp\\ZennoLab.AI.MCP.Instance.exe&quot;,
+      &quot;args&quot;: [&quot;--stdio&quot;],
+      &quot;env&quot;: {
+        &quot;Instance__ApiKey&quot;: &quot;&lt;your key&gt;&quot;,
+        &quot;Instance__Target&quot;: &quot;zennoposter&quot;,
+        &quot;Instance__BaseUrl&quot;: &quot;http://localhost:5300/api/v1&quot;
+      }
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/ZennoLab/zennoposter-mcp#readme" rel="external">View full README on GitHub</a></p>
+</section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:205928)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/apify/apify-mcp-server/">apify/apify-mcp-server (stars:8455)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/ChiR24/Unreal_mcp/">ChiR24/Unreal_mcp (stars:888)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/hproxy-com/free-proxy-list/">hproxy-com/free-proxy-list (stars:84)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/Chatway-app/chatway-mcp-server/">Chatway-app/chatway-mcp-server (stars:33)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/costory-io/costory-finops-mcp-skills/">costory-io/costory-finops-mcp-skills (stars:2)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
