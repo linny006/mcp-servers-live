@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <title>lkcair/sec-ai-mcp - entry on MCP Servers Live</title>
-<meta name="description" content="MCP server for sec-ai: 22 SEC EDGAR tools for 10-K, 10-Q, 8-K, XBRL facts, insider trades, 13F and full-text search">
+<meta name="description" content="SEC EDGAR MCP server with 22 tools on the official sec.gov APIs: 10-K, 10-Q, 8-K, filing text in pages or search, full-t">
 <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/lkcair/sec-ai-mcp/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="lkcair/sec-ai-mcp - entry on MCP Servers Live">
-<meta property="og:description" content="MCP server for sec-ai: 22 SEC EDGAR tools for 10-K, 10-Q, 8-K, XBRL facts, insider trades, 13F and full-text search">
+<meta property="og:description" content="SEC EDGAR MCP server with 22 tools on the official sec.gov APIs: 10-K, 10-Q, 8-K, filing text in pages or search, full-t">
 <meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/lkcair/sec-ai-mcp/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lkcair/sec-ai-mcp - entry on MCP Servers Live">
-<meta name="twitter:description" content="MCP server for sec-ai: 22 SEC EDGAR tools for 10-K, 10-Q, 8-K, XBRL facts, insider trades, 13F and full-text search">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"lkcair/sec-ai-mcp","codeRepository":"https://github.com/lkcair/sec-ai-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/lkcair/sec-ai-mcp/","description":"MCP server for sec-ai: 22 SEC EDGAR tools for 10-K, 10-Q, 8-K, XBRL facts, insider trades, 13F and full-text search","author":{"@type":"Person","name":"lkcair","url":"https://github.com/lkcair"},"dateModified":"2026-10-21"}</script>
+<meta name="twitter:description" content="SEC EDGAR MCP server with 22 tools on the official sec.gov APIs: 10-K, 10-Q, 8-K, filing text in pages or search, full-t">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"lkcair/sec-ai-mcp","codeRepository":"https://github.com/lkcair/sec-ai-mcp","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/lkcair/sec-ai-mcp/","description":"SEC EDGAR MCP server with 22 tools on the official sec.gov APIs: 10-K, 10-Q, 8-K, filing text in pages or search, full-t","author":{"@type":"Person","name":"lkcair","url":"https://github.com/lkcair"},"dateModified":"2026-10-21"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -44,7 +44,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>lkcair/sec-ai-mcp</span></nav>
 <main>
 <h1>lkcair/sec-ai-mcp</h1>
-<p class="lead">MCP server for sec-ai: 22 SEC EDGAR tools for 10-K, 10-Q, 8-K, XBRL facts, insider trades, 13F and full-text search</p>
+<p class="lead">SEC EDGAR MCP server with 22 tools on the official sec.gov APIs: 10-K, 10-Q, 8-K, filing text in pages or search, full-t</p>
 <div class="meta">
 <span><strong>Stars</strong> 0</span>
 <span><strong>Language</strong> Python</span>
@@ -54,15 +54,19 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
 <p>Install method detected from README: <code>claude mcp add</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add sec-ai -e SEC_USER_AGENT=&quot;Your Name you@example.com&quot; -- uvx sec-finance-ai</code></pre>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add sec-ai -e SEC_USER_AGENT=&quot;Your Name you@example.com&quot; -- uvx sec-finance-ai@latest</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;sec-ai&quot;: {
       &quot;command&quot;: &quot;uvx&quot;,
-      &quot;args&quot;: [&quot;sec-finance-ai&quot;],
-      &quot;env&quot;: { &quot;SEC_USER_AGENT&quot;: &quot;Your Name you@example.com&quot; }
+      &quot;args&quot;: [
+        &quot;sec-finance-ai@latest&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;SEC_USER_AGENT&quot;: &quot;Your Name you@example.com&quot;
+      }
     }
   }
 }</code></pre>
@@ -72,9 +76,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/garylab/MakeMoneyWithAI/">garylab/MakeMoneyWithAI (stars:1145)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/1Panel-dev/MaxKB/">1Panel-dev/MaxKB (stars:23004)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/KyaniteLabs/kinocut/">KyaniteLabs/kinocut (stars:215)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/linny006/trending-claude-skills/">linny006/trending-claude-skills (stars:129)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/escoffier-labs/brigade/">escoffier-labs/brigade (stars:79)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
