@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <title>donggua-zen/deepseek-search-mcp - entry on MCP Servers Live</title>
-<meta name="description" content="A tiny local MCP server that gives any MCP client (Claude Code, Cursor, Cherry Studio, Codex) access to DeepSeek&#x27;s Searc">
+<meta name="description" content="A tiny local MCP server (single ~1.8 MB binary, ~12 ms cold start) that gives any MCP client access to DeepSeek&#x27;s Search">
 <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/donggua-zen/deepseek-search-mcp/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="donggua-zen/deepseek-search-mcp - entry on MCP Servers Live">
-<meta property="og:description" content="A tiny local MCP server that gives any MCP client (Claude Code, Cursor, Cherry Studio, Codex) access to DeepSeek&#x27;s Searc">
+<meta property="og:description" content="A tiny local MCP server (single ~1.8 MB binary, ~12 ms cold start) that gives any MCP client access to DeepSeek&#x27;s Search">
 <meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/donggua-zen/deepseek-search-mcp/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="donggua-zen/deepseek-search-mcp - entry on MCP Servers Live">
-<meta name="twitter:description" content="A tiny local MCP server that gives any MCP client (Claude Code, Cursor, Cherry Studio, Codex) access to DeepSeek&#x27;s Searc">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"donggua-zen/deepseek-search-mcp","codeRepository":"https://github.com/donggua-zen/deepseek-search-mcp","programmingLanguage":"Rust","url":"https://linny006.github.io/mcp-servers-live/r/donggua-zen/deepseek-search-mcp/","description":"A tiny local MCP server that gives any MCP client (Claude Code, Cursor, Cherry Studio, Codex) access to DeepSeek's Searc","author":{"@type":"Person","name":"donggua-zen","url":"https://github.com/donggua-zen"},"dateModified":"2026-10-22"}</script>
+<meta name="twitter:description" content="A tiny local MCP server (single ~1.8 MB binary, ~12 ms cold start) that gives any MCP client access to DeepSeek&#x27;s Search">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"donggua-zen/deepseek-search-mcp","codeRepository":"https://github.com/donggua-zen/deepseek-search-mcp","programmingLanguage":"Rust","url":"https://linny006.github.io/mcp-servers-live/r/donggua-zen/deepseek-search-mcp/","description":"A tiny local MCP server (single ~1.8 MB binary, ~12 ms cold start) that gives any MCP client access to DeepSeek's Search","author":{"@type":"Person","name":"donggua-zen","url":"https://github.com/donggua-zen"},"dateModified":"2026-10-22"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -44,9 +44,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>donggua-zen/deepseek-search-mcp</span></nav>
 <main>
 <h1>donggua-zen/deepseek-search-mcp</h1>
-<p class="lead">A tiny local MCP server that gives any MCP client (Claude Code, Cursor, Cherry Studio, Codex) access to DeepSeek&#x27;s Searc</p>
+<p class="lead">A tiny local MCP server (single ~1.8 MB binary, ~12 ms cold start) that gives any MCP client access to DeepSeek&#x27;s Search</p>
 <div class="meta">
-<span><strong>Stars</strong> 0</span>
+<span><strong>Stars</strong> 1</span>
 <span><strong>Language</strong> Rust</span>
 <span><strong>Last updated</strong> 2026-10-22</span>
 <span><a href="https://github.com/donggua-zen/deepseek-search-mcp" rel="external">Source on GitHub</a></span>
@@ -54,13 +54,13 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 </div>
 <section id="install"><h2>Install &amp; configure</h2>
 <p>Install method detected from README: <code>claude mcp add</code></p>
-<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add deepseek-search --scope user -- /绝对路径/deepseek-mcp.exe</code></pre>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>claude mcp add deepseek-search --scope user -- /绝对路径/deepseek-mcp</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
     &quot;deepseek-search&quot;: {
-      &quot;command&quot;: &quot;D:/tools/deepseek-mcp.exe&quot;,
+      &quot;command&quot;: &quot;/绝对路径/deepseek-mcp&quot;,
       &quot;env&quot;: { &quot;DEEPSEEK_API_KEY&quot;: &quot;sk-xxx&quot; }
     }
   }
@@ -71,9 +71,9 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/mxsm/rocketmq-rust/">mxsm/rocketmq-rust (stars:1528)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/genomoncology/biomcp/">genomoncology/biomcp (stars:663)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/Muvon/octoweb/">Muvon/octoweb (stars:14)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/systempromptio/systemprompt-core/">systempromptio/systemprompt-core (stars:8)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/nuetzliches/devstack/">nuetzliches/devstack (stars:5)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/brnyxx/itda-cli/">brnyxx/itda-cli (stars:0)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
