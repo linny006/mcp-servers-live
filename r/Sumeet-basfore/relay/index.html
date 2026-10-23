@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sumeet-basfore/relay - entry on MCP Servers Live">
 <meta name="twitter:description" content="Local-first, zero-trust MCP security gateway and credential broker for AI agents. Deterministic Cedar  authorization, JI">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Sumeet-basfore/relay","codeRepository":"https://github.com/Sumeet-basfore/relay","programmingLanguage":"Rust","url":"https://linny006.github.io/mcp-servers-live/r/Sumeet-basfore/relay/","description":"Local-first, zero-trust MCP security gateway and credential broker for AI agents. Deterministic Cedar  authorization, JI","author":{"@type":"Person","name":"Sumeet-basfore","url":"https://github.com/Sumeet-basfore"},"dateModified":"2026-09-14"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Sumeet-basfore/relay","codeRepository":"https://github.com/Sumeet-basfore/relay","programmingLanguage":"Rust","url":"https://linny006.github.io/mcp-servers-live/r/Sumeet-basfore/relay/","description":"Local-first, zero-trust MCP security gateway and credential broker for AI agents. Deterministic Cedar  authorization, JI","author":{"@type":"Person","name":"Sumeet-basfore","url":"https://github.com/Sumeet-basfore"},"dateModified":"2026-10-23"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -46,19 +46,47 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <h1>Sumeet-basfore/relay</h1>
 <p class="lead">Local-first, zero-trust MCP security gateway and credential broker for AI agents. Deterministic Cedar  authorization, JI</p>
 <div class="meta">
-<span><strong>Stars</strong> 0</span>
+<span><strong>Stars</strong> 1</span>
 <span><strong>Language</strong> Rust</span>
-<span><strong>Last updated</strong> 2026-09-14</span>
+<span><strong>Last updated</strong> 2026-10-23</span>
 <span><a href="https://github.com/Sumeet-basfore/relay" rel="external">Source on GitHub</a></span>
 <span><a href="https://github.com/Sumeet-basfore" rel="external">@Sumeet-basfore</a></span>
 </div>
+<section id="install"><h2>Install &amp; configure</h2>
+<h3>Claude Desktop config snippet</h3>
+<p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
+<pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
+  &quot;mcpServers&quot;: {
+    &quot;filesystem-governed&quot;: {
+      &quot;command&quot;: &quot;relay&quot;,
+      &quot;args&quot;: [
+        &quot;run&quot;,
+        &quot;--policy&quot;, &quot;./policies&quot;,
+        &quot;--&quot;,
+        &quot;npx&quot;, &quot;-y&quot;, &quot;@modelcontextprotocol/server-filesystem&quot;, &quot;/workspace&quot;
+      ]
+    },
+    &quot;github-governed&quot;: {
+      &quot;command&quot;: &quot;relay&quot;,
+      &quot;args&quot;: [
+        &quot;run&quot;,
+        &quot;--policy&quot;, &quot;./policies&quot;,
+        &quot;--env&quot;, &quot;GITHUB_TOKEN=vault:github_pat&quot;,
+        &quot;--&quot;,
+        &quot;npx&quot;, &quot;-y&quot;, &quot;@modelcontextprotocol/server-github&quot;
+      ]
+    }
+  }
+}</code></pre>
+<p><a href="https://github.com/Sumeet-basfore/relay#readme" rel="external">View full README on GitHub</a></p>
+</section>
 <section><h2>Why this is listed</h2>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/cq27-dev/rag-rat/">cq27-dev/rag-rat (stars:20)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/xerj-org/xerj/">xerj-org/xerj (stars:13752)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/HasteHealth/HasteHealth/">HasteHealth/HasteHealth (stars:84)</a></li>
 <li><a href="https://linny006.github.io/mcp-servers-live/r/systempromptio/systemprompt-core/">systempromptio/systemprompt-core (stars:8)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/rafaelpierre/kestrel-rs/">rafaelpierre/kestrel-rs (stars:0)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
