@@ -1,16 +1,44 @@
 [
   {
-    "description": "Socle autour des agents IA que vous utilisez d\u00e9j\u00e0 (Claude Code, Claude Desktop\u2026) : r\u00e8gles embarqu\u00e9es, catalogue de ce qu",
-    "id": "Movida/holarch-socle",
+    "description": "Governance checks your AI agents can call over MCP. Run gaig-mcp with one uvx command to check an inventory, build a Dec",
+    "id": "GLOBAL-AI-GOVERNANCE/ai-governance-mcp",
     "install_info": {
-      "install_cmd": "npm install\nnode",
+      "claude_config": "{\n  \"mcpServers\": {\n    \"gaig\": {\n      \"command\": \"uvx\",\n      \"args\": [\"--from\", \"git+https://github.com/GLOBAL-AI-GOVERNANCE/ai-governance-mcp@v0.3.2\", \"gaig-mcp\"]\n    }\n  }\n}",
+      "install_cmd": "claude mcp add gaig --scope project -- uvx --from git+https://github.com/GLOBAL-AI-GOVERNANCE/ai-governance-mcp@v0.3.2 gaig-mcp",
+      "install_kind": "claude mcp add"
+    },
+    "language": "Python",
+    "name": "GLOBAL-AI-GOVERNANCE/ai-governance-mcp",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:30:18Z",
+    "url": "https://github.com/GLOBAL-AI-GOVERNANCE/ai-governance-mcp"
+  },
+  {
+    "description": "Universal remote for plugging your Android devices - TVs, TV boxes, phones, tablets - into your AI agent, over ADB. Zero",
+    "id": "cyberpunk2183/adb-ai",
+    "install_info": {
+      "claude_config": "{ \"mcpServers\": { \"adb-ai\": { \"command\": \"adb-ai\", \"args\": [\"mcp\"] } } }",
+      "install_cmd": "claude mcp add adb-ai -- adb-ai mcp",
+      "install_kind": "claude mcp add"
+    },
+    "language": "Python",
+    "name": "cyberpunk2183/adb-ai",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:30:17Z",
+    "url": "https://github.com/cyberpunk2183/adb-ai"
+  },
+  {
+    "description": "Agent-native x402 pay-per-call data & security APIs on Base (crypto, DeFi, on-chain, Polymarket, MCP security scan)",
+    "id": "rezearcher/x402-data-api",
+    "install_info": {
+      "install_cmd": "npm install\nnpm",
       "install_kind": "npm install"
     },
-    "language": "JavaScript",
-    "name": "Movida/holarch-socle",
+    "language": "TypeScript",
+    "name": "rezearcher/x402-data-api",
     "stars": 0,
-    "updated_at": "2026-10-24T19:15:25Z",
-    "url": "https://github.com/Movida/holarch-socle"
+    "updated_at": "2026-10-24T19:30:14Z",
+    "url": "https://github.com/rezearcher/x402-data-api"
   },
   {
     "description": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes",
@@ -18,48 +46,22 @@
     "language": "Python",
     "name": "linny006/trending-claude-skills",
     "stars": 133,
-    "updated_at": "2026-10-24T19:15:15Z",
+    "updated_at": "2026-10-24T19:30:12Z",
     "url": "https://github.com/linny006/trending-claude-skills"
   },
   {
-    "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracki",
-    "id": "koala73/worldmonitor",
+    "description": "Self-hosted semantic code search MCP server for Claude Code, Cursor, Codex and Copilot. Indexes many repos locally with ",
+    "id": "IBazylchuk/paparats-mcp",
     "install_info": {
-      "install_cmd": "npm install\nnpm",
-      "install_kind": "npm install"
-    },
-    "language": "TypeScript",
-    "name": "koala73/worldmonitor",
-    "stars": 89422,
-    "updated_at": "2026-10-24T19:15:13Z",
-    "url": "https://github.com/koala73/worldmonitor"
-  },
-  {
-    "description": "AI-Native Database Security Gateway  \u667a\u76fe",
-    "id": "cuipengdba/agentsql",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"agentsql\": {\n      \"command\": \"/absolute/path/to/agentsql\",\n      \"args\": [\"mcp\", \"--config\", \"/absolute/path/to/config.yaml\"],\n      \"env\": {\n        \"AGENTSQL_SECRET\": \"<YOUR_32_BYTE_SECRET>\",\n        \"AGENTSQL_API_KEY\": \"<YOUR_AGENTSQL_API_KEY>\"\n      }\n    }\n  }\n}",
-      "install_cmd": "docker pull ghcr.io/cuipengdba/agentsql:v4.0.0",
-      "install_kind": "docker pull"
-    },
-    "language": "Go",
-    "name": "cuipengdba/agentsql",
-    "stars": 13,
-    "updated_at": "2026-10-24T19:15:09Z",
-    "url": "https://github.com/cuipengdba/agentsql"
-  },
-  {
-    "description": "Watch company job boards (Greenhouse, Lever, Ashby, Workable, Workday, Eightfold, Rippling), get a ranked digest of new ",
-    "id": "vinayvobbili/jobwatch",
-    "install_info": {
-      "install_cmd": "claude mcp add jobwatch -s user -e JOBWATCH_CONFIG=~/jobwatch.yaml -- jobwatch-mcp",
+      "claude_config": "{\n  \"mcpServers\": {\n    \"paparats\": {\n      \"type\": \"http\",\n      \"url\": \"http://localhost:9876/mcp\"\n    }\n  }\n}",
+      "install_cmd": "claude mcp add --scope user --transport http paparats http://localhost:9876/mcp",
       "install_kind": "claude mcp add"
     },
-    "language": "Python",
-    "name": "vinayvobbili/jobwatch",
-    "stars": 0,
-    "updated_at": "2026-10-24T19:15:06Z",
-    "url": "https://github.com/vinayvobbili/jobwatch"
+    "language": "TypeScript",
+    "name": "IBazylchuk/paparats-mcp",
+    "stars": 11,
+    "updated_at": "2026-10-24T19:30:09Z",
+    "url": "https://github.com/IBazylchuk/paparats-mcp"
   },
   {
     "description": "Bashoor Cafe in Piroozi, Mashhad \u2014 live Persian menu, Toman/IRR prices, llms.txt, WebMCP and MCP metadata.",
@@ -67,64 +69,117 @@
     "language": "HTML",
     "name": "sepehrkeyhani00/bashoor-ai-menu",
     "stars": 1,
-    "updated_at": "2026-10-24T19:15:06Z",
+    "updated_at": "2026-10-24T19:30:09Z",
     "url": "https://github.com/sepehrkeyhani00/bashoor-ai-menu"
   },
   {
-    "description": "RuneScape 3 MCP Server (RS3) \u2014 Connect Claude, ChatGPT, Cursor, and other AI assistants to RuneScape Wiki, Grand Exchang",
-    "id": "birdwell/runescape-wiki-mcp",
+    "description": "Lint Jev and Luna questions: a VS Code extension, a command line for CI and an MCP server, for TypeSafe's Jev and OpenAI",
+    "id": "nolindnaidoo/decisionlint",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"runescape-wiki\": {\n      \"url\": \"https://runescape-wiki-mcp.fly.dev/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"decisionlint\": { \"command\": \"npx\", \"args\": [\"-y\", \"decisionlint-mcp\"] }\n  }\n}",
+      "install_cmd": "npm install --save-dev",
+      "install_kind": "npm install"
     },
     "language": "TypeScript",
-    "name": "birdwell/runescape-wiki-mcp",
-    "stars": 0,
-    "updated_at": "2026-10-24T19:15:03Z",
-    "url": "https://github.com/birdwell/runescape-wiki-mcp"
+    "name": "nolindnaidoo/decisionlint",
+    "stars": 1,
+    "updated_at": "2026-10-24T19:30:07Z",
+    "url": "https://github.com/nolindnaidoo/decisionlint"
   },
   {
-    "description": "Penpal (\u7b14\u53cb): the local memory all your AIs share. Serves Claude Code, Codex and Cursor over MCP. macOS, local-first.",
-    "id": "Longfellow1/penpal",
-    "language": "Python",
-    "name": "Longfellow1/penpal",
-    "stars": 4,
-    "updated_at": "2026-10-24T19:14:56Z",
-    "url": "https://github.com/Longfellow1/penpal"
+    "description": "Stop AI coding agents from leaking your API keys. Local proxy + MCP that swaps real secrets for phm_ tokens \u2014 works with",
+    "id": "ashlrai/phantom-secrets",
+    "language": "Rust",
+    "name": "ashlrai/phantom-secrets",
+    "stars": 18,
+    "updated_at": "2026-10-24T19:30:06Z",
+    "url": "https://github.com/ashlrai/phantom-secrets"
   },
   {
-    "description": "Argentine cattle market data layer: daily steer index since 2015, auctions, brokers, meat plants, land values \u2014 site + r",
-    "id": "josebarnetche/consignatarias-next",
-    "language": "TypeScript",
-    "name": "josebarnetche/consignatarias-next",
-    "stars": 0,
-    "updated_at": "2026-10-24T19:14:54Z",
-    "url": "https://github.com/josebarnetche/consignatarias-next"
-  },
-  {
-    "description": "Free, open-source time tracking and invoicing for freelancers, with an MCP server for any AI assistant.",
-    "id": "Zontak-LLC/usehourly",
+    "description": "Personal finance, kept like a firm keeps its books: a double-entry ledger with exact engines for tax, forecasts and plan",
+    "id": "leafmonkeylabs/salli-core",
     "install_info": {
-      "claude_config": "{ \"mcpServers\": { \"usehourly\": { \"url\": \"https://usehourly.app/api/mcp\", \"headers\": { \"Authorization\": \"Bearer <your token>\" } } } }",
-      "install_cmd": "claude mcp add --transport http usehourly https://usehourly.app/api/mcp --header \"Authorization: Bearer <your token>\"",
+      "install_cmd": "npm install --global",
+      "install_kind": "npm install"
+    },
+    "language": "Python",
+    "name": "leafmonkeylabs/salli-core",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:30:24Z",
+    "url": "https://github.com/leafmonkeylabs/salli-core"
+  },
+  {
+    "description": "AgentTrust XRPL is a trust-minimized verification and escrow service on the XRP Ledger that enables any AI agent to secu",
+    "id": "eamwhite1/agent-trust",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"agenttrust\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@smithery/cli@latest\", \"run\", \"xrpl/agent-trust\",\n               \"--key\", \"YOUR_SMITHERY_KEY\"]\n    }\n  }\n}",
+      "install_cmd": "npm install @eamwhite1/agenttrust-sdk",
+      "install_kind": "npm install"
+    },
+    "language": "HTML",
+    "name": "eamwhite1/agent-trust",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:29:53Z",
+    "url": "https://github.com/eamwhite1/agent-trust"
+  },
+  {
+    "description": "Rust ephemeris and Vedic astrology (Jyotish) engine for kundli/kundali, panchanga, dashas and vargas, accurate to 0.096\u2033",
+    "id": "arthiqlabs/vedaksha",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"vedaksha\": {\n      \"command\": \"docker\",\n      \"args\": [\"run\", \"--rm\", \"-i\", \"ghcr.io/arthiqlabs/vedaksha-mcp\", \"--stdio\"]\n    }\n  }\n}"
+    },
+    "language": "Rust",
+    "name": "arthiqlabs/vedaksha",
+    "stars": 4,
+    "updated_at": "2026-10-24T19:29:53Z",
+    "url": "https://github.com/arthiqlabs/vedaksha"
+  },
+  {
+    "description": "MCP server: gives your AI agent the real sources, public API and KDoc of any Maven/Gradle-published Kotlin or Java libra",
+    "id": "aoreshkov/kotlin-lib-mcp",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"kotlin-lib\": {\n      \"command\": \"docker\",\n      \"args\": [\"run\", \"-i\", \"--rm\", \"-v\", \"kotlin-lib-mcp-cache:/home/mcp/.cache\", \"ghcr.io/aoreshkov/kotlin-lib-mcp\"]\n    }\n  }\n}",
+      "install_cmd": "claude mcp add kotlin-lib -- /path/to/kotlin-lib-mcp-server-<version>/bin/server --transport stdio",
       "install_kind": "claude mcp add"
     },
-    "language": "TypeScript",
-    "name": "Zontak-LLC/usehourly",
-    "stars": 0,
-    "updated_at": "2026-10-24T19:14:53Z",
-    "url": "https://github.com/Zontak-LLC/usehourly"
+    "language": "Kotlin",
+    "name": "aoreshkov/kotlin-lib-mcp",
+    "stars": 13,
+    "updated_at": "2026-10-24T19:29:53Z",
+    "url": "https://github.com/aoreshkov/kotlin-lib-mcp"
   },
   {
-    "description": "Agent-first pixel art and animation toolkit. JSON recipes to PNG, APNG and sprite atlases via CLI, MCP server and local ",
-    "id": "skulitom/Pixelbolt",
+    "description": "MCP server for agent-to-agent payments on XRPL \u2014 trust scoring, crypto-condition escrow, AI audit with criteria_met/crit",
+    "id": "eamwhite1/xrpl-referee",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"pixelbolt\": {\n      \"command\": \"node\",\n      \"args\": [\n        \"/absolute/path/to/Pixelbolt/bin/pixelbolt.js\",\n        \"mcp\",\n        \"--out\",\n        \"/absolute/path/to/Pixelbolt/output\"\n      ]\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"agenttrust\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@smithery/cli@latest\", \"run\", \"xrpl/agent-trust\",\n               \"--key\", \"YOUR_SMITHERY_KEY\"]\n    }\n  }\n}"
     },
-    "language": "JavaScript",
-    "name": "skulitom/Pixelbolt",
-    "stars": 7,
-    "updated_at": "2026-10-24T19:14:45Z",
-    "url": "https://github.com/skulitom/Pixelbolt"
+    "language": "Python",
+    "name": "eamwhite1/xrpl-referee",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:29:41Z",
+    "url": "https://github.com/eamwhite1/xrpl-referee"
+  },
+  {
+    "description": "A native Windows MCP server for safe, visible computer use and desktop automation.",
+    "id": "Subhransu-De/ControlFreak",
+    "language": "Rust",
+    "name": "Subhransu-De/ControlFreak",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:29:10Z",
+    "url": "https://github.com/Subhransu-De/ControlFreak"
+  },
+  {
+    "description": "Semantic Search, Plot Discovery & Recommendation Engine API for Anime, Manga, Light Novels, Visual Novels & Manhwa (REST",
+    "id": "Meaha2000/Anime-Akashic-Records",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"anime-akashic-records\": {\n      \"url\": \"https://mcp.aarecords.tech/sse\"\n    }\n  }\n}"
+    },
+    "language": "\u2014",
+    "name": "Meaha2000/Anime-Akashic-Records",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:29:01Z",
+    "url": "https://github.com/Meaha2000/Anime-Akashic-Records"
   },
   {
     "description": "Free proxy list, verified around the clock: HTTP, HTTPS, SOCKS4 and SOCKS5 proxies with country, anonymity, latency and ",
@@ -136,8 +191,271 @@
     "language": "\u2014",
     "name": "hproxy-com/free-proxy-list",
     "stars": 82,
-    "updated_at": "2026-10-24T19:15:30Z",
+    "updated_at": "2026-10-24T19:29:01Z",
     "url": "https://github.com/hproxy-com/free-proxy-list"
+  },
+  {
+    "description": "Remote MCP access to computers you explicitly pair \u2014 files, terminal, desktop UI, browser automation, diagnostics, and d",
+    "id": "getremcp/remcp",
+    "install_info": {
+      "install_cmd": "npm install\nnpm",
+      "install_kind": "npm install"
+    },
+    "language": "JavaScript",
+    "name": "getremcp/remcp",
+    "stars": 1,
+    "updated_at": "2026-10-24T19:28:59Z",
+    "url": "https://github.com/getremcp/remcp"
+  },
+  {
+    "description": "Serveur MCP : m\u00e9t\u00e9o mesur\u00e9e en direct \u00e0 La R\u00e9union (974), mer, pr\u00e9visions, vigilance cyclonique",
+    "id": "bLd75/rundata",
+    "language": "TypeScript",
+    "name": "bLd75/rundata",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:29:06Z",
+    "url": "https://github.com/bLd75/rundata"
+  },
+  {
+    "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Cod",
+    "id": "kajisho5/ffmpeg-skill",
+    "install_info": {
+      "claude_config": "{\"mcpServers\": {\"ffmpeg-skill\": {\"command\": \"python3\", \"args\": [\"/Users/you/.claude/skills/ffmpeg-skill/mcp/server.py\"]}}}"
+    },
+    "language": "Python",
+    "name": "kajisho5/ffmpeg-skill",
+    "stars": 2519,
+    "updated_at": "2026-10-24T19:28:49Z",
+    "url": "https://github.com/kajisho5/ffmpeg-skill"
+  },
+  {
+    "description": "The MCP-first headless CMS \u2014 AI agents build and publish under your permissions, editors click-to-edit the live site. Se",
+    "id": "hybriden/paperboy",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"paperboy\": {\n      \"command\": \"pnpm\",\n      \"args\": [\"-s\", \"-C\", \"/path/to/paperboy\", \"--filter\", \"@paperboy/mcp\", \"start\"],\n      \"env\": {\n        \"MCP_TOKEN\": \"mcp_\u2026\",\n        \"DATABASE_URL\": \"postgresql://paperboy:paperboy@localhost:5433/paperboy\"\n      }\n    }\n  }\n}",
+      "install_cmd": "docker run -d -p 8090:8091 -v paperboy:/data \\",
+      "install_kind": "docker run"
+    },
+    "language": "TypeScript",
+    "name": "hybriden/paperboy",
+    "stars": 1,
+    "updated_at": "2026-10-24T19:28:43Z",
+    "url": "https://github.com/hybriden/paperboy"
+  },
+  {
+    "description": "Typed UI vocabulary for AI agents using the a2ui protocol  \u2014 474 atoms an agent composes into real rendered interfaces a",
+    "id": "a2uicatalog/a2ui",
+    "language": "HTML",
+    "name": "a2uicatalog/a2ui",
+    "stars": 4,
+    "updated_at": "2026-10-24T19:28:24Z",
+    "url": "https://github.com/a2uicatalog/a2ui"
+  },
+  {
+    "description": "The connectivity and runtime platform for your apps: public and private routing across all your machines. Self-hosted, o",
+    "id": "meshploy/meshploy",
+    "language": "Go",
+    "name": "meshploy/meshploy",
+    "stars": 10,
+    "updated_at": "2026-10-24T19:28:38Z",
+    "url": "https://github.com/meshploy/meshploy"
+  },
+  {
+    "description": "Self-hosted platform for project management, docs, CI runners, and deployment to your own servers, with a first-class MC",
+    "id": "otal-labs/nexul",
+    "language": "Go",
+    "name": "otal-labs/nexul",
+    "stars": 4,
+    "updated_at": "2026-10-24T19:28:07Z",
+    "url": "https://github.com/otal-labs/nexul"
+  },
+  {
+    "description": "Bring Apple Health to the AI agents you already use. Open-source iPhone app on the App Store, automatic sync to your own",
+    "id": "roian6/apple-health-ai-bridge",
+    "language": "Python",
+    "name": "roian6/apple-health-ai-bridge",
+    "stars": 27,
+    "updated_at": "2026-10-24T19:29:42Z",
+    "url": "https://github.com/roian6/apple-health-ai-bridge"
+  },
+  {
+    "description": "An ensemble testing service with a focus on accessibility",
+    "id": "jrpool/kilotest",
+    "language": "TypeScript",
+    "name": "jrpool/kilotest",
+    "stars": 4,
+    "updated_at": "2026-10-24T19:28:08Z",
+    "url": "https://github.com/jrpool/kilotest"
+  },
+  {
+    "description": "Java test automation framework for web, mobile, API, CLI, database, and desktop E2E testing with a fluent API and built-",
+    "id": "ShaftHQ/SHAFT_ENGINE",
+    "language": "Java",
+    "name": "ShaftHQ/SHAFT_ENGINE",
+    "stars": 417,
+    "updated_at": "2026-10-24T19:27:58Z",
+    "url": "https://github.com/ShaftHQ/SHAFT_ENGINE"
+  },
+  {
+    "description": "Edit photos by describing the change, on your own GPU. A free, open-source alternative to Nano Banana and ChatGPT image ",
+    "id": "GabrieleLozupone/kokon",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"kokon\": {\n      \"type\": \"stdio\",\n      \"command\": \"C:\\\\Users\\\\<you>\\\\AppData\\\\Local\\\\Kokon\\\\kokon-mcp.exe\",\n      \"args\": []\n    }\n  }\n}",
+      "install_cmd": "claude mcp add --scope user kokon -- \"$env:LOCALAPPDATA\\Kokon\\kokon-mcp.exe\"",
+      "install_kind": "claude mcp add"
+    },
+    "language": "TypeScript",
+    "name": "GabrieleLozupone/kokon",
+    "stars": 214,
+    "updated_at": "2026-10-24T19:27:47Z",
+    "url": "https://github.com/GabrieleLozupone/kokon"
+  },
+  {
+    "description": "Let your AI agents use your own signed-in Chrome, in background tabs that never steal focus. Works with Claude Code, Cod",
+    "id": "tabhand/tabhand",
+    "install_info": {
+      "install_cmd": "npm install\nnode",
+      "install_kind": "npm install"
+    },
+    "language": "JavaScript",
+    "name": "tabhand/tabhand",
+    "stars": 3,
+    "updated_at": "2026-10-24T19:27:23Z",
+    "url": "https://github.com/tabhand/tabhand"
+  },
+  {
+    "description": "Lightweight CalDAV task manager desktop app (PySide6/Qt6) with built-in MCP Server",
+    "id": "Stefan-Schmidbauer/minitask",
+    "language": "Python",
+    "name": "Stefan-Schmidbauer/minitask",
+    "stars": 2,
+    "updated_at": "2026-10-24T19:27:18Z",
+    "url": "https://github.com/Stefan-Schmidbauer/minitask"
+  },
+  {
+    "description": "\u2692\ufe0f Prompt in, finished short out. AI video studio with eyes: CLIP-verified footage, neural voice, karaoke captions, 50-l",
+    "id": "hydope/shortsmash",
+    "language": "Python",
+    "name": "hydope/shortsmash",
+    "stars": 3,
+    "updated_at": "2026-10-24T19:27:16Z",
+    "url": "https://github.com/hydope/shortsmash"
+  },
+  {
+    "description": "Curated, trusted open catalog of AI agent skills for OpenClaw, Claude Code, Codex, GitHub Copilot, Gemini, Cursor, MCP, ",
+    "id": "agentskillexchange/skills",
+    "language": "Python",
+    "name": "agentskillexchange/skills",
+    "stars": 58,
+    "updated_at": "2026-10-24T19:27:01Z",
+    "url": "https://github.com/agentskillexchange/skills"
+  },
+  {
+    "description": "Persistent memory for AI coding agents \u2014 MCP server, REST API & Python SDK. Works with Claude Code, Cursor, Windsurf and",
+    "id": "thameema/memnos",
+    "language": "Python",
+    "name": "thameema/memnos",
+    "stars": 4,
+    "updated_at": "2026-10-24T19:26:32Z",
+    "url": "https://github.com/thameema/memnos"
+  },
+  {
+    "description": "MCP server for Windows screen recording, frame sampling, and minimal ffmpeg edits",
+    "id": "TMHSDigital/screencast-mcp",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"screencast\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@tmhs/screencast-mcp\"]\n    }\n  }\n}",
+      "install_cmd": "npm install -g @tmhs/screencast-mcp",
+      "install_kind": "npm install -g"
+    },
+    "language": "TypeScript",
+    "name": "TMHSDigital/screencast-mcp",
+    "stars": 1,
+    "updated_at": "2026-10-24T19:30:12Z",
+    "url": "https://github.com/TMHSDigital/screencast-mcp"
+  },
+  {
+    "description": "The web wrangler for agents. Give your AI a real browser and never touch the web yourself again.",
+    "id": "LiquidBuiltIt/Supersurf",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"supersurf\": {\n      \"command\": \"npx\",\n      \"args\": [\"supersurf-mcp@latest\"]\n    }\n  }\n}",
+      "install_cmd": "claude mcp add supersurf -- supersurf mcp   # Claude Code",
+      "install_kind": "claude mcp add"
+    },
+    "language": "TypeScript",
+    "name": "LiquidBuiltIt/Supersurf",
+    "stars": 6,
+    "updated_at": "2026-10-24T19:26:18Z",
+    "url": "https://github.com/LiquidBuiltIt/Supersurf"
+  },
+  {
+    "description": "A read-only MCP server for code in git repositories \u2014 files, branches, history, diffs, blame and search \u2014 for any MCP cl",
+    "id": "alexeiveselov92/repo-reader-mcp",
+    "language": "Python",
+    "name": "alexeiveselov92/repo-reader-mcp",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:26:14Z",
+    "url": "https://github.com/alexeiveselov92/repo-reader-mcp"
+  },
+  {
+    "description": "Let coding agents prove UI changes on real iOS, Android, and web surfaces\u2014with inspectable evidence, replayable journeys",
+    "id": "aarwitz/tapp",
+    "install_info": {
+      "install_cmd": "claude mcp add tapp -- npx -y @aarwitz/tapp@latest mcp",
+      "install_kind": "claude mcp add"
+    },
+    "language": "JavaScript",
+    "name": "aarwitz/tapp",
+    "stars": 2,
+    "updated_at": "2026-10-24T19:26:10Z",
+    "url": "https://github.com/aarwitz/tapp"
+  },
+  {
+    "description": "Coding agent memory for Claude Code, Codex, Cursor and 39 more, built from the session history already on your disk. Loc",
+    "id": "vshulcz/deja-vu",
+    "language": "Go",
+    "name": "vshulcz/deja-vu",
+    "stars": 1301,
+    "updated_at": "2026-10-24T19:25:58Z",
+    "url": "https://github.com/vshulcz/deja-vu"
+  },
+  {
+    "description": "Xavier \u2014 Rust vector memory & knowledge graph for AI agents (HTTP/CLI/MCP). Powers SWAL communal context",
+    "id": "iberi22/xavier",
+    "install_info": {
+      "install_cmd": "cargo install --path",
+      "install_kind": "cargo install"
+    },
+    "language": "Rust",
+    "name": "iberi22/xavier",
+    "stars": 1,
+    "updated_at": "2026-10-24T19:25:30Z",
+    "url": "https://github.com/iberi22/xavier"
+  },
+  {
+    "description": "AI-Atelier, the all in one personal \"atelier\" (means handcraft studio in french) that can adapt to your need.",
+    "id": "linxuhao/AItelier",
+    "install_info": {
+      "install_cmd": "pip install -e",
+      "install_kind": "pip install"
+    },
+    "language": "Python",
+    "name": "linxuhao/AItelier",
+    "stars": 3,
+    "updated_at": "2026-10-24T19:25:28Z",
+    "url": "https://github.com/linxuhao/AItelier"
+  },
+  {
+    "description": "A read-only MCP server for SQL databases with a semantic layer in an open format (Apache Ossie), metrics, your own conte",
+    "id": "alexeiveselov92/semantic-warehouse-mcp",
+    "install_info": {
+      "install_cmd": "claude mcp add warehouse -- uvx semantic-warehouse-mcp --config /path/to/config.yaml",
+      "install_kind": "claude mcp add"
+    },
+    "language": "Python",
+    "name": "alexeiveselov92/semantic-warehouse-mcp",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:25:21Z",
+    "url": "https://github.com/alexeiveselov92/semantic-warehouse-mcp"
   },
   {
     "description": "Untiring, token-efficient research collaborator: reads papers and patents, cites the paragraph, writes the paper, design",
@@ -150,61 +468,8 @@
     "language": "Python",
     "name": "retospect/precis-mcp",
     "stars": 7,
-    "updated_at": "2026-10-24T19:14:40Z",
+    "updated_at": "2026-10-24T19:25:14Z",
     "url": "https://github.com/retospect/precis-mcp"
-  },
-  {
-    "description": "MCP servers & Graph API for the UniFi suite of applications, Network, Protect, and Access",
-    "id": "sirkirby/unifi-mcp",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"unifi-network\": {\n      \"command\": \"uvx\",\n      \"args\": [\"unifi-network-mcp@latest\"],\n      \"env\": {\n        // Server-specific vars take priority; UNIFI_* is the fallback\n        \"UNIFI_NETWORK_HOST\": \"192.168.1.1\",\n        \"UNIFI_NETWORK_USERNAME\": \"admin\",\n        \"UNIFI_NETWORK_PASSWORD\": \"your-password\"\n      }\n    },\n    \"unifi-protect\": {\n      \"command\": \"uvx\",\n      \"args\": [\"unifi-protect-mcp@latest\"],\n      \"env\": {\n        \"UNIFI_PROTECT_HOST\": \"192.168.1.1\",\n        \"UNIFI_PROTECT_USERNAME\": \"admin\",\n        \"UNIFI_PROTECT_PASSWORD\": \"your-password\"\n      }\n    },\n    \"unifi-access\": {\n      \"command\": \"uvx\",\n      \"args\": [\"unifi-access-mcp@latest\"],\n      \"env\": {\n        \"UNIFI_ACCESS_HOST\": \"192.168.1.1\",\n        \"UNIFI_ACCESS_USERNAME\": \"admin\",\n        \"UNIFI_ACCESS_PASSWORD\": \"your-password\"\n      }\n    }\n  }\n}",
-      "install_cmd": "uvx unifi-network-mcp@latest\nuvx unifi-protect-mcp@latest\nuvx unifi-access-mcp@latest",
-      "install_kind": "uvx"
-    },
-    "language": "Python",
-    "name": "sirkirby/unifi-mcp",
-    "stars": 945,
-    "updated_at": "2026-10-24T19:14:30Z",
-    "url": "https://github.com/sirkirby/unifi-mcp"
-  },
-  {
-    "description": "Open source agent workforce platform. Next.js + Postgres + MCP server for AI agent teams with human-in-the-loop review, ",
-    "id": "vocion/vocion-core",
-    "install_info": {
-      "install_cmd": "claude mcp add vocion -- npm --prefix /abs/path/to/vocion-core run mcp:serve",
-      "install_kind": "claude mcp add"
-    },
-    "language": "TypeScript",
-    "name": "vocion/vocion-core",
-    "stars": 2,
-    "updated_at": "2026-10-24T19:14:23Z",
-    "url": "https://github.com/vocion/vocion-core"
-  },
-  {
-    "description": "NENRIN: tree rings for AI facing services. Bitcoin-anchored public ledger, open witnessing, and an MCP server for verifi",
-    "id": "ogasurfproject-jpg/horizon-shield",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"horizon-shield\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"mcp-remote\", \"https://mcp.horizonshield.dev/\"]\n    }\n  }\n}"
-    },
-    "language": "HTML",
-    "name": "ogasurfproject-jpg/horizon-shield",
-    "stars": 2,
-    "updated_at": "2026-10-24T19:14:18Z",
-    "url": "https://github.com/ogasurfproject-jpg/horizon-shield"
-  },
-  {
-    "description": "Self-hosted MCP server that makes your Obsidian/markdown vault searchable \u2014 text, PDFs, Office docs, images, audio \u2014 fro",
-    "id": "Artexis10/exomem",
-    "install_info": {
-      "claude_config": "{\"mcpServers\": {\"exomem\": {\"command\": \"exomem\", \"args\": [\"--transport\", \"stdio\"], \"env\": {\"EXOMEM_VAULT_PATH\": \"/path/to/vault\"}}}}",
-      "install_cmd": "claude mcp add exomem -- docker run -i --rm -v \"/path/to/vault:/vault\" -e EXOMEM_VAULT_PATH=/vault ghcr.io/artexis10/exomem:latest --transport stdio",
-      "install_kind": "claude mcp add"
-    },
-    "language": "Python",
-    "name": "Artexis10/exomem",
-    "stars": 9,
-    "updated_at": "2026-10-24T19:15:03Z",
-    "url": "https://github.com/Artexis10/exomem"
   },
   {
     "description": "Your whole online presence in one sovereign Go binary \u2014 website, blog, PGP mail, E2E-encrypted chat, anti-DDoS bot shiel",
@@ -212,376 +477,104 @@
     "language": "Go",
     "name": "johalputt/VayuPress",
     "stars": 21,
-    "updated_at": "2026-10-24T19:14:15Z",
+    "updated_at": "2026-10-24T19:25:10Z",
     "url": "https://github.com/johalputt/VayuPress"
   },
   {
-    "description": "Adobe Premiere Pro MCP. Tools for AI-driven video editing via MCP, for Codex, Claude, and other MCP clients.",
-    "id": "hetpatel-11/Adobe_Premiere_Pro_MCP",
+    "description": "Google Gemini Notebook (formerly NotebookLM) over MCP + a local HTTP REST API. Citation-backed Q&A, full Studio generati",
+    "id": "roomi-fields/notebooklm-mcp",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"premiere-pro\": {\n      \"command\": \"premiere-pro-mcp\"\n    }\n  }\n}",
-      "install_cmd": "npm install -g adobe-premiere-pro-mcp",
-      "install_kind": "npm install -g"
+      "install_cmd": "claude mcp add notebooklm node /path/to/notebooklm-mcp/dist/index.js",
+      "install_kind": "claude mcp add"
     },
     "language": "TypeScript",
-    "name": "hetpatel-11/Adobe_Premiere_Pro_MCP",
-    "stars": 754,
-    "updated_at": "2026-10-24T19:14:14Z",
-    "url": "https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP"
+    "name": "roomi-fields/notebooklm-mcp",
+    "stars": 209,
+    "updated_at": "2026-10-24T19:26:40Z",
+    "url": "https://github.com/roomi-fields/notebooklm-mcp"
   },
   {
-    "description": "Xavier \u2014 Rust vector memory & knowledge graph for AI agents (HTTP/CLI/MCP). Powers SWAL communal context",
-    "id": "iberi22/xavier",
-    "install_info": {
-      "install_cmd": "cargo install --path",
-      "install_kind": "cargo install"
-    },
+    "description": "Instant file search for every drive on Windows, folder sizes with history of what grew, and an MCP server so AI assistan",
+    "id": "ossianhanning/quickseek",
     "language": "Rust",
-    "name": "iberi22/xavier",
-    "stars": 1,
-    "updated_at": "2026-10-24T19:14:59Z",
-    "url": "https://github.com/iberi22/xavier"
+    "name": "ossianhanning/quickseek",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:24:47Z",
+    "url": "https://github.com/ossianhanning/quickseek"
   },
   {
-    "description": "Coding agent memory for Claude Code, Codex, Cursor and 39 more, built from the session history already on your disk. Loc",
-    "id": "vshulcz/deja-vu",
-    "language": "Go",
-    "name": "vshulcz/deja-vu",
-    "stars": 1301,
-    "updated_at": "2026-10-24T19:13:46Z",
-    "url": "https://github.com/vshulcz/deja-vu"
+    "description": "macOS app that imports FPV goggle DVR clips into a dated, verified video library, with CLI & MCP",
+    "id": "noahkiss/quadcam",
+    "language": "Rust",
+    "name": "noahkiss/quadcam",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:24:38Z",
+    "url": "https://github.com/noahkiss/quadcam"
   },
   {
-    "description": "Local-first repository analysis engine: code structure, dependency impact, and data lineage via CLI, Python API, and a r",
-    "id": "Sanoy24/the-brownfield-cartographer",
+    "description": "Sandboxes for AI agents: TypeScript, Python, Go, Java and Ruby SDKs, the runtime CLI, an MCP server, and agent integrati",
+    "id": "withruntime/runtime",
     "install_info": {
-      "install_cmd": "uvx --from brownfield-cartographer cartographer analyze .\nuvx --from brownfield-cartographer cartographer impact models/staging/stg_payments.sql",
-      "install_kind": "uvx"
+      "install_cmd": "npm install withruntime",
+      "install_kind": "npm install"
+    },
+    "language": "TypeScript",
+    "name": "withruntime/runtime",
+    "stars": 1,
+    "updated_at": "2026-10-24T19:24:26Z",
+    "url": "https://github.com/withruntime/runtime"
+  },
+  {
+    "description": "ZeroBeacon.ai \u2014 1,003 MCP operations and 1,052 REST endpoints for agent commerce, deterministic beacon checks, utilities",
+    "id": "DavidFox998/zerobeacon",
+    "install_info": {
+      "install_cmd": "npm install -g smithery@latest",
+      "install_kind": "npm install -g"
     },
     "language": "Python",
-    "name": "Sanoy24/the-brownfield-cartographer",
-    "stars": 1,
-    "updated_at": "2026-10-24T19:13:59Z",
-    "url": "https://github.com/Sanoy24/the-brownfield-cartographer"
+    "name": "DavidFox998/zerobeacon",
+    "stars": 0,
+    "updated_at": "2026-10-24T19:23:24Z",
+    "url": "https://github.com/DavidFox998/zerobeacon"
   },
   {
-    "description": "Node-based canvas for AI media workflows - chain 100+ image, video, voice & music models (Seedance, Veo, Kling, Flux, El",
-    "id": "nodaroai/app.nodaro.ai",
+    "description": "\ud83e\udedb\ud83d\udc63 FAVA Trails \u2014 Git-native, curated memory for AI agents via MCP. Draft isolation, promotion gate, thought lifecycle ho",
+    "id": "MachineWisdomAI/fava-trails",
     "install_info": {
-      "install_cmd": "npm install -g @nodaro/cli",
-      "install_kind": "npm install -g"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"fava-trails\": {\n      \"command\": \"fava-trails-server\",\n      \"env\": {\n        \"FAVA_TRAILS_DATA_REPO\": \"/path/to/fava-trails-data\",\n        \"FAVA_TRAILS_AGENT_ID\": \"claude-code\",\n        \"OPENROUTER_API_KEY\": \"sk-or-v1-...\"\n      }\n    }\n  }\n}",
+      "install_cmd": "pip install fava-trails",
+      "install_kind": "pip install"
     },
-    "language": "TypeScript",
-    "name": "nodaroai/app.nodaro.ai",
-    "stars": 11,
-    "updated_at": "2026-10-24T19:14:15Z",
-    "url": "https://github.com/nodaroai/app.nodaro.ai"
+    "language": "Python",
+    "name": "MachineWisdomAI/fava-trails",
+    "stars": 26,
+    "updated_at": "2026-10-24T19:23:15Z",
+    "url": "https://github.com/MachineWisdomAI/fava-trails"
   },
   {
-    "description": "Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator",
-    "id": "archestra-ai/archestra",
+    "description": "Open-source revenue attribution: see which traffic channel brings paying customers. Stripe, Dodo Payments and Polar. One",
+    "id": "virling/virling",
     "install_info": {
-      "install_cmd": "docker run \\",
+      "install_cmd": "docker run -d --name virling -p 8080:8080 -v virling-data:/data \\",
       "install_kind": "docker run"
     },
-    "language": "TypeScript",
-    "name": "archestra-ai/archestra",
-    "stars": 4399,
-    "updated_at": "2026-10-24T19:15:11Z",
-    "url": "https://github.com/archestra-ai/archestra"
-  },
-  {
-    "description": "Zero-dependency AI agent context baton & diet suite. Hand off sessions between Claude Code, Codex, Gemini, and Cursor wi",
-    "id": "RAKKUNN/vicem",
-    "install_info": {
-      "install_cmd": "claude mcp add vicem -- node /absolute/path/to/vicem.mjs mcp",
-      "install_kind": "claude mcp add"
-    },
-    "language": "JavaScript",
-    "name": "RAKKUNN/vicem",
-    "stars": 4,
-    "updated_at": "2026-10-24T19:12:48Z",
-    "url": "https://github.com/RAKKUNN/vicem"
-  },
-  {
-    "description": "Let coding agents prove UI changes on real iOS, Android, and web surfaces\u2014with inspectable evidence, replayable journeys",
-    "id": "aarwitz/tapp",
-    "install_info": {
-      "install_cmd": "claude mcp add tapp -- npx -y @aarwitz/tapp@latest mcp",
-      "install_kind": "claude mcp add"
-    },
-    "language": "JavaScript",
-    "name": "aarwitz/tapp",
-    "stars": 2,
-    "updated_at": "2026-10-24T19:12:42Z",
-    "url": "https://github.com/aarwitz/tapp"
-  },
-  {
-    "description": "\ud83d\udd25 Lightweight, Airbrake/Sentry-compatible, PostgreSQL-based Open Source Error Catcher",
-    "id": "icoretech/airbroke",
-    "install_info": {
-      "install_cmd": "npm install --global",
-      "install_kind": "npm install"
-    },
-    "language": "TypeScript",
-    "name": "icoretech/airbroke",
-    "stars": 220,
-    "updated_at": "2026-10-24T19:12:43Z",
-    "url": "https://github.com/icoretech/airbroke"
-  },
-  {
-    "description": "OpenSem 2026 Starter Kit: No-Code Bootstrapping for Serena & Superpowers",
-    "id": "jenni2910/serena-superpowers-kit",
-    "language": "HTML",
-    "name": "jenni2910/serena-superpowers-kit",
-    "stars": 0,
-    "updated_at": "2026-10-24T19:12:13Z",
-    "url": "https://github.com/jenni2910/serena-superpowers-kit"
-  },
-  {
-    "description": "Unofficial Codex-First MCP for Webasyst 2026 \u2013 Apps, Plugins & UI Audit Tools",
-    "id": "abrahemy319-png/mcp-webasyst-codex-toolkit",
-    "language": "HTML",
-    "name": "abrahemy319-png/mcp-webasyst-codex-toolkit",
-    "stars": 1,
-    "updated_at": "2026-10-24T19:12:04Z",
-    "url": "https://github.com/abrahemy319-png/mcp-webasyst-codex-toolkit"
-  },
-  {
-    "description": "E-file a 2025 US federal Form 1040 from your AI assistant; you review and sign on one hosted page.",
-    "id": "terminaltax/terminal-tax-mcp-server",
-    "install_info": {
-      "install_cmd": "claude mcp add --transport http terminal-tax https://mcp.terminal.tax/v1/hosted-mcp",
-      "install_kind": "claude mcp add"
-    },
-    "language": "CSS",
-    "name": "terminaltax/terminal-tax-mcp-server",
-    "stars": 0,
-    "updated_at": "2026-10-24T19:12:02Z",
-    "url": "https://github.com/terminaltax/terminal-tax-mcp-server"
-  },
-  {
-    "description": "AI-Powered Telegram Monitor 2026: Real-Time Message Classification & Insights Dashboard",
-    "id": "enzosantana-mv/telegram-ai-scope",
-    "language": "HTML",
-    "name": "enzosantana-mv/telegram-ai-scope",
-    "stars": 2,
-    "updated_at": "2026-10-24T19:12:00Z",
-    "url": "https://github.com/enzosantana-mv/telegram-ai-scope"
-  },
-  {
-    "description": "Verified memory for coding agents: your rules, decisions and past defects, briefed before each task, proven by a check y",
-    "id": "emeraldleaf/okl",
-    "install_info": {
-      "install_cmd": "pip install -e",
-      "install_kind": "pip install"
-    },
-    "language": "Python",
-    "name": "emeraldleaf/okl",
-    "stars": 4,
-    "updated_at": "2026-10-24T19:14:33Z",
-    "url": "https://github.com/emeraldleaf/okl"
-  },
-  {
-    "description": "Self-hosted YouTube niche & outlier-video research tool (NexLev/vidIQ alternative) \u2014 MCP server + HTTP API + worker on Y",
-    "id": "pandich93/youtube-niche-finder",
-    "language": "Python",
-    "name": "pandich93/youtube-niche-finder",
-    "stars": 19,
-    "updated_at": "2026-10-24T19:12:04Z",
-    "url": "https://github.com/pandich93/youtube-niche-finder"
-  },
-  {
-    "description": "Slides in MDX with a live room for your audience: presenter sync, polls, quizzes, Q&A and drawing from phones. Framework",
-    "id": "kadalcc/deck",
-    "install_info": {
-      "install_cmd": "claude mcp add kadal-deck -- npx -y @kadal/deck mcp      # the MCP server alone",
-      "install_kind": "claude mcp add"
-    },
-    "language": "TypeScript",
-    "name": "kadalcc/deck",
-    "stars": 0,
-    "updated_at": "2026-10-24T19:12:41Z",
-    "url": "https://github.com/kadalcc/deck"
-  },
-  {
-    "description": "A Python CLI for querying and controlling Tesla vehicles via the Fleet API. Designed for clankers.",
-    "id": "Oceanswave/tescmd",
-    "install_info": {
-      "install_cmd": "pip install tescmd",
-      "install_kind": "pip install"
-    },
-    "language": "Python",
-    "name": "Oceanswave/tescmd",
-    "stars": 2,
-    "updated_at": "2026-10-24T19:11:19Z",
-    "url": "https://github.com/Oceanswave/tescmd"
-  },
-  {
-    "description": "The rules layer for AI-written code \u2014 rig-lite: a fail-closed cross-model review gate, a written constitution, git-versi",
-    "id": "marcuspat/turbo-flow",
-    "language": "Shell",
-    "name": "marcuspat/turbo-flow",
-    "stars": 176,
-    "updated_at": "2026-10-24T19:11:16Z",
-    "url": "https://github.com/marcuspat/turbo-flow"
-  },
-  {
-    "description": "Every tool your AI needs, in one install: a self-hosted MCP server with memory, reasoning, git, Docker, network and rele",
-    "id": "keefng8/homeshed-mcp",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"homeshed-mcp\": {\n      \"command\": \"uvx\",\n      \"args\": [\n        \"homeshed-mcp\"\n      ]\n    }\n  }\n}",
-      "install_cmd": "claude mcp add -s user homeshed-mcp -- uvx homeshed-mcp",
-      "install_kind": "claude mcp add"
-    },
-    "language": "Python",
-    "name": "keefng8/homeshed-mcp",
-    "stars": 19,
-    "updated_at": "2026-10-24T19:13:52Z",
-    "url": "https://github.com/keefng8/homeshed-mcp"
-  },
-  {
-    "description": "Multiplayer browser sessions for developers and AI coding agents",
-    "id": "pairbrowse/pairbrowse",
-    "language": "JavaScript",
-    "name": "pairbrowse/pairbrowse",
-    "stars": 4,
-    "updated_at": "2026-10-24T19:11:11Z",
-    "url": "https://github.com/pairbrowse/pairbrowse"
-  },
-  {
-    "description": "AI-Atelier, the all in one personal \"atelier\" (means handcraft studio in french) that can adapt to your need.",
-    "id": "linxuhao/AItelier",
-    "install_info": {
-      "install_cmd": "pip install -e",
-      "install_kind": "pip install"
-    },
-    "language": "Python",
-    "name": "linxuhao/AItelier",
-    "stars": 3,
-    "updated_at": "2026-10-24T19:11:08Z",
-    "url": "https://github.com/linxuhao/AItelier"
-  },
-  {
-    "description": "Kaiten MCP server \u2014 intent-level tools over the Kaiten API for AI agents",
-    "id": "kaitencloud/mcp",
-    "install_info": {
-      "install_cmd": "uvx kaitencloud-mcp http --port 8000",
-      "install_kind": "uvx"
-    },
-    "language": "Python",
-    "name": "kaitencloud/mcp",
-    "stars": 0,
-    "updated_at": "2026-10-24T19:10:52Z",
-    "url": "https://github.com/kaitencloud/mcp"
-  },
-  {
-    "description": "Accountability infrastructure for long-running AI agents. Self-hosted MCP server: identity, claims and evidence, review,",
-    "id": "cirwel/unitares",
-    "language": "Python",
-    "name": "cirwel/unitares",
-    "stars": 5,
-    "updated_at": "2026-10-24T19:10:47Z",
-    "url": "https://github.com/cirwel/unitares"
-  },
-  {
-    "description": "Complete Unreal Engine development toolkit exposed as MCP tools.",
-    "id": "db-lyon/ue-mcp",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"ue-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"ue-mcp@latest\", \"C:/path/to/MyGame.uproject\"]\n    }\n  }\n}",
-      "install_cmd": "npm install ue-mcp-",
-      "install_kind": "npm install"
-    },
-    "language": "C++",
-    "name": "db-lyon/ue-mcp",
-    "stars": 448,
-    "updated_at": "2026-10-24T19:13:06Z",
-    "url": "https://github.com/db-lyon/ue-mcp"
-  },
-  {
-    "description": "System 3 MCP server \u2014 persistent identity, memory, and self-model for AI agents. Single-file sqlite-vec + fastembed; zer",
-    "id": "sleepunit-agents/loom",
-    "language": "TypeScript",
-    "name": "sleepunit-agents/loom",
-    "stars": 1,
-    "updated_at": "2026-10-24T19:10:24Z",
-    "url": "https://github.com/sleepunit-agents/loom"
-  },
-  {
-    "description": "\ud83d\udd0d Your coding agent reads Figma .fig files locally. Layout, text, variables, assets, reference renders. No Figma app, lo",
-    "id": "runkids/figlens",
-    "install_info": {
-      "claude_config": "{ \"mcpServers\": { \"figlens\": { \"command\": \"npx\", \"args\": [\"-y\", \"@runkids/figlens\", \"mcp\"] } } }",
-      "install_cmd": "claude mcp add --transport stdio --scope local figlens -- npx -y @runkids/figlens mcp",
-      "install_kind": "claude mcp add"
-    },
     "language": "Rust",
-    "name": "runkids/figlens",
-    "stars": 2,
-    "updated_at": "2026-10-24T19:12:52Z",
-    "url": "https://github.com/runkids/figlens"
+    "name": "virling/virling",
+    "stars": 1,
+    "updated_at": "2026-10-24T19:23:10Z",
+    "url": "https://github.com/virling/virling"
   },
   {
-    "description": "Enhanciar remote MCP server: ask your company brain from Claude, Cursor or VS Code. Cited answers from Slack, Gmail, Not",
-    "id": "enhanciar/enhanciar-mcp",
+    "description": "A Bloomberg-style crypto terminal for your shell: live Coinbase prices, candles, order book and trade tape, the same pai",
+    "id": "owen-alderson/crypto-terminal",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"enhanciar\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\", \"mcp-remote\",\n        \"https://enhanciar.in/enhanciar/mcp/\",\n        \"--header\", \"Authorization: Bearer dh_your_key\"\n      ]\n    }\n  }\n}",
-      "install_cmd": "claude mcp add --transport http --scope user enhanciar \\",
+      "install_cmd": "claude mcp add crypto-terminal -- crypto-terminal mcp",
       "install_kind": "claude mcp add"
     },
-    "language": "\u2014",
-    "name": "enhanciar/enhanciar-mcp",
-    "stars": 0,
-    "updated_at": "2026-10-24T19:10:09Z",
-    "url": "https://github.com/enhanciar/enhanciar-mcp"
-  },
-  {
-    "description": "Local messaging for AI coding agents. Connect Codex and Claude Code through an MCP server, Unix sockets, and a SQLite-ba",
-    "id": "pairtask/pairtask",
-    "language": "Go",
-    "name": "pairtask/pairtask",
-    "stars": 10,
-    "updated_at": "2026-10-24T19:15:06Z",
-    "url": "https://github.com/pairtask/pairtask"
-  },
-  {
-    "description": "Serveur MCP : m\u00e9t\u00e9o mesur\u00e9e en direct \u00e0 La R\u00e9union (974), mer, pr\u00e9visions, vigilance cyclonique",
-    "id": "bLd75/rundata",
-    "language": "TypeScript",
-    "name": "bLd75/rundata",
-    "stars": 0,
-    "updated_at": "2026-10-24T19:11:10Z",
-    "url": "https://github.com/bLd75/rundata"
-  },
-  {
-    "description": "Open-source data quality monitoring: checks across warehouses, lakehouses and object stores, triggered by ADF, Airflow a",
-    "id": "TheurgicDuke771/DataQ",
     "language": "Python",
-    "name": "TheurgicDuke771/DataQ",
-    "stars": 0,
-    "updated_at": "2026-10-24T19:10:31Z",
-    "url": "https://github.com/TheurgicDuke771/DataQ"
-  },
-  {
-    "description": "Typed UI vocabulary for AI agents using the a2ui protocol  \u2014 474 atoms an agent composes into real rendered interfaces a",
-    "id": "a2uicatalog/a2ui",
-    "language": "HTML",
-    "name": "a2uicatalog/a2ui",
-    "stars": 4,
-    "updated_at": "2026-10-24T19:09:46Z",
-    "url": "https://github.com/a2uicatalog/a2ui"
-  },
-  {
-    "description": "Give AI agents cited, versioned context from your docs and spreadsheets. Build, diff and roll back what Claude Code, Cod",
-    "id": "burakdede/lorepack",
-    "install_info": {
-      "install_cmd": "npm install -g @lorepack/cli@next",
-      "install_kind": "npm install -g"
-    },
-    "language": "TypeScript",
-    "name": "burakdede/lorepack",
-    "stars": 4,
-    "updated_at": "2026-10-24T19:09:45Z",
-    "url": "https://github.com/burakdede/lorepack"
+    "name": "owen-alderson/crypto-terminal",
+    "stars": 6,
+    "updated_at": "2026-10-24T19:22:51Z",
+    "url": "https://github.com/owen-alderson/crypto-terminal"
   }
 ]
