@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <title>kamilkaczmareksolutions/polish-mcp-servers - entry on MCP Servers Live</title>
-<meta name="description" content="Docs for two remote MCP servers on Apify: Polish law (ELI, SAOS) and 10 official Polish public registers.">
+<meta name="description" content="Stdio MCP server for Polish law and public registers. Twelve Apify Actor tools, no token required to list them.">
 <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/kamilkaczmareksolutions/polish-mcp-servers/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="kamilkaczmareksolutions/polish-mcp-servers - entry on MCP Servers Live">
-<meta property="og:description" content="Docs for two remote MCP servers on Apify: Polish law (ELI, SAOS) and 10 official Polish public registers.">
+<meta property="og:description" content="Stdio MCP server for Polish law and public registers. Twelve Apify Actor tools, no token required to list them.">
 <meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/kamilkaczmareksolutions/polish-mcp-servers/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="kamilkaczmareksolutions/polish-mcp-servers - entry on MCP Servers Live">
-<meta name="twitter:description" content="Docs for two remote MCP servers on Apify: Polish law (ELI, SAOS) and 10 official Polish public registers.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"kamilkaczmareksolutions/polish-mcp-servers","codeRepository":"https://github.com/kamilkaczmareksolutions/polish-mcp-servers","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/kamilkaczmareksolutions/polish-mcp-servers/","description":"Docs for two remote MCP servers on Apify: Polish law (ELI, SAOS) and 10 official Polish public registers.","author":{"@type":"Person","name":"kamilkaczmareksolutions","url":"https://github.com/kamilkaczmareksolutions"},"dateModified":"2026-10-27"}</script>
+<meta name="twitter:description" content="Stdio MCP server for Polish law and public registers. Twelve Apify Actor tools, no token required to list them.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"kamilkaczmareksolutions/polish-mcp-servers","codeRepository":"https://github.com/kamilkaczmareksolutions/polish-mcp-servers","programmingLanguage":"TypeScript","url":"https://linny006.github.io/mcp-servers-live/r/kamilkaczmareksolutions/polish-mcp-servers/","description":"Stdio MCP server for Polish law and public registers. Twelve Apify Actor tools, no token required to list them.","author":{"@type":"Person","name":"kamilkaczmareksolutions","url":"https://github.com/kamilkaczmareksolutions"},"dateModified":"2026-10-27"}</script>
 <style>:root { --max: 880px; --fg: #1f2328; --muted: #59636e; --bg: #ffffff;
          --link: #0969da; --border: #d1d9e0; --card: #f6f8fa; }
 * { box-sizing: border-box; }
@@ -44,7 +44,7 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <nav class="bc"><a href="https://linny006.github.io/mcp-servers-live/">MCP Servers Live</a> &#183; <a href="https://linny006.github.io/mcp-servers-live/popular/">Entries</a> &#183; <span>kamilkaczmareksolutions/polish-mcp-servers</span></nav>
 <main>
 <h1>kamilkaczmareksolutions/polish-mcp-servers</h1>
-<p class="lead">Docs for two remote MCP servers on Apify: Polish law (ELI, SAOS) and 10 official Polish public registers.</p>
+<p class="lead">Stdio MCP server for Polish law and public registers. Twelve Apify Actor tools, no token required to list them.</p>
 <div class="meta">
 <span><strong>Stars</strong> 0</span>
 <span><strong>Language</strong> TypeScript</span>
@@ -55,21 +55,30 @@ footer { margin: 40px 0 16px; padding-top: 16px; border-top: 1px solid var(--bor
 <section id="install"><h2>Install &amp; configure</h2>
 <p>Install method detected from README: <code>npm install</code></p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;font-size:13px;border:1px solid var(--border);"><code>npm install
-npm</code></pre>
+node</code></pre>
 <h3>Claude Desktop config snippet</h3>
 <p>Add to your <code>claude_desktop_config.json</code> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows):</p>
 <pre style="background:var(--card);padding:14px;border-radius:6px;overflow:auto;max-height:500px;font-size:13px;line-height:1.5;border:1px solid var(--border);"><code>{
   &quot;mcpServers&quot;: {
+    &quot;polish-mcp&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;github:kamilkaczmareksolutions/polish-mcp-servers&quot;],
+      &quot;env&quot;: {
+        &quot;APIFY_TOKEN&quot;: &quot;&lt;YOUR_APIFY_TOKEN&gt;&quot;
+      }
+    },
     &quot;polish-law&quot;: {
-      &quot;url&quot;: &quot;https://mcp.apify.com/?tools=enterprising_hamster/polish-law-mcp-server&quot;,
-      &quot;headers&quot;: {
-        &quot;Authorization&quot;: &quot;Bearer &lt;YOUR_APIFY_TOKEN&gt;&quot;
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;--package&quot;, &quot;github:kamilkaczmareksolutions/polish-mcp-servers&quot;, &quot;polish-law-mcp&quot;],
+      &quot;env&quot;: {
+        &quot;APIFY_TOKEN&quot;: &quot;&lt;YOUR_APIFY_TOKEN&gt;&quot;
       }
     },
     &quot;polish-public-registers&quot;: {
-      &quot;url&quot;: &quot;https://mcp.apify.com/?tools=enterprising_hamster/polish-eu-funds-tenders-baza-konkurencyjnosci,enterprising_hamster/polish-ev-charging-stations-eipa,enterprising_hamster/polish-vehicle-registrations-cepik,enterprising_hamster/polish-building-permits-gunb,enterprising_hamster/polish-land-parcels-uldk-zoning,enterprising_hamster/polish-healthcare-facilities-rpwdl,enterprising_hamster/polish-developer-apartment-prices,enterprising_hamster/polish-electricity-market-pse,enterprising_hamster/polish-legal-acts-eli,enterprising_hamster/polish-court-judgments-saos&quot;,
-      &quot;headers&quot;: {
-        &quot;Authorization&quot;: &quot;Bearer &lt;YOUR_APIFY_TOKEN&gt;&quot;
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;--package&quot;, &quot;github:kamilkaczmareksolutions/polish-mcp-servers&quot;, &quot;polish-public-registers&quot;],
+      &quot;env&quot;: {
+        &quot;APIFY_TOKEN&quot;: &quot;&lt;YOUR_APIFY_TOKEN&gt;&quot;
       }
     }
   }
@@ -80,9 +89,9 @@ npm</code></pre>
 <p>This repository appears on MCP Servers Live because it matches the tracker's GitHub Search criteria (mcp-server) and was active in the recent indexing window. The tracker refreshes every 15 minutes, so the metadata above reflects the state at the most recent index pass. If the data here looks stale, the source repository may have been archived or moved out of the tracked topic; the next cron tick will reconcile.</p></section>
 <section><h2>Similar in this tracker</h2>
 <ul class="crosslinks">
-<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:208741)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/autonomous-ai/openharness/">autonomous-ai/openharness (stars:1375)</a></li>
-<li><a href="https://linny006.github.io/mcp-servers-live/r/cloudflare/mcp/">cloudflare/mcp (stars:1012)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/n8n-io/n8n/">n8n-io/n8n (stars:208742)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/jordanburke/microsoft-todo-mcp-server/">jordanburke/microsoft-todo-mcp-server (stars:118)</a></li>
+<li><a href="https://linny006.github.io/mcp-servers-live/r/dominik1001/caldav-mcp/">dominik1001/caldav-mcp (stars:105)</a></li>
 </ul></section>
 <section><h2>Explore by category</h2>
 <ul class="crosslinks">
