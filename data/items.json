@@ -1,45 +1,38 @@
 [
   {
-    "description": "CATAAS MCP \u2014 Cat as a Service (free, no auth)",
-    "id": "pipeworx-io/mcp-cataas",
+    "description": "MemVault \u2014 The Shared Memory Layer for Every AI Agent You Run. Self-hosted, open-source MCP memory server with auto-inje",
+    "id": "dreamor/MemVault",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"cataas\": {\n      \"url\": \"https://gateway.pipeworx.io/cataas/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"memvault\": {\n      \"command\": \"/path/to/memvault-mcp\",\n      \"args\": [\"--db\", \"~/.memvault/data.db\"],\n      \"env\": { \"OPENAI_API_KEY\": \"sk-...\" }\n    }\n  }\n}",
+      "install_cmd": "claude mcp add memvault /path/to/memvault-mcp -- --db ~/.memvault/data.db",
+      "install_kind": "claude mcp add"
+    },
+    "language": "Rust",
+    "name": "dreamor/MemVault",
+    "stars": 2,
+    "updated_at": "2026-10-29T02:15:31Z",
+    "url": "https://github.com/dreamor/MemVault"
+  },
+  {
+    "description": "The open ontology store. Every value typed, traced and verifiable: an ontology types every write, every field keeps its ",
+    "id": "wildstuff/lakelands",
+    "language": "Rust",
+    "name": "wildstuff/lakelands",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:15:30Z",
+    "url": "https://github.com/wildstuff/lakelands"
+  },
+  {
+    "description": "Committee Releases \u2014 documents congressional committees publish on their OWN",
+    "id": "pipeworx-io/mcp-committee-releases",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"committee-releases\": {\n      \"url\": \"https://gateway.pipeworx.io/committee-releases/mcp\"\n    }\n  }\n}"
     },
     "language": "JavaScript",
-    "name": "pipeworx-io/mcp-cataas",
+    "name": "pipeworx-io/mcp-committee-releases",
     "stars": 0,
-    "updated_at": "2026-10-29T02:00:23Z",
-    "url": "https://github.com/pipeworx-io/mcp-cataas"
-  },
-  {
-    "description": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes",
-    "id": "linny006/trending-claude-skills",
-    "language": "Python",
-    "name": "linny006/trending-claude-skills",
-    "stars": 133,
-    "updated_at": "2026-10-29T02:00:16Z",
-    "url": "https://github.com/linny006/trending-claude-skills"
-  },
-  {
-    "description": "DermLogic \u2014 Skincare Ingredient Conflict & Routine Checker. Free interactive benchmark, live SVG badges, OpenAPI 3.1 & M",
-    "id": "mulak1/derm-logic",
-    "language": "JavaScript",
-    "name": "mulak1/derm-logic",
-    "stars": 0,
-    "updated_at": "2026-10-29T02:00:16Z",
-    "url": "https://github.com/mulak1/derm-logic"
-  },
-  {
-    "description": "CarsXE MCP \u2014 wraps the CarsXE Vehicle Data API (carsxe.com)",
-    "id": "pipeworx-io/mcp-carsxe",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"carsxe\": {\n      \"url\": \"https://gateway.pipeworx.io/carsxe/mcp\"\n    }\n  }\n}"
-    },
-    "language": "JavaScript",
-    "name": "pipeworx-io/mcp-carsxe",
-    "stars": 0,
-    "updated_at": "2026-10-29T02:00:13Z",
-    "url": "https://github.com/pipeworx-io/mcp-carsxe"
+    "updated_at": "2026-10-29T02:15:29Z",
+    "url": "https://github.com/pipeworx-io/mcp-committee-releases"
   },
   {
     "description": "Free proxy list, verified around the clock: HTTP, HTTPS, SOCKS4 and SOCKS5 proxies with country, anonymity, latency and ",
@@ -51,8 +44,79 @@
     "language": "\u2014",
     "name": "hproxy-com/free-proxy-list",
     "stars": 82,
-    "updated_at": "2026-10-29T02:00:12Z",
+    "updated_at": "2026-10-29T02:15:24Z",
     "url": "https://github.com/hproxy-com/free-proxy-list"
+  },
+  {
+    "description": "Comic Vine: characters, issues, volumes, creators, publishers. Free key.",
+    "id": "pipeworx-io/mcp-comicvine",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"comicvine\": {\n      \"url\": \"https://gateway.pipeworx.io/comicvine/mcp\"\n    }\n  }\n}"
+    },
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-comicvine",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:15:19Z",
+    "url": "https://github.com/pipeworx-io/mcp-comicvine"
+  },
+  {
+    "description": "MCP server for GitLab: 277 tools for projects, MRs, issues, pipelines, wikis and more via the GitLab REST/GraphQL API",
+    "id": "zereight/gitlab-mcp",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"gitlab\": {\n      \"type\": \"http\",\n      \"url\": \"https://mcp.example.com/mcp\"\n    }\n  }\n}",
+      "install_cmd": "claude mcp add gitlab --transport stdio --scope local --env GITLAB_PERSONAL_ACCESS_TOKEN=\"$GITLAB_PERSONAL_ACCESS_TOKEN\" --env GITLAB_API_URL=https://gitlab.com/api/v4 -- zereight-mcp-gitlab",
+      "install_kind": "claude mcp add"
+    },
+    "language": "TypeScript",
+    "name": "zereight/gitlab-mcp",
+    "stars": 2074,
+    "updated_at": "2026-10-29T02:15:15Z",
+    "url": "https://github.com/zereight/gitlab-mcp"
+  },
+  {
+    "description": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes",
+    "id": "linny006/trending-claude-skills",
+    "language": "Python",
+    "name": "linny006/trending-claude-skills",
+    "stars": 133,
+    "updated_at": "2026-10-29T02:15:12Z",
+    "url": "https://github.com/linny006/trending-claude-skills"
+  },
+  {
+    "description": "\u30c7\u30d9\u30ed\u30c3\u30d1\u30fc\u30b5\u30a4\u30c8\u306e\u57f7\u7b46\u3067\u4f5c\u6210\u3057\u305f\u30b5\u30f3\u30d7\u30eb\u30b3\u30fc\u30c9",
+    "id": "ubata-mamezou/developer-site-article-examples",
+    "language": "TypeScript",
+    "name": "ubata-mamezou/developer-site-article-examples",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:15:11Z",
+    "url": "https://github.com/ubata-mamezou/developer-site-article-examples"
+  },
+  {
+    "description": "MCP server for Orbit Sentinel \u2014 space regulatory filings from FCC, ITU, UNOOSA, FAA-AST",
+    "id": "Viventine-Space/orbit-sentinel-mcp",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"orbit-sentinel\": {\n      \"command\": \"/absolute/path/to/orbit-sentinel-mcp\",\n      \"env\": {\n        \"MCP_API_URL\": \"https://orbit-sentinel.viventine.com\",\n        \"MCP_API_KEY\": \"<your-key>\"\n      }\n    }\n  }\n}",
+      "install_cmd": "claude mcp add --transport http orbit-sentinel https://orbit-sentinel.viventine.com/mcp",
+      "install_kind": "claude mcp add"
+    },
+    "language": "Go",
+    "name": "Viventine-Space/orbit-sentinel-mcp",
+    "stars": 1,
+    "updated_at": "2026-10-29T02:15:08Z",
+    "url": "https://github.com/Viventine-Space/orbit-sentinel-mcp"
+  },
+  {
+    "description": "Semantic search over your own code, documents and git history, for coding agents over MCP. One container on your machine",
+    "id": "Merp4/dexicon",
+    "install_info": {
+      "install_cmd": "claude mcp add --transport http dexicon http://localhost:8477/mcp \\",
+      "install_kind": "claude mcp add"
+    },
+    "language": "C#",
+    "name": "Merp4/dexicon",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:15:06Z",
+    "url": "https://github.com/Merp4/dexicon"
   },
   {
     "description": "Bashoor Cafe in Piroozi, Mashhad \u2014 live Persian menu, Toman/IRR prices, llms.txt, WebMCP and MCP metadata.",
@@ -60,475 +124,368 @@
     "language": "HTML",
     "name": "sepehrkeyhani00/bashoor-ai-menu",
     "stars": 1,
-    "updated_at": "2026-10-29T02:00:07Z",
+    "updated_at": "2026-10-29T02:15:06Z",
     "url": "https://github.com/sepehrkeyhani00/bashoor-ai-menu"
   },
   {
-    "description": "MCP server and Claude Code plugin for Agent Referee: independent sealed reviews of an agent\u2019s work (free daily allowance",
-    "id": "ccheez34/agent-referee-mcp",
+    "description": "MCP server for The Color API \u2014 color identification, scheme generation, and format conversion",
+    "id": "pipeworx-io/mcp-colorapi",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"agent-referee\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"agent-referee-mcp\"]\n    }\n  }\n}",
-      "install_cmd": "claude mcp add agent-referee -- npx -y agent-referee-mcp",
+      "claude_config": "{\n  \"mcpServers\": {\n    \"colorapi\": {\n      \"url\": \"https://gateway.pipeworx.io/colorapi/mcp\"\n    }\n  }\n}"
+    },
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-colorapi",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:15:00Z",
+    "url": "https://github.com/pipeworx-io/mcp-colorapi"
+  },
+  {
+    "description": "Colorado Revised Statutes \u2014 state statutes by citation, topic, and title.",
+    "id": "pipeworx-io/mcp-colorado-code",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"colorado-code\": {\n      \"url\": \"https://gateway.pipeworx.io/colorado-code/mcp\"\n    }\n  }\n}"
+    },
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-colorado-code",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:14:50Z",
+    "url": "https://github.com/pipeworx-io/mcp-colorado-code"
+  },
+  {
+    "description": "Color Pizza MCP \u2014 names hex colors using human-friendly color-name lists.",
+    "id": "pipeworx-io/mcp-color-pizza",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"color-pizza\": {\n      \"url\": \"https://gateway.pipeworx.io/color-pizza/mcp\"\n    }\n  }\n}"
+    },
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-color-pizza",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:14:40Z",
+    "url": "https://github.com/pipeworx-io/mcp-color-pizza"
+  },
+  {
+    "description": "Ultimate AI Starter Bundle multi-provider skills/MCP/plugins (Claude, Codex, Grok, Kimi, Hermes) + optional full Skyrim ",
+    "id": "SenjuWoo/Ultimate-AI-Starter-Bundle",
+    "language": "JavaScript",
+    "name": "SenjuWoo/Ultimate-AI-Starter-Bundle",
+    "stars": 6,
+    "updated_at": "2026-10-29T02:14:38Z",
+    "url": "https://github.com/SenjuWoo/Ultimate-AI-Starter-Bundle"
+  },
+  {
+    "description": "Investigate Internet outages with IODA events, alerts, and connectivity signals via MCP. STDIO or Streamable HTTP.",
+    "id": "cyanheads/ioda-outages-mcp-server",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"ioda-outages-mcp-server\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@cyanheads/ioda-outages-mcp-server\"]\n    }\n  }\n}",
+      "install_cmd": "claude mcp add --transport http ioda-outages-mcp-server https://ioda-outages.caseyjhand.com/mcp",
       "install_kind": "claude mcp add"
     },
-    "language": "JavaScript",
-    "name": "ccheez34/agent-referee-mcp",
-    "stars": 0,
-    "updated_at": "2026-10-29T02:00:05Z",
-    "url": "https://github.com/ccheez34/agent-referee-mcp"
+    "language": "TypeScript",
+    "name": "cyanheads/ioda-outages-mcp-server",
+    "stars": 1,
+    "updated_at": "2026-10-29T02:14:39Z",
+    "url": "https://github.com/cyanheads/ioda-outages-mcp-server"
   },
   {
-    "description": "CareerOneStop MCP \u2014 wraps the CareerOneStop Web API (U.S. Dept. of Labor)",
-    "id": "pipeworx-io/mcp-careeronestop",
+    "description": "Color utilities MCP.",
+    "id": "pipeworx-io/mcp-color",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"careeronestop\": {\n      \"url\": \"https://gateway.pipeworx.io/careeronestop/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"color\": {\n      \"url\": \"https://gateway.pipeworx.io/color/mcp\"\n    }\n  }\n}"
     },
     "language": "JavaScript",
-    "name": "pipeworx-io/mcp-careeronestop",
+    "name": "pipeworx-io/mcp-color",
     "stars": 0,
-    "updated_at": "2026-10-29T02:00:03Z",
-    "url": "https://github.com/pipeworx-io/mcp-careeronestop"
+    "updated_at": "2026-10-29T02:14:30Z",
+    "url": "https://github.com/pipeworx-io/mcp-color"
   },
   {
-    "description": "Carbon Interface MCP \u2014 Carbon Interface API (v1)",
-    "id": "pipeworx-io/mcp-carbon-interface",
+    "description": "Colombia SECOP MCP \u2014 Colombian government procurement (public contracting).",
+    "id": "pipeworx-io/mcp-colombia-secop",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"carbon-interface\": {\n      \"url\": \"https://gateway.pipeworx.io/carbon-interface/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"colombia-secop\": {\n      \"url\": \"https://gateway.pipeworx.io/colombia-secop/mcp\"\n    }\n  }\n}"
     },
     "language": "JavaScript",
-    "name": "pipeworx-io/mcp-carbon-interface",
+    "name": "pipeworx-io/mcp-colombia-secop",
     "stars": 0,
-    "updated_at": "2026-10-29T01:59:51Z",
-    "url": "https://github.com/pipeworx-io/mcp-carbon-interface"
+    "updated_at": "2026-10-29T02:14:20Z",
+    "url": "https://github.com/pipeworx-io/mcp-colombia-secop"
   },
   {
-    "description": "MCP server for carbon intensity data \u2014 electricity carbon emissions by region",
-    "id": "pipeworx-io/mcp-carbon",
+    "description": "\ubaa8\ub450 \ud30c\uc2f1\ud574\ubc84\ub9ac\uaca0\ub2e4 \u2014 HWP\u00b7HWPX\u00b7PDF\u00b7Office \ubb38\uc11c\ub97c Markdown\uc73c\ub85c. \uc591\uc2dd \uc790\ub3d9 \ucc44\uc6b0\uae30\uc640 \uc2e0\uad6c\ub300\uc870\ub97c \uac16\ucd98 CLI\u00b7MCP \uc11c\ubc84 | Convert Korean documents (HWP, HWPX, P",
+    "id": "chrisryugj/kordoc",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"carbon\": {\n      \"url\": \"https://gateway.pipeworx.io/carbon/mcp\"\n    }\n  }\n}"
+      "install_cmd": "npm install kordoc",
+      "install_kind": "npm install"
+    },
+    "language": "TypeScript",
+    "name": "chrisryugj/kordoc",
+    "stars": 2828,
+    "updated_at": "2026-10-29T02:14:12Z",
+    "url": "https://github.com/chrisryugj/kordoc"
+  },
+  {
+    "description": "Re-debugging Solved Failures? No Way. 500+ Evidence-graded fix lessons, One MCP Call-->https://misakanet.org",
+    "id": "Ikalus1988/MisakaNet",
+    "language": "Python",
+    "name": "Ikalus1988/MisakaNet",
+    "stars": 543,
+    "updated_at": "2026-10-29T02:14:57Z",
+    "url": "https://github.com/Ikalus1988/MisakaNet"
+  },
+  {
+    "description": "College Scorecard MCP \u2014 US Department of Education College Scorecard API",
+    "id": "pipeworx-io/mcp-college-scorecard",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"college-scorecard\": {\n      \"url\": \"https://gateway.pipeworx.io/college-scorecard/mcp\"\n    }\n  }\n}"
     },
     "language": "JavaScript",
-    "name": "pipeworx-io/mcp-carbon",
+    "name": "pipeworx-io/mcp-college-scorecard",
     "stars": 0,
-    "updated_at": "2026-10-29T01:59:41Z",
-    "url": "https://github.com/pipeworx-io/mcp-carbon"
+    "updated_at": "2026-10-29T02:14:09Z",
+    "url": "https://github.com/pipeworx-io/mcp-college-scorecard"
   },
   {
-    "description": "Mothership plugins for Claude, ChatGPT, Codex, and Cursor",
-    "id": "mothership/agent-plugins",
+    "description": "Drop AI tool links into any chat (LINE, Slack, Discord, Telegram). Get them sorted into your folders, explained and sear",
+    "id": "KevinChu1110/driftnet",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"Mothership\": {\n      \"url\": \"https://mcp.mothership.com\",\n      \"auth\": { \"CLIENT_ID\": \"cursor\" }\n    }\n  }\n}"
-    },
-    "language": "\u2014",
-    "name": "mothership/agent-plugins",
-    "stars": 2,
-    "updated_at": "2026-10-29T01:59:41Z",
-    "url": "https://github.com/mothership/agent-plugins"
-  },
-  {
-    "description": "Evidence over claims for coding agents: 55 DSH/MCP tools (23 read-only) that build, drive, capture and profile a live Wi",
-    "id": "lemonmmice/dsh-agent-toolchain",
-    "install_info": {
-      "install_cmd": "claude mcp add --scope user dsh-agent-toolchain -- cmd /c node <repo>\\mcp\\server.mjs",
+      "claude_config": "{\n  \"mcpServers\": {\n    \"driftnet\": { \"command\": \"npx\", \"args\": [\"-y\", \"driftnet\", \"mcp\"], \"env\": { \"DRIFTNET_AGENT\": \"claude-desktop\" } }\n  }\n}",
+      "install_cmd": "claude mcp add --transport http driftnet https://your-driftnet.example/mcp \\",
       "install_kind": "claude mcp add"
     },
-    "language": "JavaScript",
-    "name": "lemonmmice/dsh-agent-toolchain",
-    "stars": 3,
-    "updated_at": "2026-10-29T01:59:39Z",
-    "url": "https://github.com/lemonmmice/dsh-agent-toolchain"
-  },
-  {
-    "description": "caniuse MCP \u2014 browser feature support tables",
-    "id": "pipeworx-io/mcp-caniuse",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"caniuse\": {\n      \"url\": \"https://gateway.pipeworx.io/caniuse/mcp\"\n    }\n  }\n}"
-    },
-    "language": "JavaScript",
-    "name": "pipeworx-io/mcp-caniuse",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:59:31Z",
-    "url": "https://github.com/pipeworx-io/mcp-caniuse"
-  },
-  {
-    "description": "Free educational attention board. Attention moves first. Price is late. Not financial advice.",
-    "id": "sean0007/viral-attention-map",
-    "install_info": {
-      "install_cmd": "npm install\nnpm",
-      "install_kind": "npm install"
-    },
     "language": "TypeScript",
-    "name": "sean0007/viral-attention-map",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:59:23Z",
-    "url": "https://github.com/sean0007/viral-attention-map"
+    "name": "KevinChu1110/driftnet",
+    "stars": 15,
+    "updated_at": "2026-10-29T02:14:02Z",
+    "url": "https://github.com/KevinChu1110/driftnet"
   },
   {
-    "description": "Canada Government Procurement MCP \u2014 CanadaBuys open data (keyless).",
-    "id": "pipeworx-io/mcp-canada-tenders",
+    "description": "Coinpaprika MCP \u2014 alternative crypto data source",
+    "id": "pipeworx-io/mcp-coinpaprika",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"canada-tenders\": {\n      \"url\": \"https://gateway.pipeworx.io/canada-tenders/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"coinpaprika\": {\n      \"url\": \"https://gateway.pipeworx.io/coinpaprika/mcp\"\n    }\n  }\n}"
     },
     "language": "JavaScript",
-    "name": "pipeworx-io/mcp-canada-tenders",
+    "name": "pipeworx-io/mcp-coinpaprika",
     "stars": 1,
-    "updated_at": "2026-10-29T01:59:21Z",
-    "url": "https://github.com/pipeworx-io/mcp-canada-tenders"
+    "updated_at": "2026-10-29T02:13:59Z",
+    "url": "https://github.com/pipeworx-io/mcp-coinpaprika"
   },
   {
-    "description": "Free interactive map of AI infrastructure bottlenecks. Not investment advice.",
-    "id": "sean0007/ai-bottleneck-map",
+    "description": "CoinMarketCap MCP \u2014 crypto prices, market cap, rankings",
+    "id": "pipeworx-io/mcp-coinmarketcap",
     "install_info": {
-      "install_cmd": "npm install\nnpm",
-      "install_kind": "npm install"
-    },
-    "language": "TypeScript",
-    "name": "sean0007/ai-bottleneck-map",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:59:20Z",
-    "url": "https://github.com/sean0007/ai-bottleneck-map"
-  },
-  {
-    "description": "Free educational Faceless YouTube expectation scorecard. Quiz \u2192 HIGH/MED/LOW. Not financial advice.",
-    "id": "sean0007/faceless-yt-risk-check",
-    "install_info": {
-      "install_cmd": "npm install\nnpm",
-      "install_kind": "npm install"
-    },
-    "language": "TypeScript",
-    "name": "sean0007/faceless-yt-risk-check",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:59:16Z",
-    "url": "https://github.com/sean0007/faceless-yt-risk-check"
-  },
-  {
-    "description": "Free calculator: what Booking.com/Expedia commissions cost your hotel each year, and what direct bookings would save.",
-    "id": "sean0007/hotel-ota-calculator",
-    "install_info": {
-      "install_cmd": "npm install\nnpm",
-      "install_kind": "npm install"
-    },
-    "language": "TypeScript",
-    "name": "sean0007/hotel-ota-calculator",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:59:11Z",
-    "url": "https://github.com/sean0007/hotel-ota-calculator"
-  },
-  {
-    "description": "California Office of Tax Appeals (OTA) opinions \u2014 search by statute",
-    "id": "pipeworx-io/mcp-california-tax-appeals",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"california-tax-appeals\": {\n      \"url\": \"https://gateway.pipeworx.io/california-tax-appeals/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"coinmarketcap\": {\n      \"url\": \"https://gateway.pipeworx.io/coinmarketcap/mcp\"\n    }\n  }\n}"
     },
     "language": "JavaScript",
-    "name": "pipeworx-io/mcp-california-tax-appeals",
+    "name": "pipeworx-io/mcp-coinmarketcap",
     "stars": 0,
-    "updated_at": "2026-10-29T01:59:10Z",
-    "url": "https://github.com/pipeworx-io/mcp-california-tax-appeals"
+    "updated_at": "2026-10-29T02:13:49Z",
+    "url": "https://github.com/pipeworx-io/mcp-coinmarketcap"
   },
   {
-    "description": "Free founder scorecard: MOAT idea score, close-rate price headroom, 30-day cash check, old email list value.",
-    "id": "sean0007/founder-scorecard",
-    "language": "TypeScript",
-    "name": "sean0007/founder-scorecard",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:59:08Z",
-    "url": "https://github.com/sean0007/founder-scorecard"
-  },
-  {
-    "description": "Free pitch roaster: five judges score your startup pitch 1-10, one verdict, one change. Deterministic rubric, no AI bill",
-    "id": "sean0007/pitch-roast",
+    "description": "Backend for AI coding agents on CloudBase \u2014 database, auth, functions via Plugin, Skills & MCP.",
+    "id": "TencentCloudBase/CloudBase-AI-Toolkit",
     "install_info": {
-      "install_cmd": "npm install\nnpm",
-      "install_kind": "npm install"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"cloudbase\": {\n      \"command\": \"npx\",\n      \"args\": [\"@cloudbase/cloudbase-mcp@latest\"]\n    }\n  }\n}"
     },
     "language": "TypeScript",
-    "name": "sean0007/pitch-roast",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:59:04Z",
-    "url": "https://github.com/sean0007/pitch-roast"
+    "name": "TencentCloudBase/CloudBase-AI-Toolkit",
+    "stars": 1152,
+    "updated_at": "2026-10-29T02:13:44Z",
+    "url": "https://github.com/TencentCloudBase/CloudBase-AI-Toolkit"
   },
   {
-    "description": "Free calculator: open-source swaps for your SaaS bill, real savings after hosting and setup, and the catches.",
-    "id": "sean0007/saas-bill-cutter",
+    "description": "CoinGlass MCP \u2014 wraps the CoinGlass Derivatives API v4 (coinglass.com)",
+    "id": "pipeworx-io/mcp-coinglass",
     "install_info": {
-      "install_cmd": "npm install\nnpm",
-      "install_kind": "npm install"
-    },
-    "language": "TypeScript",
-    "name": "sean0007/saas-bill-cutter",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:59:00Z",
-    "url": "https://github.com/sean0007/saas-bill-cutter"
-  },
-  {
-    "description": "California Jury Instructions \u2014 CACI (civil) and CALCRIM (criminal),",
-    "id": "pipeworx-io/mcp-california-jury-instructions",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"california-jury-instructions\": {\n      \"url\": \"https://gateway.pipeworx.io/california-jury-instructions/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"coinglass\": {\n      \"url\": \"https://gateway.pipeworx.io/coinglass/mcp\"\n    }\n  }\n}"
     },
     "language": "JavaScript",
-    "name": "pipeworx-io/mcp-california-jury-instructions",
+    "name": "pipeworx-io/mcp-coinglass",
     "stars": 0,
-    "updated_at": "2026-10-29T01:59:00Z",
-    "url": "https://github.com/pipeworx-io/mcp-california-jury-instructions"
+    "updated_at": "2026-10-29T02:13:39Z",
+    "url": "https://github.com/pipeworx-io/mcp-coinglass"
   },
   {
-    "description": "Paste a Google/Meta Ads notice \u2192 HIGH/MED/LOW educational risk card. Not legal advice.",
-    "id": "sean0007/ads-risk-check",
+    "description": "CoinGecko MCP \u2014 wraps CoinGecko free API (no auth required)",
+    "id": "pipeworx-io/mcp-coingecko",
     "install_info": {
-      "install_cmd": "npm install\nnpm",
-      "install_kind": "npm install"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"coingecko\": {\n      \"url\": \"https://gateway.pipeworx.io/coingecko/mcp\"\n    }\n  }\n}"
     },
-    "language": "TypeScript",
-    "name": "sean0007/ads-risk-check",
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-coingecko",
     "stars": 0,
-    "updated_at": "2026-10-29T01:58:57Z",
-    "url": "https://github.com/sean0007/ads-risk-check"
+    "updated_at": "2026-10-29T02:13:29Z",
+    "url": "https://github.com/pipeworx-io/mcp-coingecko"
   },
   {
-    "description": "Free App Store wrapper / Guideline 4.2\u20134.3 precheck for Capacitor & WebView apps. Not legal advice.",
-    "id": "sean0007/appgate-pack",
-    "install_info": {
-      "install_cmd": "npm install\nnpm",
-      "install_kind": "npm install"
-    },
-    "language": "TypeScript",
-    "name": "sean0007/appgate-pack",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:58:53Z",
-    "url": "https://github.com/sean0007/appgate-pack"
-  },
-  {
-    "description": "Self-hosted control center for AI coding agents across your machines: Claude Code, Codex, Gemini CLI, opencode, Aider an",
-    "id": "hbasheer/yardbell",
-    "language": "Rust",
-    "name": "hbasheer/yardbell",
+    "description": "\u4e3a\u300cSnowLuma + qq-bridge + DSH\uff08\u5927\u80a5\u9c7c\uff09+ DeepSeek\u300d\u8fd9\u6761 QQ \u673a\u5668\u4eba\u94fe\u8def\u8865\u4e0a\u63d2\u4ef6\u5c42\uff1a46 \u4e2a\u63d2\u4ef6 / 75 \u4e2a\u5de5\u5177\uff0c\u8986\u76d6\u7fa4\u7ba1\u3001\u7b7e\u5230\u3001\u8bb0\u8d26\u3001\u5907\u5fd8\u3001\u957f\u671f\u8bb0\u5fc6\u3001\u8bed\u97f3\u5408\u6210\u3001AI \u753b\u753b\u3001\u6210\u8bed\u63a5\u9f99\u7b49\u5c0f\u6e38\u620f\u3002\u7f51\u9875\u70b9\u4e00",
+    "id": "qqbot-hub/qqbot-plugins",
+    "language": "JavaScript",
+    "name": "qqbot-hub/qqbot-plugins",
     "stars": 1,
-    "updated_at": "2026-10-29T02:00:22Z",
-    "url": "https://github.com/hbasheer/yardbell"
+    "updated_at": "2026-10-29T02:13:20Z",
+    "url": "https://github.com/qqbot-hub/qqbot-plugins"
   },
   {
-    "description": "California Codes \u2014 the text of California statutes, by citation.",
-    "id": "pipeworx-io/mcp-california-code",
+    "description": "Open-source MCP server for LinkedIn. Give Claude and any MCP-compatible AI agent access to profiles, companies, jobs, an",
+    "id": "stickerdaniel/linkedin-mcp-server",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"california-code\": {\n      \"url\": \"https://gateway.pipeworx.io/california-code/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"mcp-server-linkedin\": {\n      \"command\": \"uvx\",\n      \"args\": [\"mcp-server-linkedin@latest\"],\n      \"env\": { \"UV_HTTP_TIMEOUT\": \"300\" }\n    }\n  }\n}",
+      "install_cmd": "uvx mcp-server-linkedin@latest --import-from-browser",
+      "install_kind": "uvx"
     },
-    "language": "JavaScript",
-    "name": "pipeworx-io/mcp-california-code",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:58:50Z",
-    "url": "https://github.com/pipeworx-io/mcp-california-code"
+    "language": "Python",
+    "name": "stickerdaniel/linkedin-mcp-server",
+    "stars": 4037,
+    "updated_at": "2026-10-29T02:13:19Z",
+    "url": "https://github.com/stickerdaniel/linkedin-mcp-server"
   },
   {
-    "description": "Agent-first Japan travel planner: where to stay, festivals, and what to do by city, month, and traveler. Free JSON API +",
-    "id": "sean0007/japan-trip-brain",
-    "language": "TypeScript",
-    "name": "sean0007/japan-trip-brain",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:58:50Z",
-    "url": "https://github.com/sean0007/japan-trip-brain"
-  },
-  {
-    "description": "CALI eLangdell MCP \u2014 the free, Creative Commons-licensed US law-school",
-    "id": "pipeworx-io/mcp-cali-elangdell",
+    "description": "Local engines for ATO benchmarks, Payday Super and Division 7A loans, served by the aus-accounting-mcp server. Synthetic",
+    "id": "ryanduguid/australian-accounting",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"cali-elangdell\": {\n      \"url\": \"https://gateway.pipeworx.io/cali-elangdell/mcp\"\n    }\n  }\n}"
-    },
-    "language": "JavaScript",
-    "name": "pipeworx-io/mcp-cali-elangdell",
-    "stars": 1,
-    "updated_at": "2026-10-29T01:58:40Z",
-    "url": "https://github.com/pipeworx-io/mcp-cali-elangdell"
-  },
-  {
-    "description": "Calendly MCP Pack \u2014 wraps the Calendly API v2 for scheduling data.",
-    "id": "pipeworx-io/mcp-calendly",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"calendly\": {\n      \"url\": \"https://gateway.pipeworx.io/calendly/mcp\"\n    }\n  }\n}"
-    },
-    "language": "JavaScript",
-    "name": "pipeworx-io/mcp-calendly",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:58:30Z",
-    "url": "https://github.com/pipeworx-io/mcp-calendly"
-  },
-  {
-    "description": "NCI CACTUS Chemical Identifier Resolver MCP.",
-    "id": "pipeworx-io/mcp-cactus",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"cactus\": {\n      \"url\": \"https://gateway.pipeworx.io/cactus/mcp\"\n    }\n  }\n}"
-    },
-    "language": "JavaScript",
-    "name": "pipeworx-io/mcp-cactus",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:58:20Z",
-    "url": "https://github.com/pipeworx-io/mcp-cactus"
-  },
-  {
-    "description": "\u539f\u58f0 \u00b7 \u64ad\u5ba2\u6df1\u8bfb \u2014 \u6bcf\u5929\u4ece 49 \u6863\u4e2d\u82f1\u6587\u64ad\u5ba2\u91cc\u6311\u51fa\u503c\u5f97\u8bb0\u4f4f\u7684\u5224\u65ad\uff0c\u8981\u70b9\u4e0e\u91d1\u53e5\u5168\u90e8\u951a\u5b9a\u539f\u58f0\u65f6\u95f4\u6233 \u00b7 https://ourword.ai/podcast",
-    "id": "woowoeth/podcast",
-    "language": "HTML",
-    "name": "woowoeth/podcast",
-    "stars": 1,
-    "updated_at": "2026-10-29T01:58:11Z",
-    "url": "https://github.com/woowoeth/podcast"
-  },
-  {
-    "description": "California state contract awards & purchase orders: search, top vendors, agency spend \u2014 keyless",
-    "id": "pipeworx-io/mcp-ca-procurement",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"ca-procurement\": {\n      \"url\": \"https://gateway.pipeworx.io/ca-procurement/mcp\"\n    }\n  }\n}"
-    },
-    "language": "JavaScript",
-    "name": "pipeworx-io/mcp-ca-procurement",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:58:10Z",
-    "url": "https://github.com/pipeworx-io/mcp-ca-procurement"
-  },
-  {
-    "description": "AI agents keep redoing the same web tasks from scratch. Show a browser task once: Meta's Muse Spark turns it into a veri",
-    "id": "jai-rathore/agentboard",
-    "install_info": {
-      "install_cmd": "claude mcp add agentboard -- npx -y github:jai-rathore/agentboard",
-      "install_kind": "claude mcp add"
-    },
-    "language": "JavaScript",
-    "name": "jai-rathore/agentboard",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:58:01Z",
-    "url": "https://github.com/jai-rathore/agentboard"
-  },
-  {
-    "description": "California DHCS Medi-Cal Suspended and Ineligible (S&I) Provider List",
-    "id": "pipeworx-io/mcp-ca-medical-exclusions",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"ca-medical-exclusions\": {\n      \"url\": \"https://gateway.pipeworx.io/ca-medical-exclusions/mcp\"\n    }\n  }\n}"
-    },
-    "language": "JavaScript",
-    "name": "pipeworx-io/mcp-ca-medical-exclusions",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:58:00Z",
-    "url": "https://github.com/pipeworx-io/mcp-ca-medical-exclusions"
-  },
-  {
-    "description": "CSOAI Ltd \u2014 Council of AI. GSPC AI-behaviour measurement, signed evidence and free verification. Evidence bundles and pr",
-    "id": "CSOAI-ORG/councilof-ai",
-    "install_info": {
-      "install_cmd": "pip install csoai-gspc",
-      "install_kind": "pip install"
-    },
-    "language": "HTML",
-    "name": "CSOAI-ORG/councilof-ai",
-    "stars": 3,
-    "updated_at": "2026-10-29T01:59:34Z",
-    "url": "https://github.com/CSOAI-ORG/councilof-ai"
-  },
-  {
-    "description": "California Grants Portal MCP \u2014 open State of California grant funding opportunities (keyless).",
-    "id": "pipeworx-io/mcp-ca-grants",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"ca-grants\": {\n      \"url\": \"https://gateway.pipeworx.io/ca-grants/mcp\"\n    }\n  }\n}"
-    },
-    "language": "JavaScript",
-    "name": "pipeworx-io/mcp-ca-grants",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:57:49Z",
-    "url": "https://github.com/pipeworx-io/mcp-ca-grants"
-  },
-  {
-    "description": "Precision documentation from OpenAPI, MCP, Doxygen, and Markdown guides. Static HTML you own.",
-    "id": "sourcey/sourcey",
-    "language": "TypeScript",
-    "name": "sourcey/sourcey",
-    "stars": 1376,
-    "updated_at": "2026-10-29T01:57:44Z",
-    "url": "https://github.com/sourcey/sourcey"
-  },
-  {
-    "description": "California manufacturer drug list-price (WAC) disclosures \u2014 HCAI Cost Transparency Rx (CTRx) program (fleet #3245).",
-    "id": "pipeworx-io/mcp-ca-drug-price-transparency",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"ca-drug-price-transparency\": {\n      \"url\": \"https://gateway.pipeworx.io/ca-drug-price-transparency/mcp\"\n    }\n  }\n}"
-    },
-    "language": "JavaScript",
-    "name": "pipeworx-io/mcp-ca-drug-price-transparency",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:57:39Z",
-    "url": "https://github.com/pipeworx-io/mcp-ca-drug-price-transparency"
-  },
-  {
-    "description": "Documents MCP server - read document completely locally to allow LLM access the contents instead of image/document bytes",
-    "id": "teran/mcp-documents",
-    "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"documents\": {\n      \"command\": \"/absolute/path/to/mcp-documents/target/release/mcp-documents\"\n    }\n  }\n}",
-      "install_cmd": "cargo install cargo-llvm-cov",
-      "install_kind": "cargo install"
+      "install_cmd": "uvx --from payday-super-checker",
+      "install_kind": "uvx"
     },
     "language": "Rust",
-    "name": "teran/mcp-documents",
-    "stars": 0,
-    "updated_at": "2026-10-29T01:58:19Z",
-    "url": "https://github.com/teran/mcp-documents"
+    "name": "ryanduguid/australian-accounting",
+    "stars": 4,
+    "updated_at": "2026-10-29T02:13:19Z",
+    "url": "https://github.com/ryanduguid/australian-accounting"
   },
   {
-    "description": "California DMV: vehicle and EV registrations by ZIP, field offices, forms, insurer NAIC codes",
-    "id": "pipeworx-io/mcp-ca-dmv",
+    "description": "Coinbase Exchange public MCP.",
+    "id": "pipeworx-io/mcp-coinbase-exchange",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"ca-dmv\": {\n      \"url\": \"https://gateway.pipeworx.io/ca-dmv/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"coinbase-exchange\": {\n      \"url\": \"https://gateway.pipeworx.io/coinbase-exchange/mcp\"\n    }\n  }\n}"
     },
     "language": "JavaScript",
-    "name": "pipeworx-io/mcp-ca-dmv",
+    "name": "pipeworx-io/mcp-coinbase-exchange",
     "stars": 0,
-    "updated_at": "2026-10-29T01:57:29Z",
-    "url": "https://github.com/pipeworx-io/mcp-ca-dmv"
+    "updated_at": "2026-10-29T02:13:18Z",
+    "url": "https://github.com/pipeworx-io/mcp-coinbase-exchange"
   },
   {
-    "description": "Self-hosted shared memory, encrypted credentials, and scoped connectors for AI agents. MCP and HTTP for Claude Code, Cod",
-    "id": "nikira-studio/agent-core",
+    "description": "Codex Alimentarius maximum residue limits \u2014 the internationally agreed legal",
+    "id": "pipeworx-io/mcp-codex-mrl",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"agent-core\": {\n      \"type\": \"http\",\n      \"url\": \"http://localhost:3500/mcp\",\n      \"headers\": {\n        \"Authorization\": \"Bearer YOUR_AGENT_API_KEY\"\n      }\n    }\n  }\n}",
-      "install_cmd": "claude mcp add --transport http --scope user agent-core http://localhost:3500/mcp \\",
+      "claude_config": "{\n  \"mcpServers\": {\n    \"codex-mrl\": {\n      \"url\": \"https://gateway.pipeworx.io/codex-mrl/mcp\"\n    }\n  }\n}"
+    },
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-codex-mrl",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:13:08Z",
+    "url": "https://github.com/pipeworx-io/mcp-codex-mrl"
+  },
+  {
+    "description": "Codex GSFA \u2014 the FAO/WHO General Standard for Food Additives (CXS 192-1995).",
+    "id": "pipeworx-io/mcp-codex-gsfa",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"codex-gsfa\": {\n      \"url\": \"https://gateway.pipeworx.io/codex-gsfa/mcp\"\n    }\n  }\n}"
+    },
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-codex-gsfa",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:12:53Z",
+    "url": "https://github.com/pipeworx-io/mcp-codex-gsfa"
+  },
+  {
+    "description": "MCP server and REST API for academic conference & journal deadlines: CCF/CORE/QUALIS rankings plus the Conference Partne",
+    "id": "sundou82/conference-partner-mcp",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"conference-partner\": {\n      \"url\": \"https://www.myhuiban.com/mcp\"\n    }\n  }\n}",
+      "install_cmd": "claude mcp add --transport http conference-partner https://www.myhuiban.com/mcp",
       "install_kind": "claude mcp add"
     },
     "language": "Python",
-    "name": "nikira-studio/agent-core",
+    "name": "sundou82/conference-partner-mcp",
     "stars": 0,
-    "updated_at": "2026-10-29T01:57:20Z",
-    "url": "https://github.com/nikira-studio/agent-core"
+    "updated_at": "2026-10-29T02:12:52Z",
+    "url": "https://github.com/sundou82/conference-partner-mcp"
   },
   {
-    "description": "ca-debtwatch \u2014 California municipal bond issuance (CDIAC / DebtWatch)",
-    "id": "pipeworx-io/mcp-ca-debtwatch",
+    "description": "Codex Alimentarius CXS 193 \u2014 maximum levels for contaminants and toxins in",
+    "id": "pipeworx-io/mcp-codex-contaminants",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"ca-debtwatch\": {\n      \"url\": \"https://gateway.pipeworx.io/ca-debtwatch/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"codex-contaminants\": {\n      \"url\": \"https://gateway.pipeworx.io/codex-contaminants/mcp\"\n    }\n  }\n}"
     },
     "language": "JavaScript",
-    "name": "pipeworx-io/mcp-ca-debtwatch",
+    "name": "pipeworx-io/mcp-codex-contaminants",
     "stars": 0,
-    "updated_at": "2026-10-29T01:57:18Z",
-    "url": "https://github.com/pipeworx-io/mcp-ca-debtwatch"
+    "updated_at": "2026-10-29T02:12:43Z",
+    "url": "https://github.com/pipeworx-io/mcp-codex-contaminants"
   },
   {
-    "description": "\u2b50\ufe0f Self-hostable AI support for Discord, GitHub, Slack & Discourse communities. Answers from your knowledge source, chec",
-    "id": "answerLoops/answerLoops",
-    "language": "TypeScript",
-    "name": "answerLoops/answerLoops",
-    "stars": 23,
-    "updated_at": "2026-10-29T01:57:10Z",
-    "url": "https://github.com/answerLoops/answerLoops"
-  },
-  {
-    "description": "Business Wire MCP \u2014 press releases from Business Wire's all-news RSS feed.",
-    "id": "pipeworx-io/mcp-businesswire",
+    "description": "Measured, receipt-backed facts on paid AI-agent (x402) services. Remote MCP server: https://botsrated.com/mcp",
+    "id": "botsrated/botsrated",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"businesswire\": {\n      \"url\": \"https://gateway.pipeworx.io/businesswire/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"botsrated\": { \"type\": \"streamableHttp\", \"url\": \"https://botsrated.com/mcp\" }\n  }\n}",
+      "install_cmd": "claude mcp add --transport http botsrated https://botsrated.com/mcp",
+      "install_kind": "claude mcp add"
+    },
+    "language": "Python",
+    "name": "botsrated/botsrated",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:12:35Z",
+    "url": "https://github.com/botsrated/botsrated"
+  },
+  {
+    "description": "Codewars user profiles, completed kata, authored kata, kata detail. Keyless.",
+    "id": "pipeworx-io/mcp-codewars",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"codewars\": {\n      \"url\": \"https://gateway.pipeworx.io/codewars/mcp\"\n    }\n  }\n}"
     },
     "language": "JavaScript",
-    "name": "pipeworx-io/mcp-businesswire",
+    "name": "pipeworx-io/mcp-codewars",
     "stars": 0,
-    "updated_at": "2026-10-29T01:57:08Z",
-    "url": "https://github.com/pipeworx-io/mcp-businesswire"
+    "updated_at": "2026-10-29T02:12:33Z",
+    "url": "https://github.com/pipeworx-io/mcp-codewars"
+  },
+  {
+    "description": "Code::Stats public coding-XP profiles (codestats.net)",
+    "id": "pipeworx-io/mcp-codestats",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"codestats\": {\n      \"url\": \"https://gateway.pipeworx.io/codestats/mcp\"\n    }\n  }\n}"
+    },
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-codestats",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:12:23Z",
+    "url": "https://github.com/pipeworx-io/mcp-codestats"
+  },
+  {
+    "description": "Codeforces competitive programming users, contests, problems",
+    "id": "pipeworx-io/mcp-codeforces",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"codeforces\": {\n      \"url\": \"https://gateway.pipeworx.io/codeforces/mcp\"\n    }\n  }\n}"
+    },
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-codeforces",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:12:11Z",
+    "url": "https://github.com/pipeworx-io/mcp-codeforces"
+  },
+  {
+    "description": "MCP server for cocktail recipes \u2014 search drinks, get ingredients and mixing instructions",
+    "id": "pipeworx-io/mcp-cocktails",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"cocktails\": {\n      \"url\": \"https://gateway.pipeworx.io/cocktails/mcp\"\n    }\n  }\n}"
+    },
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-cocktails",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:11:57Z",
+    "url": "https://github.com/pipeworx-io/mcp-cocktails"
+  },
+  {
+    "description": "Free, open source task manager and Markdown notes for Windows and macOS. An archive that keeps what each task taught you",
+    "id": "rgdevment/Tisty",
+    "language": "Rust",
+    "name": "rgdevment/Tisty",
+    "stars": 5,
+    "updated_at": "2026-10-29T02:13:08Z",
+    "url": "https://github.com/rgdevment/Tisty"
   },
   {
     "description": "Team knowledge evaporates daily \u2014 pairing sessions, debugging context, architectural rationale lost to Slack. Distillery",
@@ -540,53 +497,103 @@
     "language": "Python",
     "name": "norrietaylor/distillery",
     "stars": 25,
-    "updated_at": "2026-10-29T01:59:40Z",
+    "updated_at": "2026-10-29T02:11:56Z",
     "url": "https://github.com/norrietaylor/distillery"
   },
   {
-    "description": "Re-debugging Solved Failures? No Way. 500+ Evidence-graded fix lessons, One MCP Call-->https://misakanet.org",
-    "id": "Ikalus1988/MisakaNet",
-    "language": "Python",
-    "name": "Ikalus1988/MisakaNet",
-    "stars": 543,
-    "updated_at": "2026-10-29T01:57:51Z",
-    "url": "https://github.com/Ikalus1988/MisakaNet"
+    "description": "Carrick maps your entire TypeScript codebase across services and repositories, giving AI agents full context on existing",
+    "id": "carrick-tools/carrick",
+    "install_info": {
+      "install_cmd": "npm install -g carrick",
+      "install_kind": "npm install -g"
+    },
+    "language": "Rust",
+    "name": "carrick-tools/carrick",
+    "stars": 7,
+    "updated_at": "2026-10-29T02:12:14Z",
+    "url": "https://github.com/carrick-tools/carrick"
   },
   {
-    "description": "Business Feeds MCP.",
-    "id": "pipeworx-io/mcp-business-feeds",
+    "description": "Cobalt Intelligence MCP \u2014 US Secretary-of-State business registration, UCC",
+    "id": "pipeworx-io/mcp-cobalt",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"business-feeds\": {\n      \"url\": \"https://gateway.pipeworx.io/business-feeds/mcp\"\n    }\n  }\n}"
+      "claude_config": "{\n  \"mcpServers\": {\n    \"cobalt\": {\n      \"url\": \"https://gateway.pipeworx.io/cobalt/mcp\"\n    }\n  }\n}"
     },
     "language": "JavaScript",
-    "name": "pipeworx-io/mcp-business-feeds",
+    "name": "pipeworx-io/mcp-cobalt",
     "stars": 0,
-    "updated_at": "2026-10-29T01:56:58Z",
-    "url": "https://github.com/pipeworx-io/mcp-business-feeds"
+    "updated_at": "2026-10-29T02:11:47Z",
+    "url": "https://github.com/pipeworx-io/mcp-cobalt"
   },
   {
-    "description": "Coordinate your coding agents across harnesses and models. Shared tasks, shared memory, and verification records any age",
-    "id": "escoffier-labs/brigade",
+    "description": "Distributed, self-hostable uptime monitoring: 40 check types, multi-region workers, private agents, status pages, incide",
+    "id": "fclairamb/solidping",
     "install_info": {
-      "install_cmd": "npm install --global",
-      "install_kind": "npm install"
+      "install_cmd": "docker run -p 4000:4000 --hostname solidping -v solidping-data:/data ghcr.io/fclairamb/solidping",
+      "install_kind": "docker run"
     },
-    "language": "Python",
-    "name": "escoffier-labs/brigade",
-    "stars": 81,
-    "updated_at": "2026-10-29T01:59:02Z",
-    "url": "https://github.com/escoffier-labs/brigade"
+    "language": "Go",
+    "name": "fclairamb/solidping",
+    "stars": 26,
+    "updated_at": "2026-10-29T02:12:18Z",
+    "url": "https://github.com/fclairamb/solidping"
   },
   {
-    "description": "Motion perception for AI agents: see and measure video, animation and synthetic scenes as labelled frames and real numbe",
-    "id": "tylergibbs1/kymo",
+    "description": "Local-first memory layer for AI coding agents \u2014 Markdown as source of truth, MCP server + CLI, human-reviewed capture, t",
+    "id": "stoneskin/open-memex",
     "install_info": {
-      "claude_config": "{\n  \"mcpServers\": {\n    \"kymo\": { \"command\": \"node\", \"args\": [\"/path/to/kymo/apps/cli/bin/kymo.js\", \"mcp\"] }\n  }\n}"
+      "install_cmd": "claude mcp add open-memex -- open-memex mcp",
+      "install_kind": "claude mcp add"
     },
     "language": "TypeScript",
-    "name": "tylergibbs1/kymo",
+    "name": "stoneskin/open-memex",
+    "stars": 6,
+    "updated_at": "2026-10-29T02:15:08Z",
+    "url": "https://github.com/stoneskin/open-memex"
+  },
+  {
+    "description": "CNPJ Brazil MCP \u2014 Brazilian company-registry (Receita Federal) lookup via",
+    "id": "pipeworx-io/mcp-cnpj-br",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"cnpj-br\": {\n      \"url\": \"https://gateway.pipeworx.io/cnpj-br/mcp\"\n    }\n  }\n}"
+    },
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-cnpj-br",
     "stars": 0,
-    "updated_at": "2026-10-29T01:56:48Z",
-    "url": "https://github.com/tylergibbs1/kymo"
+    "updated_at": "2026-10-29T02:11:37Z",
+    "url": "https://github.com/pipeworx-io/mcp-cnpj-br"
+  },
+  {
+    "description": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory, autonomous execution, cryptographic",
+    "id": "osaurus-ai/osaurus",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"osaurus\": {\n      \"command\": \"osaurus\",\n      \"args\": [\"mcp\"]\n    }\n  }\n}"
+    },
+    "language": "Swift",
+    "name": "osaurus-ai/osaurus",
+    "stars": 8091,
+    "updated_at": "2026-10-29T02:11:36Z",
+    "url": "https://github.com/osaurus-ai/osaurus"
+  },
+  {
+    "description": "Spain CNMV Regulated Filings MCP \u2014 keyless, same-day-fresh.",
+    "id": "pipeworx-io/mcp-cnmv-filings",
+    "install_info": {
+      "claude_config": "{\n  \"mcpServers\": {\n    \"cnmv-filings\": {\n      \"url\": \"https://gateway.pipeworx.io/cnmv-filings/mcp\"\n    }\n  }\n}"
+    },
+    "language": "JavaScript",
+    "name": "pipeworx-io/mcp-cnmv-filings",
+    "stars": 0,
+    "updated_at": "2026-10-29T02:11:27Z",
+    "url": "https://github.com/pipeworx-io/mcp-cnmv-filings"
+  },
+  {
+    "description": "You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work.",
+    "id": "777genius/agent-teams-ai",
+    "language": "TypeScript",
+    "name": "777genius/agent-teams-ai",
+    "stars": 2366,
+    "updated_at": "2026-10-29T02:11:24Z",
+    "url": "https://github.com/777genius/agent-teams-ai"
   }
 ]
