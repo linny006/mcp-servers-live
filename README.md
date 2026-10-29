@@ -44,7 +44,7 @@ expired items removed — so you can rely on what you see being current.
 
 ## 📋 Current Items
 
-> ⏰ Last updated: 2026-10-29 06:30 UTC
+> ⏰ Last updated: 2026-10-29 06:45 UTC
 >
 > Data source: `GitHub Search API`
 >
@@ -53,56 +53,56 @@ expired items removed — so you can rely on what you see being current.
 <!-- TRACKER_TABLE_START -->
 | # | Name | ⭐ | Lang | Updated | Install | Description |
 |---|------|---|------|---------|---------|-------------|
-| 1 | [pipeworx-io/mcp-statcan](https://github.com/pipeworx-io/mcp-statcan) | 0 | JavaScript | 2026-10-29 | — | StatCan MCP — Statistics Canada (StatCan) time-series via the Web Data |
-| 2 | [Mygentic-AI/cello-client](https://github.com/Mygentic-AI/cello-client) | 1 | TypeScript | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/Mygentic-AI/cello-client/) | https://cello.mygentic.ai/l/2axsGFs The official client for the CELLO protocol — lets agents such as Claude Code, Hermes |
-| 3 | [linny006/trending-claude-skills](https://github.com/linny006/trending-claude-skills) | 133 | Python | 2026-10-29 | — | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
-| 4 | [pipeworx-io/mcp-statbel-be](https://github.com/pipeworx-io/mcp-statbel-be) | 0 | JavaScript | 2026-10-29 | — | Statbel — Statistics Belgium (be.STAT / bestat) open data MCP. |
-| 5 | [hproxy-com/free-proxy-list](https://github.com/hproxy-com/free-proxy-list) | 82 | — | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/hproxy-com/free-proxy-list/) | Free proxy list, verified around the clock: HTTP, HTTPS, SOCKS4 and SOCKS5 proxies with country, anonymity, latency and  |
-| 6 | [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata) | 15617 | TypeScript | 2026-10-29 | — | The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for building trusted data context and busine |
-| 7 | [sepehrkeyhani00/bashoor-ai-menu](https://github.com/sepehrkeyhani00/bashoor-ai-menu) | 1 | HTML | 2026-10-29 | — | Bashoor Cafe in Piroozi, Mashhad — live Persian menu, Toman/IRR prices, llms.txt, WebMCP and MCP metadata. |
-| 8 | [zeegzoog/godot-mcp](https://github.com/zeegzoog/godot-mcp) | 0 | Rust | 2026-10-29 | — | High-performance Model Context Protocol (MCP) server for the Godot Game Engine. |
-| 9 | [pipeworx-io/mcp-statbank-md](https://github.com/pipeworx-io/mcp-statbank-md) | 0 | JavaScript | 2026-10-29 | — | National Bureau of Statistics of Moldova (Statbank) PxWeb MCP. |
-| 10 | [evb0110/evb-viewer](https://github.com/evb0110/evb-viewer) | 5 | TypeScript | 2026-10-29 | — | Scanned-document workbench that AI agents can operate: clean, OCR, annotate PDF and DjVu, with a local MCP server. macOS |
-| 11 | [pipeworx-io/mcp-stat-lv](https://github.com/pipeworx-io/mcp-stat-lv) | 0 | JavaScript | 2026-10-29 | — | Statistics Latvia / Official Statistics Portal (data.stat.gov.lv) PxWeb MCP. |
-| 12 | [sinolion/fleet](https://github.com/sinolion/fleet) | 0 | Python | 2026-10-29 | — | Let Claude Code, Codex and Gemini use every machine you own: which GPUs are free, what jobs and models are running, what |
-| 13 | [pipeworx-io/mcp-stat-gl](https://github.com/pipeworx-io/mcp-stat-gl) | 0 | JavaScript | 2026-10-29 | — | Statistics Greenland (Grønlands Statistik) PxWeb MCP. |
-| 14 | [Aiyo28/yzel](https://github.com/Aiyo28/yzel) | 5 | Python | 2026-10-29 | ✅ [uvx](https://linny006.github.io/mcp-servers-live/r/Aiyo28/yzel/) | MCP connectors for CIS business tools — 1C, Wildberries, Ozon, Bitrix24, AmoCRM, Moysklad, Telegram, iiko. Eight servers |
-| 15 | [pipeworx-io/mcp-stat-ee](https://github.com/pipeworx-io/mcp-stat-ee) | 1 | JavaScript | 2026-10-29 | — | Statistics Estonia (andmed.stat.ee) PxWeb MCP. Keyless. |
-| 16 | [mxsm/rocketmq-rust](https://github.com/mxsm/rocketmq-rust) | 1530 | Rust | 2026-10-29 | — | 🚀 Apache RocketMQ built in Rust 🦀 — faster, safer, and more memory-efficient. Powering high-performance messaging for th |
-| 17 | [pipeworx-io/mcp-startuphub](https://github.com/pipeworx-io/mcp-startuphub) | 0 | JavaScript | 2026-10-29 | — | StartupHub MCP — wraps the StartupHub.ai private-market API (startuphub.ai) |
-| 18 | [BeppeTemp/cartographer](https://github.com/BeppeTemp/cartographer) | 49 | Go | 2026-10-29 | — | A shared, git-backed wiki your team's AI agents maintain but can't break — Claude Code, Codex, OpenCode and any MCP clie |
-| 19 | [Uuriko/project-room](https://github.com/Uuriko/project-room) | 2 | JavaScript | 2026-10-29 | — | A shared workspace where people and AI agents work together. Agents join over MCP or HTTP, claim tasks on a shared board |
-| 20 | [pipeworx-io/mcp-stackexchange](https://github.com/pipeworx-io/mcp-stackexchange) | 1 | JavaScript | 2026-10-29 | — | MCP server for StackExchange — search questions and answers from Stack Overflow |
-| 21 | [IvanMurzak/Unreal-MCP](https://github.com/IvanMurzak/Unreal-MCP) | 52 | C++ | 2026-10-29 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/IvanMurzak/Unreal-MCP/) | AI Game Developer for Unreal Engine — MCP plugin (C++ editor plugin + .NET bridge), unreal-cli, connects Unreal Editor t |
-| 22 | [pipeworx-io/mcp-ssb-no](https://github.com/pipeworx-io/mcp-ssb-no) | 0 | JavaScript | 2026-10-29 | — | Statistics Norway (SSB) PxWebApi MCP. |
-| 23 | [draugr-dev/draugr](https://github.com/draugr-dev/draugr) | 8 | Go | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/draugr-dev/draugr/) | Security scanning for CI from one file: SAST, SCA, secrets, IaC and containers, with every finding ranked by exposure, c |
-| 24 | [pipeworx-io/mcp-squiggle](https://github.com/pipeworx-io/mcp-squiggle) | 0 | JavaScript | 2026-10-29 | — | AFL (Australian Football League) fixture, ladder, and crowd-sourced tips |
-| 25 | [Manish-Tamang/dittu](https://github.com/Manish-Tamang/dittu) | 46 | TypeScript | 2026-10-29 | — | Clone any website's frontend into Next.js or Astro with ≥95% pixel match. CLI, MCP server and agent skills. |
-| 26 | [pipeworx-io/mcp-spp](https://github.com/pipeworx-io/mcp-spp) | 0 | JavaScript | 2026-10-29 | — | Real-time electricity data for SPP, the Southwest Power Pool grid operator covering 14 US states from the Texas panhandl |
-| 27 | [aitakemyjob/sheetdiver](https://github.com/aitakemyjob/sheetdiver) | 0 | Go | 2026-10-29 | — | Your component datasheet library, shared with your AI agent: parts, parameters, graphs, schematics, pins and registers e |
-| 28 | [pipeworx-io/mcp-spotify](https://github.com/pipeworx-io/mcp-spotify) | 0 | JavaScript | 2026-10-29 | — | Spotify MCP — Web API via client_credentials OAuth |
-| 29 | [nkapila6/mcpsurfr](https://github.com/nkapila6/mcpsurfr) | 150 | Python | 2026-10-29 | — | Local web search MCP server, formerly mcp-local-rag. Multi-engine deep research with on-device re-ranking. ✨ no API keys |
-| 30 | [pipeworx-io/mcp-sportsdataio](https://github.com/pipeworx-io/mcp-sportsdataio) | 0 | JavaScript | 2026-10-29 | — | SportsDataIO MCP — wraps SportsDataIO's Big-Six sports data API (sportsdata.io) |
-| 31 | [pipeworx-io/mcp-sports-game-odds](https://github.com/pipeworx-io/mcp-sports-game-odds) | 1 | JavaScript | 2026-10-29 | — | Sports Game Odds MCP — wraps the Sports Game Odds API (sportsgameodds.com) |
-| 32 | [probityai/agent-evidence-mcp](https://github.com/probityai/agent-evidence-mcp) | 0 | Python | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/probityai/agent-evidence-mcp/) | Offline, read-only MCP server that verifies agent evidence claims and replays the agent-evidence conformance vectors |
-| 33 | [pipeworx-io/mcp-sports-feeds](https://github.com/pipeworx-io/mcp-sports-feeds) | 0 | JavaScript | 2026-10-29 | — | Sports Feeds MCP. |
-| 34 | [pipeworx-io/mcp-sportmonks](https://github.com/pipeworx-io/mcp-sportmonks) | 0 | JavaScript | 2026-10-29 | — | Sportmonks Football MCP — wraps the Sportmonks Football v3 API |
-| 35 | [limo-cad/Limo-CAD](https://github.com/limo-cad/Limo-CAD) | 32 | Rust | 2026-10-29 | — | Local-first, open-source mechanical CAD |
-| 36 | [albinati/home-energy-manager](https://github.com/albinati/home-energy-manager) | 0 | Python | 2026-10-29 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/albinati/home-energy-manager/) | LP-based home-energy planner. Optimises a Fox ESS battery + Daikin Altherma heat pump against Octopus Agile half-hourly  |
-| 37 | [pipeworx-io/mcp-spoonacular](https://github.com/pipeworx-io/mcp-spoonacular) | 0 | JavaScript | 2026-10-29 | — | Spoonacular food API: recipes, nutrition, ingredients, meal plans. Free 150/day. |
-| 38 | [udondan/duolingo](https://github.com/udondan/duolingo) | 3 | TypeScript | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/udondan/duolingo/) | Duolingo API client library and an MCP server |
-| 39 | [pipeworx-io/mcp-speedrun](https://github.com/pipeworx-io/mcp-speedrun) | 0 | JavaScript | 2026-10-29 | — | Speedrun.com MCP — wraps the Speedrun.com API v1 (speedrun.com/api/v1) |
-| 40 | [pipeworx-io/mcp-spdx-license](https://github.com/pipeworx-io/mcp-spdx-license) | 0 | JavaScript | 2026-10-29 | — | SPDX open-source license list with full text |
-| 41 | [DrBradStanfield/roadmap](https://github.com/DrBradStanfield/roadmap) | 10 | TypeScript | 2026-10-29 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/DrBradStanfield/roadmap/) | Health by Dr Brad: a free, local-first personal health record and preventive health plan. Your data stays in one JSON fi |
-| 42 | [pipeworx-io/mcp-spain-tenders](https://github.com/pipeworx-io/mcp-spain-tenders) | 0 | JavaScript | 2026-10-29 | — | Spain public procurement MCP — PLACSP tender notices (keyless). |
-| 43 | [Tenney95/AI-Canvas-tauri](https://github.com/Tenney95/AI-Canvas-tauri) | 289 | TypeScript | 2026-10-29 | — | Local-first AI canvas for visual workflows, AI short drama, image/video generation, storyboarding and asset management.  |
-| 44 | [pipeworx-io/mcp-spacenews](https://github.com/pipeworx-io/mcp-spacenews) | 0 | JavaScript | 2026-10-29 | — | MCP server for spaceflight news via Spaceflight News API |
-| 45 | [xiaonerner0821/prismsearch](https://github.com/xiaonerner0821/prismsearch) | 0 | TypeScript | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/xiaonerner0821/prismsearch/) | Multi-engine web search & page fetching MCP server |
-| 46 | [pipeworx-io/mcp-spaceflight-news](https://github.com/pipeworx-io/mcp-spaceflight-news) | 0 | JavaScript | 2026-10-29 | — | Spaceflight News MCP. |
-| 47 | [Nikolife2016/pulsefeed-x402](https://github.com/Nikolife2016/pulsefeed-x402) | 0 | JavaScript | 2026-10-29 | — | Open-source client tools for PulseFeed — trust & safety layer for x402 agent payments. Verify an x402 endpoint before yo |
-| 48 | [nubison/amaranth10-mcp](https://github.com/nubison/amaranth10-mcp) | 0 | JavaScript | 2026-10-29 | ✅ [npx](https://linny006.github.io/mcp-servers-live/r/nubison/amaranth10-mcp/) | Claude에서 더존 아마란스10의 메일·일정·전자결재를 조회하고 회의실을 예약하는 MCP 서버 |
-| 49 | [pipeworx-io/mcp-space-feeds](https://github.com/pipeworx-io/mcp-space-feeds) | 0 | JavaScript | 2026-10-29 | — | Space Feeds MCP. |
-| 50 | [Vortx-AI/emem](https://github.com/Vortx-AI/emem) | 76 | Rust | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/Vortx-AI/emem/) | emem is the machine-maintained, external memory of our physical world a.k.a. Satellites for AI.  |
+| 1 | [johnsmithxy1mmm-sys/HyperliquidMCP](https://github.com/johnsmithxy1mmm-sys/HyperliquidMCP) | 1 | TypeScript | 2026-10-29 | — | Monetized MCP server for Hyperliquid whale/funding/risk analytics + signals; |
+| 2 | [pipeworx-io/mcp-ttab](https://github.com/pipeworx-io/mcp-ttab) | 0 | JavaScript | 2026-10-29 | — | TTAB (Trademark Trial and Appeal Board) MCP — TTABVUE inquiry system |
+| 3 | [JialaoLiu/dsh-baton](https://github.com/JialaoLiu/dsh-baton) | 86 | JavaScript | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/JialaoLiu/dsh-baton/) | Pass the baton from Claude Code or Codex to a local DeepSeek Harness. An MCP server that hands off tasks and brings the  |
+| 4 | [linny006/trending-claude-skills](https://github.com/linny006/trending-claude-skills) | 133 | Python | 2026-10-29 | — | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
+| 5 | [udondan/duolingo](https://github.com/udondan/duolingo) | 3 | TypeScript | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/udondan/duolingo/) | Duolingo API client library and an MCP server |
+| 6 | [pipeworx-io/mcp-tsa-passenger-volumes](https://github.com/pipeworx-io/mcp-tsa-passenger-volumes) | 0 | JavaScript | 2026-10-29 | — | tsa-passenger-volumes — daily U.S. airport checkpoint screening counts. |
+| 7 | [chadixearth/graphyloop](https://github.com/chadixearth/graphyloop) | 3 | Python | 2026-10-29 | ✅ [npx](https://linny006.github.io/mcp-servers-live/r/chadixearth/graphyloop/) | One-command agentic workflow kit for AI coding agents: Workflow v3, a 25-agent squad, persistent memory, 70 Agent Skills |
+| 8 | [shashwatgtm/impact-mcp](https://github.com/shashwatgtm/impact-mcp) | 1 | TypeScript | 2026-10-29 | ✅ [npx](https://linny006.github.io/mcp-servers-live/r/shashwatgtm/impact-mcp/) | Hypothesis-Driven B2B Positioning Engine - 8 strategic positioning tools |
+| 9 | [sepehrkeyhani00/bashoor-ai-menu](https://github.com/sepehrkeyhani00/bashoor-ai-menu) | 1 | HTML | 2026-10-29 | — | Bashoor Cafe in Piroozi, Mashhad — live Persian menu, Toman/IRR prices, llms.txt, WebMCP and MCP metadata. |
+| 10 | [ashlrai/phantom-secrets](https://github.com/ashlrai/phantom-secrets) | 18 | Rust | 2026-10-29 | — | Stop AI coding agents from leaking your API keys. Local proxy + MCP that swaps real secrets for phm_ tokens — works with |
+| 11 | [mavrovde/viafrei-mcp](https://github.com/mavrovde/viafrei-mcp) | 0 | JavaScript | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/mavrovde/viafrei-mcp/) | The German Real-Time Mobility Context Platform for AI: live motorways, rail and public transport, EV charging, fuel, par |
+| 12 | [pipeworx-io/mcp-trykitt](https://github.com/pipeworx-io/mcp-trykitt) | 0 | JavaScript | 2026-10-29 | — | TryKitt MCP — wraps the TryKitt.ai B2B email finder API (trykitt.ai) |
+| 13 | [cordanaLLM/praetor](https://github.com/cordanaLLM/praetor) | 0 | Go | 2026-10-29 | — | Enterprise Fleet Governance, Repository-as-Code & Universal AI Agent Engineering Engine |
+| 14 | [openwong2kim/wmux](https://github.com/openwong2kim/wmux) | 437 | TypeScript | 2026-10-29 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/openwong2kim/wmux/) | The ADE for AI agents. Automate everything else. Do your true work. |
+| 15 | [pipeworx-io/mcp-trove](https://github.com/pipeworx-io/mcp-trove) | 0 | JavaScript | 2026-10-29 | — | Trove MCP. |
+| 16 | [pipeworx-io/mcp-troostwijk](https://github.com/pipeworx-io/mcp-troostwijk) | 0 | JavaScript | 2026-10-29 | — | Troostwijk Auctions MCP — European industrial + insolvency liquidation |
+| 17 | [PassTunnel/PassTunnel](https://github.com/PassTunnel/PassTunnel) | 1 | Swift | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/PassTunnel/PassTunnel/) | Connect your VPN without ever typing a one-time code again. macOS app for OpenVPN and FortiGate SSL VPN, with a CLI and  |
+| 18 | [PassTunnel/.github](https://github.com/PassTunnel/.github) | 0 | — | 2026-10-29 | — | PassTunnel organization profile |
+| 19 | [PassTunnel/homebrew-tap](https://github.com/PassTunnel/homebrew-tap) | 0 | Ruby | 2026-10-29 | — | Homebrew tap for PassTunnel |
+| 20 | [pipeworx-io/mcp-trivia](https://github.com/pipeworx-io/mcp-trivia) | 0 | JavaScript | 2026-10-29 | — | MCP server for trivia questions from Open Trivia Database |
+| 21 | [markhuangai/dense-mem](https://github.com/markhuangai/dense-mem) | 39 | Go | 2026-10-29 | — | Self-hosted AI agent memory server with MCP, evidence provenance, typed claims, conflict detection, embeddings, recall,  |
+| 22 | [hproxy-com/free-proxy-list](https://github.com/hproxy-com/free-proxy-list) | 82 | — | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/hproxy-com/free-proxy-list/) | Free proxy list, verified around the clock: HTTP, HTTPS, SOCKS4 and SOCKS5 proxies with country, anonymity, latency and  |
+| 23 | [autonomous-ai/openharness](https://github.com/autonomous-ai/openharness) | 1388 | TypeScript | 2026-10-29 | — | The ultimate harness for coding agents and beyond. All your agents. All your machines. One command center. Start with co |
+| 24 | [pipeworx-io/mcp-trimet](https://github.com/pipeworx-io/mcp-trimet) | 0 | JavaScript | 2026-10-29 | — | TriMet MCP — live arrivals, stop lookup, vehicle positions and service |
+| 25 | [kochetkov-ma/brewpage-openapi](https://github.com/kochetkov-ma/brewpage-openapi) | 5 | TypeScript | 2026-10-29 | — | Open API Specification for https://brewpage.app - Free HTML, Markdown, AI Artifacts & File Instant Hosting |
+| 26 | [pipeworx-io/mcp-trefle](https://github.com/pipeworx-io/mcp-trefle) | 0 | JavaScript | 2026-10-29 | — | Trefle MCP — global plant database (1M+ species) |
+| 27 | [pipeworx-io/mcp-treasury-tic](https://github.com/pipeworx-io/mcp-treasury-tic) | 0 | JavaScript | 2026-10-29 | — | U.S. Treasury International Capital (TIC) System — foreign holdings of U.S. securities, by country, monthly. |
+| 28 | [pipeworx-io/mcp-treasury-fiscal](https://github.com/pipeworx-io/mcp-treasury-fiscal) | 0 | JavaScript | 2026-10-29 | — | Treasury Fiscal MCP — US Treasury Fiscal Data API |
+| 29 | [quantumsequrity/qnsqy-codex](https://github.com/quantumsequrity/qnsqy-codex) | 0 | — | 2026-10-29 | — | QNSQY for Codex: post-quantum CBOM scan, encryption to public keys and verification on your own Linux computer. Takes no |
+| 30 | [phinn/KinetAios](https://github.com/phinn/KinetAios) | 12 | TypeScript | 2026-10-29 | — | Local-first multi-engine AI agent dashboard — Claude Code, Codex & built-in ReAct in one window. MCP support, skills aut |
+| 31 | [hivecommons/dibs](https://github.com/hivecommons/dibs) | 0 | Go | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/hivecommons/dibs/) | Dibs — your idea, your credit, their code. The missing contributor layer for the AI-agent era. |
+| 32 | [pipeworx-io/mcp-traveltime](https://github.com/pipeworx-io/mcp-traveltime) | 0 | JavaScript | 2026-10-29 | — | TravelTime MCP — multi-modal isochrones & reachability incl. PUBLIC TRANSPORT |
+| 33 | [liliu-z/stashbase](https://github.com/liliu-z/stashbase) | 1186 | TypeScript | 2026-10-29 | — | An open-source, local-first writing workspace where you can write with Claude Code and Codex, drawing on your own source |
+| 34 | [Uuriko/project-room](https://github.com/Uuriko/project-room) | 2 | JavaScript | 2026-10-29 | — | A shared workspace where people and AI agents work together. Agents join over MCP or HTTP, claim tasks on a shared board |
+| 35 | [lusky3/play-store-mcp](https://github.com/lusky3/play-store-mcp) | 27 | Python | 2026-10-29 | ✅ [uvx](https://linny006.github.io/mcp-servers-live/r/lusky3/play-store-mcp/) | An MCP (Model Context Protocol) server that connects to the Google Play Developer API |
+| 36 | [pipeworx-io/mcp-travelpayouts](https://github.com/pipeworx-io/mcp-travelpayouts) | 0 | JavaScript | 2026-10-29 | — | Travelpayouts MCP — wraps the Aviasales Flights Data API (travelpayouts.com) |
+| 37 | [nanohype/nanohype](https://github.com/nanohype/nanohype) | 2 | TypeScript | 2026-10-29 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/nanohype/nanohype/) | Template catalog and SDK for AI subsystems — agents, RAG, MCP servers, eval harnesses, infrastructure. Part of the nanoh |
+| 38 | [pipeworx-io/mcp-travel-feeds](https://github.com/pipeworx-io/mcp-travel-feeds) | 0 | JavaScript | 2026-10-29 | — | Travel Feeds MCP. |
+| 39 | [make0-official/brain-oss](https://github.com/make0-official/brain-oss) | 1 | TypeScript | 2026-10-29 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/make0-official/brain-oss/) | One memory for every AI agent. Local MCP server that gives Claude Code, Cursor, Codex, Windsurf, and more a shared, vers |
+| 40 | [pipeworx-io/mcp-travel-advisories](https://github.com/pipeworx-io/mcp-travel-advisories) | 0 | JavaScript | 2026-10-29 | — | US Travel Advisories MCP. |
+| 41 | [doobidoo/mcp-memory-service](https://github.com/doobidoo/mcp-memory-service) | 2053 | Python | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/doobidoo/mcp-memory-service/) | Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph |
+| 42 | [BeppeTemp/cartographer](https://github.com/BeppeTemp/cartographer) | 49 | Go | 2026-10-29 | — | A shared, git-backed wiki your team's AI agents maintain but can't break — Claude Code, Codex, OpenCode and any MCP clie |
+| 43 | [pipeworx-io/mcp-transport-nsw](https://github.com/pipeworx-io/mcp-transport-nsw) | 0 | JavaScript | 2026-10-29 | — | Transport for NSW MCP — journey planning, live departures, service alerts |
+| 44 | [mulak1/citation-forge](https://github.com/mulak1/citation-forge) | 0 | JavaScript | 2026-10-29 | — | CitationForge — AI Search & ChatGPT Visibility. Free interactive benchmark, live SVG badges, OpenAPI 3.1 & MCP Server: h |
+| 45 | [asanabrial/estigia](https://github.com/asanabrial/estigia) | 1 | Rust | 2026-10-29 | ✅ [npx](https://linny006.github.io/mcp-servers-live/r/asanabrial/estigia/) | Guardrails for AI coding agents (Claude Code, Codex, OpenCode, Pi): an MCP server and hooks that verify issue claims, bi |
+| 46 | [pipeworx-io/mcp-transport-feeds](https://github.com/pipeworx-io/mcp-transport-feeds) | 0 | JavaScript | 2026-10-29 | — | Transport Feeds MCP. |
+| 47 | [hronaut/hronaut](https://github.com/hronaut/hronaut) | 6 | TypeScript | 2026-10-29 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/hronaut/hronaut/) | Give your coding agent its own browser. Keep yours. A visible desktop browser for coding agents, with a separate workspa |
+| 48 | [pipeworx-io/mcp-translate](https://github.com/pipeworx-io/mcp-translate) | 0 | JavaScript | 2026-10-29 | — | MCP server for language translation via LibreTranslate |
+| 49 | [EtanHey/brainlayer](https://github.com/EtanHey/brainlayer) | 9 | Python | 2026-10-29 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/EtanHey/brainlayer/) | Persistent memory MCP for AI agents — SQLite, knowledge graph, 13-tool Python MCP + 17-tool BrainBar surface with ToolAn |
+| 50 | [heymrun/heym](https://github.com/heymrun/heym) | 1262 | Python | 2026-10-29 | ✅ [docker run](https://linny006.github.io/mcp-servers-live/r/heymrun/heym/) | Build agentic systems. Run them with confidence. Orchestrate agents, automate business processes, inspect every executio |
 <!-- TRACKER_TABLE_END -->
 
 ---
