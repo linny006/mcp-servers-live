@@ -44,7 +44,7 @@ expired items removed — so you can rely on what you see being current.
 
 ## 📋 Current Items
 
-> ⏰ Last updated: 2026-10-29 03:15 UTC
+> ⏰ Last updated: 2026-10-29 03:30 UTC
 >
 > Data source: `GitHub Search API`
 >
@@ -53,56 +53,56 @@ expired items removed — so you can rely on what you see being current.
 <!-- TRACKER_TABLE_START -->
 | # | Name | ⭐ | Lang | Updated | Install | Description |
 |---|------|---|------|---------|---------|-------------|
-| 1 | [pipeworx-io/mcp-esa-gaia](https://github.com/pipeworx-io/mcp-esa-gaia) | 0 | TypeScript | 2026-10-29 | — | ESA Gaia MCP — the Gaia star catalogue, queried over the ESA TAP service. |
-| 2 | [pipeworx-io/mcp-epstein](https://github.com/pipeworx-io/mcp-epstein) | 0 | JavaScript | 2026-10-29 | — | The Epstein investigation document corpus — the documents themselves, plus |
-| 3 | [TakoData/tako-mcp](https://github.com/TakoData/tako-mcp) | 7 | TypeScript | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/TakoData/tako-mcp/) | Tako MCP gives your agent industry-leading live web search plus licensed data that the open web does not have. That incl |
-| 4 | [linny006/trending-claude-skills](https://github.com/linny006/trending-claude-skills) | 133 | Python | 2026-10-29 | — | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
-| 5 | [sepehrkeyhani00/bashoor-ai-menu](https://github.com/sepehrkeyhani00/bashoor-ai-menu) | 1 | HTML | 2026-10-29 | — | Bashoor Cafe in Piroozi, Mashhad — live Persian menu, Toman/IRR prices, llms.txt, WebMCP and MCP metadata. |
-| 6 | [pipeworx-io/mcp-epss](https://github.com/pipeworx-io/mcp-epss) | 0 | JavaScript | 2026-10-29 | — | FIRST.org EPSS (Exploit Prediction Scoring System) MCP. |
-| 7 | [tourhabk-ui/pos](https://github.com/tourhabk-ui/pos) | 0 | TypeScript | 2026-10-29 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/tourhabk-ui/pos/) | Vedar (vedarai.ru): Kamchatka travel platform. Tours with live availability, safety status of places and routes, offline |
-| 8 | [pipeworx-io/mcp-epoch-ai-models](https://github.com/pipeworx-io/mcp-epoch-ai-models) | 0 | JavaScript | 2026-10-29 | — | Epoch AI — AI models database |
-| 9 | [akshatinnovate-png/Saathi-Alexa](https://github.com/akshatinnovate-png/Saathi-Alexa) | 4 | JavaScript | 2026-10-29 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/akshatinnovate-png/Saathi-Alexa/) | AWS Dev tools: Saathi (साथी, "companion"): an Alexa+ MCP server that helps elders living with memory loss, disability or |
+| 1 | [pipeworx-io/mcp-flights](https://github.com/pipeworx-io/mcp-flights) | 0 | JavaScript | 2026-10-29 | — | MCP server for tracking flights via OpenSky Network API |
+| 2 | [linny006/trending-claude-skills](https://github.com/linny006/trending-claude-skills) | 133 | Python | 2026-10-29 | — | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
+| 3 | [pipeworx-io/mcp-flightaware](https://github.com/pipeworx-io/mcp-flightaware) | 0 | JavaScript | 2026-10-29 | — | FlightAware MCP — wraps FlightAware AeroAPI v4 (aeroapi.flightaware.com) |
+| 4 | [sepehrkeyhani00/bashoor-ai-menu](https://github.com/sepehrkeyhani00/bashoor-ai-menu) | 1 | HTML | 2026-10-29 | — | Bashoor Cafe in Piroozi, Mashhad — live Persian menu, Toman/IRR prices, llms.txt, WebMCP and MCP metadata. |
+| 5 | [pipeworx-io/mcp-flickr-public](https://github.com/pipeworx-io/mcp-flickr-public) | 0 | JavaScript | 2026-10-29 | — | Flickr keyless public photo feeds (recent, by tag, by user, by group) |
+| 6 | [robhunter/agentdeals](https://github.com/robhunter/agentdeals) | 24 | TypeScript | 2026-10-29 | — | Catalogue of developer infrastructure free tiers, startup credits and pricing, with side-by-side vendor comparisons for  |
+| 7 | [CSOAI-ORG/councilof-ai](https://github.com/CSOAI-ORG/councilof-ai) | 3 | HTML | 2026-10-29 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/CSOAI-ORG/councilof-ai/) | CSOAI Ltd — Council of AI. GSPC AI-behaviour measurement, signed evidence and free verification. Evidence bundles and pr |
+| 8 | [pipeworx-io/mcp-flashalpha](https://github.com/pipeworx-io/mcp-flashalpha) | 0 | JavaScript | 2026-10-29 | — | FlashAlpha MCP — wraps the FlashAlpha options-exposure analytics API |
+| 9 | [pipeworx-io/mcp-fl-medical-exclusions](https://github.com/pipeworx-io/mcp-fl-medical-exclusions) | 0 | JavaScript | 2026-10-29 | — | Florida AHCA Medicaid Sanctioned Providers screening — check a provider |
 | 10 | [hproxy-com/free-proxy-list](https://github.com/hproxy-com/free-proxy-list) | 82 | — | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/hproxy-com/free-proxy-list/) | Free proxy list, verified around the clock: HTTP, HTTPS, SOCKS4 and SOCKS5 proxies with country, anonymity, latency and  |
-| 11 | [pipeworx-io/mcp-epo-publication-server](https://github.com/pipeworx-io/mcp-epo-publication-server) | 0 | JavaScript | 2026-10-29 | — | EPO European Publication Server (EPS) MCP |
-| 12 | [pipeworx-io/mcp-epo-ops](https://github.com/pipeworx-io/mcp-epo-ops) | 0 | JavaScript | 2026-10-29 | — | EPO Open Patent Services MCP |
-| 13 | [pipeworx-io/mcp-epa-regulations](https://github.com/pipeworx-io/mcp-epa-regulations) | 0 | JavaScript | 2026-10-29 | — | EPA Regulations MCP — US Environmental Protection Agency regulations (40 CFR). |
-| 14 | [zhurong2020/pyobfus](https://github.com/zhurong2020/pyobfus) | 11 | Python | 2026-10-29 | ✅ [uvx](https://linny006.github.io/mcp-servers-live/r/zhurong2020/pyobfus/) | AST-based Python obfuscator with reverse stack-trace mapping — obfuscate before shipping and keep production tracebacks  |
-| 15 | [pipeworx-io/mcp-epa-envirofacts](https://github.com/pipeworx-io/mcp-epa-envirofacts) | 0 | JavaScript | 2026-10-29 | — | US EPA Envirofacts MCP. |
-| 16 | [xyTom/coding-tools-mcp](https://github.com/xyTom/coding-tools-mcp) | 1216 | Python | 2026-10-29 | ✅ [uvx](https://linny006.github.io/mcp-servers-live/r/xyTom/coding-tools-mcp/) | Give any AI agent the ability to code |
-| 17 | [pipeworx-io/mcp-epa-emissions](https://github.com/pipeworx-io/mcp-epa-emissions) | 0 | JavaScript | 2026-10-29 | — | EPA Emissions MCP — wraps EPA Envirofacts REST API (free, no auth) |
-| 18 | [staccFoxx/bartholomew](https://github.com/staccFoxx/bartholomew) | 0 | Python | 2026-10-29 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/staccFoxx/bartholomew/) | Deterministic in-process AST security runtime, secret zeroization, and Ed25519 Merkle receipts for Cursor, Claude Code,  |
-| 19 | [pipeworx-io/mcp-epa-echo](https://github.com/pipeworx-io/mcp-epa-echo) | 0 | JavaScript | 2026-10-29 | — | EPA ECHO MCP — wraps EPA ECHO Web Services (free, no auth) |
-| 20 | [1102tools-dev/federal-contracting-mcps](https://github.com/1102tools-dev/federal-contracting-mcps) | 28 | Python | 2026-10-29 | — | Free MCP servers that connect Claude and ChatGPT to SAM.gov, USAspending, GSA CALC+, the FAR and more. In the Claude and |
-| 21 | [pipeworx-io/mcp-epa-aqs](https://github.com/pipeworx-io/mcp-epa-aqs) | 0 | JavaScript | 2026-10-29 | — | EPA AQS MCP — the Air Quality System, EPA's regulatory-grade air monitoring archive |
-| 22 | [pipeworx-io/mcp-eol](https://github.com/pipeworx-io/mcp-eol) | 0 | JavaScript | 2026-10-29 | — | Encyclopedia of Life (EOL) — biodiversity taxa, names, hierarchies |
-| 23 | [KevinChu1110/driftnet](https://github.com/KevinChu1110/driftnet) | 16 | TypeScript | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/KevinChu1110/driftnet/) | A drift net for your feeds: catch the tools, repos and articles your chats share before they drift away. Sorted, summari |
-| 24 | [pipeworx-io/mcp-eodhd](https://github.com/pipeworx-io/mcp-eodhd) | 0 | JavaScript | 2026-10-29 | — | EODHD MCP — wraps EOD Historical Data (eodhd.com) |
-| 25 | [Uuriko/project-room](https://github.com/Uuriko/project-room) | 2 | JavaScript | 2026-10-29 | — | A shared workspace where people and AI agents work together. Agents join over MCP or HTTP, claim tasks on a shared board |
-| 26 | [pipeworx-io/mcp-entur](https://github.com/pipeworx-io/mcp-entur) | 0 | JavaScript | 2026-10-29 | — | Entur MCP — Norway public transport, nationwide, all modes (developer.entur.org) |
-| 27 | [sinolion/fleet](https://github.com/sinolion/fleet) | 0 | Python | 2026-10-29 | — | Let Claude Code, Codex and Gemini use every machine you own: which GPUs are free, what jobs and models are running, what |
-| 28 | [pipeworx-io/mcp-entso-e](https://github.com/pipeworx-io/mcp-entso-e) | 0 | JavaScript | 2026-10-29 | — | ENTSO-E Transparency Platform MCP |
-| 29 | [thagvall/rmink](https://github.com/thagvall/rmink) | 1 | HTML | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/thagvall/rmink/) | Turn photos of handwriting, sketches, logos, SVGs and PDFs into native, editable reMarkable ink (.rmdoc, v6). CLI, web U |
-| 30 | [pipeworx-io/mcp-entreprises-fr](https://github.com/pipeworx-io/mcp-entreprises-fr) | 0 | JavaScript | 2026-10-29 | — | French Companies MCP — recherche-entreprises.api.gouv.fr |
-| 31 | [TK-WFL/o2n](https://github.com/TK-WFL/o2n) | 0 | TypeScript | 2026-10-29 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/TK-WFL/o2n/) | Obsidian の vault を、リンク・フォルダ階層・frontmatter・添付ファイルを保ったまま Notion へ移行するツール（CLI / MCP サーバー） |
-| 32 | [pipeworx-io/mcp-entertainment-feeds](https://github.com/pipeworx-io/mcp-entertainment-feeds) | 0 | JavaScript | 2026-10-29 | — | Entertainment Feeds MCP. |
-| 33 | [pipeworx-io/mcp-ensembl](https://github.com/pipeworx-io/mcp-ensembl) | 0 | JavaScript | 2026-10-29 | — | Ensembl REST — vertebrate genomes, sequences, comparative genomics, variation |
-| 34 | [vinayvobbili/jobwatch](https://github.com/vinayvobbili/jobwatch) | 0 | Python | 2026-10-29 | ✅ [pipx install](https://linny006.github.io/mcp-servers-live/r/vinayvobbili/jobwatch/) | Watch company job boards (Greenhouse, Lever, Ashby, Workable, Workday, Eightfold, Rippling), get a ranked digest of new  |
-| 35 | [pipeworx-io/mcp-ens](https://github.com/pipeworx-io/mcp-ens) | 0 | JavaScript | 2026-10-29 | — | ENS (Ethereum Name Service) MCP. |
-| 36 | [pipeworx-io/mcp-enforcement-actions](https://github.com/pipeworx-io/mcp-enforcement-actions) | 0 | JavaScript | 2026-10-29 | — | US federal enforcement actions MCP. Keyless. |
-| 37 | [agent-help-network/agent-help-network](https://github.com/agent-help-network/agent-help-network) | 0 | Python | 2026-10-29 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/agent-help-network/agent-help-network/) | Agent Help Network — one lookup for what a host allows agents to do, official status, and recent observations |
-| 38 | [pipeworx-io/mcp-energy-charts](https://github.com/pipeworx-io/mcp-energy-charts) | 0 | JavaScript | 2026-10-29 | — | Energy-Charts (Fraunhofer ISE) MCP — European electricity generation, prices, and capacity. |
-| 39 | [pipeworx-io/mcp-energi-data-dk](https://github.com/pipeworx-io/mcp-energi-data-dk) | 0 | JavaScript | 2026-10-29 | — | Energi Data Service (Energinet) MCP — Denmark's official open energy data. |
-| 40 | [kajisho5/ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | 3575 | Python | 2026-10-29 | — | Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Cod |
-| 41 | [danilokhury/Synabun](https://github.com/danilokhury/Synabun) | 70 | JavaScript | 2026-10-29 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/danilokhury/Synabun/) | Open-source persistent memory MCP server and self-hosted AI workspace for Claude Code, Codex and OpenCode. SynaBun Assis |
-| 42 | [pipeworx-io/mcp-endoflife](https://github.com/pipeworx-io/mcp-endoflife) | 0 | JavaScript | 2026-10-29 | — | endoflife.date MCP. |
-| 43 | [pipeworx-io/mcp-ena](https://github.com/pipeworx-io/mcp-ena) | 0 | JavaScript | 2026-10-29 | — | European Nucleotide Archive (ENA) — EMBL-EBI's public record of raw sequencing runs, assemblies and annotated sequence,  |
-| 44 | [pipeworx-io/mcp-emsc](https://github.com/pipeworx-io/mcp-emsc) | 0 | JavaScript | 2026-10-29 | — | EMSC (European-Mediterranean Seismological Centre) MCP — wraps the |
-| 45 | [LYJW131/lyjwpage](https://github.com/LYJW131/lyjwpage) | 0 | TypeScript | 2026-10-29 | — | A personal homepage driven by real devices: live music, video, games, coding agents and hardware telemetry, on Cloudflar |
-| 46 | [Mr-Macharia/mpesa-daraja-skills-and-mcp](https://github.com/Mr-Macharia/mpesa-daraja-skills-and-mcp) | 3 | Python | 2026-10-29 | ✅ [uvx](https://linny006.github.io/mcp-servers-live/r/Mr-Macharia/mpesa-daraja-skills-and-mcp/) | Agent Skills and an MCP server for Safaricom's M-Pesa Daraja API: build payment integrations, or let an agent handle pay |
-| 47 | [pipeworx-io/mcp-emojihub](https://github.com/pipeworx-io/mcp-emojihub) | 0 | JavaScript | 2026-10-29 | — | MCP server for emoji lookup by category and group via EmojiHub API |
-| 48 | [deedglass/deedglass](https://github.com/deedglass/deedglass) | 1 | Go | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/deedglass/deedglass/) | Check what your AI agents actually changed. AI agent safety for databases and health records: rules decide each tool cal |
-| 49 | [pipeworx-io/mcp-emoji](https://github.com/pipeworx-io/mcp-emoji) | 0 | JavaScript | 2026-10-29 | — | Emoji MCP. |
-| 50 | [pipeworx-io/mcp-emdb](https://github.com/pipeworx-io/mcp-emdb) | 1 | JavaScript | 2026-10-29 | — | EMDB (EBI Electron Microscopy Data Bank) MCP — keyless. |
+| 11 | [pipeworx-io/mcp-fl-medicaid-rates](https://github.com/pipeworx-io/mcp-fl-medicaid-rates) | 0 | JavaScript | 2026-10-29 | — | Florida Medicaid rate schedules (Florida AHCA, Medicaid cost reimbursement). |
+| 12 | [pipeworx-io/mcp-fjc-judges](https://github.com/pipeworx-io/mcp-fjc-judges) | 0 | JavaScript | 2026-10-29 | — | FJC Judges — the Federal Judicial Center's Biographical Directory of Article III federal judges, 1789 to present. |
+| 13 | [sleepunit-agents/loom](https://github.com/sleepunit-agents/loom) | 1 | TypeScript | 2026-10-29 | — | System 3 MCP server — persistent identity, memory, and self-model for AI agents. Single-file sqlite-vec + fastembed; zer |
+| 14 | [Ekwo-ai/ekwo-os](https://github.com/Ekwo-ai/ekwo-os) | 40 | TypeScript | 2026-10-29 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/Ekwo-ai/ekwo-os/) | Ekwo OS — an open double-entry accounting core for Postgres and Supabase. AGPL-3.0. |
+| 15 | [pipeworx-io/mcp-fjc-case-outcomes](https://github.com/pipeworx-io/mcp-fjc-case-outcomes) | 0 | JavaScript | 2026-10-29 | — | Federal Judicial Center (FJC), Integrated Database — federal case outcomes (fleet #3271). Complements the court-listener |
+| 16 | [scarletkc/vexor](https://github.com/scarletkc/vexor) | 247 | Python | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/scarletkc/vexor/) | A semantic search engine for files and code. |
+| 17 | [pipeworx-io/mcp-firecrawl](https://github.com/pipeworx-io/mcp-firecrawl) | 1 | JavaScript | 2026-10-29 | — | Firecrawl MCP — wraps the Firecrawl API (firecrawl.dev) for web |
+| 18 | [akshatinnovate-png/Saathi-Alexa](https://github.com/akshatinnovate-png/Saathi-Alexa) | 4 | JavaScript | 2026-10-29 | ✅ [npm install](https://linny006.github.io/mcp-servers-live/r/akshatinnovate-png/Saathi-Alexa/) | AWS Dev tools: Saathi (साथी, "companion"): an Alexa+ MCP server that helps elders living with memory loss, disability or |
+| 19 | [pipeworx-io/mcp-finra-fixed-income](https://github.com/pipeworx-io/mcp-finra-fixed-income) | 1 | JavaScript | 2026-10-29 | — | FINRA Fixed Income aggregate market data (fleet #530). |
+| 20 | [pipeworx-io/mcp-finra](https://github.com/pipeworx-io/mcp-finra) | 0 | JavaScript | 2026-10-29 | — | FINRA Reg SHO daily short-sale volume. |
+| 21 | [pipeworx-io/mcp-finnhub](https://github.com/pipeworx-io/mcp-finnhub) | 0 | JavaScript | 2026-10-29 | — | Finnhub MCP — wraps Finnhub Stock API (finnhub.io) |
+| 22 | [acidnyan/agent-collab-platform](https://github.com/acidnyan/agent-collab-platform) | 1 | TypeScript | 2026-10-29 | — | Zero-trust, E2EE task delegation protocol & MCP server for cross-owner AI agents (Ed25519 DID, X25519+AES-256-GCM Blind  |
+| 23 | [pipeworx-io/mcp-findymail](https://github.com/pipeworx-io/mcp-findymail) | 0 | JavaScript | 2026-10-29 | — | Findymail MCP — B2B email finder & reverse-email lookup (findymail.com) |
+| 24 | [Hugo0/swarmmemo](https://github.com/Hugo0/swarmmemo) | 3 | Go | 2026-10-29 | — | Talk with agent swarms. Public rooms, private messages, paid tasks and memory for your AI agent. Post from anywhere: MCP |
+| 25 | [pipeworx-io/mcp-financial-datasets](https://github.com/pipeworx-io/mcp-financial-datasets) | 0 | JavaScript | 2026-10-29 | — | Financial Datasets AI MCP — wraps financialdatasets.ai |
+| 26 | [timmo001/context](https://github.com/timmo001/context) | 1 | TypeScript | 2026-10-29 | — | 🧭 Standalone CLI and MCP server for deterministic repository context |
+| 27 | [pipeworx-io/mcp-finance-feeds](https://github.com/pipeworx-io/mcp-finance-feeds) | 0 | JavaScript | 2026-10-29 | — | Finance Feeds MCP. |
+| 28 | [answerLoops/answerLoops](https://github.com/answerLoops/answerLoops) | 23 | TypeScript | 2026-10-29 | — | ⭐️ Self-hostable AI support for Discord, GitHub, Slack & Discourse communities. Answers from your knowledge source, chec |
+| 29 | [pipeworx-io/mcp-figshare](https://github.com/pipeworx-io/mcp-figshare) | 0 | JavaScript | 2026-10-29 | — | Figshare research outputs (datasets, papers, posters) |
+| 30 | [pipeworx-io/mcp-figma](https://github.com/pipeworx-io/mcp-figma) | 0 | JavaScript | 2026-10-29 | — | Figma MCP Pack |
+| 31 | [pipeworx-io/mcp-ffiec-call-reports](https://github.com/pipeworx-io/mcp-ffiec-call-reports) | 0 | JavaScript | 2026-10-29 | — | FFIEC Call Reports MCP — US bank line-item detail (fleet #338). |
+| 32 | [ops864/legal-marketing-data](https://github.com/ops864/legal-marketing-data) | 0 | — | 2026-10-29 | — | Open legal-marketing data from Probative Growth, a marketing agency for US law firms (SEO and ads, published monthly pri |
+| 33 | [pipeworx-io/mcp-ferc-eqr](https://github.com/pipeworx-io/mcp-ferc-eqr) | 0 | JavaScript | 2026-10-29 | — | FERC Electric Quarterly Reports (EQR) — wholesale power sales: who sells |
+| 34 | [aashishmahajan/kube-noob](https://github.com/aashishmahajan/kube-noob) | 0 | Python | 2026-10-29 | — | public agent for training everything kubernetes, helm, openshift rosa and stackrox |
+| 35 | [clidey/whodb](https://github.com/clidey/whodb) | 5043 | Go | 2026-10-29 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/clidey/whodb/) | Where data access meets operational intelligence |
+| 36 | [Nagarjuna2997/ios-agent-skill](https://github.com/Nagarjuna2997/ios-agent-skill) | 40 | HTML | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/Nagarjuna2997/ios-agent-skill/) | Swift source, Apple guides and MCP tools for AI coding agents. Review iOS code, scaffold apps, and build/run/preview wit |
+| 37 | [modelstudioai/cli](https://github.com/modelstudioai/cli) | 366 | TypeScript | 2026-10-29 | ✅ [npm install -g](https://linny006.github.io/mcp-servers-live/r/modelstudioai/cli/) | Official Model Studio CLI（阿里云百炼 CLI）built for AI Agent frameworks, exposing models, search, multimodal, and workflow cap |
+| 38 | [pipeworx-io/mcp-ferc-elibrary](https://github.com/pipeworx-io/mcp-ferc-elibrary) | 0 | JavaScript | 2026-10-29 | — | FERC eLibrary MCP — the Federal Energy Regulatory Commission's public docket |
+| 39 | [pipeworx-io/mcp-feodotracker](https://github.com/pipeworx-io/mcp-feodotracker) | 0 | JavaScript | 2026-10-29 | — | abuse.ch Feodo Tracker botnet C&C IP blocklist |
+| 40 | [remymazmanian/bitwig-control-deck](https://github.com/remymazmanian/bitwig-control-deck) | 3 | JavaScript | 2026-10-29 | ✅ [claude mcp add](https://linny006.github.io/mcp-servers-live/r/remymazmanian/bitwig-control-deck/) | Bitwig MCP server: tell Claude, Codex or any SI/AI agent what to change in Bitwig Studio. It does it on your Mac, then r |
+| 41 | [kajisho5/ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | 3581 | Python | 2026-10-29 | — | Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Cod |
+| 42 | [pipeworx-io/mcp-fema-nfhl](https://github.com/pipeworx-io/mcp-fema-nfhl) | 0 | JavaScript | 2026-10-29 | — | FEMA National Flood Hazard Layer (NFHL) MCP |
+| 43 | [pipeworx-io/mcp-federal-register](https://github.com/pipeworx-io/mcp-federal-register) | 0 | JavaScript | 2026-10-29 | — | Federal Register MCP — US Federal Register API (free, no auth) |
+| 44 | [pipeworx-io/mcp-federal-criminal](https://github.com/pipeworx-io/mcp-federal-criminal) | 0 | JavaScript | 2026-10-29 | — | Federal criminal prosecutions — US federal court dockets. |
+| 45 | [330899935/apiary-memory](https://github.com/330899935/apiary-memory) | 0 | Python | 2026-10-29 | ✅ [pip install](https://linny006.github.io/mcp-servers-live/r/330899935/apiary-memory/) | Apiary Memory — local-first memory your AI agents share over MCP. Agents propose; only you confirm. Plain files on your  |
+| 46 | [pipeworx-io/mcp-federal-civil](https://github.com/pipeworx-io/mcp-federal-civil) | 0 | JavaScript | 2026-10-29 | — | Federal civil litigation — US federal court dockets. |
+| 47 | [pipeworx-io/mcp-federal-appeals](https://github.com/pipeworx-io/mcp-federal-appeals) | 0 | JavaScript | 2026-10-29 | — | Federal appellate dockets — US federal court dockets. |
+| 48 | [pipeworx-io/mcp-fed-nic](https://github.com/pipeworx-io/mcp-fed-nic) | 0 | JavaScript | 2026-10-29 | — | Federal Reserve National Information Center (NIC, ffiec.gov/npw) |
+| 49 | [AZERIA-IT/pluia](https://github.com/AZERIA-IT/pluia) | 0 | — | 2026-10-29 | — | Docs and client setup for the Pluia remote MCP server: French zoning (PLU) rules for any address or parcel, cited with t |
+| 50 | [pipeworx-io/mcp-fed-comms](https://github.com/pipeworx-io/mcp-fed-comms) | 0 | JavaScript | 2026-10-29 | — | Federal Reserve communications from federalreserve.gov: the FOMC meeting calendar, each policy statement with the rate d |
 <!-- TRACKER_TABLE_END -->
 
 ---
